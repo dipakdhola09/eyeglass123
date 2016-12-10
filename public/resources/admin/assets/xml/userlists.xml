@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UserList>
+  <User UserID="1">
+    <ProfilePicture>avatar-1.png</ProfilePicture>
+    <Name>Master Admin</Name>
+    <Email>admin@sumocommerce.com</Email>
+    <Status>Active</Status>
+    <LastActive>Feb 10 2016 - 13:22:30</LastActive>
+    <Actions>Actions</Actions>
+  </User>
+  <User UserID="2">
+    <ProfilePicture>avatar-2.png</ProfilePicture>
+    <Name>Sales</Name>
+    <Email>sales@sumocommerce.com</Email>
+    <Status>Active</Status>
+    <LastActive>Feb 09 2016 - 09:22:30</LastActive>
+    <Actions>Actions</Actions>
+  </User>
+  <User UserID="3">
+    <ProfilePicture>avatar-3.png</ProfilePicture>
+    <Name>Order Manager</Name>
+    <Email>order@sumocommerce.com</Email>
+    <Status>Inactive</Status>
+    <LastActive>Feb 08 2016 - 19:22:30</LastActive>
+    <Actions>Actions</Actions>
+  </User>
+  </UserList>

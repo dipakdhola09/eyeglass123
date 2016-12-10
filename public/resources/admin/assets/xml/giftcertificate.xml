@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<GiftCertificate>
+	<GiftList GiftListID="1">
+		<GiftCertificateName>$100 Gift Certificate</GiftCertificateName>
+		<GiftSKU>100-GIFT</GiftSKU>
+		<Price>$100.00</Price>
+		<Quantity>40</Quantity>
+		<LastUpdatedOn>2015-06-19 19:14:02</LastUpdatedOn>
+		<CreatedOn>2015-06-10 00:00:01</CreatedOn>
+		<Status>Inactive</Status>
+		<Action></Action>
+	</GiftList>
+	<GiftList GiftListID="2">
+		<GiftCertificateName>$50 Gift Certificate</GiftCertificateName>
+		<GiftSKU>50-GIFT</GiftSKU>
+		<Price>$70.00</Price>
+		<Quantity>25</Quantity>
+		<LastUpdatedOn>2015-06-19 19:14:02</LastUpdatedOn>
+		<CreatedOn>2015-06-10 00:00:01</CreatedOn>
+		<Status>active</Status>
+		<Action></Action>
+	</GiftList>
+</GiftCertificate>

@@ -1,0 +1,132 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<h4 class="page-title">Add Customer Level</h4>
+			</div>
+			<div class="col-xs-12 col-sm-7">
+				<div class="pull-right col-sm-12" style="min-width:300px;">
+					<div class="col-sm-8 text-right">
+						<label class="m-t-5">Store Name:</label>
+					</div>
+					<div class="col-sm-2">
+						<select class="form-control m-t-5 pull-left" style="width:100%;">
+							<option>Select</option>
+							<option value="" selected>Store 1</option>
+							<option value="">Store 2</option>
+							<option value="">Store 3</option>
+							<option value="">Store 4</option>
+						</select>
+					</div>
+					<div class="col-sm-2 p-r-0">
+						<select class="form-control m-t-5 pull-left" style="width:100%;" onchange="if (this.value) window.location.href=this.value;">
+							<option>Select</option>
+							<option value="products-list.html" selected>Web</option>
+							<option value="ebay-products-list.html">Ebay</option>
+							<option value="amazon-products-list.html">Amazon</option>
+							<option value="jet-products-list.html">Jet</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 m-t-20">
+				<div class="card-box">
+					<form>
+						<div class="form-group row">
+							<label class="control-label col-sm-4 col-md-3 p-t-10">Store Name</label>
+							<div class="col-sm-5 col-md-5">
+								<select class="form-control">
+									<option>Select</option>
+									<option value="">Store Name 1</option>
+									<option value="">Store Name 1</option>
+									<option value="">Store Name 3</option>
+									<option value="">Store Name 4</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-sm-4 col-md-3 p-t-10">Name</label>
+							<div class="col-sm-6 col-md-5">
+								<input class="form-control" type="text">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-sm-4 col-md-3 p-t-10">Discount</label>
+							<div class="col-sm-3 col-md-2">
+								<div class="input-group">
+									<input type="text" value="" class="form-control">
+									<span style="font-weight:bold; color:#000;" class="input-group-addon">%</span> </div>
+							</div>
+							<div class="pull-left p-t-10">Or</div>
+							<div class="col-sm-3 col-md-2">
+								<div class="input-group">
+									<input type="text" value="" class="form-control">
+									<span style="font-weight:bold; color:#000;" class="input-group-addon"><i class="fa fa-dollar"></i></span> </div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-sm-4 col-md-3 p-t-10">Annual Sales Limit</label>
+							<div class="col-sm-6 col-md-5">
+								<input class="form-control" type="text">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-sm-4 col-md-3 p-t-10">Has Free Shipping</label>
+							<div class="col-sm-6 col-md-5 m-t-5">
+								<input type="checkbox">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-sm-4 col-md-3 p-t-10">Has No Tax</label>
+							<div class="col-sm-6 col-md-5 m-t-5">
+								<input type="checkbox">
+							</div>
+						</div>
+						<div class="form-group row">
+							<label class="control-label col-sm-4 col-md-3 p-t-10">Display Order</label>
+							<div class="col-sm-6 col-md-5">
+								<input class="form-control" type="text">
+							</div>
+						</div>
+						<div class="col-sm-12 row p-t-15">
+							<div class="col-sm-12 bg-alt p-10">Category Wise Discount Details</div>
+							<div class="col-sm-12 p-10 table-bordered">Coming Soon...................</div>
+						</div>
+						<div class="col-sm-12 row p-t-15">
+							<div class="col-sm-12 bg-alt p-10">Product Wise Discount Details</div>
+							<div class="col-sm-12 p-10 table-bordered">Coming Soon...................</div>
+						</div>
+						<div class="col-sm-12 row p-t-15">
+							<div class="col-sm-12 bg-alt p-10">Brand Wise Discount Details</div>
+							<div class="col-sm-12 p-10 table-bordered">Coming Soon...................</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-12 col-md-12 p-t-10 text-right"> <a data-ui-sref="CustomerLevelDiscount" data-ui-sref-active="active" class="btn btn-primary">Save</a> <a href="#" class="btn btn-warning">cancel</a></div>
+						</div>
+					</form>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+	//Date Input Box
+	$("#dateInput").jqxDateTimeInput({ height: '38', width: '100%', formatString: "MMM dd, yyyy"});
+	$("#dateInput1").jqxDateTimeInput({ height: '38', width: '100%', formatString: "MMM dd, yyyy"});
+	
+	//Create Status Button
+	$("#jqxButton2").jqxSwitchButton({
+		theme: 'classic',
+		width: '150',
+		height: '38',
+		//thumbSize:'30',
+		checked: true,
+		onLabel: 'Yes',
+		offLabel: 'No'
+	});
+});
+</script>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CouponDiscount>
+	<Coupon CouponDiscountID="1">
+		<CouponCode>Lorem Ipsum</CouponCode>
+		<StoreName>web</StoreName>
+		<CreatedOn>Feb 21, 2016&lt;br&gt;09:20:10</CreatedOn>
+		<CreatDate>Admin User1</CreatDate>
+		<ExDate>Feb 25, 2016</ExDate>
+		<DiscountP>10%</DiscountP>
+		<DiscountD>$5</DiscountD>
+		<Expires>Lorem Ipsum</Expires>
+		<Order>12</Order>
+		<Action></Action>
+	</Coupon>
+	<Coupon CouponDiscountID="2">
+		<CouponCode>Lorem Ipsum</CouponCode>
+		<StoreName>web</StoreName>
+		<CreatedOn>Feb 21, 2016&lt;br&gt;09:20:10</CreatedOn>
+		<CreatDate>Admin User1</CreatDate>
+		<ExDate>Feb 25, 2016</ExDate>
+		<DiscountP>10%</DiscountP>
+		<DiscountD>$5</DiscountD>
+		<Expires>Lorem Ipsum</Expires>
+		<Order>12</Order>
+		<Action></Action>
+	</Coupon>
+	<Coupon CouponDiscountID="3">
+		<CouponCode>Lorem Ipsum</CouponCode>
+		<StoreName>web</StoreName>
+		<CreatedOn>Feb 21, 2016&lt;br&gt;09:20:10</CreatedOn>
+		<CreatDate>Admin User1</CreatDate>
+		<ExDate>Feb 25, 2016</ExDate>
+		<DiscountP>10%</DiscountP>
+		<DiscountD>$5</DiscountD>
+		<Expires>Lorem Ipsum</Expires>
+		<Order>12</Order>
+		<Action></Action>
+	</Coupon>
+	<Coupon CouponDiscountID="4">
+		<CouponCode>Lorem Ipsum</CouponCode>
+		<StoreName>web</StoreName>
+		<CreatedOn>Feb 21, 2016&lt;br&gt;09:20:10</CreatedOn>
+		<CreatDate>Admin User1</CreatDate>
+		<ExDate>Feb 25, 2016</ExDate>
+		<DiscountP>10%</DiscountP>
+		<DiscountD>$5</DiscountD>
+		<Expires>Lorem Ipsum</Expires>
+		<Order>12</Order>
+		<Action></Action>
+	</Coupon>
+	<Coupon CouponDiscountID="5">
+		<CouponCode>Lorem Ipsum</CouponCode>
+		<StoreName>web</StoreName>
+		<CreatedOn>Feb 21, 2016&lt;br&gt;09:20:10</CreatedOn>
+		<CreatDate>Admin User1</CreatDate>
+		<ExDate>Feb 25, 2016</ExDate>
+		<DiscountP>10%</DiscountP>
+		<DiscountD>$5</DiscountD>
+		<Expires>Lorem Ipsum</Expires>
+		<Order>12</Order>
+		<Action></Action>
+	</Coupon>
+</CouponDiscount>
+
+
+
+	
+
+
+
+

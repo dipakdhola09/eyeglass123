@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LeftDashList>
+  <LeftDash LeftDashID="1">
+    <LeftDashSectionName>Total Order By Market Place</LeftDashSectionName>
+    <LeftDashDisplay>false</LeftDashDisplay>
+    <LeftDashDisplayOrder>1</LeftDashDisplayOrder>
+  </LeftDash>
+  <LeftDash LeftDashID="2">
+    <LeftDashSectionName>Top 10 Customer</LeftDashSectionName>
+    <LeftDashDisplay>true</LeftDashDisplay>
+    <LeftDashDisplayOrder>2</LeftDashDisplayOrder>
+  </LeftDash>
+  <LeftDash LeftDashID="3">
+    <LeftDashSectionName>Recent Customer</LeftDashSectionName>
+    <LeftDashDisplay>true</LeftDashDisplay>
+    <LeftDashDisplayOrder>3</LeftDashDisplayOrder>
+  </LeftDash>
+</LeftDashList>

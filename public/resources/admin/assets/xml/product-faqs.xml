@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<ProductFaqs>
+  <Faqs ProductFaqsID="1">
+    <Id>1</Id>
+    <ProductName>Lorem Ipsum</ProductName>
+    <SKU>ABC</SKU>
+    <CustomerName>Lorem Ipsum</CustomerName>
+	 <Questions>Lorem Ipsum ?</Questions>
+    <Comments>Lorem Ipsum Lorem Ipsum Lorem Ipsum</Comments>
+    <DateTime>Jan 10,2016</DateTime>
+    <Status>Inactive</Status>
+    <TagEdit> </TagEdit>
+  </Faqs>
+  <Faqs ProductFaqsID="2">
+    <Id>2</Id>
+    <ProductName>Lorem Ipsum</ProductName>
+    <SKU>ABC</SKU>
+    <CustomerName>Lorem Ipsum</CustomerName>
+	 <Questions>Lorem Ipsum ?</Questions>
+    <Comments>Lorem Ipsum Lorem Ipsum Lorem Ipsum</Comments>
+    <DateTime>Jan 19,2016</DateTime>
+    <Status>Inactive</Status>
+    <TagEdit> </TagEdit>
+  </Faqs>
+</ProductFaqs>
+
+
+
+

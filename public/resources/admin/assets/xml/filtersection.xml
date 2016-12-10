@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FilterSectionList>
+	<FilterSection FilterSectionID="1">
+		<Image></Image>
+		<FilterName>Lorem Ipsum is simply dummy text 1</FilterName>
+		<Manufacture>Lorem Ipsum</Manufacture>
+		<FilterSection>Shop By Collection</FilterSection>
+		<Status>Active</Status>
+		<Actions></Actions>
+	</FilterSection>
+</FilterSectionList>

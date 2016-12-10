@@ -1,0 +1,116 @@
+<!-- Sidebar Scroll Container -->
+<div id="sidebar-scroll"> 
+	<!-- Sidebar Content --> 
+	<!-- Adding .sidebar-mini-hide to an element will hide it when the sidebar is in mini mode -->
+	<div class="sidebar-content"> 
+		<!-- Side Header -->
+		<div class="side-header side-content bg-white-op">
+			<button class="btn btn-link text-gray pull-right hidden-md hidden-lg" type="button" data-ng-click="oneui.settings.sidebarOpenXs = false" data-js-blur> <i class="fa fa-times"></i> </button>
+			<div class="btn-group pull-right" data-on-toggle="toggled(open)" data-uib-dropdown>
+				<button class="btn btn-link text-gray" type="button" data-uib-dropdown-toggle> <i class="si si-drop"></i> </button>
+				<ul class="dropdown-menu-right font-s13 sidebar-mini-hide" data-uib-dropdown-menu>
+					<li data-ng-class="{'active': ! oneui.settings.activeColorTheme}"> <a data-ng-click="oneui.settings.activeColorTheme = false" tabindex="-1" href="javascript:void(0)"> <i class="fa fa-circle text-default pull-right"></i> <span class="font-w600">Default</span> </a> </li>
+					<li data-ng-class="{'active': oneui.settings.activeColorTheme === 'amethyst'}"> <a data-ng-click="oneui.settings.activeColorTheme = 'amethyst'" tabindex="-1" href="javascript:void(0)"> <i class="fa fa-circle text-amethyst pull-right"></i> <span class="font-w600">Amethyst</span> </a> </li>
+					<li data-ng-class="{'active': oneui.settings.activeColorTheme === 'city'}"> <a data-ng-click="oneui.settings.activeColorTheme = 'city'" tabindex="-1" href="javascript:void(0)"> <i class="fa fa-circle text-city pull-right"></i> <span class="font-w600">City</span> </a> </li>
+					<li data-ng-class="{'active': oneui.settings.activeColorTheme === 'flat'}"> <a data-ng-click="oneui.settings.activeColorTheme = 'flat'" tabindex="-1" href="javascript:void(0)"> <i class="fa fa-circle text-flat pull-right"></i> <span class="font-w600">Flat</span> </a> </li>
+					<li data-ng-class="{'active': oneui.settings.activeColorTheme === 'modern'}"> <a data-ng-click="oneui.settings.activeColorTheme = 'modern'" tabindex="-1" href="javascript:void(0)"> <i class="fa fa-circle text-modern pull-right"></i> <span class="font-w600">Modern</span> </a> </li>
+					<li data-ng-class="{'active': oneui.settings.activeColorTheme === 'smooth'}"> <a data-ng-click="oneui.settings.activeColorTheme = 'smooth'" tabindex="-1" href="javascript:void(0)"> <i class="fa fa-circle text-smooth pull-right"></i> <span class="font-w600">Smooth</span> </a> </li>
+				</ul>
+			</div>
+			<a class="h5 text-white logo" data-ui-sref="dashboard" data-js-blur> <img src="assets/img/logo.png" alt="" title="" /> </a> </div>
+		<!-- END Side Header --> 
+		
+		<!-- Side Content -->
+		<div class="side-content"> 
+			<!-- Main navigation functionality (data-js-main-nav attribute is initialized in js/directives.js) -->
+			<ul class="nav-main" data-js-main-nav>
+				<li> <a data-ui-sref="dashboard" data-ui-sref-active="active"> <i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span> </a> </li>
+				<!--<li class="nav-main-heading"><span class="sidebar-mini-hide">Examples</span></li> -->
+				<li data-ng-class="{open: (path.indexOf('/orders/') > -1)}"> <a class="nav-submenu" data-toggle="nav-submenu" href="#"> <i class="fa fa-barcode"></i> <span class="sidebar-mini-hide">Orders</span></a>
+					<ul class="sb-submenu in">
+						<li class=""> <a data-ui-sref="OrderList" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Order List</span> </a> </li>
+						<li class=""> <a data-ui-sref="PhoneOrder" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Phone Order</span> </a> </li>
+						<li class=""> <a data-ui-sref="FailedTransaction" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Failed Transaction</span></a> </li>
+						<li class=""> <a data-ui-sref="ExportOrder" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Export Order</span></a> </li>
+						<li class=""> <a data-ui-sref="FraudIPlist" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Fraud IP list</span></a> </li>
+						<li class=""> <a data-ui-sref="ViewOldOrders" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">View Old Orders</span> </a> </li>
+					</ul>
+				</li>
+				<li data-ng-class="{open: (path.indexOf('/product/') > -1)}"> <a class="nav-submenu" data-toggle="nav-submenu" href="#"> <i class="fa fa-th"></i> <span class="sidebar-mini-hide">Product</span></a>
+					<ul class="sb-submenu in">
+						<li class=""> <a data-ui-sref="ProductList" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Product List</span></a> </li>
+						<li class=""> <a data-ui-sref="AddProduct" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Add Product</span></a> </li>
+						<li class=""> <a data-ui-sref="CategoryList" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Category List</span></a> </li>
+						<li class=""> <a data-ui-sref="AddCategory" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Add Category</span></a> </li>
+						<li class=""> <a data-ui-sref="ManufactureList" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Manufacture List</span></a> </li>
+						<li class=""> <a data-ui-sref="ProductReviews" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Product Reviews</span></a> </li>
+						<li data-ng-class="{open: (path.indexOf('/product/seo/') > -1)}"> <a class="nav-submenu" data-toggle="nav-submenu" href="#"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Seo</span></a>
+							<ul class="sb-submenu in">
+								<li class=""> <a data-ui-sref="GenerateGoogleXML" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Generate Google XML</span></a> </li>
+								<li class=""> <a data-ui-sref="GenerateRSS" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Generate RSS</span></a> </li>
+							</ul>
+						</li>
+						<li data-ng-class="{open: (path.indexOf('/product/importexport/') > -1)}"> <a class="nav-submenu" data-toggle="nav-submenu" href="#"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Import/Export</span></a>
+							<ul class="sb-submenu in">
+								<li class=""> <a data-ui-sref="ExportProducts" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Export Products</span></a> </li>
+								<li class=""> <a data-ui-sref="PIWC" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Price, Inventory, Weight CSV</span></a> </li>
+							</ul>
+						</li>
+						<li class=""> <a data-ui-sref="AmazonPrice" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Amazon Price</span></a> </li>
+						<!--<li class=""> <a data-ui-sref="AmazonProductList" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Amazon Product List</span></a> </li>-->
+						<li class=""> <a data-ui-sref="eBayProductList" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">eBay Product List</span></a> </li>
+						<li class=""> <a data-ui-sref="URLRedirect" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">URL Redirect</span></a> </li>
+						<li class=""> <a data-ui-sref="InventoryPO" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Inventory PO</span></a> </li>
+						<li class=""> <a data-ui-sref="AddInventoryPO" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Add Inventory PO</span></a> </li>
+					</ul>
+				</li>
+				<li data-ng-class="{open: (path.indexOf('/clubenviromnent/') > -1)}"> <a class="nav-submenu" data-toggle="nav-submenu" href="#"> <i class="fa fa-group"></i> <span class="sidebar-mini-hide">Club Enviromnent</span></a>
+					<ul class="sb-submenu in">
+						<li class=""> <a data-ui-sref="ClubMembersList" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Club Members List</span></a> </li>
+					</ul>
+				</li>
+				<li data-ng-class="{open: (path.indexOf('/customer/') > -1)}"> <a class="nav-submenu" data-toggle="nav-submenu" href="#"> <i class="fa  fa-user"></i> <span class="sidebar-mini-hide">Customer</span></a>
+					<ul class="sb-submenu in">
+						<li class=""> <a data-ui-sref="CustomerList" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Customer List</span></a> </li>
+						<li class=""> <a data-ui-sref="ExportCustomer" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Export Customer</span></a> </li>
+						<li class=""> <a data-ui-sref="CustomerQuestions" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Customer Questions</span></a> </li>
+						<li class=""> <a data-ui-sref="AbandonedCart" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Abandoned Cart</span></a> </li>
+					</ul>
+				</li>
+				<li data-ng-class="{open: (path.indexOf('/promotion/') > -1)}"> <a class="nav-submenu" data-toggle="nav-submenu" href="#"> <i class="fa fa-bullhorn"></i> <span class="sidebar-mini-hide">Promotion</span></a>
+					<ul class="sb-submenu in">
+						<li class=""> <a data-ui-sref="CouponManager" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Coupon Manager</span></a> </li>
+						<li class=""> <a data-ui-sref="CustomerLevelDiscount" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Customer Level Discount</span></a> </li>
+						<li class=""> <a data-ui-sref="CheckoutPromotion" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Checkout Promotion</span></a> </li>
+						<li class=""> <a data-ui-sref="BuyGetOff" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Buy & Get Off</span></a> </li>
+					</ul>
+				</li>
+				<li data-ng-class="{open: (path.indexOf('/content/') > -1)}"> <a class="nav-submenu" data-toggle="nav-submenu" href="#"> <i class="fa fa-book"></i> <span class="sidebar-mini-hide">Content</span></a>
+					<ul class="sb-submenu in">
+						<li class=""> <a data-ui-sref="TopicList" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Topic List</span></a> </li>
+						<li class=""> <a data-ui-sref="NewsletterSubscription" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Newsletter Subscription</span></a> </li>
+					</ul>
+				</li>
+				<li data-ng-class="{open: (path.indexOf('/settings/') > -1)}"> <a class="nav-submenu" data-toggle="nav-submenu" href="#"> <i class="fa fa-cogs"></i> <span class="sidebar-mini-hide">Settings</span></a>
+					<ul class="sb-submenu in">
+						<li class=""> <a data-ui-sref="AdminList" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Admin List</span></a> </li>
+					</ul>
+				</li>
+				<li> <a data-ui-sref="Report" data-ui-sref-active="active"> <i class="fa fa-bar-chart-o"></i><span class="sidebar-mini-hide">Report</span> </a> </li>
+				<li data-ng-class="{open: (path.indexOf('/configuration/') > -1)}"> <a class="nav-submenu" data-toggle="nav-submenu" href="#"> <i class="fa fa-bullhorn"></i> <span class="sidebar-mini-hide">Configuration</span></a>
+					<ul class="sb-submenu in">
+						<li class=""> <a data-ui-sref="StateTaxRate" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">State Tax Rate</span></a> </li>
+						<li class=""> <a data-ui-sref="Sitemap" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Sitemap</span></a> </li>
+						<li class=""> <a data-ui-sref="Countrylist" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Country list</span></a> </li>
+						<li class=""> <a data-ui-sref="Statelist" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">State list</span></a> </li>
+						<li class=""> <a data-ui-sref="GiftCertificate" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Gift Certificate</span></a> </li>
+						<li class=""> <a data-ui-sref="FilterSection" data-ui-sref-active="active"> <i class="fa fa-angle-right"></i> <span class="sidebar-mini-hide">Filter Section</span></a> </li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<!-- END Side Content -->
+	</div>
+	<!-- Sidebar Content -->
+</div>
+<!-- END Sidebar Scroll Container -->

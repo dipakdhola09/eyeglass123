@@ -1,0 +1,55 @@
+﻿<Orders>
+  <Order OrderID="10248">
+    <InventoryID>1</InventoryID>
+    <InventoryName>Warehouse 1</InventoryName>
+    <Date>Jan 21,2016</Date>
+    <PackageType>Unit</PackageType>
+    <Qty>80</Qty>
+    <Cost>800</Cost>
+    <RoomNumber>01</RoomNumber>
+    <AisleNumber>02</AisleNumber>
+    <Rack>05</Rack>
+    <Shelf>08</Shelf>
+	<Comment>Lorem Ipsum</Comment>
+  </Order>
+  <Order OrderID="10249">
+    <InventoryID>1</InventoryID>
+   <InventoryName>Warehouse 2</InventoryName>
+    <Date>Jan 21,2016</Date>
+    <PackageType>Unit</PackageType>
+    <Qty>20</Qty>
+    <Cost>200</Cost>
+    <RoomNumber>01</RoomNumber>
+    <AisleNumber>05</AisleNumber>
+    <Rack>08</Rack>
+    <Shelf>05</Shelf>
+	<Comment>Lorem Ipsum</Comment>
+  </Order>
+  <Order OrderID="10250">
+    <InventoryID>1</InventoryID>
+   	<InventoryName>Warehouse 3</InventoryName>
+    <Date>Jan 21,2016</Date>
+    <PackageType>Unit</PackageType>
+    <Qty>20</Qty>
+    <Cost>200</Cost>
+    <RoomNumber>01</RoomNumber>
+    <AisleNumber>03</AisleNumber>
+    <Rack>05</Rack>
+    <Shelf>07</Shelf>
+	<Comment>Lorem Ipsum</Comment>
+  </Order>
+  <Order OrderID="10250">
+    <InventoryID>2</InventoryID>
+   	<InventoryName>Warehouse 3</InventoryName>
+    <Date>Jan 21,2016</Date>
+    <PackageType>Unit</PackageType>
+    <Qty>10</Qty>
+    <Cost>200</Cost>
+    <RoomNumber>01</RoomNumber>
+    <AisleNumber>03</AisleNumber>
+    <Rack>05</Rack>
+    <Shelf>07</Shelf>
+	<Comment>Lorem Ipsum</Comment>
+  </Order>
+</Orders>
+

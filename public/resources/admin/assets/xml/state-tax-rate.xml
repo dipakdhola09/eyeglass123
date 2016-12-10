@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<StateTaxRateList>
+  <StateTaxRate StateTaxRateID="1">
+    <StateTaxRateId>1</StateTaxRateId>
+    <StateTaxRateName>Alabama</StateTaxRateName>
+    <StateTaxRateAbbreviation>AL</StateTaxRateAbbreviation>
+    <StateTaxRateTaxRates>0</StateTaxRateTaxRates>
+    <TaxZipCodeAction></TaxZipCodeAction>
+  </StateTaxRate>
+  <StateTaxRate StateTaxRateID="2">
+    <StateTaxRateId>2</StateTaxRateId>
+    <StateTaxRateName>Alaska</StateTaxRateName>
+    <StateTaxRateAbbreviation>AK</StateTaxRateAbbreviation>
+    <StateTaxRateTaxRates>0</StateTaxRateTaxRates>
+    <TaxZipCodeAction></TaxZipCodeAction>
+  </StateTaxRate>
+</StateTaxRateList>
+
+
+

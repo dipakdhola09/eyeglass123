@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TemplateList>
+	<Template TemplateID="1">
+		<ProductSelect></ProductSelect>
+		<ProductImage>ABCDE-1</ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text - t shirt</ProductName>
+		<ProductSKU>ABCDE-1</ProductSKU>
+		<ProductUPC>123456789012</ProductUPC>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016 &lt;br&gt; 00:14:15</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<ProductRating>3.5</ProductRating>
+		<ProStatus>Active</ProStatus>
+		<ProductReviewsViews>10</ProductReviewsViews>
+		<productclone>Clone</productclone>
+		<Action>Action</Action>
+	</Template>
+</TemplateList>

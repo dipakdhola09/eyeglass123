@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TemplateList>
+  <Template TemplateID="1">
+    <TemplateName>Master Template</TemplateName>
+    <Permission>Permission</Permission>
+    <Actions>Actions</Actions>
+  </Template>
+  <Template TemplateID="2">
+    <TemplateName>Sales Template</TemplateName>
+    <Permission>Permission</Permission>
+    <Actions>Actions</Actions>
+  </Template>
+  <Template TemplateID="3">
+    <TemplateName>Order Template</TemplateName>
+    <Permission>Permission</Permission>
+    <Actions>Actions</Actions>
+  </Template>
+  </TemplateList>

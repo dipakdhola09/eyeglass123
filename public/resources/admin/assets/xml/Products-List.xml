@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ProductList>
+  <Product ProductID="1">
+  	<ProductCheck>false</ProductCheck>
+    <ProductName>Lorem Ipsum is simply dummy text 1</ProductName>
+    <SKU>P-001</SKU>
+    <UPC>123456789012</UPC>
+	<Location>1-1-1-1</Location>
+	<Inventory>35</Inventory>
+	<OurPrice>50.00</OurPrice>
+	<SalePrice>40.00</SalePrice>
+    <Status>true</Status>
+    <LastUpdated>Feb 09, 2016 - 13:22:30</LastUpdated>
+	<View>view</View>
+    <Actions>Actions</Actions>
+  </Product>
+  <Product ProductID="2">
+  	<ProductCheck>false</ProductCheck>
+    <ProductName>Lorem Ipsum is simply dummy text 2</ProductName>
+    <SKU>P-002</SKU>
+    <UPC>123456789012</UPC>
+	<Location>1-1-1-1</Location>
+	<Inventory>35</Inventory>
+	<OurPrice>50.45</OurPrice>
+	<SalePrice>40.45</SalePrice>
+    <Status>true</Status>
+    <LastUpdated>Feb 09, 2016 - 09:42:12</LastUpdated>
+	<View>view</View>
+    <Actions>Actions</Actions>
+  </Product>
+  <Product ProductID="3">
+  	<ProductCheck>false</ProductCheck>
+    <ProductName>Lorem Ipsum is simply dummy text 3</ProductName>
+    <SKU>P-003</SKU>
+    <UPC>123456789012</UPC>
+	<Location>1-1-1-1</Location>
+	<Inventory>35</Inventory>
+	<OurPrice>50.00</OurPrice>
+	<SalePrice>40.00</SalePrice>
+    <Status>false</Status>
+    <LastUpdated>Feb 09, 2016 - 19:02:48</LastUpdated>
+	<View>view</View>
+    <Actions>Actions</Actions>
+  </Product>
+  <Product ProductID="4">
+  	<ProductCheck>false</ProductCheck>
+    <ProductName>Lorem Ipsum is simply dummy text 4</ProductName>
+    <SKU>P-004</SKU>
+    <UPC>123456789012</UPC>
+	<Location>1-1-0-0</Location>
+	<Inventory>35</Inventory>
+	<OurPrice>50.00</OurPrice>
+	<SalePrice>40.00</SalePrice>
+    <Status>false</Status>
+    <LastUpdated>Feb 09, 2016 - 19:02:48</LastUpdated>
+	<View>view</View>
+    <Actions>Actions</Actions>
+  </Product>
+  <Product ProductID="5">
+  	<ProductCheck>false</ProductCheck>
+    <ProductName>Lorem Ipsum is simply dummy text 5</ProductName>
+    <SKU>P-005</SKU>
+    <UPC>123456789012</UPC>
+	<Location>1-1-1-1</Location>
+	<Inventory>35</Inventory>
+	<OurPrice>50.00</OurPrice>
+	<SalePrice>40.00</SalePrice>
+    <Status>false</Status>
+    <LastUpdated>Feb 09, 2016 - 19:02:48</LastUpdated>
+	<View>view</View>
+    <Actions>Actions</Actions>
+  </Product>
+  <Product ProductID="6">
+  	<ProductCheck>false</ProductCheck>
+    <ProductName>Lorem Ipsum is simply dummy text 6</ProductName>
+    <SKU>P-006</SKU>
+    <UPC>123456789012</UPC>
+	<Location>1-1-1-1</Location>
+	<Inventory>35</Inventory>
+	<OurPrice>50.00</OurPrice>
+	<SalePrice>40.00</SalePrice>
+    <Status>true</Status>
+    <LastUpdated>Feb 09, 2016 - 19:02:48</LastUpdated>
+	<View>view</View>
+    <Actions>Actions</Actions>
+  </Product>
+  <Product ProductID="7">
+  	<ProductCheck>false</ProductCheck>
+    <ProductName>Lorem Ipsum is simply dummy text 7</ProductName>
+    <SKU>P-007</SKU>
+    <UPC>123456789012</UPC>
+	<Location>1-1-1-1</Location>
+	<Inventory>35</Inventory>
+	<OurPrice>50.00</OurPrice>
+	<SalePrice>40.00</SalePrice>
+    <Status>false</Status>
+    <LastUpdated>Feb 09, 2016 - 19:02:48</LastUpdated>
+	<View>view</View>
+    <Actions>Actions</Actions>
+  </Product>
+  <Product ProductID="8">
+  	<ProductCheck>false</ProductCheck>
+    <ProductName>Lorem Ipsum is simply dummy text 8</ProductName>
+    <SKU>P-008</SKU>
+    <UPC>123456789012</UPC>
+	<Location>1-0-1-1</Location>
+	<Inventory>35</Inventory>
+	<OurPrice>50.00</OurPrice>
+	<SalePrice>40.00</SalePrice>
+    <Status>true</Status>
+    <LastUpdated>Feb 09, 2016 - 19:02:48</LastUpdated>
+	<View>view</View>
+    <Actions>Actions</Actions>
+  </Product>
+  <Product ProductID="9">
+  	<ProductCheck>false</ProductCheck>
+    <ProductName>Lorem Ipsum is simply dummy text 9</ProductName>
+    <SKU>P-009</SKU>
+    <UPC>123456789012</UPC>
+	<Location>0-1-1-1</Location>
+	<Inventory>35</Inventory>
+	<OurPrice>50.00</OurPrice>
+	<SalePrice>40.00</SalePrice>
+    <Status>false</Status>
+    <LastUpdated>Feb 09, 2016 - 19:02:48</LastUpdated>
+	<View>view</View>
+    <Actions>Actions</Actions>
+  </Product>
+  <Product ProductID="10">
+  	<ProductCheck>false</ProductCheck>
+    <ProductName>Lorem Ipsum is simply dummy text 10</ProductName>
+    <SKU>P-0010</SKU>
+    <UPC>123456789012</UPC>
+	<Location>1-1-0-1</Location>
+	<Inventory>35</Inventory>
+	<OurPrice>50.00</OurPrice>
+	<SalePrice>40.00</SalePrice>
+    <Status>false</Status>
+    <LastUpdated>Feb 09, 2016 - 19:02:48</LastUpdated>
+	<View>view</View>
+    <Actions>Actions</Actions>
+  </Product>
+  <Product ProductID="11">
+  	<ProductCheck>false</ProductCheck>
+    <ProductName>Lorem Ipsum is simply dummy text 11</ProductName>
+    <SKU>P-0011</SKU>
+    <UPC>123456789012</UPC>
+	<Location>1-0-0-1</Location>
+	<Inventory>35</Inventory>
+	<OurPrice>50.00</OurPrice>
+	<SalePrice>40.00</SalePrice>
+    <Status>false</Status>
+    <LastUpdated>Feb 09, 2016 - 19:02:48</LastUpdated>
+	<View>view</View>
+    <Actions>Actions</Actions>
+  </Product>
+</ProductList>

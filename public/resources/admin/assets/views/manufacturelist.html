@@ -1,0 +1,165 @@
+<div class="content-page">
+	<div class="content">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-5">
+					<h4 class="page-title">Manufacture List</h4>
+					<ol class="breadcrumb">
+						<li><a href="dashboard.html">Home</a></li>
+						<li>Manufactures</li>
+						<li class="active">Manufacture List</li>
+					</ol>
+				</div>
+				<div class="col-xs-12 col-sm-7">
+					<ul class="list-unstyled list-inline text-right prod-edit-links p-t-10">
+						<li> <a href="add-manufacture.html">
+							<div class="menu-icon text-center"><i class="fa fa-plus-circle"></i></div>
+							<div class="menu-text">Add Manufacturer</div>
+							</a> </li>
+						<!--<li>
+                                <a href="#">
+                                    <div class="menu-icon text-center"><i class="fa fa-puzzle-piece"></i></div>
+                                    <div class="menu-text">Recommended Modules and services</div>
+                                </a>
+                            </li>-->
+						<li> <a href="#">
+							<div class="menu-icon text-center"><i class="fa fa-question-circle"></i></div>
+							<div class="menu-text">Help</div>
+							</a> </li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12 col-sm-12">
+					<div class="col-xs-12 col-sm-12 block p-20">
+						<div class="card-box">
+						<div id="jqxWidget">
+							<div id="jqxgrid"></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "assets/xml/manufacturelist.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'ManufactureLogo',
+			type: 'String'
+		}, {
+			name: 'ManufactureName',
+			type: 'string'
+		}, {
+			name: 'ManufactureStatus',
+			type: 'String'
+		}, {
+			name: 'ManufactureProduct',
+			type: 'String'
+		}, {
+			name: 'ManufactureEdit',
+			type: 'String'
+		}],
+		root: "ManufacturersList",
+		record: "Manufacturer",
+		id: 'manufactureID',
+		url: url
+	};
+
+	var photorenderer = function (row, column, value) {
+		var name = $('#jqxgrid').jqxGrid('getrowdata', row).ManufactureLogo;
+		var imgurl = 'img/' + name + '.png';
+		var img = '<div><img style="margin:5px 5px 0 5px; margin-left: 10px;" height="40" src="' + imgurl + '"></div>';
+		return img;
+	}
+
+
+	var actionlink = function(row, columnfield, value) {
+		var actionLink = '';
+	
+		actionLink = '<div class="text-center action-icons"><a href="edit-manufacture.html" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#"><i class="fa fa-eye"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+	
+		return actionLink;
+	}
+	
+	var ManufacturerStatus = function (row, columnfield, value) {
+		 if (value == 'Inactive') {
+			return '<div class="text-center action-icons text-danger" style="font-size:18px"><i class="fa fa-thumbs-o-down"></i></div>';
+		}
+		else {
+			return '<div class="text-center action-icons text-success" style="font-size:18px"><i class="fa fa-thumbs-o-up"></i></div>';
+		}
+	}
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	// initialize jqxGrid
+
+
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		//enabletooltips: true,
+		editable: true,
+		columnsheight: 50,
+		rowsheight: 50,
+		//autorowheight: true,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'checkbox',
+		columns: [{
+			text: 'Logo',
+			datafield: 'ManufactureLogo',
+			width: '17.6%',
+			minwidth: '120',
+			editable: false,
+			filterable: false,
+			cellsrenderer: photorenderer
+		},{
+			text: 'Name',
+			datafield: 'ManufactureName',
+			editable: false,
+			width: '45%',
+			minwidth: '200'
+		},{
+			text: 'Status',
+			datafield: 'ManufactureStatus',
+			editable: false,
+			width: '10%',
+			minwidth: '100',
+			filtertype: 'checkedlist',
+			cellsrenderer: ManufacturerStatus
+		},{
+			text: 'Product',
+			datafield: 'ManufactureProduct',
+			editable: false,
+			width: '15%',
+			minwidth: '120',
+		},{
+			text: 'Action',
+			datafield: 'ManufactureEdit',
+			width: '10%',
+			minwidth: '80',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+});
+</script>

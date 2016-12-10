@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FraudIPList>
+	<FraudIPList FraudIPListID="1">
+		<IPAddress>71.243.210.189</IPAddress>
+		<CustomerName>Vivian Shi</CustomerName>
+		<CreatedOn>01-11-2016 04:12:09</CreatedOn>
+		<Action>block</Action>
+	</FraudIPList>
+	<FraudIPList FraudIPListID="2">
+		<IPAddress>12.143.180.089</IPAddress>
+		<CustomerName>Charles Schultz</CustomerName>
+		<CreatedOn>02-14-2016 14:22:19</CreatedOn>
+		<Action>Unblock</Action>
+	</FraudIPList>
+	<FraudIPList FraudIPListID="3">
+		<IPAddress>71.873.540.759</IPAddress>
+		<CustomerName>PHILLIP MALAKAUSKAS</CustomerName>
+		<CreatedOn>02-16-2016 17:55:24</CreatedOn>
+		<Action>Unblock</Action>
+	</FraudIPList>
+	<FraudIPList FraudIPListID="4">
+		<IPAddress>78.564.750.350</IPAddress>
+		<CustomerName>Angie R Winn</CustomerName>
+		<CreatedOn>03-04-2016 14:24:35</CreatedOn>
+		<Action>block</Action>
+	</FraudIPList>
+	<FraudIPList FraudIPListID="5">
+		<IPAddress>34.453.450.798</IPAddress>
+		<CustomerName>molly black</CustomerName>
+		<CreatedOn>03-18-2016 00:10:49</CreatedOn>
+		<Action>block</Action>
+	</FraudIPList>
+</FraudIPList>

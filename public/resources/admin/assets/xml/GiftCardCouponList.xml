@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<GiftCardCouponList>
+	<GiftCardCoupon GiftCardCouponID="1">
+	    <Code>Lorem Ipsum</Code>
+		<EmailFrom>abc@companyname.com</EmailFrom>
+		<EmailTo>xyz@companyname.com</EmailTo>
+		<DiscountPercent>10%</DiscountPercent>
+		<DiscountDoller>$10</DiscountDoller>
+		<BalanceAmount>$20</BalanceAmount>
+		<Action></Action>
+	</GiftCardCoupon>
+	<GiftCardCoupon GiftCardCouponID="2">
+	    <Code>Lorem Ipsum</Code>
+		<EmailFrom>abc@companyname.com</EmailFrom>
+		<EmailTo>xyz@companyname.com</EmailTo>
+		<DiscountPercent>10%</DiscountPercent>
+		<DiscountDoller>$10</DiscountDoller>
+		<BalanceAmount>$20</BalanceAmount>
+		<Action></Action>
+	</GiftCardCoupon>
+	<GiftCardCoupon GiftCardCouponID="3">
+	    <Code>Lorem Ipsum</Code>
+		<EmailFrom>abc@companyname.com</EmailFrom>
+		<EmailTo>xyz@companyname.com</EmailTo>
+		<DiscountPercent>10%</DiscountPercent>
+		<DiscountDoller>$10</DiscountDoller>
+		<BalanceAmount>$20</BalanceAmount>
+		<Action></Action>
+	</GiftCardCoupon>
+	<GiftCardCoupon GiftCardCouponID="4">
+	    <Code>Lorem Ipsum</Code>
+		<EmailFrom>abc@companyname.com</EmailFrom>
+		<EmailTo>xyz@companyname.com</EmailTo>
+		<DiscountPercent>10%</DiscountPercent>
+		<DiscountDoller>$10</DiscountDoller>
+		<BalanceAmount>$20</BalanceAmount>
+		<Action></Action>
+	</GiftCardCoupon>
+	<GiftCardCoupon GiftCardCouponID="5">
+	    <Code>Lorem Ipsum</Code>
+		<EmailFrom>abc@companyname.com</EmailFrom>
+		<EmailTo>xyz@companyname.com</EmailTo>
+		<DiscountPercent>10%</DiscountPercent>
+		<DiscountDoller>$10</DiscountDoller>
+		<BalanceAmount>$20</BalanceAmount>
+		<Action></Action>
+	</GiftCardCoupon>
+</GiftCardCouponList>
+
+
+
+
+	
+
+
+

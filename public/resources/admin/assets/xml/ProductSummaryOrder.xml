@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductSummaryOrderList>
+  <ProductSummaryOrder ProductSummaryOrderID="1">
+    <SummaryOrderImage>camera_icon</SummaryOrderImage>
+    <SummaryOrderName>Lorem Ipsum</SummaryOrderName>
+    <SummaryOrderSKU>ABC-01</SummaryOrderSKU>
+	<SummaryOrderQty>2</SummaryOrderQty>
+    <SummaryOrderReceived>Yes</SummaryOrderReceived>
+    <SummaryOrderLive>Yes</SummaryOrderLive>
+  </ProductSummaryOrder>
+  <ProductSummaryOrder ProductSummaryOrderID="2">
+    <SummaryOrderImage>camera_icon</SummaryOrderImage>
+    <SummaryOrderName>Ipsum Lorem</SummaryOrderName>
+    <SummaryOrderSKU>BCA-01</SummaryOrderSKU>
+	<SummaryOrderQty>1</SummaryOrderQty>
+    <SummaryOrderReceived>Yes</SummaryOrderReceived>
+    <SummaryOrderLive>No</SummaryOrderLive>
+  </ProductSummaryOrder>
+  <ProductSummaryOrder ProductSummaryOrderID="3">
+    <SummaryOrderImage>camera_icon</SummaryOrderImage>
+    <SummaryOrderName>Ipsum Lorem</SummaryOrderName>
+    <SummaryOrderSKU>BCA-01</SummaryOrderSKU>
+	<SummaryOrderQty>1</SummaryOrderQty>
+    <SummaryOrderReceived>No</SummaryOrderReceived>
+    <SummaryOrderLive>No</SummaryOrderLive>
+  </ProductSummaryOrder>
+  <ProductSummaryOrder ProductSummaryOrderID="4">
+    <SummaryOrderImage>camera_icon</SummaryOrderImage>
+    <SummaryOrderName>Ipsum Lorem</SummaryOrderName>
+    <SummaryOrderSKU>BCA-01</SummaryOrderSKU>
+	<SummaryOrderQty>1</SummaryOrderQty>
+    <SummaryOrderReceived>No</SummaryOrderReceived>
+    <SummaryOrderLive>No</SummaryOrderLive>
+  </ProductSummaryOrder>
+  <ProductSummaryOrder ProductSummaryOrderID="5">
+    <SummaryOrderImage>camera_icon</SummaryOrderImage>
+    <SummaryOrderName>Ipsum Lorem</SummaryOrderName>
+    <SummaryOrderSKU>BCA-01</SummaryOrderSKU>
+	<SummaryOrderQty>1</SummaryOrderQty>
+    <SummaryOrderReceived>Yes</SummaryOrderReceived>
+    <SummaryOrderLive>No</SummaryOrderLive>
+  </ProductSummaryOrder>
+</ProductSummaryOrderList>

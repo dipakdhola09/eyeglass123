@@ -1,0 +1,17 @@
+﻿<WarehouseProductList>
+  <WarehouseProduct OrderID="10249">
+    <WarehouseID>1</WarehouseID>
+	<WarehouseProductName>Lorem Ipsum</WarehouseProductName>
+   	<WarehousePackageType>Unit</WarehousePackageType>
+    <WarehouseQty>10</WarehouseQty>
+    <WarehouseCost>100</WarehouseCost>
+    <WarehouseSKU>ACB-01</WarehouseSKU>
+    <WarehouseRoomNumber>01</WarehouseRoomNumber>
+    <WarehouseAisleNumber>03</WarehouseAisleNumber>
+    <WarehouseRack>05</WarehouseRack>
+    <WarehouseShelf>07</WarehouseShelf>
+	<WarehouseComment>Lorem Ipsum</WarehouseComment>
+    <WarehouseNumberProduct>10</WarehouseNumberProduct>
+	<WarehouseAction></WarehouseAction>
+  </WarehouseProduct>
+</WarehouseProductList>

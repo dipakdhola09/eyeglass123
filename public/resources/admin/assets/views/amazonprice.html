@@ -1,0 +1,492 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title">Amazon Pricer</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20 m-t-20">
+				<div class="card-box">
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+						<div style="width: 100%;" id="mainDemoContainer">
+							<div id="window">
+								<div id="windowHeader">
+									<div class="h4 p-10 m-0">Vendor Details</div>
+								</div>
+								<div style="overflow: hidden;" id="windowContent">
+									<form class="p-20">
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3">Product Name</label>
+											<div class="col-sm-7 col-md-6">Lorem Ipsum is simply</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3">Product SKU</label>
+											<div class="col-sm-7 col-md-6">ABC-01</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3">ASIN</label>
+											<div class="col-sm-7 col-md-6">A0012</div>
+										</div>
+										<div class="form-group row">
+											<div class="table-responsive">
+												<table class="table-bordered" width="100%">
+													<tr>
+														<th><div class="p-10">Vendor Name</div></th>
+														<th align="right"><div class="p-10">Price</div></th>
+														<th align="right"><div class="p-10">Shipping</div></th>
+														<th align="right"><div class="p-10">Total</div></th>
+													</tr>
+													<tr>
+														<td><div class="p-10">Vendor 1</div></td>
+														<td align="right"><div class="p-10">$78.80</div></td>
+														<td align="right"><div class="p-10">$00.00</div></td>
+														<td align="right"><div class="p-10">$78.80</div></td>
+													</tr>
+													<tr>
+														<td><div class="p-10">Vendor 2</div></td>
+														<td align="right"><div class="p-10">$78.80</div></td>
+														<td align="right"><div class="p-10">$00.00</div></td>
+														<td align="right"><div class="p-10">$78.80</div></td>
+													</tr>
+													<tr>
+														<td><div class="p-10">Vendor 3</div></td>
+														<td align="right"><div class="p-10">$78.80</div></td>
+														<td align="right"><div class="p-10">$00.00</div></td>
+														<td align="right"><div class="p-10">$78.80</div></td>
+													</tr>
+												</table>
+											</div>
+										</div>
+										<div class="form-group row"> </div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var basicDemo = (function() {
+	//Adding event listeners	
+	function _addEventListeners() {
+		$('#showWindowButton').click(function() {
+			$('#window').jqxWindow('open');
+		});
+		$('#hideWindowButton').click(function() {
+			$('#window').jqxWindow('close');
+		});
+	};
+	
+	//Creating the demo window
+	function _createWindow() {
+		var jqxWidget = $('#jqxWidget');
+		var offset = jqxWidget.offset();
+		$('#window').jqxWindow({
+			position: 'center',
+			//showCollapseButton: true,
+			autoOpen:false,
+			isModal: true,
+			maxHeight: 600,
+			maxWidth: 700,
+			minHeight: 200,
+			minWidth: 200,
+			width: '100%',
+			resizable: false,
+			draggable: false,
+			
+			initContent: function() {
+				$('#window').jqxWindow('focus');
+			}
+		});
+	};
+	return {
+		config: {
+			dragArea: null
+		},
+		init: function() {
+			//Attaching event listeners
+			_addEventListeners();
+			//Adding jqxWindow
+			_createWindow();
+		}
+	};
+}());
+$(document).ready(function() {
+	var url = "assets/xml/amazon-pricer.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'AmazonImage',
+			type: 'String'
+		}, {
+			name: 'AmazonSKU',
+			type: 'string'
+		}, {
+			name: 'AmazonCondition',
+			type: 'string'
+		}, {
+			name: 'AmazonName',
+			type: 'String'
+		}, {
+			name: 'AmazonASIN',
+			type: 'String'
+		}, {
+			name: 'AmazonInv',
+			type: 'String'
+		}, {
+			name: 'WebInv',
+			type: 'String'
+		}, {
+			name: 'AmazonStatus',
+			type: 'String'
+		}, {
+			name: 'WebStatus',
+			type: 'String'
+		}, {
+			name: 'AmazonVendor',
+			type: 'String'
+		}, {
+			name: 'MaxOfferPrice',
+			type: 'float'
+		}, {
+			name: 'AdjPrice',
+			type: 'float'
+		}, {
+			name: 'MinOfferPrice',
+			type: 'float'
+		}, {
+			name: 'AmazonLowestPrice',
+			type: 'float'
+		}, {
+			name: 'LowestPriceShip',
+			type: 'float'
+		}, {
+			name: 'IsLowest',
+			type: 'string'
+		}, {
+			name: 'YourPrice',
+			type: 'float'
+		}, {
+			name: 'YourPriceShip',
+			type: 'float'
+		}, {
+			name: 'VendorLowest',
+			type: 'float'
+		}, {
+			name: 'FormulaPrice',
+			type: 'float'
+		}, {
+			name: 'WebFormulaPrice',
+			type: 'float'
+		}, {
+			name: 'AmazonAction',
+			type: 'string'
+		}],
+		root: "AmaonProductList",
+		record: "AmaonProduct",
+		id: 'AmaonProductID',
+		url: url
+	};
+	
+	//Image
+	var Imagerender = function(row, columnfield, value) {
+		var name = $('#jqxgrid').jqxGrid('getrowdata', row).ManufactureLogo;
+		//var imgurl = 'img/' + name + '.png';
+		var imgurl = 'img/' + value ;
+		var img = '<div class="text-center" style="margin:10px 5px 0 5px;"><img width="50" src="' + imgurl + '"></div>';
+		return img;
+	}
+	
+	// SKU and New
+	var AmazonSKUrender = function (row, columnfield, value) {
+		//alert($('#jqxgrid').jqxGrid('getrowdata', row).WebInv);		
+		AmazonSKUrender = '<div style="margin:10px 5px 0 5px;">'+value+'<br>'+ $('#jqxgrid').jqxGrid('getrowdata', row).AmazonCondition+'</div>';
+		return AmazonSKUrender;
+	}
+
+	// Name and ASIN
+	var Namerender = function (row, columnfield, value) {
+		Namerender = '<div style="margin:10px 5px 0 5px;">'+value+'<br>'+ $('#jqxgrid').jqxGrid('getrowdata', row).AmazonASIN+'</div>';
+		return Namerender;		
+	}
+
+	//Vendor
+	var AllVendor = function(row, columnfield, value) {
+		var AllVendor = '';	
+		AllVendor = '<div class="text-center" style="margin:20px 5px 0 5px;"><a onclick="$(\'#window\').jqxWindow(\'open\');" href="javascript:void(0)" id="showWindowButton">Total ('+value+') Vendor</a></div>'	
+		return AllVendor;
+	}
+	
+	//Is Lowest
+	var Islowest = function (row, columnfield, value) {
+		if (value == 'No') {
+			return '<div class="text-center action-icons" style="font-size:18px"><i class="fa fa-times text-danger"></i></div>';
+		}
+		else {
+			return '<div class="text-center action-icons" style="font-size:18px"><i class="fa fa-check text-success"></i></div>';
+		}
+	}
+
+	//Inventory and Status
+	var InvStatus = function (row, columnfield, value) {
+		//alert($('#jqxgrid').jqxGrid('getrowdata', row).WebInv);
+		value1 = value;
+		value2 = $('#jqxgrid').jqxGrid('getrowdata', row).AmazonStatus;
+		value3 = $('#jqxgrid').jqxGrid('getrowdata', row).WebInv;
+		value4 = $('#jqxgrid').jqxGrid('getrowdata', row).WebStatus;		
+				
+		if (value2 == 'Inactive') {
+			value2 = '<span class="text-danger">Inactive</span>';
+		} else {
+			value2 = '<span class="text-success">Active</span>';
+		}
+		if (value4 == 'Inactive') {
+			value4 = '<span class="text-danger">Inactive</span>';
+		} else {
+			value4 = '<span class="text-success">Active</span>';
+		}
+		
+		InvStatus = '<div class="" style="margin:10px 5px 0 5px;">Amazon:'+value+' '+value2+'<br>Website:'+value3+' '+value4+'</div>';
+		return InvStatus;
+	}
+	
+	//Lowest Price Ship
+	var LowestPriceShip = function (row, columnfield, value) {
+		//alert($('#jqxgrid').jqxGrid('getrowdata', row).WebInv);
+		value1 = value;
+		value2 = $('#jqxgrid').jqxGrid('getrowdata', row).LowestPriceShip;
+		LowestPriceShip = '<div class="text-right" style="margin:10px 5px 0 5px;">$'+value1+'<br>$'+value2+'</div>';
+		return LowestPriceShip;
+	}
+	
+	//Lowest Price Ship
+	var LowestPriceShip = function (row, columnfield, value) {
+		//alert($('#jqxgrid').jqxGrid('getrowdata', row).WebInv);
+		value1 = value;
+		value2 = $('#jqxgrid').jqxGrid('getrowdata', row).LowestPriceShip;
+		LowestPriceShip = '<div class="text-right" style="margin:10px 5px 0 5px;">$'+value1+'<br>$'+value2+'</div>';
+		return LowestPriceShip;
+	}	
+	
+	//Your Price Ship
+	var YourPriceShip = function (row, columnfield, value) {
+		//alert($('#jqxgrid').jqxGrid('getrowdata', row).WebInv);
+		value1 = value;
+		value2 = $('#jqxgrid').jqxGrid('getrowdata', row).YourPriceShip;
+		YourPriceShip = '<div class="text-right" style="margin:10px 5px 0 5px;">$'+value1+'<br>$'+value2+'</div>';
+		return YourPriceShip;
+	}
+	
+	//FormulaPrice
+	var FormulaPrice = function (row, columnfield, value) {
+		//alert($('#jqxgrid').jqxGrid('getrowdata', row).WebInv);
+		value1 = value;
+		value2 = $('#jqxgrid').jqxGrid('getrowdata', row).WebFormulaPrice;
+		FormulaPrice = '<div class="text-right" style="margin:10px 5px 0 5px;">$'+value1+'<br>Web $'+value2+'</div>';
+		return FormulaPrice;
+	}
+	
+	//Action Link
+	var actionlink = function(row, columnfield, value) {
+		var actionLink = '';
+	
+		actionLink = '<div class="text-center action-icons"><a href="#" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+	
+		return actionLink;
+	}
+		
+	
+//		//Status	 
+//		var CategoryStatus = function (row, columnfield, value) {
+//		 if (value == 'Inactive') {
+//			return '<div class="text-center action-icons text-danger" style="font-size:18px"><i class="fa fa-thumbs-o-down"></i></div>';
+//		}
+//		else {
+//			return '<div class="text-center action-icons text-success" style="font-size:18px"><i class="fa fa-thumbs-o-up"></i></div>';
+//		}
+//	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	
+	// initialize jqxGrid
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: false,
+		editable: false,
+		columnsheight: 70,
+		//rowsheight: 50,
+		autorowheight: true,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'singlerow',
+		columns: [{
+//			text: '',
+//			datafield: 'ProductSelect',
+//			width: '3%',
+//			minwidth: '30',
+//			columntype:'checkbox',
+//			filterable: false
+//		},{
+			text: 'Image',
+			datafield: 'AmazonImage',
+			width: '5%',
+			minwidth: '60',
+			filterable: false,
+			cellsrenderer: Imagerender
+		},{
+			text: 'SKU / Condition',
+			datafield: 'AmazonSKU',
+			//datafield: 'AmazonCondition',
+			editable: false,
+			width: '7%',
+			minwidth: '80',
+			cellsrenderer: AmazonSKUrender,
+			renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:20px; margin-left: 5px;">SKU /<br>Condition</div>';
+			},
+		},{
+			text: 'Name / ASIN',
+			datafield: 'AmazonName',
+			//datafield: 'AmazonASIN',
+			editable: false,
+			width: '12%',
+			minwidth: '120',
+			cellsrenderer: Namerender
+		},{
+			text: 'Inv. / Status',
+			datafield: 'AmazonInv',
+			//datafield: 'AmazonStatus',
+			//datafield: 'WebInv',
+			//datafield: 'WebStatus',
+			editable: false,
+			width: '11%',
+			minwidth: '110',
+			cellsrenderer: InvStatus			
+		},{
+			text: 'All Vendor',
+			datafield: 'AmazonVendor',
+			width: '10%',
+			minwidth: '110',
+			editable: false,
+			cellsrenderer: AllVendor
+		},{
+			text: 'Max. Offer Price',
+			datafield: 'MaxOfferPrice',
+			width: '6%',			
+			minwidth: '75',
+			cellsformat: 'c2',
+			cellsalign: 'right',
+			renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:10px; margin-left: 5px;">Max.<br>Offer<br>Price</div>';
+			},
+		},{
+			text: 'Adj. Price',
+			datafield: 'AdjPrice',
+			width: '5%',
+			minwidth: '60',
+			cellsformat: 'c2',
+			cellsalign: 'right',
+			renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:20px; margin-left: 5px;">Adj.<br>Price</div>';
+			},
+		},{
+			text: 'Min. Offer Price',
+			datafield: 'MinOfferPrice',
+			width: '6%',
+			minwidth: '75',
+			cellsformat: 'c2',
+			cellsalign: 'right',
+			renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:10px; margin-left: 5px;">Min.<br>Offer<br>Price</div>';
+			},
+		},{
+			text: 'Amazon Lowest Price + Shipping',
+			datafield: 'AmazonLowestPrice',
+			//datafield: 'LowestPriceShip',
+			width: '8%',
+			minwidth: '100',
+			cellsformat: 'c2',
+			cellsalign: 'right',
+			cellsrenderer: LowestPriceShip,
+			renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:10px; margin-left: 5px;">Amazon<br>Lowest Price<br>+ Shipping</div>';
+			},
+		},{
+			text: 'Is Lowest',
+			datafield: 'IsLowest',
+			width: '5%',
+			minwidth: '60',
+			editable: false,
+			filtertype: 'checkedlist',
+			cellsrenderer: Islowest,
+			renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:20px; margin-left: 5px;">Is<br>Lowest</div>';
+			},
+		},{
+			text: 'Your Price + Shipping',
+			datafield: 'YourPrice',
+			//datafield: 'YourPriceShip',
+			width: '7%',
+			minwidth: '90',
+			cellsformat: 'c2',
+			cellsalign: 'right',
+			cellsrenderer: YourPriceShip,
+			renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:10px; margin-left: 5px;">Your<br>Price<br>+ Shipping</div>';
+			},
+		},{
+			text: 'Vendor Lowest',
+			datafield: 'VendorLowest',
+			width: '6%',
+			minwidth: '75',
+			cellsformat: 'c2',
+			cellsalign: 'right',
+			renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:20px; margin-left: 5px;">Vendor<br>Lowest</div>';
+			},
+		},{
+			text: 'Formula Price',
+			datafield: 'FormulaPrice',
+			//datafield: 'WebFormulaPrice',
+			width: '7%',
+			minwidth: '85',
+			cellsformat: 'c2',
+			cellsalign: 'right',
+			cellsrenderer: FormulaPrice,
+			renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:20px; margin-left: 5px;">Formula<br>Price</div>';
+			},
+		},{
+			text: 'Action',
+			datafield: 'AmazonAction',
+			width: '5%',
+			minwidth: '60',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+	
+	basicDemo.init();
+});
+</script>

@@ -1,0 +1,219 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TemplateList>
+	<Template TemplateID="1">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABC-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Uploaded>No</Uploaded>
+		<Edit>Action</Edit>
+		<FieldStatus>Active</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="2">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABC-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016</UpdatedOnBy>
+		<UpdatedBy>Admin User 2</UpdatedBy>
+		<Uploaded>Yes</Uploaded>
+		<Edit>Action</Edit>
+		<FieldStatus>Active</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="3">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016</UpdatedOnBy>
+		<UpdatedBy>Admin User 2</UpdatedBy>
+		<Uploaded>No</Uploaded>
+		<Edit>Action</Edit>
+		<FieldStatus>Active</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="4">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Uploaded>Yes</Uploaded>
+		<Edit>Action</Edit>
+		<FieldStatus>Active</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="5">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Feb 01, 2016</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Uploaded>No</Uploaded>
+		<Edit>Action</Edit>
+		<FieldStatus>Active</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="6">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016</UpdatedOnBy>
+		<UpdatedBy>Admin User 3</UpdatedBy>
+		<Uploaded>Yes</Uploaded>
+		<Edit>Action</Edit>
+		<FieldStatus>Active</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="7">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Uploaded>Yes</Uploaded>
+		<Edit>Action</Edit>
+		<FieldStatus>Missing Info</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="8">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Uploaded>No</Uploaded>
+		<Edit>Action</Edit>
+		<FieldStatus>Missing Info</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="9">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Uploaded>Yes</Uploaded>
+		<Edit>Action</Edit>
+		<FieldStatus>Active</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="10">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016</UpdatedOnBy>
+		<Uploaded>No</Uploaded>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Edit>Action</Edit>
+		<FieldStatus>Active</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="11">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Uploaded>Yes</Uploaded>
+		<Edit>Action</Edit>
+		<FieldStatus>Active</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="12">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductASIN>B012345B67</ProductASIN>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Uploaded>Yes</Uploaded>
+		<Edit>Action</Edit>
+		<FieldStatus>Missing Info</FieldStatus>
+		<Action>Action</Action>
+	</Template>
+</TemplateList>

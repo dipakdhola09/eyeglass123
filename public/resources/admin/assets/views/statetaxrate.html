@@ -1,0 +1,119 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title">State Tax List</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20">
+				<div class="card-box">
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "assets/xml/StateTaxRate.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'StateName',
+			type: 'String'
+		}, {
+			name: 'Abbreviation',
+			type: 'String'
+		}, {
+			name: 'state',
+			type: 'String'
+		}, {
+			name: 'Action',
+			type: 'string'
+		}],
+		root: "StateTaxRates",
+		record: "StateTaxRate",
+		id: 'StateTaxRateID',
+		url: url
+	};
+	
+	var numberrenderer = function (row, column, value) {
+		return '<div style="text-align: center; margin-top: 20px;">' + (1 + value) + '</div>';
+	}
+	
+	//Action Link
+	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    return  '<div class="text-center action-icons" style=" margin-top:5px;"><a href="#" class="on-default edit-row text-default" title="Edit Price"><i class="fa fa-pencil"></i></a></div>'
+	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	
+	// initialize jqxGrid
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: false,
+		editable: false,
+		columnsheight: 70,
+		autorowheight: true,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'singlerow',
+		columns: [{
+			text: '#',
+			datafield: 'SrNo',
+			width: '5%',
+			minwidth: '60',
+			filterable: false,
+			columntype: 'number',
+			cellsrenderer: numberrenderer
+		},{
+			text: 'State Name',
+			datafield: 'StateName',
+			editable: false,
+			width: '35.4%',
+			minwidth: '80'
+		},{
+			text: 'Abbreviation',
+			datafield: 'Abbreviation',
+			editable: false,
+			width: '35%',
+			minwidth: '120',
+			cellsalign: 'center'
+		},{
+			text: 'state',
+			datafield: 'state',
+			width: '15%',
+			minwidth: '110',
+			editable: true,
+		},{
+			text: 'Action',
+			datafield: 'Action',
+			width: '8.4%',
+			minwidth: '60',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+	
+	basicDemo.init();
+});
+</script>

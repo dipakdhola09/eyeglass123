@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CategoryList>
+  <Category CategoryID="1">
+    <ManufactureName>Brand Name 1</ManufactureName>
+    <ManufactureTotal>10</ManufactureTotal>
+    <Status>true</Status>
+    <Actions>Actions</Actions>
+  </Category>
+  <Category CategoryID="2">
+    <ManufactureName>Brand Name 2</ManufactureName>
+    <ManufactureTotal>5</ManufactureTotal>
+    <Status>true</Status>
+    <Actions>Actions</Actions>
+  </Category>
+  <Category CategoryID="3">
+    <ManufactureName>Brand Name 3</ManufactureName>
+    <ManufactureTotal>15</ManufactureTotal>
+    <Status>false</Status>
+    <Actions>Actions</Actions>
+  </Category>
+</CategoryList>

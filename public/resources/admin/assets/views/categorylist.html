@@ -1,0 +1,195 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<h4 class="page-title">Category List</h4>
+				<ol class="breadcrumb">
+					<li><a href="dashboard.html">Home</a></li>
+					<li>Categories</li>
+					<li class="active">Category List</li>
+				</ol>
+			</div>
+			<div class="col-xs-12 col-sm-7">
+				<div class="pull-right col-sm-12" style="min-width:300px;">
+					<ul class="list-unstyled list-inline text-right prod-edit-links p-t-10">
+						<li> <a data-ui-sref="AddCategory" data-ui-sref-active="active">
+							<div class="menu-icon text-center"><i class="fa fa-plus-circle"></i></div>
+							<div class="menu-text">Add new category</div>
+							</a> </li>
+						<li> <a href="#">
+							<div class="menu-icon text-center"><i class="fa fa-question-circle"></i></div>
+							<div class="menu-text">Help</div>
+							</a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<div class="block p-t-20 p-r-20 p-b-20 p-l-20 col-xs-12 col-sm-12">
+					<div class="card-box  grid-structure">
+						<div id="jqxWidget">
+							<div id="jqxgrid"></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "assets/xml/category-list.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'CategoryId',
+			type: 'String'
+		}, {
+			name: 'CategoryName',
+			type: 'string'
+		}, {
+			name: 'CategoryDescription',
+			type: 'String'
+		}, {
+			name: 'CategoryPosition',
+			type: 'String'
+		}, {
+			name: 'SubCategoryLink',
+			type: 'String'
+		}, {
+			name: 'CategoryStatus',
+			type: 'String'
+		}, {
+			name: 'CategoryEdit',
+			type: 'String'
+		}],
+		root: "Categories",
+		record: "Category",
+		id: 'CategoryID',
+		url: url
+	};
+	
+	var inputrender = function(row, columnfield, value) {
+		var inputrender = '';
+	
+		inputrender = '<div class="p-10"><input class="form-control" value="'+ value +'"></div>'
+	
+		return inputrender;
+	}
+
+	var SubCategoryLink = function (row, columnfield, value) {
+		 if (value == 'No') {
+			return '<div class="text-center action-icons" style="font-size:18px">-</div>';
+		}
+		else {
+			return '<div class="text-center action-icons" style="font-size:18px"><a data-ui-sref="SubCategoriesList" data-ui-sref-active="active"><i class="fa fa-plus-circle"></i></a></div>';
+		}
+	}
+
+	var CategoryStatus = function (row, columnfield, value) {
+		 if (value == 'Inactive') {
+			return '<div class="text-center action-icons text-danger" style="font-size:18px"><i class="fa fa-thumbs-o-down"></i></div>';
+		}
+		else {
+			return '<div class="text-center action-icons text-success" style="font-size:18px"><i class="fa fa-thumbs-o-up"></i></div>';
+		}
+	}
+
+	var actionlink = function(row, columnfield, value) {
+		var actionLink = '';
+	
+		actionLink = '<div class="text-center action-icons"><a data-ui-sref="EditCategory" data-ui-sref-active="active" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+	
+		return actionLink;
+	}
+	
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+
+	// initialize jqxGrid
+
+
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: true,
+		editable: true,
+		columnsheight: 50,
+		rowsheight: 60,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'checkbox',
+		columns: [
+		/*{
+			text: '',
+			datafield: 'ProductSelect',
+			width: '3%',
+			minwidth: '30',
+			columntype:'checkbox',
+			filterable: false
+		},*/ {
+			text: 'ID',
+			datafield: 'CategoryId',
+			width: '5.6%',
+			minwidth: '120',
+			editable: false,
+		},{
+			text: 'Name',
+			datafield: 'CategoryName',
+			editable: false,
+			width: '24%',
+			minwidth: '200'
+		},{
+			text: 'Description',
+			datafield: 'CategoryDescription',
+			editable: false,
+			width: '34.6%',
+			minwidth: '300',
+		},{
+			text: 'Position',
+			datafield: 'CategoryPosition',
+			editable: false,
+			width: '7%',
+			minwidth: '100',
+			cellsrenderer: inputrender
+		},{
+			text: 'Sub Category',
+			datafield: 'SubCategoryLink',
+			editable: false,
+			width: '11.8%',
+			minwidth: '100',
+			cellsrenderer: SubCategoryLink
+		},{
+			text: 'Status',
+			datafield: 'CategoryStatus',
+			width: '7%',
+			minwidth: '100',
+			editable: false,
+			filtertype: 'checkedlist',
+			cellsrenderer: CategoryStatus
+		},{
+			text: 'Action',
+			datafield: 'CategoryEdit',
+			width: '7%',
+			minwidth: '80',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+});
+</script>

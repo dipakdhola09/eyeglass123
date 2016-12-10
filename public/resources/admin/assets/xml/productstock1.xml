@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddProductList>
+  <AddProduct AddProductID="1">
+    <RelatedId>01</RelatedId>
+    <RelatedName>Lorem Ipsum is simply dummy text</RelatedName>
+    <RelatedType>Simple Product</RelatedType>
+    <RelatedAttrName>Default</RelatedAttrName>
+    <RelatedStatus>Active</RelatedStatus>
+    <RelatedVisibility>Catalog, Search</RelatedVisibility>
+    <RelatedSKU>ABCD-1</RelatedSKU>
+    <RelatedPrice>100</RelatedPrice>
+    <RelatedPosition>1</RelatedPosition>
+  </AddProduct>
+  <AddProduct AddProductID="2">
+    <RelatedId>01</RelatedId>
+    <RelatedName>Lorem Ipsum is simply dummy text</RelatedName>
+    <RelatedType>Simple Product</RelatedType>
+    <RelatedAttrName>Default</RelatedAttrName>
+    <RelatedStatus>Active</RelatedStatus>
+    <RelatedVisibility>Catalog, Search</RelatedVisibility>
+    <RelatedSKU>ABCD-2</RelatedSKU>
+    <RelatedPrice>100</RelatedPrice>
+    <RelatedPosition>2</RelatedPosition>
+  </AddProduct>
+  <AddProduct AddProductID="3">
+    <RelatedId>01</RelatedId>
+    <RelatedName>Lorem Ipsum is simply dummy text</RelatedName>
+    <RelatedType>Simple Product</RelatedType>
+    <RelatedAttrName>Default</RelatedAttrName>
+    <RelatedStatus>Active</RelatedStatus>
+    <RelatedVisibility>Catalog, Search</RelatedVisibility>
+    <RelatedSKU>ABCD-3</RelatedSKU>
+    <RelatedPrice>100</RelatedPrice>
+    <RelatedPosition>3</RelatedPosition>
+  </AddProduct>
+  <AddProduct AddProductID="4">
+    <RelatedId>01</RelatedId>
+    <RelatedName>Lorem Ipsum is simply dummy text</RelatedName>
+    <RelatedType>Simple Product</RelatedType>
+    <RelatedAttrName>Default</RelatedAttrName>
+    <RelatedStatus>Active</RelatedStatus>
+    <RelatedVisibility>Catalog, Search</RelatedVisibility>
+    <RelatedSKU>ABCD-4</RelatedSKU>
+    <RelatedPrice>100</RelatedPrice>
+    <RelatedPosition>4</RelatedPosition>
+  </AddProduct>
+  <AddProduct AddProductID="5">
+    <RelatedId>01</RelatedId>
+    <RelatedName>Lorem Ipsum is simply dummy text</RelatedName>
+    <RelatedType>Simple Product</RelatedType>
+    <RelatedAttrName>Default</RelatedAttrName>
+    <RelatedStatus>Active</RelatedStatus>
+    <RelatedVisibility>Catalog, Search</RelatedVisibility>
+    <RelatedSKU>ABCD-5</RelatedSKU>
+    <RelatedPrice>100</RelatedPrice>
+    <RelatedPosition>5</RelatedPosition>
+  </AddProduct>
+</AddProductList>

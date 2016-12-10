@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<JetTemplateList>
+	<JetTemplate JetTemplateID="1">
+		<ProductSelect></ProductSelect>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<SKU>ABC-1</SKU>
+		<Inventory>120</Inventory>
+		<SalePrice>10.00</SalePrice>
+		<Uploaded>Yes</Uploaded>
+		<Action>Action</Action>
+	</JetTemplate>
+	<JetTemplate JetTemplateID="2">
+		<ProductSelect></ProductSelect>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<SKU>ABC-1</SKU>
+		<Inventory>120</Inventory>
+		<SalePrice>10.00</SalePrice>
+		<Uploaded>No</Uploaded>
+		<Action>Action</Action>
+	</JetTemplate>
+	<JetTemplate JetTemplateID="3">
+		<ProductSelect></ProductSelect>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<SKU>ABC-1</SKU>
+		<Inventory>120</Inventory>
+		<SalePrice>10.00</SalePrice>
+		<Uploaded>No</Uploaded>
+		<Action>Action</Action>
+	</JetTemplate>
+	<JetTemplate JetTemplateID="4">
+		<ProductSelect></ProductSelect>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<SKU>ABC-1</SKU>
+		<Inventory>120</Inventory>
+		<SalePrice>10.00</SalePrice>
+		<Uploaded>No</Uploaded>
+		<Action>Action</Action>
+	</JetTemplate>
+	<JetTemplate JetTemplateID="5">
+		<ProductSelect></ProductSelect>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<SKU>ABC-1</SKU>
+		<Inventory>120</Inventory>
+		<SalePrice>10.00</SalePrice>
+		<Uploaded>No</Uploaded>
+		<Action>Action</Action>
+	</JetTemplate>
+	<JetTemplate JetTemplateID="6">
+		<ProductSelect></ProductSelect>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<SKU>ABC-1</SKU>
+		<Inventory>120</Inventory>
+		<SalePrice>10.00</SalePrice>
+		<Uploaded>No</Uploaded>
+		<Action>Action</Action>
+	</JetTemplate>
+	<JetTemplate JetTemplateID="7">
+		<ProductSelect></ProductSelect>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<SKU>ABC-1</SKU>
+		<Inventory>120</Inventory>
+		<SalePrice>10.00</SalePrice>
+		<Uploaded>No</Uploaded>
+		<Action>Action</Action>
+	</JetTemplate>
+	<JetTemplate JetTemplateID="8">
+		<ProductSelect></ProductSelect>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<SKU>ABC-1</SKU>
+		<Inventory>120</Inventory>
+		<SalePrice>10.00</SalePrice>
+		<Uploaded>No</Uploaded>
+		<Action>Action</Action>
+	</JetTemplate>
+</JetTemplateList>

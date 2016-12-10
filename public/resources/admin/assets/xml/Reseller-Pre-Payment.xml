@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResellerList>
+	<Reseller ResellerID="1">
+		<ResellerNumber>ABCD-012</ResellerNumber>
+		<ResellerCustomerName>Lorem Ipsum</ResellerCustomerName>
+		<ResellerAmount>2000</ResellerAmount>
+		<ResellerExpense></ResellerExpense>
+		<ResellerAction></ResellerAction>
+	</Reseller>
+</ResellerList>
+

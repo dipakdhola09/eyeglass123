@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TemplateList>
+	<Template TemplateID="1">
+		<ProductSelect>1</ProductSelect>
+		<ProductImage>camera_icon</ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductGiftWrap>No</ProductGiftWrap>
+		<ProductSKU>ABC-1</ProductSKU>
+		<ProductModel>ABC-1</ProductModel>
+		<ProductBarcode>barcode-1</ProductBarcode>
+		<ProductOrderQTY>2</ProductOrderQTY>
+		<ProductlastStock>36</ProductlastStock>
+		<ProductCurrentStock>34</ProductCurrentStock>
+		<Price>10.11</Price>
+		<TotalPrice>20.22</TotalPrice>
+		<ProductQTY>10</ProductQTY>
+		<ProductRoomNo>2</ProductRoomNo>
+		<ProductAisleNo>6</ProductAisleNo>
+		<ProductRack>2</ProductRack>
+		<ProductShelf>6</ProductShelf>
+	</Template>
+	<Template TemplateID="2">
+		<ProductSelect>2</ProductSelect>
+		<ProductImage>camera_icon</ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductGiftWrap></ProductGiftWrap>
+		<ProductSKU>ABC-2</ProductSKU>
+		<ProductBarcode>barcode-2</ProductBarcode>
+		<ProductOrderQTY>2</ProductOrderQTY>
+		<ProductlastStock>21</ProductlastStock>
+		<ProductCurrentStock>19</ProductCurrentStock>
+		<Price>55.24</Price>
+		<TotalPrice>110.48</TotalPrice>
+		<ProductQTY>5</ProductQTY>
+		<ProductRoomNo>1</ProductRoomNo>
+		<ProductAisleNo>5</ProductAisleNo>
+		<ProductRack>1</ProductRack>
+		<ProductShelf>4</ProductShelf>
+	</Template>
+	<Template TemplateID="3">
+		<ProductSelect>3</ProductSelect>
+		<ProductImage>camera_icon</ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductGiftWrap>Yes</ProductGiftWrap>
+		<ProductSKU>ABC-3</ProductSKU>
+		<ProductBarcode>barcode-3</ProductBarcode>
+		<ProductOrderQTY>1</ProductOrderQTY>
+		<ProductlastStock>14</ProductlastStock>
+		<ProductCurrentStock>13</ProductCurrentStock>
+		<Price>34.49</Price>
+		<TotalPrice>34.49</TotalPrice>
+		<ProductQTY>1</ProductQTY>
+		<ProductRoomNo>2</ProductRoomNo>
+		<ProductAisleNo>6</ProductAisleNo>
+		<ProductRack>2</ProductRack>
+		<ProductShelf>6</ProductShelf>
+	</Template>
+</TemplateList>

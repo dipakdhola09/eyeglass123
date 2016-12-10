@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<ProductsDisplay>
+	<ProductsDisplaylist ProductsDisplayID="1">
+		<ProductCatgory>Catgory 1</ProductCatgory>
+		<ProductSubCatgory>10</ProductSubCatgory>
+		<ProductCatgoryStatus>Active</ProductCatgoryStatus>
+	</ProductsDisplaylist>
+	<ProductsDisplaylist ProductsDisplayID="2">
+		<ProductCatgory>Catgory 1</ProductCatgory>
+		<ProductSubCatgory>10</ProductSubCatgory>
+		<ProductCatgoryStatus>Active</ProductCatgoryStatus>
+	</ProductsDisplaylist>
+</ProductsDisplay>
+

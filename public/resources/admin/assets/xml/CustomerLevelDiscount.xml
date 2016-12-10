@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CustomerLevelDiscount>
+	<CustomerLevel CustomerLevelID="1">
+	    <LevelName>Lorem Ipsum</LevelName>
+		<AnnualSalesLimit>5.00</AnnualSalesLimit>
+		<DiscountPercent>10%</DiscountPercent>
+		<DiscountDoller>$10</DiscountDoller>
+		<HasFreeShipping>Yes</HasFreeShipping>
+		<HasNoTax>No</HasNoTax>
+		<StoreName>Web</StoreName>
+		<DisplayOrder>12</DisplayOrder>
+		<Action></Action>
+	</CustomerLevel>
+	<CustomerLevel CustomerLevelID="2">
+	    <LevelName>Lorem Ipsum</LevelName>
+		<AnnualSalesLimit>5.00</AnnualSalesLimit>
+		<DiscountPercent>10%</DiscountPercent>
+		<DiscountDoller>$10</DiscountDoller>
+		<HasFreeShipping>Yes</HasFreeShipping>
+		<HasNoTax>No</HasNoTax>
+		<StoreName>Web</StoreName>
+		<DisplayOrder>12</DisplayOrder>
+		<Action></Action>
+	</CustomerLevel>
+	<CustomerLevel CustomerLevelID="3">
+	    <LevelName>Lorem Ipsum</LevelName>
+		<AnnualSalesLimit>5.00</AnnualSalesLimit>
+		<DiscountPercent>10%</DiscountPercent>
+		<DiscountDoller>$10</DiscountDoller>
+		<HasFreeShipping>Yes</HasFreeShipping>
+		<HasNoTax>No</HasNoTax>
+		<StoreName>Web</StoreName>
+		<DisplayOrder>12</DisplayOrder>
+		<Action></Action>
+	</CustomerLevel>
+	<CustomerLevel CustomerLevelID="4">
+	    <LevelName>Lorem Ipsum</LevelName>
+		<AnnualSalesLimit>5.00</AnnualSalesLimit>
+		<DiscountPercent>10%</DiscountPercent>
+		<DiscountDoller>$10</DiscountDoller>
+		<HasFreeShipping>Yes</HasFreeShipping>
+		<HasNoTax>No</HasNoTax>
+		<StoreName>Web</StoreName>
+		<DisplayOrder>12</DisplayOrder>
+		<Action></Action>
+	</CustomerLevel>
+	<CustomerLevel CustomerLevelID="5">
+	    <LevelName>Lorem Ipsum</LevelName>
+		<AnnualSalesLimit>5.00</AnnualSalesLimit>
+		<DiscountPercent>10%</DiscountPercent>
+		<DiscountDoller>$10</DiscountDoller>
+		<HasFreeShipping>Yes</HasFreeShipping>
+		<HasNoTax>No</HasNoTax>
+		<StoreName>Web</StoreName>
+		<DisplayOrder>12</DisplayOrder>
+		<Action></Action>
+	</CustomerLevel>
+</CustomerLevelDiscount>
+
+
+
+	
+
+
+

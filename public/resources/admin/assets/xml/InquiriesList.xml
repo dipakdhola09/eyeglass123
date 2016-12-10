@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<InquiriesList>
+	<Inquiries InquiriesListID="1">
+		<FirstName>Lorem Ipsum</FirstName>
+		<Email>abc@company.com</Email>
+		<Subject>Lorem Ipsum</Subject>
+		<Date>Feb 19, 2016</Date>
+		<Status>Active</Status>
+	</Inquiries>
+</InquiriesList>
+

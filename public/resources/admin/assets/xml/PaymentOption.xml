@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<PaymentOption>
+	<Payment PaymentOptionID="1">
+		<ProductSelect></ProductSelect>
+		<PaymentType>Lorem Ipsum</PaymentType>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Active</Status>
+		<Action></Action>
+	</Payment>
+	<Payment PaymentOptionID="2">
+		<ProductSelect></ProductSelect>
+		<PaymentType>Lorem Ipsum</PaymentType>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Inactive</Status>
+		<Action></Action>
+	</Payment>
+	<Payment PaymentOptionID="3">
+		<ProductSelect></ProductSelect>
+		<PaymentType>Lorem Ipsum</PaymentType>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Aactive</Status>
+		<Action></Action>
+	</Payment>
+	<Payment PaymentOptionID="4">
+		<ProductSelect></ProductSelect>
+		<PaymentType>Lorem Ipsum</PaymentType>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Inactive</Status>
+		<Action></Action>
+	</Payment>
+	<Payment PaymentOptionID="5">
+		<ProductSelect></ProductSelect>
+		<PaymentType>Lorem Ipsum</PaymentType>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Aactive</Status>
+		<Action></Action>
+	</Payment>
+</PaymentOption>
+
+

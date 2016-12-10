@@ -1,0 +1,108 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title">Add Product</h4>
+				<ol class="breadcrumb">
+					<li><a href="dashboard.html">Home</a></li>
+					<li>Catalog</li>
+					<li>Manage Products</li>
+					<li class="active">Add Product</li>
+				</ol>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 m-t-10">
+				<div class="block col-xs-12 col-sm-12 p-15 p-b-10">
+					<div class="card-box">
+						<form class="">
+							<div class="form-group row">
+								<label class="control-label col-sm-4 col-md-3 p-t-10">Assembly Product</label>
+								<div class="col-sm-7 col-md-6 show">
+									<select id="select" class="form-control">
+										<option>Select</option>
+										<option value="Yes">Yes</option>
+										<option value="No">No</option>
+									</select>
+								</div>
+							</div>
+							<div class="box">
+								<div class="form-group row">
+									<label class="control-label col-sm-4 col-md-3 p-t-10">Stock Product</label>
+									<div class="col-sm-7 col-md-6">
+										<select class="form-control">
+											<option>Select</option>
+											<option>Yes</option>
+											<option>No</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="control-label col-sm-4 col-md-3 p-t-10">Dropship Product</label>
+									<div class="col-sm-7 col-md-6">
+										<select class="form-control">
+											<option>Select</option>
+											<option>Yes</option>
+											<option>No</option>
+										</select>
+									</div>
+								</div>
+								<div class="form-group row">
+									<label class="control-label col-sm-4 col-md-3 p-t-10">Product Type</label>
+									<div class="col-sm-7 col-md-6">
+										<select class="form-control">
+											<option>Simple Product</option>
+											<option>Grouped Product</option>
+											<option>Configurable Product</option>
+											<option>Virtual Product</option>
+											<option>Bundle Product</option>
+											<option>Downloadable Product</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-group row m-b-0 box-btn">
+								<label class="control-label col-sm-4 col-md-3 p-t-10"></label>
+								<div class="col-sm-7 col-md-6"> <a class="btn btn-primary" data-ui-sref="AssemblyProduct" data-ui-sref-active="active">Next</a> </div>
+							</div>
+							<div class="form-group row m-b-0 box-btn-assmbley">
+								<label class="control-label col-sm-4 col-md-3 p-t-10"></label>
+								<div class="col-sm-7 col-md-6"> <a class="btn btn-primary" data-ui-sref="ProductType" data-ui-sref-active="active">Next</a> </div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("select").change(function(){
+        $(".show").find("option:selected").each(function(){
+            if($(this).attr("value")=="No"){
+                $(".box").show();
+            }
+            else{
+                $(".box").hide();
+            }
+        });
+    }).change();
+	$("select").change(function(){
+        $(".show").find("option:selected").each(function(){
+            if($(this).attr("value")=="No"){
+                $(".box-btn").show();
+				$(".box-btn-assmbley").hide();
+            }
+			else if($(this).attr("value")=="Yes"){
+                $(".box-btn-assmbley").show();
+				$(".box-btn").hide();
+            }
+            else{
+                $(".box-btn").hide();
+				$(".box-btn-assmbley").hide();
+            }
+        });
+    }).change();
+});
+</script>

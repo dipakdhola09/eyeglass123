@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductSummaryList>
+  <ProductSummary ProductSummaryID="1">
+    <SummaryDate>Dec 01,2015</SummaryDate>
+    <SummaryOrder>213345</SummaryOrder>
+    <SummaryReviewReceived>Yes</SummaryReviewReceived>
+    <SummaryReviewLive>Yes</SummaryReviewLive>
+  </ProductSummary>
+  <ProductSummary ProductSummaryID="2">
+    <SummaryDate>Dec 21,2015</SummaryDate>
+    <SummaryOrder>213345</SummaryOrder>
+    <SummaryReviewReceived>Yes</SummaryReviewReceived>
+    <SummaryReviewLive>Yes</SummaryReviewLive>
+  </ProductSummary>
+  <ProductSummary ProductSummaryID="3">
+    <SummaryDate>Jan 12,2016</SummaryDate>
+    <SummaryOrder>213345</SummaryOrder>
+    <SummaryReviewReceived>Yes</SummaryReviewReceived>
+    <SummaryReviewLive>No</SummaryReviewLive>
+  </ProductSummary>
+  <ProductSummary ProductSummaryID="4">
+    <SummaryDate>Feb 10,2016</SummaryDate>
+    <SummaryOrder>213345</SummaryOrder>
+    <SummaryReviewReceived>No</SummaryReviewReceived>
+    <SummaryReviewLive>No</SummaryReviewLive>
+  </ProductSummary>
+  <ProductSummary ProductSummaryID="5">
+    <SummaryDate>Feb 18,2016</SummaryDate>
+    <SummaryOrder>213345</SummaryOrder>
+    <SummaryReviewReceived>No</SummaryReviewReceived>
+    <SummaryReviewLive>No</SummaryReviewLive>
+  </ProductSummary>
+</ProductSummaryList>

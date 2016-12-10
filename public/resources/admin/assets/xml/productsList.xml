@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TemplateList>
+	<Template TemplateID="1">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductVariant>01 Satin Black/Blue - 40,&lt;br&gt;15 Satin Black/Red - 30</ProductVariant>
+		<ProductSKU>ABC-1</ProductSKU>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016&lt;br&gt;09:20:10</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<ProductRating>3.5</ProductRating>
+		<Clone>Clone</Clone>
+		<Edit>Action</Edit>
+		<ProStatus>Active</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="2">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductUPC>451278986532</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>20.00</Price>
+		<SalePrice>18.79</SalePrice>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 18, 2016&lt;br&gt;20:30:20</UpdatedOnBy>
+		<UpdatedBy>Admin User 2</UpdatedBy>
+		<ProductRating>3.5</ProductRating>
+		<Clone>Clone</Clone>
+		<Edit>Action</Edit>
+		<ProStatus>Active</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="3">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>simply dummy text Lorem Ipsum</ProductName>
+		<ProductSKU>ABDD-1</ProductSKU>
+		<ProductUPC>985463214785</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>30.00</Price>
+		<SalePrice>28.79</SalePrice>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<StoreName>MasterAdmin</StoreName>
+		<Clone>Clone</Clone>
+		<UpdatedOnBy>Jan 09, 2016&lt;br&gt;15:56:44</UpdatedOnBy>
+		<UpdatedBy>Admin User 2</UpdatedBy>
+		<ProductRating>3.5</ProductRating>
+		<Edit>Action</Edit>
+		<ProStatus>Active</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="4">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem dummy text</ProductName>
+		<ProductSKU>AABD-1</ProductSKU>
+		<ProductUPC>5412786321452</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>40.00</Price>
+		<Clone>Clone</Clone>
+		<SalePrice>38.79</SalePrice>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016&lt;br&gt;22:30:20</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<ProductRating>3.5</ProductRating>
+		<Edit>Action</Edit>
+		<ProStatus>Active</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="5">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum text</ProductName>
+		<ProductSKU>AEBD-1</ProductSKU>
+		<ProductUPC>658932147896</ProductUPC>
+		<Inventory>120</Inventory>
+		<Clone>Clone</Clone>
+		<Price>40.00</Price>
+		<SalePrice>28.79</SalePrice>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Feb 01, 2016&lt;br&gt;08:10:20</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<ProductRating>3.5</ProductRating>
+		<Edit>Action</Edit>
+		<ProStatus>Active</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="6">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>SACD-1</ProductSKU>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>50.00</Price>
+		<SalePrice>18.79</SalePrice>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016&lt;br&gt;14:00:20</UpdatedOnBy>
+		<Clone>Clone</Clone>
+		<UpdatedBy>Admin User 3</UpdatedBy>
+		<ProductRating>3.5</ProductRating>
+		<Edit>Action</Edit>
+		<ProStatus>Active</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="7">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>FCD-1</ProductSKU>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016&lt;br&gt;11:08:50</UpdatedOnBy>
+		<Clone>Clone</Clone>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<ProductRating>3.5</ProductRating>
+		<Edit>Action</Edit>
+		<ProStatus>Inactive</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="8">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016&lt;br&gt;18:20:20</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Clone>Clone</Clone>
+		<ProductRating>3.5</ProductRating>
+		<Edit>Action</Edit>
+		<ProStatus>Inactive</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="9">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016&lt;br&gt;18:20:20</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Clone>Clone</Clone>
+		<ProductRating>3.5</ProductRating>
+		<Edit>Action</Edit>
+		<ProStatus>Active</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="10">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<Clone>Clone</Clone>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016&lt;br&gt;18:20:20</UpdatedOnBy>
+		<ProductRating>3.5</ProductRating>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Edit>Action</Edit>
+		<ProStatus>Active</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="11">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<SalePrice>8.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016&lt;br&gt;18:20:20</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<ProductRating>3.5</ProductRating>
+		<Edit>Action</Edit>
+		<Clone>Clone</Clone>
+		<ProStatus>Active</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+	<Template TemplateID="12">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<ProductUPC>123456789012</ProductUPC>
+		<Inventory>120</Inventory>
+		<Price>10.00</Price>
+		<SalePrice>8.79</SalePrice>
+		<ProductManufacture>Sumo</ProductManufacture>
+		<ProductCategory>Category 1</ProductCategory>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Jan 21, 2016&lt;br&gt;18:20:20</UpdatedOnBy>
+		<UpdatedBy>Admin User 1</UpdatedBy>
+		<Clone>Clone</Clone>
+		<ProductRating>3.5</ProductRating>
+		<Edit>Action</Edit>
+		<ProStatus>Inactive</ProStatus>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Action>Action</Action>
+	</Template>
+</TemplateList>

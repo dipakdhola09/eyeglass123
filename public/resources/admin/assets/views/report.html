@@ -1,0 +1,191 @@
+<div class="content">
+	<div class="col-sm-12 block p-20">
+		<div class="col-sm-12">
+			<div id='chartContainer' style="width:100%; height:500px"> </div>
+		</div>
+	</div>
+	<div class="col-sm-12 block p-20 p-b-0">
+		<div class="col-sm-4">
+			<div class="block">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">Log</h4>
+						</div>
+						<div class="panel-collapse collapse in">
+							<div class="panel-body">
+								<ul>
+									<li><a href="#">Profitable Customers</a></li>
+									<li><a href="#">Export customers/order summary</a></li>
+									<li><a href="#">Inquiry List</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="block">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">Customers</h4>
+						</div>
+						<div class="panel-collapse collapse in">
+							<div class="panel-body">
+								<ul>
+									<li><a href="#">Mail Log</a></li>
+									<li><a href="#">Store Statistics</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="block">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">Orders/Sales</h4>
+						</div>
+						<div class="panel-collapse collapse in">
+							<div class="panel-body">
+								<ul>
+									<li><a href="#">Order Statistics</a></li>
+									<li><a href="#">Comparative sales by time period</a></li>
+									<li><a href="#">Order summary by status</a></li>
+									<li><a href="#">Export order summary</a></li>
+									<li><a href="#">Print Order Invoice By Range</a></li>
+									<li><a href="#">Print Order Packing Slip by Range</a></li>
+									<li><a href="#">Export Sales summary by Item</a></li>
+									<li><a href="#">Order Statistics by Region</a></li>
+									<li><a href="#">Order Shipping Cost</a></li>
+									<li><a href="#">Order Profitability</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="block">
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h4 class="panel-title">Inventory / Product</h4>
+						</div>
+						<div class="panel-collapse collapse in">
+							<div class="panel-body">
+								<ul>
+									<li><a href="#">Inventory Status</a></li>
+									<li><a href="#">Inventory Value Report</a></li>
+									<li><a href="#">High Inventory</a></li>
+									<li><a href="#">Low Inventory</a></li>
+									<li><a href="#">Best Selling Item</a></li>
+									<li><a href="#">Product Comparison (Sale)</a></li>
+									<li><a href="#">Product Summary</a></li>
+									<li><a href="#">Not Sold Products</a></li>
+									<li><a href="#">Inventory & Location Verification</a></li>
+									<li><a href="#">Inventory Count Report</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+	// prepare chart data as an array
+	var sampleData = [
+			{ Day: 1, Sales: 1500 },
+			{ Day: 2, Sales: 1200 },
+			{ Day: 3, Sales: 1835 },
+			{ Day: 4, Sales: 1354 },
+			{ Day: 5, Sales: 1478 },
+			{ Day: 6, Sales: 1778 },
+			{ Day: 7, Sales: 1298 },
+			{ Day: 8, Sales: 1200 },
+			{ Day: 9, Sales: 1350 },
+			{ Day: 10, Sales: 1650 },
+			{ Day: 11, Sales: 758 },
+			{ Day: 12, Sales: 21815 },
+			{ Day: 13, Sales: 1135 },
+			{ Day: 14, Sales: 1305 },
+			{ Day: 15, Sales: 945 },
+			{ Day: 16, Sales: 1390 },
+			{ Day: 17, Sales: 1066 },
+			{ Day: 18, Sales: 741 },
+			{ Day: 19, Sales: 820 },
+			{ Day: 20, Sales: 1059 },
+			{ Day: 21, Sales: 1770 },
+			{ Day: 22, Sales: 1200 },
+			{ Day: 23, Sales: 1835 },
+			{ Day: 24, Sales: 1354 },
+			{ Day: 25, Sales: 1478 },
+			{ Day: 26, Sales: 1778 },
+			{ Day: 27, Sales: 798 },
+			{ Day: 28, Sales: 1200 },
+			{ Day: 29, Sales: 1350 },
+			{ Day: 30, Sales: 1650 },
+			{ Day: 31, Sales: 958 }
+		];
+	// prepare jqxChart settings
+	var settings = {
+		title: "Average store sales per Day",
+		description: "",
+		enableAnimations: true,
+		showLegend: true,
+		padding: { left: 5, top: 5, right: 10, bottom: 5 },
+		titlePadding: { left: 90, top: 0, right: 0, bottom: 10 },
+		source: sampleData,
+		colorScheme: 'scheme02',
+		xAxis:
+		{
+			dataField: 'Day',
+			minValue: 0,
+			maxValue: 31,
+			unitInterval: 1,
+			valuesOnTicks: false,
+			labels: {
+				angle: 0,
+				formatFunction: function (value) {
+					return value.toString();
+				}
+			},
+			tickMarks: {
+				visible: true,
+				interval: 1
+			},
+			gridLines: {
+				visible: true,
+				interval: 3
+			}
+		},
+		valueAxis:
+		{
+			visible: true,
+			minValue: 0,
+			maxValue: 2500,
+			unitInterval: 250,
+			title: { text: 'Sales ($)<br>' },
+			labels: { horizontalAlignment: 'right' }
+		},
+		seriesGroups:
+			[
+				{
+					type: 'column',
+					series: [
+							{ dataField: 'Sales', displayText: 'Sales', showLabels: true }
+						]
+				}
+			]
+	};
+	// setup the chart
+	$('#chartContainer').jqxChart(settings);
+});
+</script>

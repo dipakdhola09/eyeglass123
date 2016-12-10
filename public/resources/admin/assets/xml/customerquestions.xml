@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<CustomersList>
+	<CustomerList CustomerListID="1">
+		<ProductName>Lorem Ipsum</ProductName>
+		<Question>What are dimensions?</Question>
+		<Name>ABC</Name>
+		<Email>abc@xyz.com</Email>
+		<CreatedOn>2016-09-25 13:42:57</CreatedOn>
+		<Status>Inactive</Status>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="2">
+		<ProductName>Lorem Ipsum</ProductName>
+		<Question>What are dimensions?</Question>
+		<Name>ABC</Name>
+		<Email>abc@xyz.com</Email>
+		<CreatedOn>2016-09-25 13:42:57</CreatedOn>
+		<Status>Active</Status>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="3">
+		<ProductName>Lorem Ipsum</ProductName>
+		<Question>What are dimensions?</Question>
+		<Name>ABC</Name>
+		<Email>abc@xyz.com</Email>
+		<CreatedOn>2016-09-25 13:42:57</CreatedOn>
+		<Status>Active</Status>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="4">
+		<ProductName>Lorem Ipsum</ProductName>
+		<Question>What are dimensions?</Question>
+		<Name>ABC</Name>
+		<Email>abc@xyz.com</Email>
+		<CreatedOn>2016-09-25 13:42:57</CreatedOn>
+		<Status>Active</Status>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="5">
+		<ProductName>Lorem Ipsum</ProductName>
+		<Question>What are dimensions?</Question>
+		<Name>ABC</Name>
+		<Email>abc@xyz.com</Email>
+		<CreatedOn>2016-09-25 13:42:57</CreatedOn>
+		<Status>InActive</Status>
+		<Action></Action>
+	</CustomerList>
+</CustomersList>

@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RetailerCustomerList>
+	<RetailerCustomer RetailerCustomerID="1">
+		<ProductSelect></ProductSelect>
+		<CustomerID>1233</CustomerID>
+		<CustomerName>Lorem Ipsum is simply dummy text</CustomerName>
+		<Email>abc@company.com</Email>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Orders>6($100.00)</Orders>
+		<Status>Active</Status>
+		<CustomerType>Lorem Ipsum</CustomerType>
+		<Action>Action</Action>
+	</RetailerCustomer>
+	<RetailerCustomer RetailerCustomerID="2">
+		<ProductSelect></ProductSelect>
+		<CustomerID>1233</CustomerID>
+		<CustomerName>Lorem Ipsum is simply dummy text</CustomerName>
+		<Email>abc@company.com</Email>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Orders>4($70.00)</Orders>
+		<Status>Inactive</Status>
+		<CustomerType>Lorem Ipsum</CustomerType>
+		<Action>Action</Action>
+	</RetailerCustomer>
+	<RetailerCustomer RetailerCustomerID="3">
+		<ProductSelect></ProductSelect>
+		<CustomerID>1233</CustomerID>
+		<CustomerName>Lorem Ipsum is simply dummy text</CustomerName>
+		<Email>abc@company.com</Email>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Orders>8($150.00)</Orders>
+		<Status>Active</Status>
+		<CustomerType>Lorem Ipsum</CustomerType>
+		<Action>Action</Action>
+	</RetailerCustomer>
+	<RetailerCustomer RetailerCustomerID="4">
+		<ProductSelect></ProductSelect>
+		<CustomerID>1233</CustomerID>
+		<CustomerName>Lorem Ipsum is simply dummy text</CustomerName>
+		<Email>abc@company.com</Email>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Orders>2($25.00)</Orders>
+		<Status>Inactive</Status>
+		<CustomerType>Lorem Ipsum</CustomerType>
+		<Action>Action</Action>
+	</RetailerCustomer>
+	<RetailerCustomer RetailerCustomerID="5">
+		<ProductSelect></ProductSelect>
+		<CustomerID>1233</CustomerID>
+		<CustomerName>Lorem Ipsum is simply dummy text</CustomerName>
+		<Email>abc@company.com</Email>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Orders>9($200.00)</Orders>
+		<Status>Active</Status>
+		<CustomerType>Lorem Ipsum</CustomerType>
+		<Action>Action</Action>
+	</RetailerCustomer>
+	<RetailerCustomer RetailerCustomerID="6">
+		<ProductSelect></ProductSelect>
+		<CustomerID>1233</CustomerID>
+		<CustomerName>Lorem Ipsum is simply dummy text</CustomerName>
+		<Email>abc@company.com</Email>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Orders>4($70.00)</Orders>
+		<Status>Inactive</Status>
+		<CustomerType>Lorem Ipsum</CustomerType>
+		<Action>Action</Action>
+	</RetailerCustomer>
+</RetailerCustomerList>
+
+

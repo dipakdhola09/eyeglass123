@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<SubCategories>
+  <SubCategory SubCategoryID="1">
+    <SubCategoryId>1</SubCategoryId>
+    <SubCategoryName>SubCategory 1</SubCategoryName>
+    <SubCategoryDescription>Lorem Ipsum</SubCategoryDescription>
+    <SubCategoryPosition>1</SubCategoryPosition>
+    <SubCategoryStatus>Active</SubCategoryStatus>
+    <SubCategoryEdit></SubCategoryEdit>
+  </SubCategory>
+  <SubCategory SubCategoryID="2">
+    <SubCategoryId>1</SubCategoryId>
+    <SubCategoryName>Lorem Ipsum</SubCategoryName>
+    <SubCategoryDescription>Lorem Ipsum</SubCategoryDescription>
+    <SubCategoryPosition>2</SubCategoryPosition>
+    <SubCategoryStatus>Inactive</SubCategoryStatus>
+    <SubCategoryEdit></SubCategoryEdit>
+  </SubCategory>
+</SubCategories>

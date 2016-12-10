@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssembleaddProductList>
+  <AssembleaddProduct AssembleaddProductID="1">
+    <AssembleaddImage>camera_icon</AssembleaddImage>
+    <AssembleaddName>Lorem Ipsum</AssembleaddName>
+    <AssembleaddSKU>ABC-01</AssembleaddSKU>
+	<AssembleaddInstockQty>40</AssembleaddInstockQty>
+    <AssembleaddQty>4</AssembleaddQty>
+    <AssembleaddStatus>Active</AssembleaddStatus>
+  </AssembleaddProduct>
+  <AssembleaddProduct AssembleaddProductID="2">
+    <AssembleaddImage>camera_icon</AssembleaddImage>
+    <AssembleaddName>Lorem Ipsum Lorem</AssembleaddName>
+    <AssembleaddSKU>ABC-02</AssembleaddSKU>
+	<AssembleaddInstockQty>50</AssembleaddInstockQty>
+    <AssembleaddQty>1</AssembleaddQty>
+    <AssembleaddStatus>Active</AssembleaddStatus>
+  </AssembleaddProduct>
+  <AssembleaddProduct AssembleaddProductID="3">
+    <AssembleaddImage>camera_icon</AssembleaddImage>
+    <AssembleaddName>Lorem Ipsum Ipsum</AssembleaddName>
+    <AssembleaddSKU>ABC-03</AssembleaddSKU>
+	<AssembleaddInstockQty>40</AssembleaddInstockQty>
+    <AssembleaddQty>3</AssembleaddQty>
+    <AssembleaddStatus>Active</AssembleaddStatus>
+  </AssembleaddProduct>
+  <AssembleaddProduct AssembleaddProductID="4">
+    <AssembleaddImage>camera_icon</AssembleaddImage>
+    <AssembleaddName>Ipsum Lorem</AssembleaddName>
+    <AssembleaddSKU>ABC-04</AssembleaddSKU>
+	<AssembleaddInstockQty>60</AssembleaddInstockQty>
+    <AssembleaddQty>1</AssembleaddQty>
+    <AssembleaddStatus>Inactive</AssembleaddStatus>
+  </AssembleaddProduct>
+  <AssembleaddProduct AssembleaddProductID="5">
+    <AssembleaddImage>camera_icon</AssembleaddImage>
+    <AssembleaddName>Lorem Ipsum</AssembleaddName>
+    <AssembleaddSKU>ABC-05</AssembleaddSKU>
+	<AssembleaddInstockQty>50</AssembleaddInstockQty>
+    <AssembleaddQty>2</AssembleaddQty>
+    <AssembleaddStatus>Active</AssembleaddStatus>
+  </AssembleaddProduct>
+</AssembleaddProductList>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductCustomerOrderList>
+  <ProductCustomerOrder ProductCustomerOrderID="1">
+    <CustomerOrderImage>camera_icon</CustomerOrderImage>
+    <CustomerOrderName>Lorem Ipsum</CustomerOrderName>
+	<CustomerOrdernumber>0123456</CustomerOrdernumber>
+    <CustomerOrderSKU>ABC-01</CustomerOrderSKU>
+	<CustomerOrderQty>1</CustomerOrderQty>
+	<CustomerOrderAmt>100</CustomerOrderAmt>
+  </ProductCustomerOrder>
+  <ProductCustomerOrder ProductCustomerOrderID="2">
+    <CustomerOrderImage>camera_icon</CustomerOrderImage>
+    <CustomerOrderName>Ipsum Lorem Lorem</CustomerOrderName>
+	<CustomerOrdernumber>78901</CustomerOrdernumber>
+    <CustomerOrderSKU>BCA-01</CustomerOrderSKU>
+	<CustomerOrderQty>2</CustomerOrderQty>
+	<CustomerOrderAmt>100.80</CustomerOrderAmt>
+  </ProductCustomerOrder>
+  <ProductCustomerOrder ProductCustomerOrderID="3">
+    <CustomerOrderImage>camera_icon</CustomerOrderImage>
+    <CustomerOrderName>Ipsum Lorem Ipsum</CustomerOrderName>
+	<CustomerOrdernumber>3457745</CustomerOrdernumber>
+    <CustomerOrderSKU>BAA-01</CustomerOrderSKU>
+	<CustomerOrderQty>1</CustomerOrderQty>
+	<CustomerOrderAmt>120.20</CustomerOrderAmt>
+  </ProductCustomerOrder>
+  <ProductCustomerOrder ProductCustomerOrderID="4">
+    <CustomerOrderImage>camera_icon</CustomerOrderImage>
+    <CustomerOrderName>Lorem Ipsum</CustomerOrderName>
+	<CustomerOrdernumber>0123456</CustomerOrdernumber>
+    <CustomerOrderSKU>ACA-01</CustomerOrderSKU>
+	<CustomerOrderQty>1</CustomerOrderQty>
+	<CustomerOrderAmt>130.50</CustomerOrderAmt>
+  </ProductCustomerOrder>
+  <ProductCustomerOrder ProductCustomerOrderID="5">
+    <CustomerOrderImage>camera_icon</CustomerOrderImage>
+    <CustomerOrderName>Ipsum Lorem</CustomerOrderName>
+	<CustomerOrdernumber>0123456</CustomerOrdernumber>
+    <CustomerOrderSKU>CCA-01</CustomerOrderSKU>
+	<CustomerOrderQty>1</CustomerOrderQty>
+	<CustomerOrderAmt>120.00</CustomerOrderAmt>
+  </ProductCustomerOrder>
+</ProductCustomerOrderList>

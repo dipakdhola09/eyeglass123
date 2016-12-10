@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OrderCoupon>
+	<Order OrderCouponID="1">
+		<Orders>65215</Orders>
+		<OrderDate>Feb 25 2016,</OrderDate>
+		<UsedBy>Lorem Ipsum</UsedBy>
+		<OrderSubtotal>$121</OrderSubtotal>
+		<DiscountAmount>$5</DiscountAmount>
+		<OrderShippingCost>$10</OrderShippingCost>
+		<Tax>1.2%</Tax>
+		<Total>$121</Total>
+	</Order>
+	<Order OrderCouponID="2">
+		<Orders>12563</Orders>
+		<OrderDate>Feb 25 2016,</OrderDate>
+		<UsedBy>Lorem Ipsum</UsedBy>
+		<OrderSubtotal>$121</OrderSubtotal>
+		<DiscountAmount>$5</DiscountAmount>
+		<OrderShippingCost>$10</OrderShippingCost>
+		<Tax>1.2%</Tax>
+		<Total>$121</Total>
+	</Order>
+</OrderCoupon>
+
+

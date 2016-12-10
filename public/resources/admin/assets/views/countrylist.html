@@ -1,0 +1,161 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title">Country List</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20">
+				<div class="card-box">
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "assets/xml/CountryList.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'CountryName',
+			type: 'String'
+		}, {
+			name: 'Name',
+			type: 'String'
+		}, {
+			name: 'TwoLetterISOCode',
+			type: 'String'
+		}, {
+			name: 'ThreeLetterISOCode',
+			type: 'String'
+		}, {
+			name: 'NumericISOCode',
+			type: 'String'
+		}, {
+			name: 'DisplayOrder',
+			type: 'String'
+		}, {
+			name: 'CreatedOn',
+			type: 'string'
+		}, {
+			name: 'Action',
+			type: 'string'
+		}],
+		root: "CountryList",
+		record: "Country",
+		id: 'CountryID',
+		url: url
+	};
+	
+	var numberrenderer = function (row, column, value) {
+		return '<div style="text-align: center; margin-top: 20px;">' + (1 + value) + '</div>';
+	}
+	
+	//Action Link
+	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    return  '<div class="text-center action-icons" style=" margin-top:5px;"><a href="#" class="on-default edit-row text-default" title="Edit Price"><i class="fa fa-pencil"></i></a></div>'
+	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	
+	// initialize jqxGrid
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: false,
+		editable: false,
+		columnsheight: 70,
+		autorowheight: true,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'singlerow',
+		columns: [{
+			text: '#',
+			datafield: 'SrNo',
+			width: '5%',
+			minwidth: '60',
+			filterable: false,
+			columntype: 'number',
+			cellsrenderer: numberrenderer
+		},{
+			text: 'Country Name',
+			datafield: 'CountryName',
+			editable: false,
+			width: '12.4%',
+			minwidth: '80'
+		},{
+			text: 'Name',
+			datafield: 'Name',
+			editable: false,
+			width: '10%',
+			minwidth: '120',
+			cellsalign: 'center'
+		},{
+			text: 'TwoLetterISOCode',
+			datafield: 'TwoLetterISOCode',
+			editable: false,
+			width: '10%',
+			minwidth: '120',
+			cellsalign: 'center'
+		},{
+			text: 'ThreeLetterISOCode',
+			datafield: 'ThreeLetterISOCode',
+			editable: false,
+			width: '14%',
+			minwidth: '120',
+			cellsalign: 'center'
+		},{
+			text: 'NumericISOCode',
+			datafield: 'NumericISOCode',
+			editable: false,
+			width: '15%',
+			minwidth: '120',
+			cellsalign: 'center'
+		},{
+			text: 'DisplayOrder',
+			datafield: 'DisplayOrder',
+			editable: false,
+			width: '10%',
+			minwidth: '120',
+			cellsalign: 'center'
+		},{
+			text: 'CreatedOn',
+			datafield: 'CreatedOn',
+			width: '15%',
+			minwidth: '110',
+			editable: true,
+		},{
+			text: 'Action',
+			datafield: 'Action',
+			width: '8.4%',
+			minwidth: '60',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+	
+	basicDemo.init();
+});
+</script>

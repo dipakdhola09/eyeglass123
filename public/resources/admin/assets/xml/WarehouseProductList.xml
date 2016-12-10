@@ -1,0 +1,153 @@
+﻿<WarehouseProductList>
+  <WarehouseProduct OrderID="10249">
+    <WarehouseID>1</WarehouseID>
+	<WarehouseProductName>Lorem Ipsum</WarehouseProductName>
+   	<WarehousePackageType>Unit</WarehousePackageType>
+    <WarehouseQty>10</WarehouseQty>
+    <WarehouseCost>100</WarehouseCost>
+    <WarehouseSKU>ACB-01</WarehouseSKU>
+    <WarehouseRoomNumber>01</WarehouseRoomNumber>
+    <WarehouseAisleNumber>03</WarehouseAisleNumber>
+    <WarehouseRack>05</WarehouseRack>
+    <WarehouseShelf>07</WarehouseShelf>
+	<WarehouseComment>Lorem Ipsum</WarehouseComment>
+    <WarehouseNumberProduct>10</WarehouseNumberProduct>
+	<WarehouseAction></WarehouseAction>
+  </WarehouseProduct>
+  <WarehouseProduct OrderID="10250">
+    <WarehouseID>1</WarehouseID>
+	<WarehouseProductName>Ipsum Lorem</WarehouseProductName>
+   	<WarehousePackageType>Box</WarehousePackageType>
+    <WarehouseQty>20</WarehouseQty>
+    <WarehouseCost>200</WarehouseCost>
+    <WarehouseSKU>ADC-04</WarehouseSKU>
+    <WarehouseRoomNumber>02</WarehouseRoomNumber>
+    <WarehouseAisleNumber>04</WarehouseAisleNumber>
+    <WarehouseRack>05</WarehouseRack>
+    <WarehouseShelf>01</WarehouseShelf>
+	<WarehouseComment>Lorem Ipsum</WarehouseComment>
+    <WarehouseNumberProduct>20</WarehouseNumberProduct>
+	<WarehouseAction></WarehouseAction>
+  </WarehouseProduct>
+  <WarehouseProduct OrderID="10350">
+    <WarehouseID>1</WarehouseID>
+	<WarehouseProductName>Lorem</WarehouseProductName>
+   	<WarehousePackageType>Unit</WarehousePackageType>
+    <WarehouseQty>30</WarehouseQty>
+    <WarehouseCost>300</WarehouseCost>
+    <WarehouseSKU>ABC-02</WarehouseSKU>
+    <WarehouseRoomNumber>04</WarehouseRoomNumber>
+    <WarehouseAisleNumber>09</WarehouseAisleNumber>
+    <WarehouseRack>08</WarehouseRack>
+    <WarehouseShelf>04</WarehouseShelf>
+	<WarehouseComment>Lorem Ipsum</WarehouseComment>
+    <WarehouseNumberProduct>30</WarehouseNumberProduct>
+	<WarehouseAction></WarehouseAction>
+  </WarehouseProduct>
+  <WarehouseProduct OrderID="10351">
+    <WarehouseID>1</WarehouseID>
+	<WarehouseProductName>Ipsum</WarehouseProductName>
+   	<WarehousePackageType>Unit</WarehousePackageType>
+    <WarehouseQty>40</WarehouseQty>
+    <WarehouseCost>400</WarehouseCost>
+    <WarehouseSKU>ADC-02</WarehouseSKU>
+    <WarehouseRoomNumber>01</WarehouseRoomNumber>
+    <WarehouseAisleNumber>03</WarehouseAisleNumber>
+    <WarehouseRack>05</WarehouseRack>
+    <WarehouseShelf>07</WarehouseShelf>
+	<WarehouseComment>Lorem Ipsum</WarehouseComment>
+    <WarehouseNumberProduct>40</WarehouseNumberProduct>
+	<WarehouseAction></WarehouseAction>
+  </WarehouseProduct>
+  <WarehouseProduct OrderID="10352">
+    <WarehouseID>1</WarehouseID>
+	<WarehouseProductName>Lorem Ipsum</WarehouseProductName>
+   	<WarehousePackageType>Unit</WarehousePackageType>
+    <WarehouseQty>50</WarehouseQty>
+    <WarehouseCost>500</WarehouseCost>
+    <WarehouseSKU>ABB-01</WarehouseSKU>
+    <WarehouseRoomNumber>01</WarehouseRoomNumber>
+    <WarehouseAisleNumber>02</WarehouseAisleNumber>
+    <WarehouseRack>03</WarehouseRack>
+    <WarehouseShelf>04</WarehouseShelf>
+	<WarehouseComment>Lorem Ipsum</WarehouseComment>
+    <WarehouseNumberProduct>50</WarehouseNumberProduct>
+	<WarehouseAction></WarehouseAction>
+  </WarehouseProduct>
+  <WarehouseProduct OrderID="10353">
+    <WarehouseID>1</WarehouseID>
+	<WarehouseProductName>Ipsum Lorem</WarehouseProductName>
+   	<WarehousePackageType>Unit</WarehousePackageType>
+    <WarehouseQty>10</WarehouseQty>
+    <WarehouseCost>100</WarehouseCost>
+    <WarehouseSKU>ABA-01</WarehouseSKU>
+    <WarehouseRoomNumber>01</WarehouseRoomNumber>
+    <WarehouseAisleNumber>03</WarehouseAisleNumber>
+    <WarehouseRack>05</WarehouseRack>
+    <WarehouseShelf>07</WarehouseShelf>
+	<WarehouseComment>Lorem Ipsum</WarehouseComment>
+    <WarehouseNumberProduct>10</WarehouseNumberProduct>
+	<WarehouseAction></WarehouseAction>
+  </WarehouseProduct>
+  <WarehouseProduct OrderID="10355">
+    <WarehouseID>1</WarehouseID>
+	<WarehouseProductName>LoremIpsum</WarehouseProductName>
+   	<WarehousePackageType>Unit</WarehousePackageType>
+    <WarehouseQty>20</WarehouseQty>
+    <WarehouseCost>200</WarehouseCost>
+    <WarehouseSKU>ABC-01</WarehouseSKU>
+    <WarehouseRoomNumber>01</WarehouseRoomNumber>
+    <WarehouseAisleNumber>03</WarehouseAisleNumber>
+    <WarehouseRack>05</WarehouseRack>
+    <WarehouseShelf>07</WarehouseShelf>
+	<WarehouseComment>Lorem Ipsum</WarehouseComment>
+    <WarehouseNumberProduct>20</WarehouseNumberProduct>
+	<WarehouseAction></WarehouseAction>
+  </WarehouseProduct>
+  <WarehouseProduct OrderID="10356">
+    <WarehouseID>1</WarehouseID>
+	<WarehouseProductName>Lorem Ipsum</WarehouseProductName>
+   	<WarehousePackageType>Unit</WarehousePackageType>
+    <WarehouseQty>10</WarehouseQty>
+    <WarehouseCost>200</WarehouseCost>
+    <WarehouseSKU>ABC-01</WarehouseSKU>
+    <WarehouseRoomNumber>01</WarehouseRoomNumber>
+    <WarehouseAisleNumber>03</WarehouseAisleNumber>
+    <WarehouseRack>05</WarehouseRack>
+    <WarehouseShelf>07</WarehouseShelf>
+	<WarehouseComment>Lorem Ipsum</WarehouseComment>
+    <WarehouseNumberProduct>10</WarehouseNumberProduct>
+	<WarehouseAction></WarehouseAction>
+  </WarehouseProduct>
+  <WarehouseProduct OrderID="10357">
+    <WarehouseID>1</WarehouseID>
+	<WarehouseProductName>Ipsum</WarehouseProductName>
+   	<WarehousePackageType>Unit</WarehousePackageType>
+    <WarehouseQty>10</WarehouseQty>
+    <WarehouseCost>200</WarehouseCost>
+    <WarehouseSKU>ABC-01</WarehouseSKU>
+    <WarehouseRoomNumber>01</WarehouseRoomNumber>
+    <WarehouseAisleNumber>03</WarehouseAisleNumber>
+    <WarehouseRack>05</WarehouseRack>
+    <WarehouseShelf>07</WarehouseShelf>
+	<WarehouseComment>Lorem Ipsum</WarehouseComment>
+    <WarehouseNumberProduct>10</WarehouseNumberProduct>
+	<WarehouseAction></WarehouseAction>
+  </WarehouseProduct>
+  <WarehouseProduct OrderID="10453">
+    <WarehouseID>2</WarehouseID>
+	<WarehouseProductName>Lorem Ipsum</WarehouseProductName>
+   	<WarehousePackageType>Unit</WarehousePackageType>
+    <WarehouseQty>120</WarehouseQty>
+    <WarehouseCost>200</WarehouseCost>
+    <WarehouseSKU>ABC-01</WarehouseSKU>
+    <WarehouseRoomNumber>01</WarehouseRoomNumber>
+    <WarehouseAisleNumber>03</WarehouseAisleNumber>
+    <WarehouseRack>05</WarehouseRack>
+    <WarehouseShelf>07</WarehouseShelf>
+	<WarehouseComment>Lorem Ipsum</WarehouseComment>
+    <WarehouseNumberProduct>120</WarehouseNumberProduct>
+	<WarehouseAction></WarehouseAction>
+  </WarehouseProduct>
+  
+</WarehouseProductList>

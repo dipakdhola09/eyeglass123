@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<faqList>
+  <faq faqID="1">
+    <faqName>Lorem Ipsum</faqName>
+    <faqEmail>lorem_ipsum@demo.com</faqEmail>
+    <faqQuestion>Lorem ipsum dolor sit amet, consectetur?</faqQuestion>
+	<faqAnswer>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</faqAnswer>
+    <faqDate>Feb 09, 2016</faqDate>
+    <faqStatus>Enable</faqStatus>
+  </faq>
+  <faq faqID="2">
+    <faqName>Lorem Ipsum</faqName>
+    <faqEmail>lorem_ipsum@demo.com</faqEmail>
+    <faqQuestion>Lorem ipsum dolor sit amet, consectetur?</faqQuestion>
+	<faqAnswer>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</faqAnswer>
+    <faqDate>Feb 09, 2016</faqDate>
+    <faqStatus>Disable</faqStatus>
+  </faq>
+</faqList>

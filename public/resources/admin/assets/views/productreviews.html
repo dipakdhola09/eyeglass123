@@ -1,0 +1,350 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<h4 class="page-title">Product Reviews</h4>
+			</div>
+			<div class="col-xs-12 col-sm-7">
+				<div style="min-width:300px;" class="pull-right col-sm-12">
+					<ul class="list-unstyled list-inline text-right prod-edit-links p-t-10">
+						<li> <a onclick="$('#window1').jqxWindow('open');" href="javascript:void(0)" id="showWindowButton1" >
+							<div class="menu-icon text-center"><i class="fa fa-plus-circle"></i></div>
+							<div class="menu-text">Add review</div>
+							</a> </li>
+						<li> <a href="#">
+							<div class="menu-icon text-center"><i class="fa fa-question-circle"></i></div>
+							<div class="menu-text">Help</div>
+							</a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20 m-t-20">
+				<div class="card-box">
+					<div id="jqxWidget">
+						<div id="jqxgrid"> </div>
+						<div style="width: 100%;" id="mainDemoContainer">
+							<div id="window">
+								<div id="windowHeader">
+									<div class="h4 p-10 m-0">Edit Review</div>
+								</div>
+								<div style="overflow: hidden;" id="windowContent">
+									<form class="p-20">
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10">Name</label>
+											<div class="col-sm-7 col-md-6">
+												<input type="text" class="form-control" value="Lorem Ipsum is simply">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10">Email</label>
+											<div class="col-sm-7 col-md-6">
+												<input type="text" class="form-control" value="lorem@demo.com">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10">Rating</label>
+											<div class="col-sm-7 col-md-6 p-t-10"> <i class="fa fa-star text-success"></i> <i class="fa fa-star text-success"></i> <i class="fa fa-star text-success"></i> <i class="fa fa-star-half-o text-success"></i> <i class="fa fa-star-o text-success"></i> </div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10">Comment</label>
+											<div class="col-sm-7 col-md-6">
+												<textarea class="form-control">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</textarea>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10">Date</label>
+											<div class="col-sm-7 col-md-6">
+												<div id="dateInput1"></div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10"></label>
+											<div class="col-sm-7 col-md-6"> <a class="btn btn-primary m-r-10">Save</a><a id="hideWindowButton" class="btn btn-warning">Cancel</a> </div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div style="width: 100%;" id="mainDemoContainer">
+							<div id="window1">
+								<div id="windowHeader">
+									<div class="h4 p-10 m-0">Add Review</div>
+								</div>
+								<div style="overflow: hidden;" id="windowContent">
+									<form class="p-20">
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10">Name</label>
+											<div class="col-sm-7 col-md-6">
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10">Email</label>
+											<div class="col-sm-7 col-md-6">
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10">Rating</label>
+											<div class="col-sm-7 col-md-6 p-t-10"> <i class="fa fa-star-o text-success"></i> <i class="fa fa-star-o text-success"></i> <i class="fa fa-star-o text-success"></i> <i class="fa fa-star-o text-success"></i> <i class="fa fa-star-o text-success"></i> </div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10">Comment</label>
+											<div class="col-sm-7 col-md-6">
+												<textarea class="form-control"></textarea>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10">Date</label>
+											<div class="col-sm-7 col-md-6">
+												<div id="dateInput"></div>
+											</div>
+										</div>
+										<div class="form-group row">
+											<label class="control-label col-sm-4 col-md-3 p-t-10"></label>
+											<div class="col-sm-7 col-md-6"> <a class="btn btn-primary m-r-10">Save</a><a id="hideWindowButton" class="btn btn-warning">Cancel</a> </div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var basicDemo = (function() {
+	//Adding event listeners	
+	function _addEventListeners() {
+		$('#showWindowButton').click(function() {
+			$('#window').jqxWindow('open');
+		});
+		$('#hideWindowButton').click(function() {
+			$('#window').jqxWindow('close');
+		});
+		$('#showWindowButton1').click(function() {
+			$('#window1').jqxWindow('open');
+		});
+		$('#hideWindowButton1').click(function() {
+			$('#window1').jqxWindow('close');
+		});
+	};
+	
+	//Creating the demo window
+	function _createWindow() {
+		var jqxWidget = $('#jqxWidget');
+		var offset = jqxWidget.offset();
+		$('#window').jqxWindow({
+			position: 'center',
+			//showCollapseButton: true,
+			autoOpen:false,
+			isModal: true,
+			maxHeight: 600,
+			maxWidth: 700,
+			minHeight: 200,
+			minWidth: 200,
+			width: '100%',
+			resizable: false,
+			draggable: false,
+			
+			initContent: function() {
+				$('#window').jqxWindow('focus');
+			}
+		});
+		$('#window1').jqxWindow({
+			position: 'center',
+			//showCollapseButton: true,
+			autoOpen:false,
+			isModal: true,
+			maxHeight: 600,
+			maxWidth: 700,
+			minHeight: 200,
+			minWidth: 200,
+			width: '100%',
+			resizable: false,
+			draggable: false,
+			
+			initContent: function() {
+				$('#window1').jqxWindow('focus');
+			}
+		});
+	};
+	return {
+		config: {
+			dragArea: null
+		},
+		init: function() {
+			//Attaching event listeners
+			_addEventListeners();
+			//Adding jqxWindow
+			_createWindow();
+		}
+	};
+}());
+$(document).ready(function() {
+	$("#dateInput").jqxDateTimeInput({ width: '100%', height: '38px' });
+	$("#dateInput1").jqxDateTimeInput({ width: '100%', height: '38px' });
+	
+	var url = "assets/xml/product-review.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [{
+			name: 'ProductName',
+			type: 'string'
+		}, {
+			name: 'ProductSKU',
+			type: 'String'
+		}, {
+			name: 'CustomerName',
+			type: 'String'
+		}, {
+			name: 'ProductRating',
+			type: 'String'
+		}, {
+			name: 'ProductComment',
+			type: 'String'
+		}, {
+//			name: 'ProductHelpful',
+//			type: 'String'
+//		}, {
+//			name: 'ProductHelpfulNo',
+//			type: 'String'
+//		}, {
+			name: 'ProductReviewDate',
+			type: 'String'
+		}, {
+			name: 'Disapprove',
+			type: 'String'
+		}, {
+			name: 'Action',
+			type: 'Action'
+		}],
+		root: "ReviewList",
+		record: "Review",
+		id: 'ReviewID',
+		url: url
+	};
+	
+	var prorating = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+		var prorating = '';
+	
+		prorating = '<div class="text-center action-icons"><i class="fa fa-star text-success"></i> <i class="fa fa-star text-success"></i> <i class="fa fa-star text-success"></i> <i class="fa fa-star-half-empty text-success"></i> <i class="fa fa-star-o text-success"></i></div>'
+	
+		return prorating;
+	}
+
+	var disapprovelink = function (row, columnfield, value) {
+		 if (value == 'Inactive') {
+			return '<div class="text-center action-icons text-danger" style="font-size:18px"><i class="fa fa-thumbs-o-down"></i></div>';
+		}
+		else {
+			return '<div class="text-center action-icons text-success" style="font-size:18px"><i class="fa fa-thumbs-o-up"></i></div>';
+		}
+	}		
+	
+	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+		var actionLink = '';
+	
+		actionLink = '<div class="text-center action-icons"><a onclick="$(\'#window\').jqxWindow(\'open\');" href="javascript:void(0)" id="showWindowButton" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+	
+		return actionLink;
+	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	// initialize jqxGrid
+
+
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+			width: '100%',
+			//height: '100%',
+			source: dataAdapter,                
+			pageable: true,
+			autoheight: true,
+			sortable: true,
+			altrows: true,
+			enabletooltips: true,
+			editable: false,
+			showfilterrow: true,
+			filterable: true,
+			columnsheight: 50,
+			rowsheight: 50,
+			selectionmode: 'multiplecellsadvanced',
+			columns: [{
+				text: 'Product Name',
+				datafield: 'ProductName',
+				width: '20%',
+				minwidth: '170'
+			}, {
+				text: 'SKU',
+				datafield: 'ProductSKU',
+				width: '8%',
+				minwidth: '100'
+			}, {
+				text: 'Customer Name',
+				datafield: 'CustomerName',
+				width: '18%',
+				minwidth: '150'
+			}, {
+				text: 'Rating',
+				datafield: 'ProductRating',
+				width: '8%',
+				minwidth: '100',
+				cellsrenderer: prorating
+			}, {
+				text: 'Comment',
+				datafield: 'ProductComment',
+				width: '21%',
+				minwidth: '220'
+			}, {
+//				text: 'Helpful',
+//				datafield: 'ProductHelpful',
+//				width: '6%',
+//				align: 'center',
+//				cellsalign: 'center',
+//				minwidth: '60'
+//			}, {
+//				text: 'Helpful No',
+//				datafield: 'ProductHelpfulNo',
+//				width: '7%',
+//				minwidth: '80',
+//				cellsalign: 'center',
+//				align: 'center'
+//			}, {
+				text: 'Review Date',
+				datafield: 'ProductReviewDate',
+				width: '10%',
+				minwidth: '120'
+			}, {
+				text: 'Disapprove',
+				datafield: 'Disapprove',
+				width: '9%',
+				minwidth: '90',
+				filtertype: 'checkedlist',
+				cellsrenderer: disapprovelink
+			}, {
+				text: 'Action',
+				datafield: 'Action',
+				width: '6%',
+				minwidth: '70',
+				filterable: false,
+				cellsrenderer: actionlink
+			}],
+		});
+		
+		
+	basicDemo.init();	
+});
+</script>

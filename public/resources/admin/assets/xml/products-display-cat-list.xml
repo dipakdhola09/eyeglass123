@@ -1,0 +1,153 @@
+﻿<ProductsDisplayProductList>
+  <ProductsDisplayProduct OrderID="10249">
+    <ProductsDisplayID>1</ProductsDisplayID>
+	<ProductsDisplayProductName>Lorem Ipsum</ProductsDisplayProductName>
+   	<ProductsDisplayPackageType>Unit</ProductsDisplayPackageType>
+    <ProductsDisplayQty>10</ProductsDisplayQty>
+    <ProductsDisplayCost>100</ProductsDisplayCost>
+    <ProductsDisplaySKU>ACB-01</ProductsDisplaySKU>
+    <ProductsDisplayRoomNumber>01</ProductsDisplayRoomNumber>
+    <ProductsDisplayAisleNumber>03</ProductsDisplayAisleNumber>
+    <ProductsDisplayRack>05</ProductsDisplayRack>
+    <ProductsDisplayShelf>07</ProductsDisplayShelf>
+	<ProductsDisplayComment>Lorem Ipsum</ProductsDisplayComment>
+    <ProductsDisplayNumberProduct>10</ProductsDisplayNumberProduct>
+	<ProductsDisplayAction></ProductsDisplayAction>
+  </ProductsDisplayProduct>
+  <ProductsDisplayProduct OrderID="10250">
+    <ProductsDisplayID>1</ProductsDisplayID>
+	<ProductsDisplayProductName>Ipsum Lorem</ProductsDisplayProductName>
+   	<ProductsDisplayPackageType>Box</ProductsDisplayPackageType>
+    <ProductsDisplayQty>20</ProductsDisplayQty>
+    <ProductsDisplayCost>200</ProductsDisplayCost>
+    <ProductsDisplaySKU>ADC-04</ProductsDisplaySKU>
+    <ProductsDisplayRoomNumber>02</ProductsDisplayRoomNumber>
+    <ProductsDisplayAisleNumber>04</ProductsDisplayAisleNumber>
+    <ProductsDisplayRack>05</ProductsDisplayRack>
+    <ProductsDisplayShelf>01</ProductsDisplayShelf>
+	<ProductsDisplayComment>Lorem Ipsum</ProductsDisplayComment>
+    <ProductsDisplayNumberProduct>20</ProductsDisplayNumberProduct>
+	<ProductsDisplayAction></ProductsDisplayAction>
+  </ProductsDisplayProduct>
+  <ProductsDisplayProduct OrderID="10350">
+    <ProductsDisplayID>1</ProductsDisplayID>
+	<ProductsDisplayProductName>Lorem</ProductsDisplayProductName>
+   	<ProductsDisplayPackageType>Unit</ProductsDisplayPackageType>
+    <ProductsDisplayQty>30</ProductsDisplayQty>
+    <ProductsDisplayCost>300</ProductsDisplayCost>
+    <ProductsDisplaySKU>ABC-02</ProductsDisplaySKU>
+    <ProductsDisplayRoomNumber>04</ProductsDisplayRoomNumber>
+    <ProductsDisplayAisleNumber>09</ProductsDisplayAisleNumber>
+    <ProductsDisplayRack>08</ProductsDisplayRack>
+    <ProductsDisplayShelf>04</ProductsDisplayShelf>
+	<ProductsDisplayComment>Lorem Ipsum</ProductsDisplayComment>
+    <ProductsDisplayNumberProduct>30</ProductsDisplayNumberProduct>
+	<ProductsDisplayAction></ProductsDisplayAction>
+  </ProductsDisplayProduct>
+  <ProductsDisplayProduct OrderID="10351">
+    <ProductsDisplayID>1</ProductsDisplayID>
+	<ProductsDisplayProductName>Ipsum</ProductsDisplayProductName>
+   	<ProductsDisplayPackageType>Unit</ProductsDisplayPackageType>
+    <ProductsDisplayQty>40</ProductsDisplayQty>
+    <ProductsDisplayCost>400</ProductsDisplayCost>
+    <ProductsDisplaySKU>ADC-02</ProductsDisplaySKU>
+    <ProductsDisplayRoomNumber>01</ProductsDisplayRoomNumber>
+    <ProductsDisplayAisleNumber>03</ProductsDisplayAisleNumber>
+    <ProductsDisplayRack>05</ProductsDisplayRack>
+    <ProductsDisplayShelf>07</ProductsDisplayShelf>
+	<ProductsDisplayComment>Lorem Ipsum</ProductsDisplayComment>
+    <ProductsDisplayNumberProduct>40</ProductsDisplayNumberProduct>
+	<ProductsDisplayAction></ProductsDisplayAction>
+  </ProductsDisplayProduct>
+  <ProductsDisplayProduct OrderID="10352">
+    <ProductsDisplayID>1</ProductsDisplayID>
+	<ProductsDisplayProductName>Lorem Ipsum</ProductsDisplayProductName>
+   	<ProductsDisplayPackageType>Unit</ProductsDisplayPackageType>
+    <ProductsDisplayQty>50</ProductsDisplayQty>
+    <ProductsDisplayCost>500</ProductsDisplayCost>
+    <ProductsDisplaySKU>ABB-01</ProductsDisplaySKU>
+    <ProductsDisplayRoomNumber>01</ProductsDisplayRoomNumber>
+    <ProductsDisplayAisleNumber>02</ProductsDisplayAisleNumber>
+    <ProductsDisplayRack>03</ProductsDisplayRack>
+    <ProductsDisplayShelf>04</ProductsDisplayShelf>
+	<ProductsDisplayComment>Lorem Ipsum</ProductsDisplayComment>
+    <ProductsDisplayNumberProduct>50</ProductsDisplayNumberProduct>
+	<ProductsDisplayAction></ProductsDisplayAction>
+  </ProductsDisplayProduct>
+  <ProductsDisplayProduct OrderID="10353">
+    <ProductsDisplayID>1</ProductsDisplayID>
+	<ProductsDisplayProductName>Ipsum Lorem</ProductsDisplayProductName>
+   	<ProductsDisplayPackageType>Unit</ProductsDisplayPackageType>
+    <ProductsDisplayQty>10</ProductsDisplayQty>
+    <ProductsDisplayCost>100</ProductsDisplayCost>
+    <ProductsDisplaySKU>ABA-01</ProductsDisplaySKU>
+    <ProductsDisplayRoomNumber>01</ProductsDisplayRoomNumber>
+    <ProductsDisplayAisleNumber>03</ProductsDisplayAisleNumber>
+    <ProductsDisplayRack>05</ProductsDisplayRack>
+    <ProductsDisplayShelf>07</ProductsDisplayShelf>
+	<ProductsDisplayComment>Lorem Ipsum</ProductsDisplayComment>
+    <ProductsDisplayNumberProduct>10</ProductsDisplayNumberProduct>
+	<ProductsDisplayAction></ProductsDisplayAction>
+  </ProductsDisplayProduct>
+  <ProductsDisplayProduct OrderID="10355">
+    <ProductsDisplayID>1</ProductsDisplayID>
+	<ProductsDisplayProductName>LoremIpsum</ProductsDisplayProductName>
+   	<ProductsDisplayPackageType>Unit</ProductsDisplayPackageType>
+    <ProductsDisplayQty>20</ProductsDisplayQty>
+    <ProductsDisplayCost>200</ProductsDisplayCost>
+    <ProductsDisplaySKU>ABC-01</ProductsDisplaySKU>
+    <ProductsDisplayRoomNumber>01</ProductsDisplayRoomNumber>
+    <ProductsDisplayAisleNumber>03</ProductsDisplayAisleNumber>
+    <ProductsDisplayRack>05</ProductsDisplayRack>
+    <ProductsDisplayShelf>07</ProductsDisplayShelf>
+	<ProductsDisplayComment>Lorem Ipsum</ProductsDisplayComment>
+    <ProductsDisplayNumberProduct>20</ProductsDisplayNumberProduct>
+	<ProductsDisplayAction></ProductsDisplayAction>
+  </ProductsDisplayProduct>
+  <ProductsDisplayProduct OrderID="10356">
+    <ProductsDisplayID>1</ProductsDisplayID>
+	<ProductsDisplayProductName>Lorem Ipsum</ProductsDisplayProductName>
+   	<ProductsDisplayPackageType>Unit</ProductsDisplayPackageType>
+    <ProductsDisplayQty>10</ProductsDisplayQty>
+    <ProductsDisplayCost>200</ProductsDisplayCost>
+    <ProductsDisplaySKU>ABC-01</ProductsDisplaySKU>
+    <ProductsDisplayRoomNumber>01</ProductsDisplayRoomNumber>
+    <ProductsDisplayAisleNumber>03</ProductsDisplayAisleNumber>
+    <ProductsDisplayRack>05</ProductsDisplayRack>
+    <ProductsDisplayShelf>07</ProductsDisplayShelf>
+	<ProductsDisplayComment>Lorem Ipsum</ProductsDisplayComment>
+    <ProductsDisplayNumberProduct>10</ProductsDisplayNumberProduct>
+	<ProductsDisplayAction></ProductsDisplayAction>
+  </ProductsDisplayProduct>
+  <ProductsDisplayProduct OrderID="10357">
+    <ProductsDisplayID>1</ProductsDisplayID>
+	<ProductsDisplayProductName>Ipsum</ProductsDisplayProductName>
+   	<ProductsDisplayPackageType>Unit</ProductsDisplayPackageType>
+    <ProductsDisplayQty>10</ProductsDisplayQty>
+    <ProductsDisplayCost>200</ProductsDisplayCost>
+    <ProductsDisplaySKU>ABC-01</ProductsDisplaySKU>
+    <ProductsDisplayRoomNumber>01</ProductsDisplayRoomNumber>
+    <ProductsDisplayAisleNumber>03</ProductsDisplayAisleNumber>
+    <ProductsDisplayRack>05</ProductsDisplayRack>
+    <ProductsDisplayShelf>07</ProductsDisplayShelf>
+	<ProductsDisplayComment>Lorem Ipsum</ProductsDisplayComment>
+    <ProductsDisplayNumberProduct>10</ProductsDisplayNumberProduct>
+	<ProductsDisplayAction></ProductsDisplayAction>
+  </ProductsDisplayProduct>
+  <ProductsDisplayProduct OrderID="10453">
+    <ProductsDisplayID>2</ProductsDisplayID>
+	<ProductsDisplayProductName>Lorem Ipsum</ProductsDisplayProductName>
+   	<ProductsDisplayPackageType>Unit</ProductsDisplayPackageType>
+    <ProductsDisplayQty>120</ProductsDisplayQty>
+    <ProductsDisplayCost>200</ProductsDisplayCost>
+    <ProductsDisplaySKU>ABC-01</ProductsDisplaySKU>
+    <ProductsDisplayRoomNumber>01</ProductsDisplayRoomNumber>
+    <ProductsDisplayAisleNumber>03</ProductsDisplayAisleNumber>
+    <ProductsDisplayRack>05</ProductsDisplayRack>
+    <ProductsDisplayShelf>07</ProductsDisplayShelf>
+	<ProductsDisplayComment>Lorem Ipsum</ProductsDisplayComment>
+    <ProductsDisplayNumberProduct>120</ProductsDisplayNumberProduct>
+	<ProductsDisplayAction></ProductsDisplayAction>
+  </ProductsDisplayProduct>
+  
+</ProductsDisplayProductList>

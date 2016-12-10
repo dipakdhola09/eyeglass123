@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<CreditCardList>
+	<Credit CreditCardListID="1">
+		<ProductSelect></ProductSelect>
+		<CreditCardType>Lorem Ipsum</CreditCardType>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Active</Status>
+		<Action></Action>
+	</Credit>
+<Credit CreditCardListID="2">
+		<ProductSelect></ProductSelect>
+		<CreditCardType>Lorem Ipsum</CreditCardType>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Inactive</Status>
+		<Action></Action>
+	</Credit>
+	<Credit CreditCardListID="3">
+		<ProductSelect></ProductSelect>
+		<CreditCardType>Lorem Ipsum</CreditCardType>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Active</Status>
+		<Action></Action>
+	</Credit>	
+	<Credit CreditCardListID="4">
+		<ProductSelect></ProductSelect>
+		<CreditCardType>Lorem Ipsum</CreditCardType>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Inactive</Status>
+		<Action></Action>
+	</Credit>	
+	<Credit CreditCardListID="5">
+		<ProductSelect></ProductSelect>
+		<CreditCardType>Lorem Ipsum</CreditCardType>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Active</Status>
+		<Action></Action>
+	</Credit>	
+</CreditCardList>
+
+

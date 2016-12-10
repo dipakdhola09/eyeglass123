@@ -1,0 +1,223 @@
+<?xml version="1.0"?>
+<CustomersList>
+	<CustomerList CustomerListID="1">
+		<Email>abc@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>11</Ordersqty>
+		<OrdersTotal>$168.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="2">
+		<Email>def@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>4</Ordersqty>
+		<OrdersTotal>$208.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="3">
+		<Email>ghi@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>1</Reviews>
+		<Ordersqty>3</Ordersqty>
+		<OrdersTotal>$618.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Inactive</Status>
+		<IsRegistered>Guest</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="4">
+		<Email>jkl@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>1</Ordersqty>
+		<OrdersTotal>$168.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="5">
+		<Email>mno@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>1</Ordersqty>
+		<OrdersTotal>$114.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="6">
+		<Email>abc@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>11</Ordersqty>
+		<OrdersTotal>$168.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="7">
+		<Email>def@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>4</Ordersqty>
+		<OrdersTotal>$208.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="8">
+		<Email>ghi@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>1</Reviews>
+		<Ordersqty>3</Ordersqty>
+		<OrdersTotal>$618.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Inactive</Status>
+		<IsRegistered>Guest</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="9">
+		<Email>jkl@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>1</Ordersqty>
+		<OrdersTotal>$168.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="10">
+		<Email>mno@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>1</Ordersqty>
+		<OrdersTotal>$114.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="11">
+		<Email>abc@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>11</Ordersqty>
+		<OrdersTotal>$168.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="12">
+		<Email>def@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>4</Ordersqty>
+		<OrdersTotal>$208.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="13">
+		<Email>ghi@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>1</Reviews>
+		<Ordersqty>3</Ordersqty>
+		<OrdersTotal>$618.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Inactive</Status>
+		<IsRegistered>Guest</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="14">
+		<Email>jkl@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>1</Ordersqty>
+		<OrdersTotal>$168.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="15">
+		<Email>mno@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>1</Ordersqty>
+		<OrdersTotal>$114.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="16">
+		<Email>abc@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>11</Ordersqty>
+		<OrdersTotal>$168.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="17">
+		<Email>def@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>4</Ordersqty>
+		<OrdersTotal>$208.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="18">
+		<Email>ghi@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>1</Reviews>
+		<Ordersqty>3</Ordersqty>
+		<OrdersTotal>$618.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Inactive</Status>
+		<IsRegistered>Guest</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="19">
+		<Email>jkl@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>1</Ordersqty>
+		<OrdersTotal>$168.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+	<CustomerList CustomerListID="20">
+		<Email>mno@xyz.com</Email>
+		<CustomerName>Lorem Ipsum</CustomerName>
+		<Reviews>0</Reviews>
+		<Ordersqty>1</Ordersqty>
+		<OrdersTotal>$114.00</OrdersTotal>
+		<LastOrderDate>-</LastOrderDate>
+		<Status>Active</Status>
+		<IsRegistered>Registered</IsRegistered>
+		<Action></Action>
+	</CustomerList>
+</CustomersList>

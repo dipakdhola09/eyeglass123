@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TestimonialManagement>
+	<Testimonial TestimonialID="1">
+		<Name>Lorem Ipsum</Name>
+		<ProductRating>3.5</ProductRating>
+		<Comments>Lorem Ipsum is simply dummy text</Comments>
+		<Date>Feb 21, 2016</Date>
+		<Status>Active</Status>
+	</Testimonial>
+	<Testimonial TestimonialID="2">
+		<Name>Lorem Ipsum</Name>
+		<ProductRating>3.5</ProductRating>
+		<Comments>Lorem Ipsum is simply dummy text</Comments>
+		<Date>Feb 21, 2016</Date>
+		<Status>Inactive</Status>
+	</Testimonial>
+</TestimonialManagement>
+
+
+
+
+
+
+
+
+
+
+

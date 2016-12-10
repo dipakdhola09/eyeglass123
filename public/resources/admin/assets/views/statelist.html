@@ -1,0 +1,127 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-6">
+				<h4 class="page-title">State List</h4>
+			</div>
+			<div class="col-xs-12 col-sm-6 p-r-0  text-right"> <a class="btn btn-primary" href="add-product.html"><i class="fa fa-plus"></i> Add State</a></div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20 m-t-20">
+				<div class="card-box">
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "assets/xml/StateList.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'StateName',
+			type: 'String'
+		}, {
+			name: 'CountryName',
+			type: 'String'
+		}, {
+			name: 'Abbreviation',
+			type: 'String'
+		}, {
+			name: 'DisplayOrder',
+			type: 'String'
+		}, {
+			name: 'CreateOn',
+			type: 'String'
+		}, {
+			name: 'Action',
+			type: 'string'
+		}],
+		root: "StateList",
+		record: "State",
+		id: 'StateID',
+		url: url
+	};
+	
+	//Action Link
+	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    return  '<div class="text-center action-icons" style=" margin-top:5px;"><a href="#" class="on-default edit-row text-default" title="Edit Price"><i class="fa fa-pencil"></i></a> <a href="#" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	
+	// initialize jqxGrid
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: false,
+		editable: false,
+		columnsheight: 70,
+		autorowheight: true,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'singlerow',
+		columns: [{
+			text: 'State Name',
+			datafield: 'StateName',
+			editable: false,
+			width: '26.4%',
+			minwidth: '80'
+		},{
+			text: 'Country Name',
+			datafield: 'CountryName',
+			editable: false,
+			width: '20%',
+			minwidth: '120',
+			cellsalign: 'left'
+		},{
+			text: 'Abbreviation',
+			datafield: 'Abbreviation',
+			editable: false,
+			width: '15%',
+			minwidth: '120',
+			cellsalign: 'left'
+		},{
+			text: 'Display Order',
+			datafield: 'DisplayOrder',
+			width: '10%',
+			minwidth: '110',
+			editable: true,
+		},{
+			text: 'Create On',
+			datafield: 'CreateOn',
+			width: '20%',
+			minwidth: '110',
+			editable: true,
+		},{
+			text: 'Action',
+			datafield: 'Action',
+			width: '8.4%',
+			minwidth: '60',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+	
+	basicDemo.init();
+});
+</script>

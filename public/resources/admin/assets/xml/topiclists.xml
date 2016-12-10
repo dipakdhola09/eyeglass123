@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<TopicLists>
+	<TopicList TopicListID="1">
+		<TopicName>Warranty</TopicName>
+		<SEName>Warranty</SEName>
+		<Title>Warranty</Title>
+		<CreatedOn>-</CreatedOn>
+		<LastUpdated>Sep 03, 2016, 12:10 pm</LastUpdated>
+		<Status><![CDATA[<div class="switch round tiny"><input id="exampleCheckboxSwitch" type="checkbox"><label for="exampleCheckboxSwitch"></label></div>]]></Status>
+		<Action></Action>
+	</TopicList>
+</TopicLists>

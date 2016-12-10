@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<BuyGetOffList>
+	<BuyGetList BuyGetID="1">
+		<OfferName>Buy 2 Get 1 Free</OfferName>
+		<StarDate>2016-05-17 00:00:00</StarDate>
+		<EndDate>2016-05-19 00:00:00</EndDate>
+		<Buy>2</Buy>
+		<Get>1</Get>
+		<GetType>Free</GetType>
+		<Action></Action>
+	</BuyGetList>
+</BuyGetOffList>

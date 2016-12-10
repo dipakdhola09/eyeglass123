@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssembleProductList>
+  <AssembleProduct AssembleProductID="1">
+    <AssembleImage>camera_icon</AssembleImage>
+    <AssembleName>Lorem Ipsum</AssembleName>
+    <AssembleSKU>ABC-01</AssembleSKU>
+    <AssembleQty>4</AssembleQty>
+    <AssembleStatus>Active</AssembleStatus>
+  </AssembleProduct>
+  <AssembleProduct AssembleProductID="2">
+    <AssembleImage>camera_icon</AssembleImage>
+    <AssembleName>Lorem Ipsum Lorem</AssembleName>
+    <AssembleSKU>ABC-02</AssembleSKU>
+    <AssembleQty>1</AssembleQty>
+    <AssembleStatus>Active</AssembleStatus>
+  </AssembleProduct>
+  <AssembleProduct AssembleProductID="3">
+    <AssembleImage>camera_icon</AssembleImage>
+    <AssembleName>Lorem Ipsum Ipsum</AssembleName>
+    <AssembleSKU>ABC-03</AssembleSKU>
+    <AssembleQty>3</AssembleQty>
+    <AssembleStatus>Active</AssembleStatus>
+  </AssembleProduct>
+  <AssembleProduct AssembleProductID="4">
+    <AssembleImage>camera_icon</AssembleImage>
+    <AssembleName>Ipsum Lorem</AssembleName>
+    <AssembleSKU>ABC-04</AssembleSKU>
+    <AssembleQty>1</AssembleQty>
+    <AssembleStatus>Inactive</AssembleStatus>
+  </AssembleProduct>
+  <AssembleProduct AssembleProductID="5">
+    <AssembleImage>camera_icon</AssembleImage>
+    <AssembleName>Lorem Ipsum</AssembleName>
+    <AssembleSKU>ABC-05</AssembleSKU>
+    <AssembleQty>2</AssembleQty>
+    <AssembleStatus>Active</AssembleStatus>
+  </AssembleProduct>
+</AssembleProductList>

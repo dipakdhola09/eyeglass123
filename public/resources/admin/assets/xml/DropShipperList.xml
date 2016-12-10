@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DropShipperList>
+  <DropShipper DropShipperID="1">
+    <DropShipperName>DropShipper 1</DropShipperName>
+	<DropShipperLocation>Lorem Ipsum</DropShipperLocation>
+	<DropShipperDate>Jan 11, 2016</DropShipperDate>
+    <DropShipperTotalStock>200</DropShipperTotalStock>
+  </DropShipper>
+  <DropShipper DropShipperID="2">
+    <DropShipperName>DropShipper 2</DropShipperName>
+	<DropShipperLocation>Lorem</DropShipperLocation>
+	<DropShipperDate>Jan 21, 2016</DropShipperDate>
+    <DropShipperTotalStock>120</DropShipperTotalStock>
+  </DropShipper>
+</DropShipperList>
+

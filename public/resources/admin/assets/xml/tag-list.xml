@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<TagList>
+  <List TagListID="1">
+    <Id>1</Id>
+    <TagLanguage>English (English)</TagLanguage>
+    <TagName>Lorem Ipsum</TagName>
+    <TagProducts>2</TagProducts>
+    <Status>active</Status>
+    <TagEdit> </TagEdit>
+  </List>
+  <List TagListID="2">
+    <Id>2</Id>
+    <TagLanguage>English (English)</TagLanguage>
+    <TagName>Lorem Ipsum</TagName>
+    <TagProducts>5</TagProducts>
+    <Status>Inactive</Status>
+    <TagEdit> </TagEdit>
+  </List>
+   <List TagListID="3">
+    <Id>3</Id>
+    <TagLanguage>English (English)</TagLanguage>
+    <TagName>Lorem Ipsum</TagName>
+    <TagProducts>8</TagProducts>
+    <Status>Inactive</Status>
+    <TagEdit> </TagEdit>
+  </List>
+</TagList>
+
+

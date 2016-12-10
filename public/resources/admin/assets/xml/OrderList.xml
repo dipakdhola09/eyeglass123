@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TemplateList>
+	<Template TemplateID="1">
+		<OrderSelect></OrderSelect>
+		<OrderDateTime>Jan 21, 2016 00:00:00 AM</OrderDateTime>
+		<OrderChannelSite>masterstore</OrderChannelSite>
+		
+		<OrderID>0001</OrderID>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<OrderQTY>5</OrderQTY>
+		<OrderSKU>ABCD-EF51-000</OrderSKU>
+		<OrderRefCode>104-8149787-4233840</OrderRefCode>
+		<OrderPersonName>Lorem Ipsum</OrderPersonName>
+		<OrderPersonAddress><![CDATA[ 4400 N. Lorem Ipsum ST.,<br />  E-100,<br /> Midland, Texas 00000,<br /> United States,<br />  123-456-7890 ]]></OrderPersonAddress>
+		<OrdershippingStatus>Free Shipping</OrdershippingStatus>
+		<OrderedPersonIP>100.0.100.11</OrderedPersonIP>
+		<OrderExpDel>02-20-2016</OrderExpDel>
+		
+		<OrderShippingAddress><![CDATA[ 4400 N. Lorem Ipsum ST.,<br />  E-100,<br /> Midland, Texas 00000,<br /> United States,<br />  123-456-7890 ]]></OrderShippingAddress>
+		<OrderComment>We ship via priority mail. It takes 1-3 business days.</OrderComment>
+		<PaymentType>Amazon</PaymentType>
+		
+		<OrderTotal>120</OrderTotal>
+
+		<Orderstatus>Authorized</Orderstatus>
+		<OrderType>New</OrderType>
+		
+		<Action>Action</Action>
+	</Template>
+</TemplateList>

@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<IndevtoryPOList>
+	<IndevtoryPO IndevtoryPOID="1">
+		<PONumber>26</PONumber>
+		<Brand>ABC</Brand>
+		<POQty>10</POQty>
+		<CreatedDate>2016-04-15 13:59:27</CreatedDate>
+		<CreatedBy>Client</CreatedBy>
+		<DownloadPO></DownloadPO>
+	</IndevtoryPO>
+	<IndevtoryPO IndevtoryPOID="2">
+		<PONumber>26</PONumber>
+		<Brand>ABC</Brand>
+		<POQty>10</POQty>
+		<CreatedDate>2016-04-15 13:59:27</CreatedDate>
+		<CreatedBy>Client</CreatedBy>
+		<DownloadPO></DownloadPO>
+	</IndevtoryPO>
+	<IndevtoryPO IndevtoryPOID="3">
+		<PONumber>26</PONumber>
+		<Brand>ABC</Brand>
+		<POQty>10</POQty>
+		<CreatedDate>2016-04-15 13:59:27</CreatedDate>
+		<CreatedBy>Client</CreatedBy>
+		<DownloadPO></DownloadPO>
+	</IndevtoryPO>
+	<IndevtoryPO IndevtoryPOID="4">
+		<PONumber>26</PONumber>
+		<Brand>ABC</Brand>
+		<POQty>10</POQty>
+		<CreatedDate>2016-04-15 13:59:27</CreatedDate>
+		<CreatedBy>Client</CreatedBy>
+		<DownloadPO></DownloadPO>
+	</IndevtoryPO>
+	<IndevtoryPO IndevtoryPOID="5">
+		<PONumber>26</PONumber>
+		<Brand>ABC</Brand>
+		<POQty>10</POQty>
+		<CreatedDate>2016-04-15 13:59:27</CreatedDate>
+		<CreatedBy>Client</CreatedBy>
+		<DownloadPO></DownloadPO>
+	</IndevtoryPO>
+	<IndevtoryPO IndevtoryPOID="6">
+		<PONumber>26</PONumber>
+		<Brand>ABC</Brand>
+		<POQty>10</POQty>
+		<CreatedDate>2016-04-15 13:59:27</CreatedDate>
+		<CreatedBy>Client</CreatedBy>
+		<DownloadPO></DownloadPO>
+	</IndevtoryPO>
+	<IndevtoryPO IndevtoryPOID="7">
+		<PONumber>26</PONumber>
+		<Brand>ABC</Brand>
+		<POQty>10</POQty>
+		<CreatedDate>2016-04-15 13:59:27</CreatedDate>
+		<CreatedBy>Client</CreatedBy>
+		<DownloadPO></DownloadPO>
+	</IndevtoryPO>
+	<IndevtoryPO IndevtoryPOID="8">
+		<PONumber>26</PONumber>
+		<Brand>ABC</Brand>
+		<POQty>10</POQty>
+		<CreatedDate>2016-04-15 13:59:27</CreatedDate>
+		<CreatedBy>Client</CreatedBy>
+		<DownloadPO></DownloadPO>
+	</IndevtoryPO>
+	<IndevtoryPO IndevtoryPOID="9">
+		<PONumber>26</PONumber>
+		<Brand>ABC</Brand>
+		<POQty>10</POQty>
+		<CreatedDate>2016-04-15 13:59:27</CreatedDate>
+		<CreatedBy>Client</CreatedBy>
+		<DownloadPO></DownloadPO>
+	</IndevtoryPO>
+	<IndevtoryPO IndevtoryPOID="10">
+		<PONumber>26</PONumber>
+		<Brand>ABC</Brand>
+		<POQty>10</POQty>
+		<CreatedDate>2016-04-15 13:59:27</CreatedDate>
+		<CreatedBy>Client</CreatedBy>
+		<DownloadPO></DownloadPO>
+	</IndevtoryPO>
+</IndevtoryPOList>

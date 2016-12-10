@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TemplateList>
+	<Template TemplateID="1">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-1</ProductSKU>
+		<Inventory>120</Inventory>
+		<Price>100.00</Price>
+		<SalePrice>99.79</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Feb 09, 2016</UpdatedOnBy>
+		<ProductRating></ProductRating>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Edit>Action</Edit>
+	</Template>
+	<Template TemplateID="2">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-2</ProductSKU>
+		<Inventory>120</Inventory>
+		<Price>110.00</Price>
+		<SalePrice>105</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Feb 09, 2016</UpdatedOnBy>
+		<ProductRating></ProductRating>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Edit>Action</Edit>
+	</Template>
+	<Template TemplateID="3">
+		<ProductSelect></ProductSelect>
+		<ProductImage></ProductImage>
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABCD-3</ProductSKU>
+		<Inventory>120</Inventory>
+		<Price>200.00</Price>
+		<SalePrice>150</SalePrice>
+		<StoreName>MasterAdmin</StoreName>
+		<UpdatedOnBy>Feb 09, 2016</UpdatedOnBy>
+		<ProductRating></ProductRating>
+		<ProductReviewsViews>Product Reviews/Views</ProductReviewsViews>
+		<Edit>Action</Edit>
+	</Template>
+</TemplateList>

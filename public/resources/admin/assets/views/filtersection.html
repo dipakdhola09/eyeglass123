@@ -1,0 +1,142 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<label class="page-title">Filter Section</label>
+			</div>
+			<div class="col-xs-12 col-sm-7">
+				<div class="pull-right col-sm-12 text-right">
+					<a class="btn btn-primary" href="add-product.html"><i class="fa fa-plus"></i> Add Product</a>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20">
+				<div class="card-box grid-structure">
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "assets/xml/filtersection.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+	    datatype: "xml",
+	    datafields: [{
+	        name: 'Image',
+	        type: 'String'
+	    }, {
+	        name: 'FilterName',
+	        type: 'string'
+	    }, {
+	        name: 'Manufacture',
+	        type: 'string'
+	    }, {
+	        name: 'FilterSection',
+	        type: 'String'
+	    }, {
+	        name: 'Status',
+	        type: 'string'
+	    }, {
+	        name: 'Action',
+	        type: 'string'
+	    }],
+	    root: "FilterSectionList",
+	    record: "FilterSection",
+	    id: 'FilterSectionID',
+	    url: url
+	};
+
+	var proimg = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    return '<div class="text-center action-icons" style="margin-top:5px;"><img width="60" src="img/camera_icon.png"></div>'
+	}
+
+	var Status = function(rrow, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    if (value == 'Inactive') {
+	        return '<div class="text-center action-icons text-danger" style="margin-top:13px; font-size:18px"><i class="fa fa-thumbs-o-down"></i></div>';
+	    } else {
+	        return '<div class="text-center action-icons text-success" style="margin-top:13px; font-size:18px"><i class="fa fa-thumbs-o-up"></i></div>';
+	    }
+	}
+
+	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    return  '<div class="text-center action-icons" style=" margin-top:13px;"><a href="edit-product.html" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" title=""><i class="fa  fa-eye"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+	}
+	
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+	    downloadComplete: function(data, status, xhr) {},
+	    loadComplete: function(data) {},
+	    loadError: function(xhr, status, error) {}
+	});
+	// initialize jqxGrid
+	$("#jqxgrid").jqxGrid(
+	    //$("#jqxgrid").jqxDataTable(
+	    {
+	        width: '100%',
+	        //height: '100%',
+	        source: dataAdapter,
+	        pageable: true,
+	        autoheight: true,
+	        sortable: true,
+	        altrows: true,
+	        enabletooltips: true,
+	        editable: true,
+	        columnsheight: 75,
+	        rowsheight: 75,
+			//autorowheight: true,
+	        showfilterrow: true,
+	        filterable: true,
+	        selectionmode: 'checkbox',
+	        columns: [{
+	                text: 'Image',
+	                datafield: 'Image',
+	                width: '10.8%',
+					minwidth: '70',
+	                editable: false,
+	                filterable: false,
+	                cellsrenderer: proimg
+	            }, {
+	                text: 'Filter Name',
+	                datafield: 'FilterName',
+	                editable: false,
+	                width: '25%',
+	                minwidth: '140'
+	            }, {
+	                text: 'Manufacture',
+	                datafield: 'Manufacture',
+	                editable: false,
+	                width: '25%',
+	                minwidth: '90',
+	            }, {
+	                text: 'FilterSection',
+	                datafield: 'FilterSection',
+	                editable: false,
+	                width: '20%',
+	            }, {
+	                text: 'Status',
+	                datafield: 'Status',
+	                width: '11.2%',
+	                minwidth: '50',
+	                editable: false,
+	                filterable: false,
+	                cellsrenderer: Status
+	            }, {
+	                text: 'Action',
+	                datafield: 'Action',
+	                width: '6%',
+	                minwidth: '40',
+	                editable: false,
+	                filterable: false,
+	                cellsrenderer: actionlink
+	            }
+	        ],
+	    });
+});
+</script>

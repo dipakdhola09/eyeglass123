@@ -1,0 +1,184 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title">Inventory PO List</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20 m-t-20">
+				<div class="card-box">
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var basicDemo = (function() {
+	//Adding event listeners	
+	function _addEventListeners() {
+		$('#showWindowButton').click(function() {
+			$('#window').jqxWindow('open');
+		});
+		$('#hideWindowButton').click(function() {
+			$('#window').jqxWindow('close');
+		});
+	};
+	
+	//Creating the demo window
+	function _createWindow() {
+		var jqxWidget = $('#jqxWidget');
+		var offset = jqxWidget.offset();
+		$('#window').jqxWindow({
+			position: 'center',
+			//showCollapseButton: true,
+			autoOpen:false,
+			isModal: true,
+			maxHeight: 600,
+			maxWidth: 700,
+			minHeight: 200,
+			minWidth: 200,
+			width: '100%',
+			resizable: false,
+			draggable: false,
+			
+			initContent: function() {
+				$('#window').jqxWindow('focus');
+			}
+		});
+	};
+	return {
+		config: {
+			dragArea: null
+		},
+		init: function() {
+			//Attaching event listeners
+			_addEventListeners();
+			//Adding jqxWindow
+			_createWindow();
+		}
+	};
+}());
+$(document).ready(function() {
+	var url = "assets/xml/indevtorypo.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'PONumber',
+			type: 'String'
+		}, {
+			name: 'Brand',
+			type: 'string'
+		}, {
+			name: 'POQty',
+			type: 'string'
+		}, {
+			name: 'CreatedDate',
+			type: 'String'
+		}, {
+			name: 'CreatedBy',
+			type: 'String'
+		}, {
+			name: 'DownloadPO',
+			type: 'string'
+		}],
+		root: "IndevtoryPOList",
+		record: "IndevtoryPO",
+		id: 'IndevtoryPOID',
+		url: url
+	};
+	
+	var numberrenderer = function (row, column, value) {
+		return '<div style="text-align: center; margin-top: 20px;">' + (1 + value) + '</div>';
+	}
+	
+	//Action Link
+	var actionlink = function(row, columnfield, value) {
+		var actionLink = '';
+	
+		actionLink = '<div class="text-center action-icons"><a href="#" class="on-default edit-row text-default"><i class="fa fa-download"></i></a></div>'
+	
+		return actionLink;
+	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	
+	// initialize jqxGrid
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: false,
+		editable: false,
+		columnsheight: 70,
+		autorowheight: true,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'singlerow',
+		columns: [{
+			text: 'Sr No.',
+			datafield: 'SrNo',
+			width: '4%',
+			minwidth: '60',
+			filterable: false,
+			columntype: 'number',
+			cellsrenderer: numberrenderer
+		},{
+			text: 'PO Number',
+			datafield: 'PONumber',
+			width: '22%',
+			minwidth: '60'
+		},{
+			text: 'Brand',
+			datafield: 'Brand',
+			editable: false,
+			width: '25%',
+			minwidth: '80'
+		},{
+			text: 'PO Qty',
+			datafield: 'POQty',
+			editable: false,
+			width: '15%',
+			minwidth: '120'
+		},{
+			text: 'Created Date',
+			datafield: 'CreatedDate',
+			editable: false,
+			width: '15%',
+			minwidth: '110'
+		},{
+			text: 'Created By',
+			datafield: 'CreatedBy',
+			width: '10.4%',
+			minwidth: '110',
+			editable: false
+		},{
+			text: 'Download PO',
+			datafield: 'DownloadPO',
+			width: '8.4%',
+			minwidth: '60',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+	
+	basicDemo.init();
+});
+</script>

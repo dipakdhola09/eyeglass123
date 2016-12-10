@@ -1,0 +1,193 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title">Customer Management</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-t-20 p-l-20 p-r-20 m-t-20 m-b-0">
+				<div class="col-sm-3 col-sm-push-7 text-right"><label>Show Customer:</label></div>
+				<div class="col-sm-2 col-sm-push-7">
+					<select class="form-control">
+						<option>All</option>
+						<option>Registered User</option>
+						<option>Guest User</option>
+					</select>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 block p-20">
+				<div class="card-box">
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "assets/xml/customerlist.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'Email',
+			type: 'String'
+		}, {
+			name: 'CustomerName',
+			type: 'string'
+		}, {
+			name: 'Reviews',
+			type: 'string'
+		}, {
+			name: 'Ordersqty',
+			type: 'String'
+		}, {
+			name: 'OrdersTotal',
+			type: 'String'
+		}, {
+			name: 'LastOrderDate',
+			type: 'String'
+		}, {
+			name: 'Status',
+			type: 'string'
+		}, {
+			name: 'IsRegistered',
+			type: 'string'
+		}, {
+			name: 'Action',
+			type: 'string'
+		}],
+		root: "CustomersList",
+		record: "CustomerList",
+		id: 'CustomerID',
+		url: url
+	};
+	
+	var numberrenderer = function (row, column, value) {
+		return '<div style="text-align: center; margin-top: 20px;">' + (1 + value) + '</div>';
+	}
+	
+	var Ordersqty = function(row, columnfield, value) {
+		value1 = $('#jqxgrid').jqxGrid('getrowdata', row).OrdersTotal;
+	    return '<div class="text-center action-icons" style="white-space:normal; margin-top:20px; margin-bottom:0px; line-height:20px;  text-align:center; margin-right:3px; overflow:hidden; text-overflow:ellipsis;"><span style="padding: 0 10px 0 0">' + value + '(<strong class="text-danger">' + value1+ '</strong>)' + '</span> </div>'
+	}
+	
+
+	var CustomerStatus = function(rrow, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    if (value == 'Inactive') {
+	        return '<div class="text-center action-icons text-danger" style="margin-top:5px; font-size:18px"><i class="fa fa-thumbs-o-down"></i></div>';
+	    } else {
+	        return '<div class="text-center action-icons text-success" style="margin-top:5px; font-size:18px"><i class="fa fa-thumbs-o-up"></i></div>';
+	    }
+	}
+	
+	var RegStatus = function(rrow, columnfield, value, defaulthtml, columnproperties, rowdata) {
+		if (value == 'Registered') {
+	        return '<div class="text-center action-icons text-success" style="margin-top:5px; font-size:18px"><i class="fa fa-user"></i></div>';
+	    } else {
+	        return '<div class="text-center action-icons text-danger" style="margin-top:5px; font-size:18px"><i class="fa fa-user"></i></div>';
+	    }
+	}
+	
+	//Action Link
+	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    return  '<div class="text-center action-icons" style=" margin-top:5px;"><a href="#" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" title=""><i class="fa fa-close text-danger"></i></a></div>'
+	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	
+	// initialize jqxGrid
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: false,
+		editable: false,
+		columnsheight: 70,
+		autorowheight: true,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'singlerow',
+		columns: [{
+			text: 'Sr No.',
+			datafield: 'SrNo',
+			width: '5%',
+			minwidth: '60',
+			filterable: false,
+			columntype: 'number',
+			cellsrenderer: numberrenderer
+		},{
+			text: 'Email',
+			datafield: 'Email',
+			width: '20%',
+			minwidth: '60'
+		},{
+			text: 'Customer Name',
+			datafield: 'CustomerName',
+			editable: false,
+			width: '20%',
+			minwidth: '80'
+		},{
+			text: 'Reviews',
+			datafield: 'Reviews',
+			editable: false,
+			width: '10%',
+			minwidth: '120',
+			cellsalign: 'center'
+		},{
+			text: 'Orders (Revenue)',
+			datafield: 'Ordersqty',
+			editable: false,
+			width: '12%',
+			minwidth: '110',
+			cellsrenderer: Ordersqty
+		},{
+			text: 'Last Order Date',
+			datafield: 'LastOrderDate',
+			width: '10%',
+			minwidth: '110',
+			editable: false,
+			cellsalign: 'center',
+		},{
+			text: 'Status',
+			datafield: 'Status',
+			width: '5%',
+			minwidth: '110',
+			editable: false,
+			cellsrenderer: CustomerStatus
+		},{
+			text: 'Is Registered',
+			datafield: 'IsRegistered',
+			width: '7%',
+			minwidth: '110',
+			editable: false,
+			cellsrenderer: RegStatus
+		},{
+			text: 'Action',
+			datafield: 'Action',
+			width: '8.4%',
+			minwidth: '60',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+	
+	basicDemo.init();
+});
+</script>

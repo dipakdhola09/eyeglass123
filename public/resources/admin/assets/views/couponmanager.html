@@ -1,0 +1,411 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<h4 class="page-title">Coupon Discount</h4>
+				<!--<ol class="breadcrumb">
+              <li><a href="dashboard.html">Home</a></li>
+              <li>Products</li>
+              <li class="active">Product List</li>
+            </ol>--> 
+			</div>
+			<div class="col-xs-12 col-sm-7">
+				<div class="pull-right col-sm-12" style="min-width:300px;">
+					<div class="col-sm-8 text-right">
+						<label>Store Name:</label>
+					</div>
+					<div class="col-sm-2">
+						<select class="form-control m-t-5 pull-left" style="width:100%;">
+							<option>Select</option>
+							<option value="" selected>Store 1</option>
+							<option value="">Store 2</option>
+							<option value="">Store 3</option>
+							<option value="">Store 4</option>
+						</select>
+					</div>
+					<div class="col-sm-2 p-r-0">
+						<select class="form-control m-t-5 pull-left" style="width:100%;" onchange="if (this.value) window.location.href=this.value;">
+							<option>Select</option>
+							<option value="products-list.html" selected>Web</option>
+							<option value="ebay-products-list.html">Ebay</option>
+							<option value="amazon-products-list.html">Amazon</option>
+							<option value="jet-products-list.html">Jet</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20 m-t-10">
+				<div class="card-box grid-structure">
+					<div class="col-md-12 p-b-10 text-right"> <a class="btn btn-primary" data-ui-sref="AddCouponDiscount" data-ui-sref-active="active"><i class="fa fa-plus"></i> Add Coupon Discount</a> </div>
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+						<div id="window" style="z-index:-1;">
+							<div id="windowHeader">
+								<div class="h4 p-10 m-0">Orders</div>
+							</div>
+							<div style="overflow: hidden;" id="windowContent">
+								<div id="jqxgrid1"></div>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var basicDemo = (function() {
+	//Adding event listeners	
+	function _addEventListeners() {
+		$('#showWindowButton').click(function() {
+			$('#window').jqxWindow('open');
+		});
+		$('#hideWindowButton').click(function() {
+			$('#window').jqxWindow('close');
+		});
+	};
+	
+	//Creating the demo window
+	function _createWindow() {
+		var jqxWidget = $('#jqxWidget');
+		var offset = jqxWidget.offset();
+		$('#window').jqxWindow({
+			position: 'center',
+			//showCollapseButton: true,
+			autoOpen:false,
+			isModal: true,
+			maxHeight: 600,
+			maxWidth: 700,
+			minHeight: 200,
+			minWidth: 200,
+			width: '100%',
+			resizable: false,
+			draggable: false,
+			
+			initContent: function() {
+				$('#window').jqxWindow('focus');
+			}
+		});
+	};
+	return {
+		config: {
+			dragArea: null
+		},
+		init: function() {
+			//Attaching event listeners
+			_addEventListeners();
+			//Adding jqxWindow
+			_createWindow();
+		}
+	};
+}());
+$(document).ready(function() {
+	var url = "assets/xml/CouponDiscount.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+//			name: 'ProductSelect',
+//			type: 'String'
+//		}, {
+			name: 'CouponCode',
+			type: 'String'
+		}, {
+			name: 'StoreName',
+			type: 'string'
+		}, {
+			name: 'CreatedOn',
+			type: 'String'
+		}, {
+			name: 'CreatDate',
+			type: 'String'
+		}, {
+			name: 'ExDate',
+			type: 'String'
+		}, {
+			name: 'DiscountP',
+			type: 'String'
+		},{
+			name: 'DiscountD',
+			type: 'string'
+		},{
+			name: 'Expires',
+			type: 'string'
+		},{
+			name: 'Order',
+			type: 'string'
+		}, {
+			name: 'Action',
+			type: 'string'
+		}],
+		root: "CouponDiscount",
+		record: "Coupon",
+		id: 'CouponDiscountID',
+		url: url
+	};
+	
+	var invent = function (row, columnfield, value){
+		var invent = '';
+		
+		invent = '<div class="text-center action-icons p-t-10"><a title="Edit Detail" onclick="$(\'#window\').jqxWindow(\'open\');" href="javascript:void(0)" id="showWindowButton">'+ value+'</a></div>'
+		
+		return invent;
+	}
+	
+	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+		var actionLink = '';
+	
+		actionLink = '<div class="text-center action-icons p-t-10"><a href="#" ><i class="fa fa-pencil"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+	
+		return actionLink;
+	}
+	
+	var updatebyon = function(row, columnfield, value) {
+		value1 = value;
+		value2 = $('#jqxgrid').jqxGrid('getrowdata', row).CreatedOn;
+		return '<div class="text-center" style="margin-top:10px">'+value1+'<br>'+value2+'</div>';
+	}
+	
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+
+	// initialize jqxGrid
+
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+			width: '100%',
+			//height: '100%',
+			source: dataAdapter,                
+			pageable: true,
+			autoheight: true,
+			sortable: true,
+			altrows: true,
+			enabletooltips: true,
+			editable: true,
+			columnsheight: 50,
+			rowsheight: 70,
+			showfilterrow: true,
+            filterable: true,
+			selectionmode: 'checkbox',
+			columns: [
+			/*{
+				text: '',
+				datafield: 'ProductSelect',
+				width: '3%',
+				minwidth: '30',
+				columntype:'checkbox',
+				filterable: false
+			}, */{
+				text: 'Coupon Code',
+				datafield: 'CouponCode',
+				editable: false,
+				width: '13%',
+				minwidth: '210'
+			},  {
+				text: 'Store Name',
+				datafield: 'StoreName',
+				editable: false,
+				width: '12%',
+				minwidth: '160'
+			}, {
+				text: 'Created By / On',
+				//datafield: 'CreatedOn',
+				datafield: 'CreatDate',
+				editable: false,
+				width: '13%',
+				minwidth: '160',
+				cellsrenderer: updatebyon
+			}, {
+				text: 'Ex Date', 
+				datafield: 'ExDate',
+				editable: false,
+				width: '10%',
+				minwidth: '80',
+			}, {
+				text: 'Discount %', 
+				datafield: 'DiscountP',
+				editable: false,
+				width: '10%',
+				minwidth: '80',
+			}, {
+				text: 'Discount $', 
+				datafield: 'DiscountD',
+				editable: false,
+				width: '10%',
+				minwidth: '80',
+			}, {
+				text: 'Expires', 
+				datafield: 'Expires',
+				editable: false,
+				width: '10%',
+				minwidth: '80',
+			}, {
+				text: 'Orders', 
+				datafield: 'Order',
+				editable: false,
+				width: '10%',
+				minwidth: '70',
+				cellsrenderer: invent
+			}, {
+				text: 'Action',
+				datafield: 'Action',
+				width: '9.944%',
+				minwidth: '80',
+				editable: false,
+				filterable: false,
+				cellsrenderer: actionlink
+			}],
+		});
+		
+		
+	var url = "assets/xml/OrderCoupon.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+//			name: 'ProductSelect',
+//			type: 'String'
+//		}, {
+			name: 'Orders',
+			type: 'String'
+		}, {
+			name: 'OrderDate',
+			type: 'string'
+		}, {
+			name: 'UsedBy',
+			type: 'String'
+		}, {
+			name: 'OrderSubtotal',
+			type: 'String'
+		}, {
+			name: 'DiscountAmount',
+			type: 'String'
+		}, {
+			name: 'OrderShippingCost',
+			type: 'String'
+		},{
+			name: 'Tax',
+			type: 'string'
+		},{
+			name: 'Total',
+
+		}],
+		root: "OrderCoupon",
+		record: "Order",
+		id: 'OrderCouponID',
+		url: url
+	};
+	
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	// initialize jqxGrid
+
+
+	$("#jqxgrid1").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+			width: '100%',
+			//height: '100%',
+			source: dataAdapter,                
+			pageable: true,
+			autoheight: true,
+			sortable: true,
+			altrows: true,
+			enabletooltips: true,
+			editable: true,
+			columnsheight: 70,
+			rowsheight: 50,
+			showfilterrow: true,
+            filterable: true,
+			//selectionmode: 'checkbox',
+			columns: [
+			/*{
+				text: '',
+				datafield: 'ProductSelect',
+				width: '3%',
+				minwidth: '30',
+				columntype:'checkbox',
+				filterable: false
+			}, */{
+				text: 'Order #',
+				datafield: 'Orders',
+				editable: false,
+				width: '15%',
+				minwidth: '70'
+			},  {
+				text: 'Order Date',
+				datafield: 'OrderDate',
+				editable: false,
+				width: '15%',
+				minwidth: '70'
+			}, {
+				text: 'Customer Name',
+				datafield: 'UsedBy',
+				editable: false,
+				width: '15%',
+				minwidth: '70',
+				renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:20px; margin-left: 5px;">Customer<br>Name</div>';
+			},
+			}, {
+				text: 'Order Subtotal', 
+				datafield: 'OrderSubtotal',
+				editable: false,
+				width: '15%',
+				minwidth: '70',
+				renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:20px; margin-left: 5px;">Order<br>Subtotal</div>';
+			},
+			}, {
+				text: 'Discount Amount', 
+				datafield: 'DiscountAmount',
+				editable: false,
+				width: '10%',
+				minwidth: '70',
+				renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:20px; margin-left: 5px;">Discount<br>Amount</div>';
+			},
+			}, {
+				text: 'Order Shipping Cost', 
+				datafield: 'OrderShippingCost',
+				editable: false,
+				width: '10%',
+				minwidth: '70',
+				renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:20px; margin-left: 5px;">Order<br>Shipping<br>Cost</div>';
+			},
+			}, {
+				text: 'Tax', 
+				datafield: 'Tax',
+				editable: false,
+				width: '10%',
+				minwidth: '70',
+			}, {
+				text: 'Total', 
+				datafield: 'Total',
+				editable: false,
+				width: '9.8%',
+				minwidth: '70',
+			
+			}],
+		});		
+
+	 basicDemo.init();
+	 
+	 
+	//$("#dropDownButton").jqxDropDownButton({ width: 150, height: 36});
+});
+</script>

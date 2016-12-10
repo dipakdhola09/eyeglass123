@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TaxClassList>
+  <TaxClass TaxClassID="1">
+    <TaxClassClass>Tax Rates</TaxClassClass>
+    <TaxClassStoreName>Master Store</TaxClassStoreName>
+    <TaxClassTaxCode>7</TaxClassTaxCode>
+    <TaxClassAction></TaxClassAction>
+  </TaxClass>
+</TaxClassList>

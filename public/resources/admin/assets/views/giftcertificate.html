@@ -1,0 +1,164 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title">Gift Certificate</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20">
+				<div class="card-box">
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+				<div class="col-xs-12 col-sm-12 p-10 text-right">
+					<a class="btn btn-primary" href="add-product.html"><i class="fa fa-plus"></i> Add State</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "assets/xml/giftcertificate.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'GiftCertificateName',
+			type: 'String'
+		}, {
+			name: 'GiftSKU',
+			type: 'String'
+		}, {
+			name: 'Price',
+			type: 'String'
+		}, {
+			name: 'Quantity',
+			type: 'String'
+		}, {
+			name: 'LastUpdatedOn',
+			type: 'String'
+		}, {
+			name: 'CreatedOn',
+			type: 'String'
+		}, {
+			name: 'Status',
+			type: 'string'
+		}, {
+			name: 'Action',
+			type: 'string'
+		}],
+		root: "GiftCertificate",
+		record: "GiftList",
+		id: 'GiftListID',
+		url: url
+	};
+	
+	var numberrenderer = function (row, column, value) {
+		return '<div style="text-align: center; margin-top: 20px;">' + (1 + value) + '</div>';
+	}
+
+	var Status = function(rrow, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    if (value == 'Inactive') {
+	        return '<div class="text-center action-icons text-danger" style="margin-top:5px; font-size:18px"><i class="fa fa-thumbs-o-down"></i></div>';
+	    } else {
+	        return '<div class="text-center action-icons text-success" style="margin-top:5px; font-size:18px"><i class="fa fa-thumbs-o-up"></i></div>';
+	    }
+	}
+	
+	
+	//Action Link
+	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    return  '<div class="text-center action-icons" style=" margin-top:5px;"><a href="#" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" title=""><i class="fa fa-close text-danger"></i></a></div>'
+	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	
+	// initialize jqxGrid
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: false,
+		editable: false,
+		columnsheight: 70,
+		autorowheight: true,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'checkbox',
+		columns: [{
+			text: 'GiftCertificateName',
+			datafield: 'GiftCertificateName',
+			editable: false,
+			width: '20.4%',
+			minwidth: '80'
+		},{
+			text: 'GiftSKU',
+			datafield: 'GiftSKU',
+			editable: false,
+			width: '10%',
+			minwidth: '120',
+			cellsalign: 'center'
+		},{
+			text: 'Price',
+			datafield: 'Price',
+			editable: false,
+			width: '10%',
+			minwidth: '110',
+			cellsalign: 'center',
+		},{
+			text: 'Quantity',
+			datafield: 'Quantity',
+			width: '10%',
+			minwidth: '110',
+			editable: false,
+			cellsalign: 'center',
+		},{
+			text: 'LastUpdatedOn',
+			datafield: 'LastUpdatedOn',
+			width: '14.1%',
+			minwidth: '110',
+			editable: false,
+			cellsalign: 'center',
+		},{
+			text: 'CreatedOn',
+			datafield: 'CreatedOn',
+			width: '15%',
+			minwidth: '110',
+			editable: false,
+			cellsalign: 'center',
+		},{
+			text: 'Status',
+			datafield: 'Status',
+			width: '10%',
+			minwidth: '110',
+			editable: false,
+			cellsrenderer: Status
+		},{
+			text: 'Action',
+			datafield: 'Action',
+			width: '8.4%',
+			minwidth: '60',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+	
+	basicDemo.init();
+});
+</script>

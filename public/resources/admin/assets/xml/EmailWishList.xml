@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<EmailCatItems>
+	<CatItems EmailCatItemsID="1">
+		<EmailThumbnail>camera_icon</EmailThumbnail>
+		<EmailProduct>Lorem Ipsum</EmailProduct>
+		<EmailSKU>Lorem Ipsum#333</EmailSKU>
+		<EmailPrice>30$</EmailPrice>
+		<EmailQuantity>1</EmailQuantity>
+		<EmailSubTotal>30$</EmailSubTotal>
+	</CatItems>
+</EmailCatItems>
+
+
+
+

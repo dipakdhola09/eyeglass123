@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ShipDimensionList>
+  <ShipDimension ShipDimensionID="1">
+    <DimenstionType>Lorem Ipsum</DimenstionType>
+    <DimenstionHeight>4</DimenstionHeight>
+    <DimenstionWidth>4</DimenstionWidth>
+    <DimenstionLength>4</DimenstionLength>
+    <DimenstionWeight>4</DimenstionWeight>
+    <DimenstionStatus>Active</DimenstionStatus>
+    <DimenstionAction></DimenstionAction>
+  </ShipDimension>
+  <ShipDimension ShipDimensionID="2">
+    <DimenstionType>Ipsum Lorem</DimenstionType>
+    <DimenstionHeight>2</DimenstionHeight>
+    <DimenstionWidth>4.00</DimenstionWidth>
+    <DimenstionLength>2.20</DimenstionLength>
+    <DimenstionWeight>3.50</DimenstionWeight>
+    <DimenstionStatus>Inactive</DimenstionStatus>
+    <DimenstionAction></DimenstionAction>
+  </ShipDimension>
+</ShipDimensionList>

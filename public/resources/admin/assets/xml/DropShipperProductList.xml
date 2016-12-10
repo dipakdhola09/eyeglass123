@@ -1,0 +1,152 @@
+﻿<DropShipperProductList>
+  <DropShipperProduct OrderID="10249">
+    <DropShipperID>1</DropShipperID>
+    <DropShipperProductName>Lorem Ipsum</DropShipperProductName>
+    <DropShipperPackageType>Unit</DropShipperPackageType>
+    <DropShipperQty>10</DropShipperQty>
+    <DropShipperCost>100</DropShipperCost>
+    <DropShipperSKU>ACB-01</DropShipperSKU>
+    <DropShipperRoomNumber>01</DropShipperRoomNumber>
+    <DropShipperAisleNumber>03</DropShipperAisleNumber>
+    <DropShipperRack>05</DropShipperRack>
+    <DropShipperShelf>07</DropShipperShelf>
+    <DropShipperComment>Lorem Ipsum</DropShipperComment>
+    <DropShipperNumberProduct>10</DropShipperNumberProduct>
+    <DropShipperAction></DropShipperAction>
+  </DropShipperProduct>
+  <DropShipperProduct OrderID="10250">
+    <DropShipperID>1</DropShipperID>
+    <DropShipperProductName>Ipsum Lorem</DropShipperProductName>
+    <DropShipperPackageType>Box</DropShipperPackageType>
+    <DropShipperQty>20</DropShipperQty>
+    <DropShipperCost>200</DropShipperCost>
+    <DropShipperSKU>ADC-04</DropShipperSKU>
+    <DropShipperRoomNumber>02</DropShipperRoomNumber>
+    <DropShipperAisleNumber>04</DropShipperAisleNumber>
+    <DropShipperRack>05</DropShipperRack>
+    <DropShipperShelf>01</DropShipperShelf>
+    <DropShipperComment>Lorem Ipsum</DropShipperComment>
+    <DropShipperNumberProduct>20</DropShipperNumberProduct>
+    <DropShipperAction></DropShipperAction>
+  </DropShipperProduct>
+  <DropShipperProduct OrderID="10350">
+    <DropShipperID>1</DropShipperID>
+    <DropShipperProductName>Lorem</DropShipperProductName>
+    <DropShipperPackageType>Unit</DropShipperPackageType>
+    <DropShipperQty>30</DropShipperQty>
+    <DropShipperCost>300</DropShipperCost>
+    <DropShipperSKU>ABC-02</DropShipperSKU>
+    <DropShipperRoomNumber>04</DropShipperRoomNumber>
+    <DropShipperAisleNumber>09</DropShipperAisleNumber>
+    <DropShipperRack>08</DropShipperRack>
+    <DropShipperShelf>04</DropShipperShelf>
+    <DropShipperComment>Lorem Ipsum</DropShipperComment>
+    <DropShipperNumberProduct>30</DropShipperNumberProduct>
+    <DropShipperAction></DropShipperAction>
+  </DropShipperProduct>
+  <DropShipperProduct OrderID="10351">
+    <DropShipperID>1</DropShipperID>
+    <DropShipperProductName>Ipsum</DropShipperProductName>
+    <DropShipperPackageType>Unit</DropShipperPackageType>
+    <DropShipperQty>40</DropShipperQty>
+    <DropShipperCost>400</DropShipperCost>
+    <DropShipperSKU>ADC-02</DropShipperSKU>
+    <DropShipperRoomNumber>01</DropShipperRoomNumber>
+    <DropShipperAisleNumber>03</DropShipperAisleNumber>
+    <DropShipperRack>05</DropShipperRack>
+    <DropShipperShelf>07</DropShipperShelf>
+    <DropShipperComment>Lorem Ipsum</DropShipperComment>
+    <DropShipperNumberProduct>40</DropShipperNumberProduct>
+    <DropShipperAction></DropShipperAction>
+  </DropShipperProduct>
+  <DropShipperProduct OrderID="10352">
+    <DropShipperID>1</DropShipperID>
+    <DropShipperProductName>Lorem Ipsum</DropShipperProductName>
+    <DropShipperPackageType>Unit</DropShipperPackageType>
+    <DropShipperQty>50</DropShipperQty>
+    <DropShipperCost>500</DropShipperCost>
+    <DropShipperSKU>ABB-01</DropShipperSKU>
+    <DropShipperRoomNumber>01</DropShipperRoomNumber>
+    <DropShipperAisleNumber>02</DropShipperAisleNumber>
+    <DropShipperRack>03</DropShipperRack>
+    <DropShipperShelf>04</DropShipperShelf>
+    <DropShipperComment>Lorem Ipsum</DropShipperComment>
+    <DropShipperNumberProduct>50</DropShipperNumberProduct>
+    <DropShipperAction></DropShipperAction>
+  </DropShipperProduct>
+  <DropShipperProduct OrderID="10353">
+    <DropShipperID>1</DropShipperID>
+    <DropShipperProductName>Ipsum Lorem</DropShipperProductName>
+    <DropShipperPackageType>Unit</DropShipperPackageType>
+    <DropShipperQty>10</DropShipperQty>
+    <DropShipperCost>100</DropShipperCost>
+    <DropShipperSKU>ABA-01</DropShipperSKU>
+    <DropShipperRoomNumber>01</DropShipperRoomNumber>
+    <DropShipperAisleNumber>03</DropShipperAisleNumber>
+    <DropShipperRack>05</DropShipperRack>
+    <DropShipperShelf>07</DropShipperShelf>
+    <DropShipperComment>Lorem Ipsum</DropShipperComment>
+    <DropShipperNumberProduct>10</DropShipperNumberProduct>
+    <DropShipperAction></DropShipperAction>
+  </DropShipperProduct>
+  <DropShipperProduct OrderID="10355">
+    <DropShipperID>1</DropShipperID>
+    <DropShipperProductName>LoremIpsum</DropShipperProductName>
+    <DropShipperPackageType>Unit</DropShipperPackageType>
+    <DropShipperQty>20</DropShipperQty>
+    <DropShipperCost>200</DropShipperCost>
+    <DropShipperSKU>ABC-01</DropShipperSKU>
+    <DropShipperRoomNumber>01</DropShipperRoomNumber>
+    <DropShipperAisleNumber>03</DropShipperAisleNumber>
+    <DropShipperRack>05</DropShipperRack>
+    <DropShipperShelf>07</DropShipperShelf>
+    <DropShipperComment>Lorem Ipsum</DropShipperComment>
+    <DropShipperNumberProduct>20</DropShipperNumberProduct>
+    <DropShipperAction></DropShipperAction>
+  </DropShipperProduct>
+  <DropShipperProduct OrderID="10356">
+    <DropShipperID>1</DropShipperID>
+    <DropShipperProductName>Lorem Ipsum</DropShipperProductName>
+    <DropShipperPackageType>Unit</DropShipperPackageType>
+    <DropShipperQty>10</DropShipperQty>
+    <DropShipperCost>200</DropShipperCost>
+    <DropShipperSKU>ABC-01</DropShipperSKU>
+    <DropShipperRoomNumber>01</DropShipperRoomNumber>
+    <DropShipperAisleNumber>03</DropShipperAisleNumber>
+    <DropShipperRack>05</DropShipperRack>
+    <DropShipperShelf>07</DropShipperShelf>
+    <DropShipperComment>Lorem Ipsum</DropShipperComment>
+    <DropShipperNumberProduct>10</DropShipperNumberProduct>
+    <DropShipperAction></DropShipperAction>
+  </DropShipperProduct>
+  <DropShipperProduct OrderID="10357">
+    <DropShipperID>1</DropShipperID>
+    <DropShipperProductName>Ipsum</DropShipperProductName>
+    <DropShipperPackageType>Unit</DropShipperPackageType>
+    <DropShipperQty>10</DropShipperQty>
+    <DropShipperCost>200</DropShipperCost>
+    <DropShipperSKU>ABC-01</DropShipperSKU>
+    <DropShipperRoomNumber>01</DropShipperRoomNumber>
+    <DropShipperAisleNumber>03</DropShipperAisleNumber>
+    <DropShipperRack>05</DropShipperRack>
+    <DropShipperShelf>07</DropShipperShelf>
+    <DropShipperComment>Lorem Ipsum</DropShipperComment>
+    <DropShipperNumberProduct>10</DropShipperNumberProduct>
+    <DropShipperAction></DropShipperAction>
+  </DropShipperProduct>
+  <DropShipperProduct OrderID="10453">
+    <DropShipperID>2</DropShipperID>
+    <DropShipperProductName>Lorem Ipsum</DropShipperProductName>
+    <DropShipperPackageType>Unit</DropShipperPackageType>
+    <DropShipperQty>120</DropShipperQty>
+    <DropShipperCost>200</DropShipperCost>
+    <DropShipperSKU>ABC-01</DropShipperSKU>
+    <DropShipperRoomNumber>01</DropShipperRoomNumber>
+    <DropShipperAisleNumber>03</DropShipperAisleNumber>
+    <DropShipperRack>05</DropShipperRack>
+    <DropShipperShelf>07</DropShipperShelf>
+    <DropShipperComment>Lorem Ipsum</DropShipperComment>
+    <DropShipperNumberProduct>120</DropShipperNumberProduct>
+    <DropShipperAction></DropShipperAction>
+  </DropShipperProduct>
+</DropShipperProductList>

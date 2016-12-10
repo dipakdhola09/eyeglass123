@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<InventoryList>
+  <Inventory InventoryID="1">
+    <WarehouseName>Warehouse 1</WarehouseName>
+    <InventoryTotal>120</InventoryTotal>
+  </Inventory>
+  <Inventory InventoryID="2">
+    <WarehouseName>Warehouse 2</WarehouseName>
+    <InventoryTotal>10</InventoryTotal>
+  </Inventory>
+</InventoryList>

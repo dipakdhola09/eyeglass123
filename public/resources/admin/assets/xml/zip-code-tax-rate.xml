@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TaxZipCodeList>
+  <TaxZipCode TaxZipCodeID="1">
+    <TaxZipCode>010150</TaxZipCode>
+    <TaxZipCodeTax>10.00</TaxZipCodeTax>
+    <TaxZipCodeAction></TaxZipCodeAction>
+  </TaxZipCode>
+</TaxZipCodeList>

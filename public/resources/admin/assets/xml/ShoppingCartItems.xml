@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ShoppingCatItems>
+	<ShoppingCat ShoppingCatItemsID="1">
+		<Thumbnail>camera_icon</Thumbnail>
+		<Product>Lorem Ipsum</Product>
+		<SKU>Lorem Ipsum#333</SKU>
+		<Price>$30</Price>
+		<Quantity>1</Quantity>
+		<SubTotal>$30</SubTotal>
+	</ShoppingCat>
+	<ShoppingCat ShoppingCatItemsID="2">
+		<Thumbnail>camera_icon</Thumbnail>
+		<Product>Lorem Ipsum</Product>
+		<SKU>Lorem Ipsum#333</SKU>
+		<Price>$30</Price>
+		<Quantity>1</Quantity>
+		<SubTotal>$30</SubTotal>
+	</ShoppingCat>
+	<ShoppingCat ShoppingCatItemsID="3">
+		<Thumbnail>camera_icon</Thumbnail>
+		<Product>Lorem Ipsum</Product>
+		<SKU>Lorem Ipsum#333</SKU>
+		<Price>$30</Price>
+		<Quantity>1</Quantity>
+		<SubTotal>$30</SubTotal>
+	</ShoppingCat>
+</ShoppingCatItems>
+
+
+
+

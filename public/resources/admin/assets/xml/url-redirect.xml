@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<URLRedirectList>
+	<URLRedirect URLRedirectID="1">
+		<OldURL>page.png</OldURL>
+		<NewURL>page.html</NewURL>
+		<RedirectType>301</RedirectType>
+		<TotalCount>0</TotalCount>
+		<LastRedirectOn>0000-00-00 00:00:00</LastRedirectOn>
+		<Status>Yes</Status>
+		<URLAction></URLAction>
+	</URLRedirect>
+	<URLRedirect URLRedirectID="2">
+		<OldURL>page.png</OldURL>
+		<NewURL>page.html</NewURL>
+		<RedirectType>401</RedirectType>
+		<TotalCount>0</TotalCount>
+		<LastRedirectOn>0000-00-00 00:00:00</LastRedirectOn>
+		<Status>No</Status>
+		<URLAction></URLAction>
+	</URLRedirect>
+	<URLRedirect URLRedirectID="3">
+		<OldURL>page.png</OldURL>
+		<NewURL>page.html</NewURL>
+		<RedirectType>404</RedirectType>
+		<TotalCount>0</TotalCount>
+		<LastRedirectOn>0000-00-00 00:00:00</LastRedirectOn>
+		<Status>Yes</Status>
+		<URLAction></URLAction>
+	</URLRedirect>
+	<URLRedirect URLRedirectID="4">
+		<OldURL>page.png</OldURL>
+		<NewURL>page.html</NewURL>
+		<RedirectType>303</RedirectType>
+		<TotalCount>0</TotalCount>
+		<LastRedirectOn>0000-00-00 00:00:00</LastRedirectOn>
+		<Status>No</Status>
+		<URLAction></URLAction>
+	</URLRedirect>
+	<URLRedirect URLRedirectID="5">
+		<OldURL>page.png</OldURL>
+		<NewURL>page.html</NewURL>
+		<RedirectType>404</RedirectType>
+		<TotalCount>0</TotalCount>
+		<LastRedirectOn>0000-00-00 00:00:00</LastRedirectOn>
+		<Status>Yes</Status>
+		<URLAction></URLAction>
+	</URLRedirect>
+</URLRedirectList>

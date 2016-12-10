@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddProductList>
+  <AddProduct AddProductID="1">
+    <RelatedId>01</RelatedId>
+    <RelatedName>Lorem Ipsum is simply dummy text</RelatedName>
+    <RelatedType>Simple Product</RelatedType>
+    <RelatedAttrName>Default</RelatedAttrName>
+    <RelatedStatus>Active</RelatedStatus>
+    <RelatedVisibility>Catalog, Search</RelatedVisibility>
+	<RelatedSKU>P-2341</RelatedSKU>
+	<RelatedPrice>88.42</RelatedPrice>
+	<RelatedPosition>0</RelatedPosition>
+  </AddProduct>
+  <AddProduct AddProductID="2">
+    <RelatedId>02</RelatedId>
+    <RelatedName>Lorem Ipsum is simply dummy text</RelatedName>
+    <RelatedType>Simple Product</RelatedType>
+    <RelatedAttrName>Default</RelatedAttrName>
+    <RelatedStatus>Inactive</RelatedStatus>
+    <RelatedVisibility>Catalog, Search</RelatedVisibility>
+	<RelatedSKU>P-2443</RelatedSKU>
+	<RelatedPrice>102.42</RelatedPrice>
+	<RelatedPosition>0</RelatedPosition>
+  </AddProduct>
+</AddProductList>

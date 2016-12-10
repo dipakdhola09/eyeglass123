@@ -1,0 +1,809 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title p-b-20">Add Assemly Product</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="block col-xs-12 col-sm-12 p-20 p-b-0">
+				<div class="card-box product-add-tab-bg">
+					<div id="jqxWidget">
+						<div id="jqxTabs">
+							<ul>
+								<li style="margin-left:15px !important;">General</li>
+								<li>Price</li>
+								<!--<li>SEO</li> -->
+								<li>Category</li>
+								<li>Images</li>
+								<!--
+                    <li>Inventory</li>
+                    <li>Images</li>
+                    <li>Related Products</li>
+                    <li>Up Sells</li>
+                    <li>Cross Sells</li>
+                    <li>Variants</li>
+                    <li>Product Review</li>
+					<li>Product FAQ</li>
+					<li>Product Order History</li>
+					<li>Product Life Cycle</li> 
+                    <li>Market Place</li>
+                    -->
+							</ul>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<form class="">
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10"><span class="bg-tooltip" data-container="body" title="" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="">Name</span></label>
+										<div class="col-sm-6 col-md-5">
+											<input type="text" placeholder="" id="inputbox1" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10"><span class="bg-tooltip" data-container="body" title="" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="">Reference Code</span></label>
+										<div class="col-sm-6 col-md-5">
+											<input type="text" placeholder="" id="inputbox2" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10"><span class="bg-tooltip" data-container="body" title="" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="">UPC Barcode</span></label>
+										<div class="col-sm-6 col-md-5">
+											<input type="text" placeholder="" id="inputbox3" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Description</label>
+										<div class="col-sm-6 col-md-5">
+											<textarea id="editor"></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Short Description</label>
+										<div class="col-sm-6 col-md-5">
+											<textarea id="editor1"></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Status</label>
+										<div class="col-sm-6 col-md-5">
+											<div id="jqxButton"></div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Is Feature</label>
+										<div class="col-sm-6 col-md-5">
+											<div class="radio radio-inline p-t-10">
+												<input type="radio" checked="" name="featureInline1" value="option1" id="featureRadio1">
+												<label for="featureRadio1">Yes</label>
+											</div>
+											<div class="radio radio-inline p-t-10">
+												<input type="radio"  name="featureInline1" value="option1" id="featureRadio2">
+												<label for="featureRadio2">No</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Visibility</label>
+										<div class="col-sm-6 col-md-5">
+											<select class="form-control">
+												<option>Select</option>
+												<option value="">Everywhere</option>
+												<option value="">Catalog</option>
+												<option value="">Search</option>
+												<option value="">Nowhere</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Condition</label>
+										<div class="col-sm-6 col-md-5">
+											<select class="form-control">
+												<option value="">New</option>
+												<option value="">Used</option>
+												<option value="">Refurbished</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10"><span class="bg-tooltip" data-container="body" title="" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="">Tags</span></label>
+										<div class="col-sm-6 col-md-5">
+											<input type="text" placeholder="" id="inputbox4" class="form-control" data-role="tagsinput">
+											<small>(Each tag has to be followed by a comma)</small> </div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Manufacture</label>
+										<div class="col-sm-6 col-md-5">
+											<select class="form-control">
+												<option>Select</option>
+												<option>Option 1</option>
+												<option>Option 2</option>
+											</select>
+										</div>
+									</div>
+								</form>
+								<div id="jqxWidget">
+									<div id="jqxgrid"></div>
+									<div class="p-t-15 text-right"> <a id="showWindowButton" href="javascript:void(0)" onclick="$('#window').jqxWindow('open');" class="btn btn-primary">Add More</a> </div>
+									<div style="width: 100%;" id="mainDemoContainer">
+										<div id="window">
+											<div id="windowHeader">
+												<div class="h4 p-10 m-0">Add More Product</div>
+											</div>
+											<div style="overflow: hidden;" id="windowContent">
+												<div class="row m-0 p-10">
+													<div id="jqxgrid1"></div>
+												</div>
+												<div class="row m-0 p-t-0 p-10 text-right"><a class="btn btn-primary" href="AssemblyProduct">Add</a></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<form class="">
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Retail Price</label>
+										<div class="col-lg-2 col-md-2 col-sm-3">
+											<input type="text" placeholder="" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Wholesale Price</label>
+										<div class="col-lg-2 col-md-2 col-sm-3">
+											<input type="text" placeholder="" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Tax rule</label>
+										<div class="col-sm-5 col-md-5">
+											<select class="form-control">
+												<option value="">No Tax</option>
+												<option value="">IND Tax</option>
+												<option value="">US-AK Rate (0%)</option>
+												<option value="">US-AL Rate (4%)</option>
+											</select>
+										</div>
+										<div class="col-sm-3 col-md-3 p-t-10"> <a href="#"><i class="fa fa-plus-circle"></i> Create new tax <i class="fa fa-external-link-square"></i></a> </div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Special Price</label>
+										<div class="col-md-5 col-sm-6">
+											<input type="text" placeholder="" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Special Price From Date</label>
+										<div class="col-sm-6 col-md-5"> 
+											<!--<input type="text" placeholder="" class="form-control"> -->
+											<div id="dateInput"></div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Special Price To date</label>
+										<div class="col-sm-6 col-md-5"> 
+											<!--<input type="text" placeholder="" class="form-control"> -->
+											<div id="dateInput1"></div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Tax Class</label>
+										<div class="col-sm-6 col-md-5">
+											<select class="form-control">
+												<option value="">No Tax</option>
+												<option value="">IND Tax</option>
+												<option value="">US-AK Rate (0%)</option>
+												<option value="">US-AL Rate (4%)</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Tier Price</label>
+										<div class="col-sm-8 col-md-9">
+											<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0">
+												<div id="jqxgrid8"> </div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<div id='jqxWidget'>
+									<div>
+										<div id='jqxTree' style='visibility: hidden;'>
+											<ul>
+												<li item-expanded='true'>Category
+													<ul>
+														<li>Category - 1</li>
+														<li >Category - 2
+															<ul>
+																<li>Category - 2.1</li>
+																<li>Category - 2.2 </li>
+																<li>Category - 2.3</li>
+																<li>Category - 2.4</li>
+																<li>Category - 2.5 </li>
+																<li>Category - 2.6</li>
+															</ul>
+														</li>
+														<li>Category - 3
+															<ul>
+																<li>Category - 3.1</li>
+																<li>Category - 3.2 </li>
+																<li>Category - 3.3</li>
+																<li>Category - 3.4</li>
+																<li>Category - 3.5 </li>
+																<li>Category - 3.6</li>
+															</ul>
+														</li>
+														<li>Category - 4
+															<ul>
+																<li>Category - 4.1</li>
+																<li>Category - 4.2 </li>
+																<li>Category - 4.3</li>
+																<li>Category - 4.4</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<form>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Add a new image to this product</label>
+										<div class="col-sm-6 col-md-5">
+											<input type="file" id="filestyle-1" class="filestyle" value="Thumb" style="position:absolute; z-index:-1;">
+											<div class="bootstrap-filestyle"> <span class="group-span-filestyle" tabindex="0">
+												<label class="btn btn-white" for="filestyle-1"> <span class="icon-span-filestyle glyphicon glyphicon-folder-open"></span> <span class="buttonText">Add Files</span> </label>
+												</span> </div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Caption</label>
+										<div class="col-sm-6 col-md-5">
+											<input class="form-control" placeholder="" type="text">
+										</div>
+										<div class="col-sm-2"> <a class="btn btn-white">Update</a> </div>
+									</div>
+								</form>
+								<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0">
+									<div id="jqxgrid6"> </div>
+								</div>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-12 col-md-12 p-t-10 text-right"> <a class="btn btn-warning" href="#">Save Product</a> <a class="btn btn-primary" href="#">Save &amp; Exit</a> <a class="btn btn-danger" href="#">cancel</a></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var basicDemo = (function() {
+	//Adding event listeners	
+	function _addEventListeners() {
+		$('#showWindowButton').click(function() {
+			$('#window').jqxWindow('open');
+		});
+		$('#hideWindowButton').click(function() {
+			$('#window').jqxWindow('close');
+		});
+	};
+	
+	//Creating the demo window
+	function _createWindow() {
+		var jqxWidget = $('#jqxWidget');
+		var offset = jqxWidget.offset();
+		$('#window').jqxWindow({
+			position: 'center',
+			//showCollapseButton: true,
+			autoOpen:false,
+			isModal: true,
+			maxHeight: 700,
+			maxWidth: 700,
+			minHeight: 400,
+			minWidth: 200,
+			width: '100%',
+			resizable: false,
+			draggable: false,
+			
+			initContent: function() {
+				$('#window').jqxWindow('focus');
+			}
+		});
+	};
+	return {
+		config: {
+			dragArea: null
+		},
+		init: function() {
+			//Attaching event listeners
+			_addEventListeners();
+			//Adding jqxWindow
+			_createWindow();
+		}
+	};
+}());
+$(document).ready(function () {  
+$('[data-toggle="popover"]').popover(); 
+	//Date Input Box
+	$("#dateInput").jqxDateTimeInput({ height: '38', width: '100%', formatString: "MMM dd, yyyy"});
+	$("#dateInput1").jqxDateTimeInput({ height: '38', width: '100%', formatString: "MMM dd, yyyy"});
+
+	// Edit In Textarea
+	var initEditor = function () {
+	$('#editor').jqxEditor({
+			height: "200px",
+			width: '100%'
+	});
+	$('#editor1').jqxEditor({
+			height: "200px",
+			width: '100%'
+	});
+	};
+	
+	//Create Browse Button
+	$("#jqxButton").jqxSwitchButton({
+		theme: 'classic',
+		width: '150',
+		height: '38',
+		checked: true,
+		onLabel: 'Active',
+		offLabel: 'Inactive'
+	});
+
+	$("#jqxButton").on('change', function(event) {
+		var checked = event.args.check;
+		$("#eventlog1").html("Checked: " + checked);
+	});
+
+
+    // Create Related Products jqxGrid
+    var url = "assets/xml/assemblyproduct.xml";
+    $.jqx.theme = "custom";
+    // prepare the data
+    var source = {
+        datatype: "xml",
+        datafields: [{
+            name: 'AssembleImage',
+            type: 'string'
+        }, {
+            name: 'AssembleName',
+            type: 'String'
+        }, {
+            name: 'AssembleSKU',
+            type: 'string'
+        }, {
+            name: 'AssembleQty',
+            type: 'string'
+        }, {
+            name: 'AssembleStatus',
+            type: 'string'
+        }],
+        root: "AssembleProductList",
+        record: "AssembleProduct",
+        id: 'AssembleProductID',
+        url: url
+    };
+
+	//Image
+	var Imagerender = function(row, columnfield, value) {
+		var name = $('#jqxgrid').jqxGrid('getrowdata', row).AssembleImage;
+		var imgurl = 'img/' + value+'.png' ;
+		var img = '<div class="text-center" style="margin:10px 5px 0 5px;"><img width="50" src="' + imgurl + '"></div>';
+		return img;
+	}
+
+    var dataAdapter = new $.jqx.dataAdapter(source, {
+        downloadComplete: function(data, status, xhr) {},
+        loadComplete: function(data) {},
+        loadError: function(xhr, status, error) {}
+    });
+    // initialize jqxGrid
+	
+	var statusrenderer = function(row, columnfield, value) {
+		return '<div class="text-center action-icons"><a href="#" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>';
+	}
+	
+    $("#jqxgrid").jqxGrid(
+        //$("#jqxgrid").jqxDataTable(
+        {
+            width: '100%',
+            //height: '100%',
+            source: dataAdapter,
+            pageable: true,
+            autoheight: true,
+            sortable: true,
+            altrows: true,
+			showfilterrow: true,
+            filterable: true,
+            //enabletooltips: true,
+            editable: false,
+            columnsheight: 50,
+            rowsheight: 50,
+            selectionmode: 'checkbox',
+            columns: [{
+                    text: 'Image',
+                    datafield: 'AssembleImage',
+					editable: false,
+                    minwidth: '90',
+					filterable: false,
+					width: '15%',
+					cellsrenderer: Imagerender
+                }, {
+                    text: 'Name',
+                    datafield: 'AssembleName',
+					editable: false,
+                    minwidth: '150',
+					width: '43%',					
+                }, {
+                    text: 'SKU',
+                    datafield: 'AssembleSKU',
+					editable: false,
+                    minwidth: '100',
+					width: '15%'
+                }, {
+                    text: 'Qty',
+                    datafield: 'AssembleQty',
+					editable: false,
+                    minwidth: '140',
+					width: '15%'
+                }, {
+                    text: 'Action',
+                    datafield: 'AssembleStatus',
+					editable: false,
+                    minwidth: '80',
+					align: 'center',
+					filterable: false,
+					cellsalign: 'center',
+					cellsrenderer: statusrenderer,
+					width: '10%'
+                }
+            ],
+        });
+		
+		
+
+	//Create Product Image jqxGrid
+    var url = "assets/xml/product-images.xml";
+    $.jqx.theme = "custom";
+    // prepare the data
+    var source = {
+        datatype: "xml",
+        datafields: [{
+            name: 'ProductImage',
+            type: 'string'
+        },{
+            name: 'ImageCaption',
+            type: 'string'
+        }, {
+            name: 'ImagePosition',
+            type: 'String'
+        }, {
+            name: 'ImageCover',
+            type: 'float'
+        }],
+        root: "ProductImageList",
+        record: "ProductImage",
+        id: 'ProductImageID',
+        url: url
+    };
+
+    var dataAdapter = new $.jqx.dataAdapter(source, {
+        downloadComplete: function(data, status, xhr) {},
+        loadComplete: function(data) {},
+        loadError: function(xhr, status, error) {}
+    });
+	
+	var photorenderer = function (row, column, value) {
+		var name = $('#jqxgrid6').jqxGrid('getrowdata', row).ProductImage;
+		var imgurl = 'img/' + name.toLowerCase() + '.png';
+		var img = '<div class="text-center"><img style="margin:2px;" width="50" height="50" src="' + imgurl + '"></div>';
+		return img;
+	}
+	
+    // initialize jqxGrid
+	$("#jqxgrid6").jqxGrid(
+        //$("#jqxgrid").jqxDataTable(
+        {
+            width: '100%',
+            //height: '100%',
+            source: dataAdapter,
+            pageable: true,
+            autoheight: true,
+            sortable: true,
+            altrows: true,
+			//showfilterrow: true,
+            //filterable: true,			
+            //enabletooltips: true,
+            editable: true,
+            columnsheight: 50,
+            //rowsheight: 50,
+			autorowheight: true,
+            selectionmode: 'multiplecellsadvanced',
+            columns: [{
+                    text: 'Image',
+                    datafield: 'ProductImage',
+					align: 'center',
+					cellsalign: 'center',
+					editable: false,
+                    minwidth: '200',
+					width: '30%',
+					cellsrenderer: photorenderer
+                },{
+                    text: 'Caption',
+                    datafield: 'ImageCaption',
+					editable: false,
+                    minwidth: '200',
+					width: '40%'
+                }, {
+                    text: 'Position',
+                    datafield: 'ImagePosition',
+                    minwidth: '100',
+					width: '15%',
+                }, {
+                    text: 'Cover',
+                    datafield: 'ImageCover',
+                    minwidth: '100',
+					align: 'center',
+					cellsalign: 'center',
+					columntype: 'checkbox',
+					width: '15%'
+                }
+            ],
+        });
+
+
+	// Create Price Tier jqxGrid
+    var url = "assets/xml/tier-price.xml";
+    $.jqx.theme = "custom";
+    // prepare the data
+    var source = {
+        datatype: "xml",
+        datafields: [{
+            name: 'TierWebsite',
+            type: 'string'
+        }, {
+            name: 'TierCustomerGroup',
+            type: 'String'
+        }, {
+            name: 'TierQty',
+            type: 'string'
+        }, {
+
+            name: 'TierPrice',
+            type: 'float'
+        }, {
+            name: 'TierAction',
+            type: 'string'
+        }],
+        root: "TierPriceList",
+        record: "TierPrice",
+        id: 'TierPriceID',
+        url: url
+    };
+
+    var dataAdapter = new $.jqx.dataAdapter(source, {
+        downloadComplete: function(data, status, xhr) {},
+        loadComplete: function(data) {},
+        loadError: function(xhr, status, error) {}
+    });
+    // initialize jqxGrid
+
+	var selectrender = function(row, columnfield, value) {
+		var selectrender = '';
+	
+		selectrender = '<div class="text-center action-icons"><div class="p-10"><select class="form-control"><option>'+ value +'</option></select><div></div>'
+	
+		return selectrender;
+	}
+
+	var inputrenderer = function(row, columnfield, value) {
+		var inputrender = '';
+	
+		inputrender = '<div class="text-center action-icons"><div class="p-10"><input class="form-control" value="'+ value +'"><div></div>'
+	
+		return inputrender;
+	}
+	
+	var tieractionrenderer = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+		var actionLink = '';
+	
+		actionLink = '<div class="text-center action-icons"><a class="btn btn-primary btn-sm" href="#">Add Tier</a></div>'
+	
+		return actionLink;
+	}
+	
+	
+    $("#jqxgrid8").jqxGrid(
+        //$("#jqxgrid").jqxDataTable(
+        {
+            width: '100%',
+            //height: '100%',
+            source: dataAdapter,
+            pageable: true,
+            autoheight: true,
+            sortable: true,
+            altrows: true,
+			//showfilterrow: true,
+            //filterable: true,
+            //enabletooltips: true,
+            editable: false,
+            columnsheight: 50,
+            rowsheight: 60,
+            selectionmode: 'multiplecellsadvanced',
+            columns: [{
+                    text: 'Website',
+                    datafield: 'TierWebsite',
+					width: '25%',
+					minwidth: '150',
+					cellsrenderer: selectrender
+                }, {
+                    text: 'Customer Group',
+                    datafield: 'TierCustomerGroup',
+                    minwidth: '150',
+					width: '25%',
+					cellsrenderer: selectrender
+                }, {
+                    text: 'Quantity',
+                    datafield: 'TierQty',
+                    minwidth: '120',
+					width: '20%',
+					cellsrenderer: inputrenderer
+                }, {
+                    text: 'Price',
+                    datafield: 'TierPrice',
+					cellsformat: 'c2',
+					cellsalign: 'right',
+                    minwidth: '120',
+					width: '19%',
+					cellsrenderer: inputrenderer
+                }, {
+                    text: 'Actions',
+                    datafield: 'TierAction',
+                    minwidth: '100',
+					align: 'center',
+					cellsalign: 'center',
+					cellsrenderer: tieractionrenderer,
+					filterable: false,
+					width: '11%'
+                }
+            ],
+        });
+	
+	
+	// Create Related Products jqxGrid
+    var url = "assets/xml/assemblyaddproduct.xml";
+    $.jqx.theme = "custom";
+    // prepare the data
+    var source = {
+        datatype: "xml",
+        datafields: [{
+            name: 'AssembleaddImage',
+            type: 'string'
+        }, {
+            name: 'AssembleaddName',
+            type: 'String'
+        }, {
+            name: 'AssembleaddSKU',
+            type: 'string'
+        }, {
+            name: 'AssembleaddInstockQty',
+            type: 'string'
+        }, {
+            name: 'AssembleaddQty',
+            type: 'string'
+        }],
+        root: "AssembleaddProductList",
+        record: "AssembleaddProduct",
+        id: 'AssembleaddProductID',
+        url: url
+    };
+
+	//Image
+	var Imagerender = function(row, columnfield, value) {
+		var name = $('#jqxgrid1').jqxGrid('getrowdata', row).AssembleaddImage;
+		var imgurl = 'img/' + value+'.png' ;
+		var img = '<div class="text-center" style="margin:10px 5px 0 5px;"><img width="50" src="' + imgurl + '"></div>';
+		return img;
+	}
+
+    var dataAdapter = new $.jqx.dataAdapter(source, {
+        downloadComplete: function(data, status, xhr) {},
+        loadComplete: function(data) {},
+        loadError: function(xhr, status, error) {}
+    });
+
+	var inputrenderer = function(row, columnfield, value){
+		return '<div class="p-10"><input type="text" class="form-control"></div>';
+	}
+
+    $("#jqxgrid1").jqxGrid(
+        //$("#jqxgrid").jqxDataTable(
+        {
+            width: '100%',
+            height: '350',
+            source: dataAdapter,
+            pageable: true,
+            //autoheight: true,
+            sortable: true,
+            altrows: true,
+			showfilterrow: true,
+            filterable: true,
+            //enabletooltips: true,
+            editable: false,
+            columnsheight: 50,
+            rowsheight: 60,
+            selectionmode: 'checkbox',
+            columns: [{
+                    text: 'Image',
+                    datafield: 'AssembleaddImage',
+					filterable: false,
+                    minwidth: '90',
+					width: '10%',
+					cellsrenderer: Imagerender
+                }, {
+                    text: 'Name',
+                    datafield: 'AssembleaddName',
+					editable: false,
+                    minwidth: '100',
+					width: '35%',					
+                }, {
+                    text: 'SKU',
+                    datafield: 'AssembleaddSKU',
+					editable: false,
+                    minwidth: '90',
+					width: '16%'
+                }, {
+                    text: 'Instock Qty',
+                    datafield: 'AssembleaddInstockQty',
+					editable: false,
+                    minwidth: '80',
+					width: '15%',
+                }, {
+                    text: 'Qty',
+                    datafield: 'AssembleaddQty',
+					editable: false,
+                    minwidth: '80',
+					filterable: false,
+					width: '15%',
+					cellsrenderer: inputrenderer
+                }
+            ],
+        });	
+
+	basicDemo.init();
+
+    // Create jqxTree.
+    $('#jqxTree').jqxTree({
+        height: '600px',
+        theme: 'default',
+        hasThreeStates: true,
+        checkboxes: true,
+        width: '90%'
+    });
+    $('#jqxTree').css('visibility', 'visible');
+
+	var initWidgets = function (tab) {
+		switch (tab) {
+			case 0:
+				initEditor();
+				break;
+//			case 13:
+//				initChart();
+//				break;
+		}
+    }
+	
+	 // Create jqxTabs.
+    $('#jqxTabs').jqxTabs({
+        width: '100%',
+        position: 'top',
+		initTabContent: initWidgets
+    });
+ 
+});
+</script>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ShippingServices>
+	<Shipping ShippingServicesID="1">
+		<ProductSelect></ProductSelect>
+		<ShippingService>Lorem Ipsum</ShippingService>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Active</Status>
+		<Action></Action>
+	</Shipping>
+	<Shipping ShippingServicesID="2">
+		<ProductSelect></ProductSelect>
+		<ShippingService>Lorem Ipsum</ShippingService>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Inactive</Status>
+		<Action></Action>
+	</Shipping>
+	<Shipping ShippingServicesID="3">
+		<ProductSelect></ProductSelect>
+		<ShippingService>Lorem Ipsum</ShippingService>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Active</Status>
+		<Action></Action>
+	</Shipping>
+	<Shipping ShippingServicesID="4">
+		<ProductSelect></ProductSelect>
+		<ShippingService>Lorem Ipsum</ShippingService>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Inactive</Status>
+		<Action></Action>
+	</Shipping>
+	<Shipping ShippingServicesID="5">
+		<ProductSelect></ProductSelect>
+		<ShippingService>Lorem Ipsum</ShippingService>
+		<StoreName>Lorem Ipsum</StoreName>
+		<Status>Active</Status>
+		<Action></Action>
+	</Shipping>
+</ShippingServices>
+
+

@@ -1,0 +1,170 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title">Edit Category</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 m-t-20">
+				<div class="row">
+					<div class="col-sm-4 col-md-3">
+						<div class="col-sm-12 col-xs-12 p-t-20 p-b-20 block">
+							<div class="card-box">
+								<div id='jqxTree1'>
+									<ul>
+										<li item-expanded='true'>Root
+											<ul>
+												<li item-expanded='true'>Category 1
+													<ul>
+														<li>Category 2</li>
+														<li item-expanded='true'>Category 3
+															<ul>
+																<li>Category 4</li>
+																<li>Category 5</li>
+															</ul>
+														</li>
+														<li>Category 6</li>
+													</ul>
+												</li>
+												<li>Category 7
+													<ul>
+														<li>Category 8</li>
+														<li>Category 9</li>
+														<li>Category 10</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-8 col-md-9">
+						<div class="col-sm-12 col-xs-12 block p-t-20">
+							<div class="card-box">
+								<form>
+									<div class="form-group row">
+										<label class="control-label col-sm-5 col-md-4 p-t-10">Name</label>
+										<div class="col-sm-7 col-md-6">
+											<input type="text" class="form-control" value="lorem Ipsum">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-5 col-md-4 p-t-10">SEName</label>
+										<div class="col-sm-7 col-md-6">
+											<input type="text" class="form-control" value="lorem Ipsum">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-5 col-md-4 p-t-10">Description</label>
+										<div class="col-sm-7 col-md-6">
+											<textarea id="editor">lorem Ipsum</textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-5 col-md-4 p-t-10"><span>Category Cover Image</span></label>
+										<div class="col-sm-7 col-md-6">
+											<input type="file" data-input="false" class="filestyle" id="filestyle-1" style="position: absolute; clip: rect(0px, 0px, 0px, 0px);" tabindex="-1">
+											<div class="bootstrap-filestyle input-group"><span class="group-span-filestyle " tabindex="0">
+												<label class="btn btn-white " for="filestyle-1"><span class="icon-span-filestyle glyphicon glyphicon-folder-open"></span> <span class="buttonText">&nbsp;Choose file</span></label>
+												</span></div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-5 col-md-4 p-t-10">Meta Title</label>
+										<div class="col-sm-7 col-md-6">
+											<input type="text" class="form-control" value="lorem Ipsum">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-5 col-md-4 p-t-10">Meta Keywords</label>
+										<div class="col-sm-7 col-md-6">
+											<input type="text" class="form-control" value="lorem Ipsum">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-5 col-md-4 p-t-10">Meta Description</label>
+										<div class="col-sm-7 col-md-6">
+											<textarea class="form-control">lorem Ipsum</textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-5 col-md-4 p-t-10">Friendly URL</label>
+										<div class="col-sm-7 col-md-6">
+											<input type="text" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-5 col-md-4 p-t-10">Status</label>
+										<div class="col-sm-7 col-md-6">
+											<div id="jqxButton"></div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-5 col-md-4 p-t-10">Categorization</label>
+										<div class="col-sm-7 col-md-6">
+											<div id='jqxTree' style='visibility: hidden; margin-left: 0px;'>
+												<ul>
+													<li item-expanded='true'>Root
+														<ul>
+															<li item-checked='true' item-expanded='true'>Category 1
+																<ul>
+																	<li>Category 2</li>
+																	<li>Category 3</li>
+																	<li>Category 4
+																		<ul>
+																			<li>Category 5</li>
+																			<li>Category 6</li>
+																		</ul>
+																	</li>
+																	<li>Category 7</li>
+																</ul>
+															</li>
+															<li>Category 8</li>
+														</ul>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<div class="col-sm-12 col-md-12 p-t-10 text-right"> <a href="#" class="btn btn-warning">Save</a> <a href="#" class="btn btn-danger">cancel</a></div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function () {
+	// create Editor
+	$('#editor').jqxEditor({
+		height: "200px",
+		width: '100%',
+		theme: 'custom'
+	});
+	
+	// create jqxTree
+	$('#jqxTree').jqxTree({ height: '200px', hasThreeStates: true, theme: 'custom', checkboxes: true, width: '100%'});
+	$('#jqxTree').css('visibility', 'visible');
+	
+	$('#jqxTree1').jqxTree({ height: '230px', width: '100%', theme: 'custom'});
+	
+	//Create Status Button
+	$("#jqxButton").jqxSwitchButton({
+		theme: 'classic',
+		width: '150',
+		height: '38',
+		checked: true,
+		onLabel: 'Active',
+		offLabel: 'Inactive'
+	});
+});
+</script>

@@ -1,0 +1,138 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title">Buy &amp; Get Off</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20">
+				<div class="card-box">
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "assets/xml/butgetoff.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'OfferName',
+			type: 'String'
+		}, {
+			name: 'StarDate',
+			type: 'String'
+		}, {
+			name: 'EndDate',
+			type: 'String'
+		}, {
+			name: 'Buy',
+			type: 'string'
+		}, {
+			name: 'Get',
+			type: 'string'
+		}, {
+			name: 'GetType',
+			type: 'string'
+		}, {
+			name: 'Action',
+			type: 'string'
+		}],
+		root: "BuyGetOffList",
+		record: "BuyGetList",
+		id: 'BuyGetID',
+		url: url
+	};
+	
+	//Action Link
+	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    return  '<div class="text-center action-icons" style=" margin-top:5px;"><a href="#" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" title=""><i class="fa fa-close text-danger"></i></a></div>'
+	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	
+	// initialize jqxGrid
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: false,
+		editable: false,
+		columnsheight: 70,
+		autorowheight: true,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'singlerow',
+		columns: [{
+			text: 'Offer Name',
+			datafield: 'OfferName',
+			editable: false,
+			width: '26.4%',
+			minwidth: '80'
+		},{
+			text: 'Star Date',
+			datafield: 'StarDate',
+			editable: false,
+			width: '20%',
+			minwidth: '120',
+			cellsalign: 'center'
+		},{
+			text: 'End Date',
+			datafield: 'EndDate',
+			editable: false,
+			width: '15%',
+			minwidth: '110',
+			cellsalign: 'center',
+		},{
+			text: 'Buy',
+			datafield: 'Buy',
+			width: '10%',
+			minwidth: '110',
+			editable: false,
+			cellsalign: 'center',
+		},{
+			text: 'Get',
+			datafield: 'Get',
+			width: '10%',
+			minwidth: '110',
+			editable: false,
+			cellsalign: 'center',
+		},{
+			text: 'Get Type',
+			datafield: 'GetType',
+			width: '10%',
+			minwidth: '110',
+			editable: false,
+			cellsalign: 'center',
+		},{
+			text: 'Action',
+			datafield: 'Action',
+			width: '8.4%',
+			minwidth: '60',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+	
+	basicDemo.init();
+});
+</script>

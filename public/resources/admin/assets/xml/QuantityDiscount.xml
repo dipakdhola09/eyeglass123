@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<QuantityDiscount>
+	<Quantity DiscountID="1">
+		<ProductSelect></ProductSelect>
+		<QuantityName>Lorem Ipsum</QuantityName>
+		<StoreName>web</StoreName>
+		<LowQuantity>25</LowQuantity>
+		<HighQuantity>100</HighQuantity>
+		<DiscountP>10%</DiscountP>
+		<DiscountD>$22.00</DiscountD>
+		<Action></Action>
+	</Quantity>
+	<Quantity DiscountID="2">
+		<ProductSelect></ProductSelect>
+		<QuantityName>Lorem Ipsum</QuantityName>
+		<StoreName>web</StoreName>
+		<LowQuantity>25</LowQuantity>
+		<HighQuantity>100</HighQuantity>
+		<DiscountP>15%</DiscountP>
+		<DiscountD>$35.00</DiscountD>
+		<Action></Action>
+	</Quantity>
+	<Quantity DiscountID="3">
+		<ProductSelect></ProductSelect>
+		<QuantityName>Lorem Ipsum</QuantityName>
+		<StoreName>web</StoreName>
+		<LowQuantity>30</LowQuantity>
+		<HighQuantity>80</HighQuantity>
+		<DiscountP>20%</DiscountP>
+		<DiscountD>$30.00</DiscountD>
+		<Action></Action>
+	</Quantity>
+	<Quantity DiscountID="4">
+		<ProductSelect></ProductSelect>
+		<QuantityName>Lorem Ipsum</QuantityName>
+		<StoreName>web</StoreName>
+		<LowQuantity>40</LowQuantity>
+		<HighQuantity>70</HighQuantity>
+		<DiscountP>25%</DiscountP>
+		<DiscountD>$16.00</DiscountD>
+		<Action></Action>
+	</Quantity>
+	<Quantity DiscountID="5">
+		<ProductSelect></ProductSelect>
+		<QuantityName>Lorem Ipsum</QuantityName>
+		<StoreName>web</StoreName>
+		<LowQuantity>10</LowQuantity>
+		<HighQuantity>50</HighQuantity>
+		<DiscountP>30%</DiscountP>
+		<DiscountD>$20.00</DiscountD>
+		<Action></Action>
+	</Quantity>
+</QuantityDiscount>
+
+
+	
+
+
+
+

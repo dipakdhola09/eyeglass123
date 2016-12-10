@@ -1,0 +1,151 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title">Customer Management</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20">
+				<div class="card-box">
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "assets/xml/checkoutpromotion.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'DiscountLabel',
+			type: 'String'
+		}, {
+			name: 'DiscountAbovePrice',
+			type: 'String'
+		}, {
+			name: 'Discount',
+			type: 'String'
+		}, {
+			name: 'DiscountAmount',
+			type: 'string'
+		}, {
+			name: 'HasFreeShipping',
+			type: 'string'
+		}, {
+			name: 'Action',
+			type: 'string'
+		}],
+		root: "DiscountsList",
+		record: "DiscountList",
+		id: 'DiscountID',
+		url: url
+	};
+	
+	var numberrenderer = function (row, column, value) {
+		return '<div style="text-align: center; margin-top: 20px;">' + (1 + value) + '</div>';
+	}
+	
+	
+
+	var CustomerStatus = function(rrow, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    if (value == 'Inactive') {
+	        return '<div class="text-center action-icons text-danger" style="margin-top:5px; font-size:18px"><i class="fa fa-thumbs-o-down"></i></div>';
+	    } else {
+	        return '<div class="text-center action-icons text-success" style="margin-top:5px; font-size:18px"><i class="fa fa-thumbs-o-up"></i></div>';
+	    }
+	}
+	
+	
+	//Action Link
+	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    return  '<div class="text-center action-icons" style=" margin-top:5px;"><a href="#" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" title=""><i class="fa fa-close text-danger"></i></a></div>'
+	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	
+	// initialize jqxGrid
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: false,
+		editable: false,
+		columnsheight: 70,
+		autorowheight: true,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'singlerow',
+		columns: [{
+			text: '#',
+			datafield: 'SrNo',
+			width: '5%',
+			minwidth: '60',
+			filterable: false,
+			columntype: 'number',
+			cellsrenderer: numberrenderer
+		},{
+			text: 'Discount Label',
+			datafield: 'DiscountLabel',
+			editable: false,
+			width: '26.4%',
+			minwidth: '80'
+		},{
+			text: 'Discount Above Price',
+			datafield: 'DiscountAbovePrice',
+			editable: false,
+			width: '20%',
+			minwidth: '120',
+			cellsalign: 'center'
+		},{
+			text: 'Discount%',
+			datafield: 'Discount',
+			editable: false,
+			width: '15%',
+			minwidth: '110',
+			cellsalign: 'center',
+		},{
+			text: 'Discount Amount',
+			datafield: 'DiscountAmount',
+			width: '15%',
+			minwidth: '110',
+			editable: false,
+			cellsalign: 'center',
+		},{
+			text: 'Has Free Shipping',
+			datafield: 'HasFreeShipping',
+			width: '10%',
+			minwidth: '110',
+			editable: false,
+			cellsrenderer: CustomerStatus
+		},{
+			text: 'Action',
+			datafield: 'Action',
+			width: '8.4%',
+			minwidth: '60',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+	
+	basicDemo.init();
+});
+</script>

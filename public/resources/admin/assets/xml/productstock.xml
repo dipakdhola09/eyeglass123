@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AddProductList>
+  <AddProduct AddProductID="1">
+    <InventoryName>Warehouse 1</InventoryName>
+    <Variant>xl.White</Variant>
+	<Date>Jan 21,2016</Date>
+    <PackageType>Unit</PackageType>
+    <Qty>1</Qty>
+    <Cost>10</Cost>
+    <RoomNumber>01</RoomNumber>
+    <AisleNumber>02</AisleNumber>
+    <Rack>05</Rack>
+    <Shelf>08</Shelf>
+	<Comment>Lorem Ipsum</Comment>
+  </AddProduct>
+</AddProductList>

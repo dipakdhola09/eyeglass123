@@ -1,0 +1,2118 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12">
+				<h4 class="page-title p-b-20">Add Product</h4>
+				<!--
+                        <ol class="breadcrumb">
+							<li><a href="dashboard.html">Home</a></li>
+							<li>Catalog</li>
+							<li>Manage Products</li>
+							<li class="active">Add Product</li>
+						</ol>
+                         --> 
+			</div>
+			<!--<div class="col-xs-12 col-sm-7 m-b-15">
+                        <div class="pull-right col-xs-12 col-sm-12" style="min-width:300px;">
+                          <div class="col-xs-4 col-sm-4 col-md-6 col-lg-8 text-right">
+                            <h4>Store Name:</h4>
+                          </div>
+                          <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2">
+                            <select class="form-control m-t-5 pull-left" style="width:100%;">
+                              <option>Select</option>
+                              <option value="" selected>Store 1</option>
+                              <option value="">Store 2</option>
+                              <option value="">Store 3</option>
+                              <option value="">Store 4</option>
+                            </select>
+                          </div>
+                          <div class="col-xs-4 col-sm-4 col-md-3 col-lg-2 p-r-0">
+                            <select class="form-control m-t-5 pull-left" style="width:100%;">
+                              <option>Select</option>
+                              <option value="" selected>Web</option>
+                              <option value="">Ebay</option>
+                              <option value="">Amazon</option>
+                              <option value="">Jet</option>
+                            </select>
+                          </div>              
+                        </div>
+                      </div> --> 
+		</div>
+		<div class="row">
+			<div class="block col-sm-12 p-t-30 p-b-5">
+				<div class="col-xs-12 col-sm-12">
+					<div class="card-box product-add-tab-bg">
+					<div id="jqxWidget">
+						<div id="jqxTabs">
+							<ul>
+								<li style="margin-left:15px !important;">General</li>
+								<li>Price</li>
+								<li>SEO</li>
+								<li>Category</li>
+								<li>Variants</li>
+								<li>Images</li>
+								<li>Inventory</li>
+								<li>Related Products</li>
+								<li>Up Sells</li>
+								<li>Cross Sells</li>
+								<!--<li>Product Review</li>
+										<li>Product FAQ</li>
+										<li>Product Order History</li>
+										<li>Product Life Cycle</li> -->
+								<li>Market Place</li>
+							</ul>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<form class="">
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10"><span class="bg-tooltip animate" data-container="body" title="" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="">Name</span></label>
+										<div class="col-sm-6 col-md-5">
+											<input type="text" placeholder="" id="inputbox1" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10"><span class="bg-tooltip" data-container="body" title="" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="">Reference Code</span></label>
+										<div class="col-sm-6 col-md-5">
+											<input type="text" placeholder="" id="inputbox2" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10"><span class="bg-tooltip" data-container="body" title="" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="">UPC Barcode</span></label>
+										<div class="col-sm-6 col-md-5">
+											<input type="text" placeholder="" id="inputbox3" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Description</label>
+										<div class="col-sm-6 col-md-5">
+											<textarea id="editor"></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Short Description</label>
+										<div class="col-sm-6 col-md-5">
+											<textarea id="editor1"></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Status</label>
+										<div class="col-sm-6 col-md-5">
+											<div id="jqxButton"></div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Is Feature</label>
+										<div class="col-sm-6 col-md-5 radio-box">
+											<div class="radio radio-inline p-t-10">
+												<input type="radio" checked="" name="featureInline1" value="option1" id="featureRadio1">
+												<label for="featureRadio1">Yes</label>
+											</div>
+											<div class="radio radio-inline p-t-10">
+												<input type="radio"  name="featureInline1" value="option1" id="featureRadio2">
+												<label for="featureRadio2">No</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Visibility</label>
+										<div class="col-sm-6 col-md-5">
+											<select class="form-control">
+												<option>Select</option>
+												<option value="">Everywhere</option>
+												<option value="">Catalog</option>
+												<option value="">Search</option>
+												<option value="">Nowhere</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Condition</label>
+										<div class="col-sm-6 col-md-5">
+											<select class="form-control">
+												<option value="">New</option>
+												<option value="">Used</option>
+												<option value="">Refurbished</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10"><span class="bg-tooltip" data-container="body" title="" data-toggle="popover" data-trigger="hover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus." data-original-title="">Tags</span></label>
+										<div class="col-sm-6 col-md-5">
+											<input type="text" placeholder="" id="inputbox4" class="form-control" data-role="tagsinput">
+											<small>(Each tag has to be followed by a comma)</small> </div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Manufacture</label>
+										<div class="col-sm-6 col-md-5">
+											<select class="form-control">
+												<option>Select</option>
+												<option>Option 1</option>
+												<option>Option 2</option>
+											</select>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<form class="">
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Retail Price</label>
+										<div class="col-lg-2 col-md-2 col-sm-3">
+											<input type="text" placeholder="" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Wholesale Price</label>
+										<div class="col-lg-2 col-md-2 col-sm-3">
+											<input type="text" placeholder="" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Tax rule</label>
+										<div class="col-sm-5 col-md-5">
+											<select class="form-control">
+												<option value="">No Tax</option>
+												<option value="">IND Tax</option>
+												<option value="">US-AK Rate (0%)</option>
+												<option value="">US-AL Rate (4%)</option>
+											</select>
+										</div>
+										<div class="col-sm-3 col-md-3 p-t-10"> <a href="#"><i class="fa fa-plus-circle"></i> Create new tax <i class="fa fa-external-link-square"></i></a> </div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Special Price</label>
+										<div class="col-md-5 col-sm-6">
+											<input type="text" placeholder="" class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Special Price From Date</label>
+										<div class="col-sm-6 col-md-5"> 
+											<!--<input type="text" placeholder="" class="form-control"> -->
+											<div id="dateInput"></div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Special Price To date</label>
+										<div class="col-sm-6 col-md-5"> 
+											<!--<input type="text" placeholder="" class="form-control"> -->
+											<div id="dateInput1"></div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Tax Class</label>
+										<div class="col-sm-6 col-md-5">
+											<select class="form-control">
+												<option value="">No Tax</option>
+												<option value="">IND Tax</option>
+												<option value="">US-AK Rate (0%)</option>
+												<option value="">US-AL Rate (4%)</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Tier Price</label>
+										<div class="col-sm-8 col-md-9">
+											<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0">
+												<div id="jqxgrid8"> </div>
+											</div>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20"> 
+								<!--
+                                        <form class="">
+											<div class="form-group row">
+												<label class="control-label col-sm-4 col-md-3 p-t-10">Meta Title</label>
+												<div class="col-sm-6 col-md-5">
+													<input type="text" placeholder="" id="input" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-sm-4 col-md-3 p-t-10">Meta Description</label>
+												<div class="col-sm-6 col-md-5">
+													<textarea class="form-control"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-sm-4 col-md-3 p-t-10">Meta Keyword</label>
+												<div class="col-sm-6 col-md-5">
+													<textarea class="form-control"></textarea>
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-sm-4 col-md-3 p-t-10">SEDescription</label>
+												<div class="col-sm-6 col-md-5">
+													<input type="text" placeholder="" id="input" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-sm-4 col-md-3 p-t-10">Canonical URL</label>
+												<div class="col-sm-6 col-md-5">
+													<input type="text" placeholder="" id="input" class="form-control">
+												</div>
+											</div><div class="form-group row">
+												<label class="control-label col-sm-4 col-md-3 p-t-10">Header Tag (H1)</label>
+												<div class="col-sm-6 col-md-5">
+													<input type="text" placeholder="" id="input" class="form-control">
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="control-label col-sm-4 col-md-3 p-t-10">Header Tag (H2)</label>
+												<div class="col-sm-6 col-md-5">
+													<input type="text" placeholder="" id="input" class="form-control">
+												</div>
+											</div>
+                                            <div class="form-group row">
+												<label class="control-label col-sm-4 col-md-3 p-t-10">Header Tag (H3)</label>
+												<div class="col-sm-6 col-md-5">
+													<input type="text" placeholder="" id="input" class="form-control">
+												</div>
+											</div>
+                                            <div class="form-group row">
+												<label class="control-label col-sm-4 col-md-3 p-t-10">Header Tag (H4)</label>
+												<div class="col-sm-6 col-md-5">
+													<input type="text" placeholder="" id="input" class="form-control">
+												</div>
+											</div>
+                                            <div class="form-group row">
+												<label class="control-label col-sm-4 col-md-3 p-t-10">Header Tag (H5)</label>
+												<div class="col-sm-6 col-md-5">
+													<input type="text" placeholder="" id="input" class="form-control">
+												</div>
+											</div>
+                                            <div class="form-group row">
+												<label class="control-label col-sm-4 col-md-3 p-t-10">Header Tag (H6)</label>
+												<div class="col-sm-6 col-md-5">
+													<input type="text" placeholder="" id="input" class="form-control">
+												</div>
+											</div>
+										</form>
+                                        -->
+								<div class="form-group row">
+									<div class="col-sm-12 col-xs-12 p-0">
+										<div class="text-right m-b-10"> <span><i class="fa fa-circle text-success"></i> Complete</span><span class="p-l-20"><i class="fa fa-circle text-warning"></i> Product Description or SEO Details Missing</span><span class="p-l-20"><i class="fa fa-circle text-danger"></i> Dropshipper SKU or Assembly Items Missing</span> </div>
+										<div class="section-title-bg">
+											<div class="col-sm-12 col-xs-12 section-title">General Info</div>
+										</div>
+										<div class="col-sm-12 col-xs-12 p-10">
+											<div class="col-lg-9 col-sm-12 col-md-12 col-xs-12 p-0">
+												<form class="">
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">Name <small>(100 Chars Max)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+															<b>(25)</b> </div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-success"></i> <i class="fa fa-circle text-success"></i> <i class="fa fa-circle text-success"></i> <i class="fa fa-circle text-success"></i> <i class="fa fa-circle text-success"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">URL <small>(We recommend 250 Chars)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+															<b>(46)</b> </div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">Page Title <small>(70 Chars Max)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+															<b>(42)</b> </div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-danger"></i> <i class="fa fa-circle text-danger"></i> <i class="fa fa-circle text-danger"></i> <i class="fa fa-circle text-danger"></i> <i class="fa fa-circle text-danger"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">Meta Description <small>(160 Chars Max)</small></label>
+														<div class="col-sm-5 col-md-5 col-xs-12 condition-cmt-box">
+															<textarea class="form-control"></textarea>
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-success"></i> <i class="fa fa-circle text-success"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">Meta Keywords <small>(250 Chars Max)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<textarea class="form-control"></textarea>
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-success"></i> <i class="fa fa-circle text-success"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H1 <small>(Primary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H2 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H2 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H2 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H3 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H3 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H3 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H4 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H4 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H4 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H5 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H5 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H5 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H6 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H6 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+													<div class="form-group row">
+														<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">H6 <small>(Secondary Keyword)</small></label>
+														<div class="col-sm-5 col-md-5  col-xs-12 condition-cmt-box">
+															<input type="text" placeholder="" id="input" class="form-control">
+														</div>
+														<div class="col-sm-3 col-md-4 col-xs-12 m-t-10"> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> <i class="fa fa-circle text-warning"></i> </div>
+													</div>
+												</form>
+											</div>
+											<div class="col-lg-3 col-sm-12 col-md-12 col-xs-12 p-0">
+												<div class="form-group row">
+													<div class="table-responsive">
+														<table class="table-bordered" width="100%">
+															<tr>
+																<th align="center"><div class="p-10 text-center">Tag</div></th>
+																<th align="center"><div class="p-10 text-center">Count</div></th>
+															</tr>
+															<tr>
+																<td align="center"><div class="p-10">Total H1 Tag</div></td>
+																<td align="center"><div class="p-10">1</div></td>
+															</tr>
+															<tr>
+																<td align="center"><div class="p-10">Total H2 Tag</div></td>
+																<td align="center"><div class="p-10">5</div></td>
+															</tr>
+															<tr>
+																<td align="center"><div class="p-10">Total H3 Tag</div></td>
+																<td align="center"><div class="p-10">3</div></td>
+															</tr>
+															<tr>
+																<td align="center"><div class="p-10">Total H4 Tag</div></td>
+																<td align="center"><div class="p-10">4</div></td>
+															</tr>
+															<tr>
+																<td align="center"><div class="p-10">Total H5 Tag</div></td>
+																<td align="center"><div class="p-10">1</div></td>
+															</tr>
+															<tr>
+																<td align="center"><div class="p-10">Total H6 Tag</div></td>
+																<td align="center"><div class="p-10">3</div></td>
+															</tr>
+														</table>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="section-title-bg">
+											<div class="col-sm-12 col-xs-12 section-title">Social Media Promotion</div>
+										</div>
+										<div class="col-sm-12 col-xs-12 p-10">
+											<div class="table-responsive">
+												<table class="table-bordered">
+													<tr>
+														<th colspan="2"><div class="bg-alt p-10">Preffered Promotion Time</div></th>
+													</tr>
+													<tr>
+														<td><div class="p-10">Always</div></td>
+														<td><form>
+																<div class="col-sm-12 col-md-12 col-xs-12 p-10">
+																	<div class="radio radio-inline">
+																		<input type="radio" name="preffered-time" id="preffered-time-yes">
+																		<label for="preffered-time-yes">Yes</label>
+																	</div>
+																	<div class="radio radio-inline">
+																		<input type="radio" name="preffered-time" id="preffered-time-no">
+																		<label for="preffered-time-no">No</label>
+																	</div>
+																</div>
+															</form></td>
+													</tr>
+													<tr>
+														<td align="center" colspan="2"><div class="p-10"><a class="btn btn-primary">Set</a></div></td>
+													</tr>
+												</table>
+											</div>
+											<div class="bg-alt p-10 m-t-15"> <span>Social Media Promotion</span><span class="pull-right">
+												<input type="checkbox">
+												</span> </div>
+											<div id="jqxWidget">
+												<div id="jqxTabs2" class="seo-tabs m-t-15">
+													<ul>
+														<li style="margin-left:10px">Facebook</li>
+														<li>Twitter</li>
+														<li>Pinterest</li>
+														<li>You Tube</li>
+														<li>Google+</li>
+														<li>Flickr</li>
+													</ul>
+													<div class="p-10">
+														<form>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Website Likes</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Product Link Liked</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">First Posted On Facebook</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Last Posted On Facebook</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Next Post Date</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Next Submission after</label>
+																<div class="col-sm-2 col-md-3">
+																	<input class="form-control" type="text">
+																</div>
+																<div class="col-sm-5 col-md-4"> <span>Day(s)</span><a href="#" class="btn btn-primary m-l-10">Update</a> </div>
+															</div>
+														</form>
+													</div>
+													<div class="p-10">
+														<form>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Followers</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Total Tweets</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Last Tweet Date</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Next Tweet Date</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Next Submission After</label>
+																<div class="col-sm-2 col-md-3">
+																	<input class="form-control" type="text">
+																</div>
+																<div class="col-sm-5 col-md-4"> <span>Day(s)</span><a href="#" class="btn btn-primary m-l-10">Update</a> </div>
+															</div>
+														</form>
+													</div>
+													<div class="p-10">
+														<form>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Total Boards</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Total Pins</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Last Pinit Date</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Next Pinit Date</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Next Submission After</label>
+																<div class="col-sm-2 col-md-3">
+																	<input class="form-control" type="text">
+																</div>
+																<div class="col-sm-5 col-md-4"> <span>Day(s)</span><a href="#" class="btn btn-primary m-l-10">Update</a> </div>
+															</div>
+														</form>
+													</div>
+													<div class="p-10">
+														<form>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">YouTube URL</label>
+																<div class="col-sm-4 col-md-4">
+																	<input class="form-control" type="text">
+																</div>
+																<div class="col-sm-3 col-md-3"> <a href="#" class="btn btn-sm btn-primary">Upload</a> </div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Channel's Subscriber</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Video Date</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+														</form>
+													</div>
+													<div class="p-10">
+														<form>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Product Shared</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Last Post Date</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Next Post Date</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Next Submission After</label>
+																<div class="col-sm-3 col-md-3">
+																	<input class="form-control" type="text">
+																</div>
+																<div class="col-sm-4 col-md-4"> <span>Day(s)</span><a href="#" class="btn btn-primary m-l-10">Update</a> </div>
+															</div>
+														</form>
+													</div>
+													<div class="p-10">
+														<form>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Product Shared</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Name</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10 m-b-15">Picture</label>
+																<div class="col-sm-4 col-md-4">
+																	<input type="file" style="position:absolute; z-index:-1;" value="Thumb" class="filestyle" id="filestyle-1">
+																	<div class="bootstrap-filestyle"> <span tabindex="0" class="group-span-filestyle">
+																		<label for="filestyle-1" class="btn btn-white"> <span class="buttonText">Browse Files</span> </label>
+																		</span> </div>
+																</div>
+																<div class="col-sm-3 col-md-3"> <a href="#" class="btn btn-primary">Upload</a> </div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Last Post Date</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Next Post Date</label>
+																<div class="col-sm-7 col-md-6">
+																	<input class="form-control" type="text">
+																</div>
+															</div>
+															<div class="form-group row">
+																<label class="col-sm-5 col-md-5 p-t-10">Next Submission After</label>
+																<div class="col-sm-3 col-md-3">
+																	<input class="form-control" type="text">
+																</div>
+																<div class="col-sm-4 col-md-4"> <span>Day(s)</span><a href="#" class="btn btn-primary m-l-10">Update</a> </div>
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="section-title-bg">
+											<div class="col-sm-12 col-xs-12 section-title">Does this Product posed on Blog?</div>
+										</div>
+										<div class="col-sm-12 col-xs-12 p-10">
+											<form>
+												<div class="form-group row">
+													<label class="control-label col-sm-5 col-md-3 col-xs-12 p-t-10">Does this product posted on Blog?</label>
+													<div class="col-sm-5 col-md-5 col-xs-12 p-t-10">
+														<div class="radio radio-inline">
+															<input type="radio" name="blog-name" id="post-blog-yes">
+															<label for="post-blog-yes">Yes</label>
+														</div>
+														<div class="radio radio-inline">
+															<input type="radio" name="blog-name" id="post-blog-no">
+															<label for="post-blog-no">No</label>
+														</div>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">Blog Post Name</label>
+													<div class="col-sm-5 col-md-5 col-xs-12 p-t-10">
+														<input class="form-control" type="text">
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">Post About</label>
+													<div class="col-sm-5 col-md-5 col-xs-12 p-t-10">
+														<select class="form-control">
+															<option>Product</option>
+															<option>Category</option>
+															<option>New Arrival</option>
+															<option>Best Seller</option>
+															<option>Store</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-group row">
+													<label class="control-label col-sm-4 col-md-3 col-xs-12 p-t-10">Comment</label>
+													<div class="col-sm-5 col-md-5 col-xs-12 p-t-10">
+														<textarea class="form-control"></textarea>
+													</div>
+												</div>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<div id='jqxWidget'>
+									<div>
+										<div id='jqxTree' style='visibility: hidden;'>
+											<ul>
+												<li item-expanded='true'>Category
+													<ul>
+														<li>Category - 1</li>
+														<li >Category - 2
+															<ul>
+																<li>Category - 2.1</li>
+																<li>Category - 2.2 </li>
+																<li>Category - 2.3</li>
+																<li>Category - 2.4</li>
+																<li>Category - 2.5 </li>
+																<li>Category - 2.6</li>
+															</ul>
+														</li>
+														<li>Category - 3
+															<ul>
+																<li>Category - 3.1</li>
+																<li>Category - 3.2 </li>
+																<li>Category - 3.3</li>
+																<li>Category - 3.4</li>
+																<li>Category - 3.5 </li>
+																<li>Category - 3.6</li>
+															</ul>
+														</li>
+														<li>Category - 4
+															<ul>
+																<li>Category - 4.1</li>
+																<li>Category - 4.2 </li>
+																<li>Category - 4.3</li>
+																<li>Category - 4.4</li>
+															</ul>
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<form>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3"><strong>Option Name</strong></label>
+										<div class="col-sm-6 col-md-5"><strong>Option Values</strong></div>
+									</div>
+									<div class="form-group row">
+										<div class="col-sm-4 col-md-3">
+											<input class="form-control" type="text" value="Size">
+										</div>
+										<div class="col-sm-6 col-md-5">
+											<input class="form-control" type="text" data-role="tagsinput">
+										</div>
+										<a class="btn btn-danger"><i class="fa fa-trash-o"></i></a> </div>
+									<div class="form-group row">
+										<div class="col-sm-4 col-md-3">
+											<input class="form-control" type="text" value="Color">
+										</div>
+										<div class="col-sm-6 col-md-5">
+											<input class="form-control" type="text" data-role="tagsinput">
+										</div>
+										<a class="btn btn-danger"><i class="fa fa-trash-o"></i></a> </div>
+									<div class="form-group row">
+										<div class="col-sm-6 col-md-5"> <a href="" class="btn btn-primary">Add another Option</a> </div>
+									</div>
+								</form>
+								<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0">
+									<div id="jqxgrid7"> </div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<form>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Add a new image to this product</label>
+										<div class="col-sm-6 col-md-5">
+											<input type="file" id="filestyle-1" class="filestyle" value="Thumb" style="position:absolute; z-index:-1;">
+											<div class="bootstrap-filestyle"> <span class="group-span-filestyle" tabindex="0">
+												<label class="btn btn-white" for="filestyle-1"> <span class="icon-span-filestyle glyphicon glyphicon-folder-open"></span> <span class="buttonText">Add Files</span> </label>
+												</span> </div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Caption</label>
+										<div class="col-sm-6 col-md-5">
+											<input class="form-control" placeholder="" type="text">
+										</div>
+										<div class="col-sm-2"> <a class="btn btn-white">Update</a> </div>
+									</div>
+								</form>
+								<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0">
+									<div id="jqxgrid6"> </div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<form class="">
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Manage Stock</label>
+										<div class="col-sm-6 col-md-5">
+											<div class="radio radio-inline p-t-10">
+												<input type="radio" checked="" name="stock1" value="option1" id="stockRadio1">
+												<label for="stockRadio1">Yes</label>
+											</div>
+											<div class="radio radio-inline p-t-10">
+												<input type="radio"  name="stock1" value="option1" id="stockRadio2">
+												<label for="stockRadio2">No</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Minimum Qty Allowed in Shopping Cart</label>
+										<div class="col-sm-6 col-md-5">
+											<input class="form-control" placeholder="" type="text" value="1">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Maximum Qty allowed in shopping Cart</label>
+										<div class="col-sm-6 col-md-5">
+											<input class="form-control" placeholder="" type="text" value="100">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Enable Qty Increments</label>
+										<div class="col-sm-6 col-md-5">
+											<div class="radio radio-inline p-t-10">
+												<input type="radio" checked="" name="qty1" value="qtyoption1" id="qtyRadio1">
+												<label for="qtyRadio1">Yes</label>
+											</div>
+											<div class="radio radio-inline p-t-10">
+												<input type="radio"  name="qty1" value="qtyoption1" id="qtyRadio2">
+												<label for="qtyRadio2">No</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Qty</label>
+										<div class="col-sm-6 col-md-5">
+											<input class="form-control" placeholder="" type="text">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Qty for Item's Status to Become Out of Stock</label>
+										<div class="col-sm-6 col-md-5">
+											<input class="form-control" placeholder="" type="text" value="0">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Qty Uses Decimals</label>
+										<div class="col-sm-6 col-md-5">
+											<div class="radio radio-inline p-t-10">
+												<input type="radio" checked="" name="QtyUses1" value="option1" id="QtyUsesRadio1">
+												<label for="QtyUsesRadio1">Yes</label>
+											</div>
+											<div class="radio radio-inline p-t-10">
+												<input type="radio"  name="QtyUses1" value="option1" id="QtyUsesRadio2">
+												<label for="QtyUsesRadio2">No</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Backorders</label>
+										<div class="col-sm-6 col-md-5">
+											<input class="form-control" placeholder="" type="text">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Stock Availability</label>
+										<div class="col-sm-6 col-md-5">
+											<select class="form-control">
+												<option>Out of Stock</option>
+												<option>In Stock</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Displayed text when in-stock</label>
+										<div class="col-sm-6 col-md-5">
+											<input class="form-control" placeholder="" type="text">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Displayed text when backordering is allowed</label>
+										<div class="col-sm-6 col-md-5">
+											<input class="form-control" placeholder="" type="text">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Availability date</label>
+										<div class="col-sm-6 col-md-5">
+											<div id="dateInput2"></div>
+										</div>
+									</div>
+								</form>
+								<div class="card-box">
+									<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0 m-t-15">
+										<form>
+											<div class="form-group">
+												<label class="control-label"><b>Add Inventory</b></label>
+											</div>
+										</form>
+										<div id="jqxgrid9"> </div>
+										<div class="text-right p-t-10"> <a class="btn btn-default btn-sm">Add</a> </div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<div class="row">
+									<div class="col-sm-3 col-xs-12 pull-right m-b-10">
+										<div class="input-group">
+											<input class="form-control">
+											<span class="input-group-addon"><a class="" href=""><i class="fa fa-search"></i></a></span> </div>
+									</div>
+								</div>
+								<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0">
+									<div id="jqxgrid"> </div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<div class="row">
+									<div class="col-sm-3 col-xs-12 pull-right m-b-10">
+										<div class="input-group">
+											<input class="form-control">
+											<span class="input-group-addon"><a class="" href=""><i class="fa fa-search"></i></a></span> </div>
+									</div>
+								</div>
+								<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0">
+									<div id="jqxgrid1"> </div>
+								</div>
+							</div>
+							<div class="col-sm-12 col-xs-12 p-20">
+								<div class="row">
+									<div class="col-sm-3 col-xs-12 pull-right m-b-10">
+										<div class="input-group">
+											<input class="form-control">
+											<span class="input-group-addon"><a class="" href=""><i class="fa fa-search"></i></a></span> </div>
+									</div>
+								</div>
+								<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0">
+									<div id="jqxgrid2"> </div>
+								</div>
+							</div>
+							
+							<!--
+                                    <div class="col-sm-12 col-xs-12 p-20">
+                                    	<div class="row">
+                                            <div class="col-sm-3 col-xs-12 pull-right m-b-10">
+                                            	<div class="input-group">
+                                                <input class="form-control">
+                                                <span class="input-group-addon"><a class="" href=""><i class="fa fa-search"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+										<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0">
+											<div id="jqxgrid3"> </div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-xs-12 p-20">
+                                    	<div class="row">
+                                            <div id="jqxWidget2">
+                                            <div class="pull-right m-b-10">
+                                                <input class="btn btn-white" type="button" value="Add Faq" id="showWindowButton" >
+                                            </div>
+                                            <div class="col-sm-3 col-xs-12 pull-right m-b-10">
+                                            	<div class="input-group">
+                                                <input class="form-control">
+                                                <span class="input-group-addon"><a class="" href=""><i class="fa fa-search"></i></a></span>
+                                                </div>
+                                            </div>                                            
+                                            <div id="mainDemoContainer">
+                                                <div id="customWindow">
+                                                    <div id="customWindowHeader">
+                                                        <span id="captureContainer">
+                                                            <label style="font-weight:bold;">Add FAQ</label>
+                                                        </span>
+                                                    </div>
+                                                    <div style="overflow: hidden;" id="customWindowContent">
+                                                    	<form class="p-10">
+                                                        	<div class="form-group row">
+                                                                <label class="control-label col-sm-4 col-md-3 p-t-10">Question</label>
+                                                                <div class="col-sm-8 col-md-7">
+                                                                    <input class="form-control" type="text">
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                                <label class="control-label col-sm-4 col-md-3 p-t-10">Answer</label>
+                                                                <div class="col-sm-8 col-md-7">
+                                                                    <textarea class="form-control"></textarea>
+                                                                </div>
+                                                            </div>
+                                                            <div class="form-group row">
+                                                            	<label class="control-label col-sm-4 col-md-3 p-t-10"></label>
+                                                                <div class="col-sm-8 col-md-9">
+                                                                    <input class="btn btn-white" type="button" value="Submit" id="">
+                                                                    <input class="btn btn-white" type="button" value="Cancel" id="cancelButton">
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>                                                    
+                                            </div>
+                                            </div>                                    
+                                        </div>
+										<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0">
+											<div id="jqxgrid4"> </div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-xs-12 p-20">
+                                    	<div class="row">
+                                            <div class="col-sm-3 col-xs-12 pull-right m-b-10">
+                                            	<div class="input-group">
+                                                <input class="form-control">
+                                                <span class="input-group-addon"><a class="" href=""><i class="fa fa-search"></i></a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+										<div id="jqxWidget" class="col-sm-12 col-xs-12 p-0">
+											<div id="jqxgrid5"> </div>
+										</div>
+									</div>
+									<div class="col-sm-12 col-xs-12 p-20"> 
+                                    	<div id="chartContainer" style="width:100%; height:500px;"></div>
+                                    </div>
+                                    -->
+							<div class="col-sm-12 col-xs-12 p-20">
+								<ul class="p-0 m-0 list-unstyled">
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/masterstore.jpg" width="95" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/amazon.jpg" width="133" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/amazon-ca.jpg" width="121" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/atg.jpg" width="77" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/bellacor.jpg" width="103" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/ebay.jpg" width="100" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/esty.jpg" width="79" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/houzz.jpg" width="90" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/jet.jpg" width="101" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/kohl.jpg" width="97" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/lnt.jpg" width="78" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/NewEgg.jpg" width="103" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/overstock.jpg" width="115" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/polyvore.jpg" width="107" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/rekuten.jpg" width="103" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/sears.jpg" width="87" height="34" alt="" title=""></a> </li>
+									<li class="col-sm-4 m-b-10"> <a href="#" title="">
+										<input type="checkbox">
+										<img src="assets/images/brand/wayfair.jpg" width="102" height="34" alt="" title=""></a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="form-group row">
+							<div class="col-sm-12 col-md-12 p-t-10 text-right"> <a class="btn btn-warning" href="#">Save Product</a> <a class="btn btn-primary" href="#">Save &amp; Exit</a> <a class="btn btn-danger" href="#">cancel</a></div>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+$(document).ready(function () {  
+	$('[data-toggle="popover"]').popover(); 
+	$("#dateInput").jqxDateTimeInput({ height: '38', width: '100%', formatString: "MMM dd, yyyy"});
+	$("#dateInput1").jqxDateTimeInput({ height: '38', width: '100%', formatString: "MMM dd, yyyy"});
+	$("#dateInput2").jqxDateTimeInput({ height: '38', width: '100%', formatString: "MMM dd, yyyy"});
+	
+	// Edit In Textarea
+	var initEditor = function () {
+	$('#editor').jqxEditor({
+			height: "200px",
+			width: '100%'
+	});
+	$('#editor1').jqxEditor({
+			height: "200px",
+			width: '100%'
+	});
+	};
+	
+	//Create Browse Button
+	$("#jqxButton").jqxSwitchButton({
+		theme: 'classic',
+		width: '150',
+		height: '38',
+		checked: true,
+		onLabel: 'Active',
+		offLabel: 'Inactive'
+	});
+
+	$("#jqxButton").on('change', function(event) {
+		var checked = event.args.check;
+		$("#eventlog1").html("Checked: " + checked);
+	});
+
+    // Create Related Products jqxGrid
+    var url = "assets/xml/productstock1.xml";
+    $.jqx.theme = "custom";
+    // prepare the data
+    var source = {
+        datatype: "xml",
+        datafields: [{
+            name: 'RelatedId',
+            type: 'string'
+        }, {
+            name: 'RelatedName',
+            type: 'String'
+        }, {
+            name: 'RelatedType',
+            type: 'string'
+        }, {
+            name: 'RelatedAttrName',
+            type: 'string'
+        }, {
+            name: 'RelatedStatus',
+            type: 'string'
+        }, {
+            name: 'RelatedSKU',
+            type: 'string'
+        }, {
+            name: 'RelatedPrice',
+            type: 'float'
+        }, {
+            name: 'RelatedPosition',
+            type: 'string'
+        }],
+        root: "AddProductList",
+        record: "AddProduct",
+        id: 'AddProductID',
+        url: url
+    };
+
+    var dataAdapter = new $.jqx.dataAdapter(source, {
+        downloadComplete: function(data, status, xhr) {},
+        loadComplete: function(data) {},
+        loadError: function(xhr, status, error) {}
+    });
+    // initialize jqxGrid
+
+	var statusrenderer = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+
+		if (value == 'Inactive') {
+			return '<div class="text-center action-icons text-danger" style="font-size:20px;"><i class="fa fa-thumbs-o-down"></i></div>';
+		} else {
+			return '<div class="text-center action-icons text-success" style="font-size:20px;"><i class="fa fa-thumbs-o-up"></i></div>';
+		}
+	}
+	
+    $("#jqxgrid").jqxGrid(
+        //$("#jqxgrid").jqxDataTable(
+        {
+            width: '100%',
+            //height: '100%',
+            source: dataAdapter,
+            pageable: true,
+            autoheight: true,
+            sortable: true,
+            altrows: true,
+			showfilterrow: true,
+            filterable: true,
+            //enabletooltips: true,
+            editable: true,
+            columnsheight: 50,
+            rowsheight: 50,
+            selectionmode: 'multiplecellsadvanced',
+            columns: [{
+                    text: '',
+                    datafield: 'Relatedcheck',
+					columntype: 'checkbox',
+					filterable: false,
+					width: '2%',
+					minwidth: '25'
+                }, {
+                    text: 'ID',
+                    datafield: 'RelatedId',
+					editable: false,
+                    minwidth: '90',
+					width: '10%'
+                }, {
+                    text: 'Name',
+                    datafield: 'RelatedName',
+					editable: false,
+                    minwidth: '220',
+					width: '23%'
+                }, {
+                    text: 'Type ',
+                    datafield: 'RelatedType',
+					editable: false,
+                    minwidth: '100',
+					width: '14%'
+                }, {
+                    text: 'Attrib. Set Name',
+                    datafield: 'RelatedAttrName',
+					editable: false,
+                    minwidth: '140',
+					width: '13%'
+                }, {
+                    text: 'Status',
+                    datafield: 'RelatedStatus',
+					editable: false,
+                    minwidth: '80',
+					align: 'center',
+					cellsalign: 'center',
+					cellsrenderer: statusrenderer,
+					filtertype: 'checkedlist',
+					width: '8%'
+                }, {
+                    text: 'Position',
+                    datafield: 'RelatedPosition',
+					editable: false,
+                    minwidth: '90',
+					width: '10%'
+                }, {
+                    text: 'SKU',
+                    datafield: 'RelatedSKU',
+					editable: false,
+                    minwidth: '90',
+					width: '10%'
+                }, {
+                    text: 'Price',
+                    datafield: 'RelatedPrice',
+					editable: false,
+                    minwidth: '90',
+					cellsformat: 'c2',
+					cellsalign: 'right',
+					width: '10%'
+                }
+            ],
+        });
+
+	//Create Up Sells jqxGrid
+    var url = "assets/xml/up-sells.xml";
+    $.jqx.theme = "custom";
+    // prepare the data
+    var source = {
+        datatype: "xml",
+        datafields: [{
+            name: 'RelatedId',
+            type: 'string'
+        }, {
+            name: 'RelatedName',
+            type: 'String'
+        }, {
+            name: 'RelatedType',
+            type: 'string'
+        }, {
+            name: 'RelatedAttrName',
+            type: 'string'
+        }, {
+            name: 'RelatedStatus',
+            type: 'string'
+        }, {
+            name: 'RelatedSKU',
+            type: 'string'
+        }, {
+            name: 'RelatedPrice',
+            type: 'float'
+        }, {
+            name: 'RelatedPosition',
+            type: 'string'
+        }],
+        root: "AddProductList",
+        record: "AddProduct",
+        id: 'AddProductID',
+        url: url
+    };
+
+    var dataAdapter = new $.jqx.dataAdapter(source, {
+        downloadComplete: function(data, status, xhr) {},
+        loadComplete: function(data) {},
+        loadError: function(xhr, status, error) {}
+    });
+    // initialize jqxGrid
+
+	var statusrenderer = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+
+		if (value == 'Inactive') {
+			return '<div class="text-center action-icons text-danger" style="font-size:20px;"><i class="fa fa-thumbs-o-down"></i></div>';
+		} else {
+			return '<div class="text-center action-icons text-success" style="font-size:20px;"><i class="fa fa-thumbs-o-up"></i></div>';
+		}
+	}
+	
+	$("#jqxgrid1").jqxGrid(
+        //$("#jqxgrid").jqxDataTable(
+        {
+            width: '100%',
+            //height: '100%',
+            source: dataAdapter,
+            pageable: true,
+            autoheight: true,
+            sortable: true,
+            altrows: true,
+			showfilterrow: true,
+            filterable: true,
+            //enabletooltips: true,
+            editable: true,
+            columnsheight: 50,
+            rowsheight: 50,
+            selectionmode: 'multiplecellsadvanced',
+            columns: [{
+                    text: '',
+                    datafield: 'Relatedcheck',
+					columntype: 'checkbox',
+					width: '2%',
+					filterable: false,
+					minwidth: '25'
+                }, {
+                    text: 'ID',
+                    datafield: 'RelatedId',
+					editable: false,
+                    minwidth: '90',
+					width: '10%'
+                }, {
+                    text: 'Name',
+                    datafield: 'RelatedName',
+					editable: false,
+                    minwidth: '220',
+					width: '22%'
+                }, {
+                    text: 'Type ',
+                    datafield: 'RelatedType',
+					editable: false,
+                    minwidth: '100',
+					width: '14%'
+                }, {
+                    text: 'Attrib. Set Name',
+                    datafield: 'RelatedAttrName',
+					editable: false,
+                    minwidth: '140',
+					width: '14%'
+                }, {
+                    text: 'Status',
+                    datafield: 'RelatedStatus',
+					editable: false,
+                    minwidth: '90',
+					align: 'center',
+					cellsalign: 'center',
+					cellsrenderer: statusrenderer,
+					filtertype: 'checkedlist',
+					width: '10%'
+                }, {
+                    text: 'Position',
+                    datafield: 'RelatedPosition',
+					editable: false,
+                    minwidth: '90',
+					width: '8%'
+                }, {
+                    text: 'SKU',
+                    datafield: 'RelatedSKU',
+					editable: false,
+                    minwidth: '100',
+					width: '10%'
+                }, {
+                    text: 'Price',
+                    datafield: 'RelatedPrice',
+					editable: false,
+                    minwidth: '90',
+					cellsformat: 'c2',
+					cellsalign: 'right',
+					width: '10%'
+                }
+            ],
+        });
+
+
+	//Create Cross Sells jqxGrid
+    var url = "assets/xml/cross-sells.xml";
+    $.jqx.theme = "custom";
+    // prepare the data
+    var source = {
+        datatype: "xml",
+        datafields: [{
+            name: 'RelatedId',
+            type: 'string'
+        }, {
+            name: 'RelatedName',
+            type: 'String'
+        }, {
+            name: 'RelatedType',
+            type: 'string'
+        }, {
+            name: 'RelatedAttrName',
+            type: 'string'
+        }, {
+            name: 'RelatedStatus',
+            type: 'string'
+        }, {
+            name: 'RelatedSKU',
+            type: 'string'
+        }, {
+            name: 'RelatedPrice',
+            type: 'float'
+        }, {
+            name: 'RelatedPosition',
+            type: 'string'
+        }],
+        root: "AddProductList",
+        record: "AddProduct",
+        id: 'AddProductID',
+        url: url
+    };
+
+    var dataAdapter = new $.jqx.dataAdapter(source, {
+        downloadComplete: function(data, status, xhr) {},
+        loadComplete: function(data) {},
+        loadError: function(xhr, status, error) {}
+    });
+    // initialize jqxGrid
+
+	var statusrenderer = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+
+		if (value == 'Inactive') {
+			return '<div class="text-center action-icons text-danger" style="font-size:20px;"><i class="fa fa-thumbs-o-down"></i></div>';
+		} else {
+			return '<div class="text-center action-icons text-success" style="font-size:20px;"><i class="fa fa-thumbs-o-up"></i></div>';
+		}
+	}
+	
+	$("#jqxgrid2").jqxGrid(
+        //$("#jqxgrid").jqxDataTable(
+        {
+            width: '100%',
+            //height: '100%',
+            source: dataAdapter,
+            pageable: true,
+            autoheight: true,
+            sortable: true,
+            altrows: true,
+			showfilterrow: true,
+            filterable: true,			
+            //enabletooltips: true,
+            editable: true,
+            columnsheight: 50,
+            rowsheight: 50,
+            selectionmode: 'multiplecellsadvanced',
+            columns: [{
+                    text: '',
+                    datafield: 'Relatedcheck',
+					columntype: 'checkbox',
+					width: '2%',
+					filterable: false,
+					minwidth: '25'
+                }, {
+                    text: 'ID',
+                    datafield: 'RelatedId',
+					editable: false,
+                    minwidth: '100',
+					width: '10%'
+                }, {
+                    text: 'Name',
+                    datafield: 'RelatedName',
+					editable: false,
+                    minwidth: '220',
+					width: '22%'
+                }, {
+                    text: 'Type ',
+                    datafield: 'RelatedType',
+					editable: false,
+                    minwidth: '100',
+					width: '14%'
+                }, {
+                    text: 'Attrib. Set Name',
+                    datafield: 'RelatedAttrName',
+					editable: false,
+                    minwidth: '140',
+					width: '14%'
+                }, {
+                    text: 'Status',
+                    datafield: 'RelatedStatus',
+					editable: false,
+                    minwidth: '90',
+					align: 'center',
+					cellsalign: 'center',
+					cellsrenderer: statusrenderer,
+					filtertype: 'checkedlist',
+					width: '9%'
+                }, {
+                    text: 'Position',
+                    datafield: 'RelatedPosition',
+					editable: false,
+                    minwidth: '90',
+					width: '9%'
+                }, {
+                    text: 'SKU',
+                    datafield: 'RelatedSKU',
+					editable: false,
+                    minwidth: '100',
+					width: '10%'
+                }, {
+                    text: 'Price',
+                    datafield: 'RelatedPrice',
+					editable: false,
+                    minwidth: '90',
+					cellsformat: 'c2',
+					cellsalign: 'right',
+					width: '10%'
+                }
+            ],
+        });
+
+	//Create Product FAQ jqxGrid
+    var url = "assets/xml/product-images.xml";
+    $.jqx.theme = "custom";
+    // prepare the data
+    var source = {
+        datatype: "xml",
+        datafields: [{
+            name: 'ProductImage',
+            type: 'string'
+        },{
+            name: 'ImageCaption',
+            type: 'string'
+        }, {
+            name: 'ImagePosition',
+            type: 'String'
+        }, {
+            name: 'ImageCover',
+            type: 'float'
+        }],
+        root: "ProductImageList",
+        record: "ProductImage",
+        id: 'ProductImageID',
+        url: url
+    };
+
+    var dataAdapter = new $.jqx.dataAdapter(source, {
+        downloadComplete: function(data, status, xhr) {},
+        loadComplete: function(data) {},
+        loadError: function(xhr, status, error) {}
+    });
+	
+	var photorenderer = function (row, column, value) {
+		var name = $('#jqxgrid6').jqxGrid('getrowdata', row).ProductImage;
+		var imgurl = 'img/' + name.toLowerCase() + '.png';
+		var img = '<div class="text-center"><img style="margin:2px;" width="50" height="50" src="' + imgurl + '"></div>';
+		return img;
+	}
+	
+    // initialize jqxGrid
+	$("#jqxgrid6").jqxGrid(
+        //$("#jqxgrid").jqxDataTable(
+        {
+            width: '100%',
+            //height: '100%',
+            source: dataAdapter,
+            pageable: true,
+            autoheight: true,
+            sortable: true,
+            altrows: true,
+			//showfilterrow: true,
+            //filterable: true,			
+            //enabletooltips: true,
+            editable: true,
+            columnsheight: 50,
+            //rowsheight: 50,
+			autorowheight: true,
+            selectionmode: 'multiplecellsadvanced',
+            columns: [{
+                    text: 'Image',
+                    datafield: 'ProductImage',
+					align: 'center',
+					cellsalign: 'center',
+					editable: false,
+                    minwidth: '200',
+					width: '30%',
+					cellsrenderer: photorenderer
+                },{
+                    text: 'Caption',
+                    datafield: 'ImageCaption',
+					editable: false,
+                    minwidth: '200',
+					width: '40%'
+                }, {
+                    text: 'Position',
+                    datafield: 'ImagePosition',
+                    minwidth: '100',
+					width: '15%',
+                }, {
+                    text: 'Cover',
+                    datafield: 'ImageCover',
+                    minwidth: '100',
+					align: 'center',
+					cellsalign: 'center',
+					columntype: 'checkbox',
+					width: '15%'
+                }
+            ],
+        });
+
+
+	// Create Custom Option jqxGrid
+    var url = "assets/xml/variant-option.xml";
+    $.jqx.theme = "custom";
+    // prepare the data
+    var source = {
+        datatype: "xml",
+        datafields: [{
+            name: 'CustomOptionName',
+            type: 'String'
+        }, {
+            name: 'CustomOptionPrice',
+            type: 'float'
+        }, {
+            name: 'CustomOptionSKU',
+            type: 'string'
+        }, {
+            name: 'CustomOptionBarcode',
+            type: 'string'
+        }],
+        root: "CustomOptionList",
+        record: "CustomOption",
+        id: 'CustomOptionID',
+        url: url
+    };
+
+    var dataAdapter = new $.jqx.dataAdapter(source, {
+        downloadComplete: function(data, status, xhr) {},
+        loadComplete: function(data) {},
+        loadError: function(xhr, status, error) {}
+    });
+    // initialize jqxGrid
+
+	var inputrenderer = function(row, columnfield, value) {
+		var inputrenderer = '';
+	
+		inputrenderer = '<div class="p-10"><input type="text" class="form-control" value="'+ value +'"></div>'
+	
+		return inputrenderer;
+	}
+	
+	
+    $("#jqxgrid7").jqxGrid(
+        //$("#jqxgrid").jqxDataTable(
+        {
+            width: '100%',
+            //height: '100%',
+            source: dataAdapter,
+            pageable: true,
+            autoheight: true,
+            sortable: true,
+            altrows: true,
+			showfilterrow: true,
+            filterable: true,
+            //enabletooltips: true,
+            editable: true,
+            columnsheight: 50,
+            rowsheight: 60,
+            selectionmode: 'checkbox',
+            columns: [{
+                    text: 'Variant',
+                    datafield: 'CustomOptionName',
+					editable: false,
+                    minwidth: '250',
+					width: '37.6%'
+                }, {
+                    text: 'Price',
+                    datafield: 'CustomOptionPrice',
+					editable: false,
+                    minwidth: '90',
+					cellsformat: 'c2',
+					cellsalign: 'right',
+					width: '20%',
+					cellsrenderer: inputrenderer
+                }, {
+                    text: 'SKU',
+                    datafield: 'CustomOptionSKU',
+					editable: false,
+                    minwidth: '90',
+					width: '20%',
+					cellsrenderer: inputrenderer
+                }, {
+                    text: 'Barcode',
+                    datafield: 'CustomOptionBarcode',
+					editable: false,
+                    minwidth: '90',
+					width: '20%',
+					cellsrenderer: inputrenderer
+                }
+            ],
+        });
+
+
+	// Create Price Tier jqxGrid
+    var url = "assets/xml/tier-price.xml";
+    $.jqx.theme = "custom";
+    // prepare the data
+    var source = {
+        datatype: "xml",
+        datafields: [{
+            name: 'TierWebsite',
+            type: 'string'
+        }, {
+            name: 'TierCustomerGroup',
+            type: 'String'
+        }, {
+            name: 'TierQty',
+            type: 'string'
+        }, {
+
+            name: 'TierPrice',
+            type: 'float'
+        }, {
+            name: 'TierAction',
+            type: 'string'
+        }],
+        root: "TierPriceList",
+        record: "TierPrice",
+        id: 'TierPriceID',
+        url: url
+    };
+
+    var dataAdapter = new $.jqx.dataAdapter(source, {
+        downloadComplete: function(data, status, xhr) {},
+        loadComplete: function(data) {},
+        loadError: function(xhr, status, error) {}
+    });
+    // initialize jqxGrid
+
+	var selectrender = function(row, columnfield, value) {
+		var selectrender = '';
+	
+		selectrender = '<div class="text-center action-icons"><div class="p-10"><select class="form-control"><option>'+ value +'</option></select><div></div>'
+	
+		return selectrender;
+	}
+
+	var inputrenderer = function(row, columnfield, value) {
+		var inputrender = '';
+	
+		inputrender = '<div class="text-center action-icons"><div class="p-10"><input class="form-control" value="'+ value +'"><div></div>'
+	
+		return inputrender;
+	}
+	
+	var tieractionrenderer = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+		var actionLink = '';
+	
+		actionLink = '<div class="text-center action-icons"><a class="btn btn-primary btn-sm" href="#">Add Tier</a></div>'
+	
+		return actionLink;
+	}
+	
+	
+    $("#jqxgrid8").jqxGrid(
+        //$("#jqxgrid").jqxDataTable(
+        {
+            width: '100%',
+            //height: '100%',
+            source: dataAdapter,
+            pageable: true,
+            autoheight: true,
+            sortable: true,
+            altrows: true,
+			//showfilterrow: true,
+            //filterable: true,
+            //enabletooltips: true,
+            editable: false,
+            columnsheight: 50,
+            rowsheight: 60,
+            selectionmode: 'multiplecellsadvanced',
+            columns: [{
+                    text: 'Website',
+                    datafield: 'TierWebsite',
+					width: '25%',
+					minwidth: '150',
+					cellsrenderer: selectrender
+                }, {
+                    text: 'Customer Group',
+                    datafield: 'TierCustomerGroup',
+                    minwidth: '150',
+					width: '25%',
+					cellsrenderer: selectrender
+                }, {
+                    text: 'Quantity',
+                    datafield: 'TierQty',
+                    minwidth: '120',
+					width: '20%',
+					cellsrenderer: inputrenderer
+                }, {
+                    text: 'Price',
+                    datafield: 'TierPrice',
+					cellsformat: 'c2',
+					cellsalign: 'right',
+                    minwidth: '120',
+					width: '19%',
+					cellsrenderer: inputrenderer
+                }, {
+                    text: 'Actions',
+                    datafield: 'TierAction',
+                    minwidth: '100',
+					align: 'center',
+					cellsalign: 'center',
+					cellsrenderer: tieractionrenderer,
+					filterable: false,
+					width: '11%'
+                }
+            ],
+        });
+
+	
+	// Create Inventory grid
+	var url = "assets/xml/productstock.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+	    datatype: "xml",
+	    datafields: [{
+	        name: 'InventoryName',
+	        type: 'string'
+	    }, {
+	        name: 'Date',
+	        type: 'date'
+	    }, {
+	        name: 'PackageType',
+	        type: 'String'
+	    }, {
+	        name: 'Qty',
+	        type: 'string'
+	    }, {
+	        name: 'Cost',
+	        type: 'string'
+	    }, {
+	        name: 'RoomNumber',
+	        type: 'string'
+	    }, {
+	        name: 'AisleNumber',
+	        type: 'string'
+	    }, {
+	        name: 'Rack',
+	        type: 'string'
+	    }, {
+	        name: 'Shelf',
+	        type: 'string'
+	    }, {
+	        name: 'Comment',
+	        type: 'string'
+	    }],
+	    root: "AddProductList",
+	    record: "AddProduct",
+	    id: 'AddProductID',
+	    url: url
+	};
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+	    downloadComplete: function(data, status, xhr) {},
+	    loadComplete: function(data) {},
+	    loadError: function(xhr, status, error) {}
+	});
+	// initialize jqxGrid
+
+	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+	    var actionLink = '';
+	    actionLink = '<div class="text-center action-icons"><a href="#" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" class="on-default permission-row text-primary"><i class="fa fa-unlock-alt"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+	    return actionLink;
+	}
+
+	var myinputTag = function(row, columnfield, value) {
+	    var src = value;
+	    return '<div class="col-sm-12"><input class="m-t-5 form-control" value=' + value + '></div>';
+	}
+
+	var myselectTag = function(row, columnfield, value) {
+	    var src = value;
+	    return '<div class="col-sm-12"><select class="m-t-5 form-control"><option>Unit</option><option>Box</option></select></div>';
+	}
+	
+	var myselectTag1 = function(row, columnfield, value) {
+	    var src = value;
+	    return '<div class="col-sm-12"><select class="m-t-5 form-control"><option>Warehouse 1</option><option>Warehouse 2</option></select></div>';
+	}
+
+	var mytextareaTag = function(row, columnfield, value) {
+	    var src = value;
+	    return '<div class="col-sm-12"><textarea style="min-height:40px; height:40px;" class="m-t-5 form-control"></textarea></div>';
+	}
+
+	var myinputDateTag = function(row, columnfield, value) {
+	    var src = value;
+	    return '<div class="col-sm-12"><div class="input-group m-t-5 "><input class="form-control"><span class="input-group-addon"><i class="fa fa-calendar-o"></i></span></div></div>';
+	}
+
+	$("#jqxgrid9").jqxGrid(
+	    //$("#jqxgrid").jqxDataTable(
+	    {
+	        width: '100%',
+	        //height: '100%',
+	        source: dataAdapter,
+	        //pageable: true,
+	        autoheight: true,
+	        sortable: true,
+	        altrows: true,
+	        enabletooltips: true,
+	        editable: false,
+	        columnsheight: 50,
+	        rowsheight: 50,
+	        selectionmode: 'multiplecellsadvanced',
+	        columns: [{
+	                text: 'Warehouse Name',
+	                datafield: 'InventoryName',
+	                width: '14%',
+					minwidth: '160',					
+	                cellsrenderer: myselectTag1
+	            }, {
+	                text: 'Date',
+	                datafield: 'Date',
+	                width: '13%',
+					minwidth: '140',
+	                cellsformat: 'd',
+	                columntype: 'datetimeinput',
+	                filtertype: 'date',
+	                cellsrenderer: myinputDateTag
+	            }, {
+	                text: 'Package Type',
+	                datafield: 'PackageType',
+	                width: '12%',
+					minwidth: '120',
+	                cellsrenderer: myselectTag
+	            }, {
+	                text: 'Quantity',
+	                datafield: 'Qty',
+	                width: '8%',
+					minwidth: '80',
+	                cellsrenderer: myinputTag
+	            }, {
+	                text: 'Cost',
+	                datafield: 'Cost',
+	                width: '8%',
+					minwidth: '80',
+	                cellsrenderer: myinputTag
+	            }, {
+	                text: 'Room Num',
+	                datafield: 'RoomNumber',
+	                width: '8%',
+					minwidth: '80',
+	                cellsrenderer: myinputTag
+	            }, {
+	                text: 'Aisle Num',
+	                datafield: 'AisleNumber',
+	                width: '8%',
+					minwidth: '80',
+	                cellsrenderer: myinputTag
+	            }, {
+	                text: 'Rack',
+	                datafield: 'Rack',
+	                width: '8%',
+					minwidth: '80',
+	                cellsrenderer: myinputTag
+	            }, {
+	                text: 'Shelf',
+	                datafield: 'Shelf',
+					width: '8%',
+	                minwidth: '80',
+	                cellsrenderer: myinputTag
+	            }, {
+	                text: 'Comment',
+	                datafield: 'Comment',
+	                width: '13%',
+					minwidth: '150',
+	                cellsrenderer: mytextareaTag
+	            }
+	        ],
+	    });
+
+    // Create jqxTree.
+    $('#jqxTree').jqxTree({
+        height: '600px',
+        theme: 'default',
+        hasThreeStates: true,
+        checkboxes: true,
+        width: '90%'
+    });
+    $('#jqxTree').css('visibility', 'visible');
+
+	var initWidgets = function (tab) {
+		switch (tab) {
+			case 0:
+				initEditor();
+				break;
+//			case 13:
+//				initChart();
+//				break;
+		}
+    }
+	
+    // Create jqxTabs.
+    $('#jqxTabs').jqxTabs({
+        width: '100%',
+        position: 'top',
+		initTabContent: initWidgets
+    });
+	
+	$('#jqxTabs2').jqxTabs({ width: '100%', height: 300, position: 'top'});
+
+
+     //Initializing the demo
+//     customButtonsDemo.init();
+
+});
+</script>

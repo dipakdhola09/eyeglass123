@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<NewsletterSubscription>
+	<NewsSubList NewsSubListID="1">
+		<EmailID>admin@xyz.com</EmailID>
+		<SubscribeOn>Apr 28, 2016, 1:36 pm</SubscribeOn>
+		<CreatedOn>Apr 28, 2016, 1:36 pm</CreatedOn>
+		<UnubscribeOn>-</UnubscribeOn>
+	</NewsSubList>
+	<NewsSubList NewsSubListID="2">
+		<EmailID>admin@xyz.com</EmailID>
+		<SubscribeOn>Apr 28, 2016, 1:36 pm</SubscribeOn>
+		<CreatedOn>Apr 28, 2016, 1:36 pm</CreatedOn>
+		<UnubscribeOn>-</UnubscribeOn>
+	</NewsSubList>
+	<NewsSubList NewsSubListID="3">
+		<EmailID>admin@xyz.com</EmailID>
+		<SubscribeOn>Apr 28, 2016, 1:36 pm</SubscribeOn>
+		<CreatedOn>Apr 28, 2016, 1:36 pm</CreatedOn>
+		<UnubscribeOn>-</UnubscribeOn>
+	</NewsSubList>
+	<NewsSubList NewsSubListID="4">
+		<EmailID>admin@xyz.com</EmailID>
+		<SubscribeOn>Apr 28, 2016, 1:36 pm</SubscribeOn>
+		<CreatedOn>Apr 28, 2016, 1:36 pm</CreatedOn>
+		<UnubscribeOn>-</UnubscribeOn>
+	</NewsSubList>
+	<NewsSubList NewsSubListID="5">
+		<EmailID>admin@xyz.com</EmailID>
+		<SubscribeOn>Apr 28, 2016, 1:36 pm</SubscribeOn>
+		<CreatedOn>Apr 28, 2016, 1:36 pm</CreatedOn>
+		<UnubscribeOn>-</UnubscribeOn>
+	</NewsSubList>
+</NewsletterSubscription>

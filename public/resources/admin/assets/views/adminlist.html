@@ -1,0 +1,151 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<h4 class="page-title">Admin List</h4>
+			</div>
+			<div class="col-xs-12 col-sm-7">
+				<div class="pull-right col-sm-12 p-0" style="min-width:300px;">
+					<div class="col-md-12 p-0 text-right"> <a class="btn btn-primary" href="javascript:void(0)" title="Add Admin"><i class="fa fa-plus"></i> Add Admin</a></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20 m-t-10">
+				<div class="card-box grid-structure">
+					<div class="col-md-12 col-xs-12 p-b-10">
+						<div id="jqxWidget">
+							<div id="jqxgrid"></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	
+	var url = "assets/xml/adminlist.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'Name',
+			type: 'String'
+		}, {
+			name: 'Email',
+			type: 'string'
+		}, {
+			name: 'Status',
+			type: 'String'
+		}, {
+			name: 'LastAccess',
+			type: 'String'
+		}, {
+			name: 'LastUpdated',
+			type: 'String'
+		}, {
+			name: 'UpdatedBy',
+			type: 'String'
+		}, {
+			name: 'Action',
+			type: 'string'
+		}],
+		root: "AdminLists",
+		record: "AdminList",
+		id: 'AdminListID',
+		url: url
+	};
+
+ 	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+		var actionLink = '';
+	
+		actionLink = '<div class="text-center action-icons p-t-10"><a href="javascript:void(0)"><i class="fa fa-pencil"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+	
+		return actionLink;
+	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+
+	// initialize jqxGrid
+
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+			width: '100%',
+			//height: '100%',
+			source: dataAdapter,                
+			pageable: true,
+			autoheight: true,
+			sortable: true,
+			altrows: true,
+			enabletooltips: false,
+			editable: true,
+			columnsheight: 50,
+			rowsheight: 70,
+			showfilterrow: false,
+            filterable: false,
+			//selectionmode: 'checkbox',
+			columns: [{
+				text: 'Name',
+				datafield: 'Name',
+				editable: false,
+				width: '16%',
+				minwidth: '160'
+			}, {
+				text: 'Email', 
+				datafield: 'Email',
+				editable: false,
+				width: '15.4%',
+				minwidth: '80',
+			}, {
+				text: 'Status', 
+				datafield: 'Status',
+				editable: false,
+				width: '7.4%',
+				minwidth: '70',
+				cellsalign : 'center',
+				filterable: false
+			}, {
+				text: 'Last Access', 
+				datafield: 'LastAccess',
+				editable: false,
+				width: '18%',
+				minwidth: '80',
+			}, {
+				text: 'Last Updated', 
+				datafield: 'LastUpdated',
+				editable: false,
+				width: '17.5%',
+				minwidth: '80',
+			}, {
+				text: 'Updated By', 
+				datafield: 'UpdatedBy',
+				editable: false,
+				width: '16.8%',
+				minwidth: '80',
+				filterable: false,
+			}, {
+				text: 'Action',
+				datafield: 'Action',
+				width: '8.6%',
+				minwidth: '80',
+				editable: false,
+				filterable: false,
+				cellsrenderer: actionlink
+			}],
+		});
+
+	 basicDemo.init();
+ 
+	//$("#dropDownButton").jqxDropDownButton({ width: 150, height: 36});
+});
+</script>

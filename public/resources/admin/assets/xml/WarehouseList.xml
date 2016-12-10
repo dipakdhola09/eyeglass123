@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<WarehouseList>
+  <Warehouse WarehouseID="1">
+    <WarehouseName>Warehouse 1</WarehouseName>
+    <WarehouseLocation>Lorem Ipsum</WarehouseLocation>
+    <WarehouseDate>Jan 11, 2016</WarehouseDate>
+    <WarehouseTotalStock>200</WarehouseTotalStock>
+  </Warehouse>
+  <Warehouse WarehouseID="2">
+    <WarehouseName>Warehouse 2</WarehouseName>
+    <WarehouseLocation>Lorem</WarehouseLocation>
+    <WarehouseDate>Jan 21, 2016</WarehouseDate>
+    <WarehouseTotalStock>120</WarehouseTotalStock>
+  </Warehouse>
+</WarehouseList>

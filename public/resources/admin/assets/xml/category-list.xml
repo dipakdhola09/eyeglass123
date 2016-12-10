@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<Categories>
+  <Category CategoryID="1">
+    <CategoryId>1</CategoryId>
+    <CategoryName>Category 1</CategoryName>
+    <CategoryDescription>Lorem Ipsum</CategoryDescription>
+    <CategoryPosition>1</CategoryPosition>
+	<SubCategoryLink>Yes</SubCategoryLink>
+    <CategoryStatus>Active</CategoryStatus>
+    <CategoryEdit></CategoryEdit>
+  </Category>
+  <Category CategoryID="2">
+    <CategoryId>1</CategoryId>
+    <CategoryName>Lorem Ipsum</CategoryName>
+    <CategoryDescription>Lorem Ipsum</CategoryDescription>
+    <CategoryPosition>2</CategoryPosition>
+	<SubCategoryLink>No</SubCategoryLink>
+    <CategoryStatus>Inactive</CategoryStatus>
+    <CategoryEdit></CategoryEdit>
+  </Category>
+</Categories>

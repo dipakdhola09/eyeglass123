@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FailedTransactionOrderList>
+  <FailedTransactionOrder FailedTransactionOrderID="1">
+    <FailedProductName>Lorem Ipsum</FailedProductName>
+    <FailedProductSKU>ACV-01</FailedProductSKU>
+    <FailedProductPrice>70.55</FailedProductPrice>
+    <FailedProductQty>1</FailedProductQty>
+    <FailedSubTotal>70.55</FailedSubTotal>
+  </FailedTransactionOrder>
+  <FailedTransactionOrder FailedTransactionOrderID="2">
+    <FailedProductName>Lorem Ipsum</FailedProductName>
+    <FailedProductSKU>CCA-01</FailedProductSKU>
+    <FailedProductPrice>20.20</FailedProductPrice>
+    <FailedProductQty>2</FailedProductQty>
+    <FailedSubTotal>40.40</FailedSubTotal>
+  </FailedTransactionOrder>
+</FailedTransactionOrderList>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CustomOptionList>
+  <CustomOption CustomOptionID="1">
+    <CustomOptionName>xl white</CustomOptionName>
+	<CustomOptionPrice>88.42</CustomOptionPrice>
+	<CustomOptionSKU>P-2341</CustomOptionSKU>
+    <CustomOptionBarcode></CustomOptionBarcode>
+  </CustomOption>  
+  <CustomOption CustomOptionID="2">
+    <CustomOptionName>xl Blue</CustomOptionName>
+	<CustomOptionPrice>102.50</CustomOptionPrice>
+	<CustomOptionSKU>P-2488</CustomOptionSKU>
+    <CustomOptionBarcode></CustomOptionBarcode>
+  </CustomOption>  
+</CustomOptionList>
+

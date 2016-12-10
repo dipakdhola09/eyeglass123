@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LeftDashList>
+  <LeftDash LeftDashID="1">
+    <LeftDashSectionName>Top 5 Items By Sales</LeftDashSectionName>
+    <LeftDashDisplay>true</LeftDashDisplay>
+    <LeftDashDisplayOrder>1</LeftDashDisplayOrder>
+  </LeftDash>
+  <LeftDash LeftDashID="2">
+    <LeftDashSectionName>Last Order</LeftDashSectionName>
+    <LeftDashDisplay>true</LeftDashDisplay>
+    <LeftDashDisplayOrder>2</LeftDashDisplayOrder>
+  </LeftDash>
+  <LeftDash LeftDashID="3">
+    <LeftDashSectionName>Top 10 Low Inventory</LeftDashSectionName>
+    <LeftDashDisplay>true</LeftDashDisplay>
+    <LeftDashDisplayOrder>3</LeftDashDisplayOrder>
+  </LeftDash>
+</LeftDashList>

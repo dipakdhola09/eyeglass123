@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<vendorDropshipper>
+  <Dropshipper DropshipperID="1">
+    <VendorShipperName>Lorem Ipsum</VendorShipperName>
+    <Email>abc@company.com</Email>
+    <DropShipper>Lorem Ipsum</DropShipper>
+    <PurchaseOrder></PurchaseOrder>
+	<PaymentDetails></PaymentDetails>
+    <Status>Active</Status>
+    <Edit></Edit>
+  </Dropshipper>
+  <Dropshipper DropshipperID="2">
+    <VendorShipperName>Lorem Ipsum</VendorShipperName>
+    <Email>abc@company.com</Email>
+    <DropShipper>Lorem Ipsum</DropShipper>
+    <PurchaseOrder></PurchaseOrder>
+	<PaymentDetails></PaymentDetails>
+    <Status>Inactive</Status>
+    <Edit></Edit>
+  </Dropshipper>
+  <Dropshipper DropshipperID="3">
+    <VendorShipperName>Lorem Ipsum</VendorShipperName>
+    <Email>abc@company.com</Email>
+    <DropShipper>Lorem Ipsum</DropShipper>
+    <PurchaseOrder></PurchaseOrder>
+	<PaymentDetails></PaymentDetails>
+    <Status>Inactive</Status>
+    <Edit></Edit>
+  </Dropshipper>
+  <Dropshipper DropshipperID="4">
+    <VendorShipperName>Lorem Ipsum</VendorShipperName>
+    <Email>abc@company.com</Email>
+    <DropShipper>Lorem Ipsum</DropShipper>
+    <PurchaseOrder></PurchaseOrder>
+	<PaymentDetails></PaymentDetails>
+    <Status>Inactive</Status>
+    <Edit></Edit>
+  </Dropshipper>
+  <Dropshipper DropshipperID="5">
+    <VendorShipperName>Lorem Ipsum</VendorShipperName>
+    <Email>abc@company.com</Email>
+    <DropShipper>Lorem Ipsum</DropShipper>
+    <PurchaseOrder></PurchaseOrder>
+	<PaymentDetails></PaymentDetails>
+    <Status>Inactive</Status>
+    <Edit></Edit>
+  </Dropshipper>
+</vendorDropshipper>
+
+

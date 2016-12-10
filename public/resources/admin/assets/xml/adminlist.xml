@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<AdminLists>
+	<AdminList AdminListID="1">
+		<Name>ABC</Name>
+		<Email>abc@xyz.com</Email>
+		<Status><![CDATA[<div class="switch round tiny"><input id="exampleCheckboxSwitch" type="checkbox"><label for="exampleCheckboxSwitch"></label></div>]]></Status>
+		<LastAccess>2016-08-03 11:19:18</LastAccess>
+		<LastUpdated>2016-05-14 02:41:54</LastUpdated>
+		<UpdatedBy>ABC</UpdatedBy>
+		<Action></Action>
+	</AdminList>
+</AdminLists>

@@ -1,0 +1,148 @@
+<?xml version="1.0"?>
+<AmaonProductList>
+  <AmaonProduct AmaonProductID="1">
+    <AmazonImage>camera_icon.png</AmazonImage>
+	<AmazonSKU>ABC-01</AmazonSKU>
+	<AmazonCondition>New</AmazonCondition>
+	<AmazonName>Lorem Ipsum</AmazonName>
+	<AmazonASIN>A0012AB</AmazonASIN>
+	<AmazonInv>0</AmazonInv>
+	<AmazonStatus>Inactive</AmazonStatus>
+	<WebInv>200</WebInv>	
+	<WebStatus>Active</WebStatus>
+	<AmazonVendor>3</AmazonVendor>
+	<MaxOfferPrice>100</MaxOfferPrice>
+	<AdjPrice>0.50</AdjPrice>
+	<MinOfferPrice>27.50</MinOfferPrice>
+	<AmazonLowestPrice>78.80</AmazonLowestPrice>
+	<LowestPriceShip>0.00</LowestPriceShip>
+	<IsLowest>Yes</IsLowest>
+	<YourPrice>78.80</YourPrice>
+	<YourPriceShip>0.00</YourPriceShip>
+	<VendorLowest>85.50</VendorLowest>
+	<FormulaPrice>84.50</FormulaPrice>
+	<WebFormulaPrice>44.50</WebFormulaPrice>
+	<AmazonAction></AmazonAction>
+  </AmaonProduct>
+  <AmaonProduct AmaonProductID="2">
+    <AmazonImage>camera_icon.png</AmazonImage>
+	<AmazonSKU>ABC-01</AmazonSKU>
+	<AmazonCondition>New</AmazonCondition>
+	<AmazonName>Lorem Ipsum</AmazonName>
+	<AmazonASIN>A0012AB</AmazonASIN>
+	<AmazonInv>0</AmazonInv>
+	<AmazonStatus>Inactive</AmazonStatus>
+	<WebInv>200</WebInv>	
+	<WebStatus>Active</WebStatus>
+	<AmazonVendor>3</AmazonVendor>
+	<MaxOfferPrice>100</MaxOfferPrice>
+	<AdjPrice>0.50</AdjPrice>
+	<MinOfferPrice>27.50</MinOfferPrice>
+	<AmazonLowestPrice>78.80</AmazonLowestPrice>
+	<LowestPriceShip>0.00</LowestPriceShip>
+	<IsLowest>Yes</IsLowest>
+	<YourPrice>78.80</YourPrice>
+	<YourPriceShip>0.00</YourPriceShip>
+	<VendorLowest>85.50</VendorLowest>
+	<FormulaPrice>84.50</FormulaPrice>
+	<WebFormulaPrice>44.50</WebFormulaPrice>
+	<AmazonAction></AmazonAction>
+  </AmaonProduct>
+  <AmaonProduct AmaonProductID="3">
+    <AmazonImage>camera_icon.png</AmazonImage>
+	<AmazonSKU>ABC-01</AmazonSKU>
+	<AmazonCondition>New</AmazonCondition>
+	<AmazonName>Lorem Ipsum</AmazonName>
+	<AmazonASIN>A0012AB</AmazonASIN>
+	<AmazonInv>0</AmazonInv>
+	<AmazonStatus>Inactive</AmazonStatus>
+	<WebInv>200</WebInv>	
+	<WebStatus>Active</WebStatus>
+	<AmazonVendor>3</AmazonVendor>
+	<MaxOfferPrice>100</MaxOfferPrice>
+	<AdjPrice>0.50</AdjPrice>
+	<MinOfferPrice>27.50</MinOfferPrice>
+	<AmazonLowestPrice>78.80</AmazonLowestPrice>
+	<LowestPriceShip>0.00</LowestPriceShip>
+	<IsLowest>Yes</IsLowest>
+	<YourPrice>78.80</YourPrice>
+	<YourPriceShip>0.00</YourPriceShip>
+	<VendorLowest>85.50</VendorLowest>
+	<FormulaPrice>84.50</FormulaPrice>
+	<WebFormulaPrice>44.50</WebFormulaPrice>
+	<AmazonAction></AmazonAction>
+  </AmaonProduct>
+  <AmaonProduct AmaonProductID="4">
+    <AmazonImage>camera_icon.png</AmazonImage>
+	<AmazonSKU>ABC-01</AmazonSKU>
+	<AmazonCondition>New</AmazonCondition>
+	<AmazonName>Lorem Ipsum</AmazonName>
+	<AmazonASIN>A0012AB</AmazonASIN>
+	<AmazonInv>0</AmazonInv>
+	<AmazonStatus>Inactive</AmazonStatus>
+	<WebInv>200</WebInv>	
+	<WebStatus>Active</WebStatus>
+	<AmazonVendor>3</AmazonVendor>
+	<MaxOfferPrice>100</MaxOfferPrice>
+	<AdjPrice>0.50</AdjPrice>
+	<MinOfferPrice>27.50</MinOfferPrice>
+	<AmazonLowestPrice>78.80</AmazonLowestPrice>
+	<LowestPriceShip>0.00</LowestPriceShip>
+	<IsLowest>Yes</IsLowest>
+	<YourPrice>78.80</YourPrice>
+	<YourPriceShip>0.00</YourPriceShip>
+	<VendorLowest>85.50</VendorLowest>
+	<FormulaPrice>84.50</FormulaPrice>
+	<WebFormulaPrice>44.50</WebFormulaPrice>
+	<AmazonAction></AmazonAction>
+  </AmaonProduct>
+  <AmaonProduct AmaonProductID="5">
+    <AmazonImage>camera_icon.png</AmazonImage>
+	<AmazonSKU>ABC-01</AmazonSKU>
+	<AmazonCondition>New</AmazonCondition>
+	<AmazonName>Lorem Ipsum</AmazonName>
+	<AmazonASIN>A0012AB</AmazonASIN>
+	<AmazonInv>0</AmazonInv>
+	<AmazonStatus>Inactive</AmazonStatus>
+	<WebInv>200</WebInv>	
+	<WebStatus>Active</WebStatus>
+	<AmazonVendor>3</AmazonVendor>
+	<MaxOfferPrice>100</MaxOfferPrice>
+	<AdjPrice>0.50</AdjPrice>
+	<MinOfferPrice>27.50</MinOfferPrice>
+	<AmazonLowestPrice>78.80</AmazonLowestPrice>
+	<LowestPriceShip>0.00</LowestPriceShip>
+	<IsLowest>Yes</IsLowest>
+	<YourPrice>78.80</YourPrice>
+	<YourPriceShip>0.00</YourPriceShip>
+	<VendorLowest>85.50</VendorLowest>
+	<FormulaPrice>84.50</FormulaPrice>
+	<WebFormulaPrice>44.50</WebFormulaPrice>
+	<AmazonAction></AmazonAction>
+  </AmaonProduct>
+  <AmaonProduct AmaonProductID="6">
+    <AmazonImage>camera_icon.png</AmazonImage>
+	<AmazonSKU>ABC-01</AmazonSKU>
+	<AmazonCondition>New</AmazonCondition>
+	<AmazonName>Lorem Ipsum</AmazonName>
+	<AmazonASIN>A0012AB</AmazonASIN>
+	<AmazonInv>0</AmazonInv>
+	<AmazonStatus>Inactive</AmazonStatus>
+	<WebInv>200</WebInv>	
+	<WebStatus>Active</WebStatus>
+	<AmazonVendor>3</AmazonVendor>
+	<MaxOfferPrice>100</MaxOfferPrice>
+	<AdjPrice>0.50</AdjPrice>
+	<MinOfferPrice>27.50</MinOfferPrice>
+	<AmazonLowestPrice>78.80</AmazonLowestPrice>
+	<LowestPriceShip>0.00</LowestPriceShip>
+	<IsLowest>Yes</IsLowest>
+	<YourPrice>78.80</YourPrice>
+	<YourPriceShip>0.00</YourPriceShip>
+	<VendorLowest>85.50</VendorLowest>
+	<FormulaPrice>84.50</FormulaPrice>
+	<WebFormulaPrice>44.50</WebFormulaPrice>
+	<AmazonAction></AmazonAction>
+  </AmaonProduct>  
+</AmaonProductList>
+

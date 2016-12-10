@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<OrderHistoryList>
+  <OrderHistory OrderHistoryID="1">
+    <customerName>lorem ipsum</customerName>
+    <customerEmail>lorem@loremipsum.com</customerEmail>
+    <OrderHistoryDate>Feb 09, 2016</OrderHistoryDate>
+    <OrderHistoryNo>1245</OrderHistoryNo>
+    <OrderHistoryQty>1</OrderHistoryQty>
+    <OrderHistoryPrice>37.00</OrderHistoryPrice>
+    <OrderHistoryOrderPrice>37.00</OrderHistoryOrderPrice>
+    <OrderHistoryStatus>New</OrderHistoryStatus>
+  </OrderHistory>
+  <OrderHistory OrderHistoryID="2">
+   <customerName>lorem ipsum</customerName>
+    <customerEmail>lorem@loremipsum.com</customerEmail>
+    <OrderHistoryDate>Feb 09, 2016</OrderHistoryDate>
+    <OrderHistoryNo>3545</OrderHistoryNo>
+    <OrderHistoryQty>1</OrderHistoryQty>
+    <OrderHistoryPrice>40.50</OrderHistoryPrice>
+    <OrderHistoryOrderPrice>46.50</OrderHistoryOrderPrice>
+    <OrderHistoryStatus>Shipped</OrderHistoryStatus>
+  </OrderHistory>
+</OrderHistoryList>
+

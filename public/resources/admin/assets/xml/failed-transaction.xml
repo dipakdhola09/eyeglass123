@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FailedTransactionList>
+  <FailedTransaction FailedTransactionID="1">
+    <FailedOrderNo>32015</FailedOrderNo>
+    <FailedCustomerName>Ipsum Lorem</FailedCustomerName>
+    <FailedStoreName>Master Store</FailedStoreName>
+    <FailedPaymentGateway>PAYSCAPE</FailedPaymentGateway>
+    <FailedPaymentMethod>creditcard</FailedPaymentMethod>
+    <FailedTransactionResult></FailedTransactionResult>
+    <FailedIP>::100</FailedIP>
+    <FailedOrderDate>Feb 10, 2016</FailedOrderDate>
+    <FailedAlert>false</FailedAlert>
+    <FailedNote>Lorem ipsum dolor sit amet.</FailedNote>
+  </FailedTransaction>
+  <FailedTransaction FailedTransactionID="2">
+    <FailedOrderNo>12033</FailedOrderNo>
+    <FailedCustomerName>Lorem Ipsum</FailedCustomerName>
+    <FailedStoreName>Master Store</FailedStoreName>
+    <FailedPaymentGateway>PAYSCAPE</FailedPaymentGateway>
+    <FailedPaymentMethod>creditcard</FailedPaymentMethod>
+    <FailedTransactionResult>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</FailedTransactionResult>
+    <FailedIP>::100</FailedIP>
+    <FailedOrderDate>Jan 31, 2016</FailedOrderDate>
+    <FailedAlert>true</FailedAlert>
+    <FailedNote>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</FailedNote>
+  </FailedTransaction>
+</FailedTransactionList>

@@ -1,0 +1,113 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<h4 class="page-title">News Letter Subscription List</h4>
+			</div>
+			<div class="col-xs-12 col-sm-7">
+				<div class="pull-right col-sm-12 p-0" style="min-width:300px;">
+					<div class="col-md-12 p-0 text-right"> <a class="btn btn-danger" href="javascript:void(0)">Delete News Letter Subscription</a> </div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20 m-t-10">
+				<div class="card-box grid-structure">
+					<div class="pull-right col-sm-12 p-b-20">
+						<div class="col-md-12 p-0 text-right"> <a class="btn btn-primary" href="javascript:void(0)">Select All</a> <a class="btn btn-primary" href="javascript:void(0)">deselect All</a> <a class="btn btn-primary" href="javascript:void(0)">copy</a> <a class="btn btn-primary" href="javascript:void(0)">Print</a> <a class="btn btn-success" href="javascript:void(0)">Save</a> </div>
+					</div>
+					<div class="col-md-12 col-xs-12 p-b-10">
+						<div id="jqxWidget">
+							<div id="jqxgrid"></div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+
+$(document).ready(function() {
+	var url = "assets/xml/newssubscription.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'EmailID',
+			type: 'String'
+		}, {
+			name: 'SubscribeOn',
+			type: 'string'
+		}, {
+			name: 'CreatedOn',
+			type: 'String'
+		}, {
+			name: 'UnubscribeOn',
+			type: 'String'
+		}],
+		root: "NewsletterSubscription",
+		record: "NewsSubList",
+		id: 'NewsSubListID',
+		url: url
+	};
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+
+	// initialize jqxGrid
+
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+			width: '100%',
+			//height: '100%',
+			source: dataAdapter,                
+			pageable: true,
+			autoheight: true,
+			sortable: true,
+			altrows: true,
+			enabletooltips: false,
+			editable: true,
+			columnsheight: 50,
+			rowsheight: 70,
+			showfilterrow: true,
+            filterable: true,
+			selectionmode: 'checkbox',
+			columns: [{
+				text: 'Email ID',
+				datafield: 'EmailID',
+				editable: false,
+				width: '25%',
+				minwidth: '160'
+			}, {
+				text: 'Subscribe On', 
+				datafield: 'SubscribeOn',
+				editable: false,
+				width: '25%',
+				minwidth: '80',
+			}, {
+				text: 'Created On', 
+				datafield: 'CreatedOn',
+				editable: false,
+				width: '25%',
+				minwidth: '80',
+			}, {
+				text: 'Unubscribe On', 
+				datafield: 'UnubscribeOn',
+				editable: false,
+				width: '23.12%',
+				minwidth: '80',
+			}],
+		});
+
+	 basicDemo.init();
+ 
+	//$("#dropDownButton").jqxDropDownButton({ width: 150, height: 36});
+});
+</script>

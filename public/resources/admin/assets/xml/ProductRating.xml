@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProductRatingList>
+  <ProductRating ProductRatingID="1">
+    <ReviewproductDate>13 Dec,2015</ReviewproductDate>
+    <ReviewproductName>Lorem Ipsum</ReviewproductName>
+    <ReviewproductQty>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</ReviewproductQty>
+    <ReviewProductRating>3.5</ReviewProductRating>
+    <ReviewProductStatus>Active</ReviewProductStatus>
+  </ProductRating>
+  <ProductRating ProductRatingID="2">
+    <ReviewproductDate>31 Dec,2015</ReviewproductDate>
+    <ReviewproductName>Lorem Ipsum Lorem</ReviewproductName>
+    <ReviewproductQty>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</ReviewproductQty>
+    <ReviewProductRating>3.5</ReviewProductRating>
+    <ReviewProductStatus>Active</ReviewProductStatus>
+  </ProductRating>
+  <ProductRating ProductRatingID="3">
+    <ReviewproductDate>12 Jan,2016</ReviewproductDate>
+    <ReviewproductName>Lorem Ipsum Ipsum</ReviewproductName>
+    <ReviewproductQty>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</ReviewproductQty>
+    <ReviewProductRating>3.5</ReviewProductRating>
+    <ReviewProductStatus>Inactive</ReviewProductStatus>
+  </ProductRating>
+  <ProductRating ProductRatingID="4">
+    <ReviewproductDate>27 Jan,2016</ReviewproductDate>
+    <ReviewproductName>Lorem</ReviewproductName>
+    <ReviewproductQty>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</ReviewproductQty>
+    <ReviewProductRating>3.5</ReviewProductRating>
+    <ReviewProductStatus>Active</ReviewProductStatus>
+  </ProductRating>
+  <ProductRating ProductRatingID="5">
+    <ReviewproductDate>18 Feb,2016</ReviewproductDate>
+    <ReviewproductName>Lorem Ipsum</ReviewproductName>
+    <ReviewproductQty>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</ReviewproductQty>
+    <ReviewProductRating>3.5</ReviewProductRating>
+    <ReviewProductStatus>Inactive</ReviewProductStatus>
+  </ProductRating>
+</ProductRatingList>

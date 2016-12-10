@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ChangeOrderList>
+  <ChangeOrder ChangeOrderID="1">
+    <ChangeOrderSelect>1</ChangeOrderSelect>
+    <ChangeOrderName>Lorem Ipsum is simply dummy text</ChangeOrderName>
+    <ChangeOrderSKU>ABC-1</ChangeOrderSKU>
+    <ChangeOrderOrderQTY>2</ChangeOrderOrderQTY>
+    <ChangeOrderPrice>10.11</ChangeOrderPrice>
+    <ChangeOrderTotalPrice>20.22</ChangeOrderTotalPrice>
+    <ChangeOrderAction></ChangeOrderAction>
+  </ChangeOrder>
+</ChangeOrderList>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<AbandonedShoppingCart>
+	<AbandonedShopping AbandonedShoppingID="1">
+		<ProductSelect></ProductSelect>
+		<FirstName>Lorem Ipsum</FirstName>
+		<Email>abc@company.com</Email>
+		<Orders>-</Orders>
+		<Date>Feb 19, 2016</Date>
+		<Status>Active</Status>
+		<Action>Action</Action>
+	</AbandonedShopping>
+</AbandonedShoppingCart>
+
+

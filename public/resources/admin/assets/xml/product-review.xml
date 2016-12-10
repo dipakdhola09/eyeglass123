@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ReviewList>
+	<Review ReviewID="1">
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABC-1</ProductSKU>
+		<CustomerName>Lorem Ipsum is simply</CustomerName>
+		<ProductRating></ProductRating>
+		<ProductComment>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</ProductComment>
+		<ProductHelpful>0</ProductHelpful>
+		<ProductHelpfulNo>0</ProductHelpfulNo>
+		<ProductReviewDate>Feb 09, 2016</ProductReviewDate>
+		<Disapprove>Active</Disapprove>
+		<Action>Action</Action>
+	</Review>
+	<Review ReviewID="2">
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABC-1</ProductSKU>
+		<CustomerName>Lorem Ipsum is simply</CustomerName>
+		<ProductRating></ProductRating>
+		<ProductComment>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</ProductComment>
+		<ProductHelpful>0</ProductHelpful>
+		<ProductHelpfulNo>0</ProductHelpfulNo>
+		<ProductReviewDate>Feb 09, 2016</ProductReviewDate>
+		<Disapprove>Inactive</Disapprove>
+		<Action>Action</Action>
+	</Review>
+	<Review ReviewID="3">
+		<ProductName>Lorem Ipsum is simply dummy text</ProductName>
+		<ProductSKU>ABC-1</ProductSKU>
+		<CustomerName>Lorem Ipsum is simply</CustomerName>
+		<ProductRating></ProductRating>
+		<ProductComment>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever</ProductComment>
+		<ProductHelpful>0</ProductHelpful>
+		<ProductHelpfulNo>0</ProductHelpfulNo>
+		<ProductReviewDate>Feb 09, 2016</ProductReviewDate>
+		<Disapprove>Inactive</Disapprove>
+		<Action>Action</Action>
+	</Review>
+</ReviewList>

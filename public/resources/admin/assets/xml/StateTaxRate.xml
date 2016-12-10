@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<StateTaxRates>
+	<StateTaxRate StateTaxRateID="1">
+		<StateName>State 1</StateName>
+		<Abbreviation>SA</Abbreviation>
+		<state>0.00</state>
+		<Action></Action>
+	</StateTaxRate>
+	<StateTaxRate StateTaxRateID="2">
+		<StateName>State 2</StateName>
+		<Abbreviation>SA</Abbreviation>
+		<state>0.00</state>
+		<Action></Action>
+	</StateTaxRate>
+	<StateTaxRate StateTaxRateID="3">
+		<StateName>State 3</StateName>
+		<Abbreviation>SA</Abbreviation>
+		<state>0.00</state>
+		<Action></Action>
+	</StateTaxRate>
+	<StateTaxRate StateTaxRateID="4">
+		<StateName>State 4</StateName>
+		<Abbreviation>SA</Abbreviation>
+		<state>0.00</state>
+		<Action></Action>
+	</StateTaxRate>
+	<StateTaxRate StateTaxRateID="5">
+		<StateName>State 5</StateName>
+		<Abbreviation>SA</Abbreviation>
+		<state>0.00</state>
+		<Action></Action>
+	</StateTaxRate>
+</StateTaxRates>

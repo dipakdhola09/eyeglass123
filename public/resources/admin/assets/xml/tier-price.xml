@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TierPriceList>
+  	<TierPrice TierPriceID="1">
+		<TierWebsite>loremipsum.com</TierWebsite>
+		<TierCustomerGroup>Lorem Ipsum</TierCustomerGroup>
+		<TierQty>1</TierQty>
+		<TierPrice>35.45</TierPrice>
+		<TierAction></TierAction>
+  	</TierPrice>  
+</TierPriceList>
+

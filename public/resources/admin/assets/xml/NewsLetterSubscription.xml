@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<NewsLetterSubscription>
+	<NewsLetter NewsLetterID="1">
+		<ProductSelect></ProductSelect>
+		<EmailId>abc@companyname.com</EmailId>
+		<StoreName>Lorem Ipsum</StoreName>
+		<CreatedOn>Feb 20, 2016</CreatedOn>
+		<Status>Active</Status>
+		<Action></Action>
+	</NewsLetter>
+	<NewsLetter NewsLetterID="2">
+		<ProductSelect></ProductSelect>
+		<EmailId>abc@companyname.com</EmailId>
+		<StoreName>Lorem Ipsum</StoreName>
+		<CreatedOn>Feb 20, 2016</CreatedOn>
+		<Status>Inactive</Status>
+		<Action></Action>
+	</NewsLetter>
+</NewsLetterSubscription>
+
+
+
+

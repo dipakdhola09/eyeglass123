@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CustomOptionList>
+  <CustomOption CustomOptionID="1">
+    <CustomOptionId>01</CustomOptionId>
+    <CustomOptionName>Lorem Ipsum</CustomOptionName>
+    <CustomOptionAttrName>Default</CustomOptionAttrName>
+	<CustomOptionSKU>P-2341</CustomOptionSKU>
+	<CustomOptionPrice>88.42</CustomOptionPrice>
+    <CustomOptionInventory>1</CustomOptionInventory>
+    <CustomOptionColor>Black</CustomOptionColor>
+	<CustomOptionActions></CustomOptionActions>
+  </CustomOption>  
+</CustomOptionList>
+

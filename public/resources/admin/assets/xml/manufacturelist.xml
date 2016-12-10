@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ManufacturersList>
+  <Manufacturer manufactureID="1">
+    <ManufactureLogo>avatar-1</ManufactureLogo>
+    <ManufactureName>Brand Name 1</ManufactureName>
+    <ManufactureProduct>10</ManufactureProduct>
+    <ManufactureStatus>Active</ManufactureStatus>
+    <ManufactureEdit></ManufactureEdit>
+  </Manufacturer>
+  <Manufacturer manufactureID="2">
+    <ManufactureLogo>avatar-2</ManufactureLogo>
+    <ManufactureName>Brand Name 2</ManufactureName>
+    <ManufactureProduct>15</ManufactureProduct>
+    <ManufactureStatus>Inactive</ManufactureStatus>
+    <ManufactureEdit></ManufactureEdit>
+  </Manufacturer>
+</ManufacturersList>

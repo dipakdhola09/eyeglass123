@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ShippingMethods>
+	<Shipping ShippingMethodsID="1">
+		<ProductSelect></ProductSelect>
+		<Name>Lorem Ipsum</Name>
+		<ShippingService>Lorem Ipsum</ShippingService>
+		<StoreName>Lorem Ipsum</StoreName>
+		<ShowOnClient>Active</ShowOnClient>
+		<ShowOnAdmin>Inactive</ShowOnAdmin>
+		<RealTimeShipping>Active</RealTimeShipping>
+		<Status>Active</Status>
+		<Action></Action>
+	</Shipping>
+	<Shipping ShippingMethodsID="2">
+		<ProductSelect></ProductSelect>
+		<Name>Lorem Ipsum</Name>
+		<ShippingService>Lorem Ipsum</ShippingService>
+		<StoreName>Lorem Ipsum</StoreName>
+		<ShowOnClient>Active</ShowOnClient>
+		<ShowOnAdmin>Inactive</ShowOnAdmin>
+		<RealTimeShipping>Active</RealTimeShipping>
+		<Status>Inactive</Status>
+		<Action></Action>
+	</Shipping>
+	<Shipping ShippingMethodsID="3">
+		<ProductSelect></ProductSelect>
+		<Name>Lorem Ipsum</Name>
+		<ShippingService>Lorem Ipsum</ShippingService>
+		<StoreName>Lorem Ipsum</StoreName>
+		<ShowOnClient>Inactive</ShowOnClient>
+		<ShowOnAdmin>Active</ShowOnAdmin>
+		<RealTimeShipping>Active</RealTimeShipping>
+		<Status>Active</Status>
+		<Action></Action>
+	</Shipping>
+	<Shipping ShippingMethodsID="4">
+		<ProductSelect></ProductSelect>
+		<Name>Lorem Ipsum</Name>
+		<ShippingService>Lorem Ipsum</ShippingService>
+		<StoreName>Lorem Ipsum</StoreName>
+		<ShowOnClient>Active</ShowOnClient>
+		<ShowOnAdmin>Inactive</ShowOnAdmin>
+		<RealTimeShipping>Inactive</RealTimeShipping>
+		<Status>Inactive</Status>
+		<Action></Action>
+	</Shipping>
+	<Shipping ShippingMethodsID="5">
+		<ProductSelect></ProductSelect>
+		<Name>Lorem Ipsum</Name>
+		<ShippingService>Lorem Ipsum</ShippingService>
+		<StoreName>Lorem Ipsum</StoreName>
+		<ShowOnClient>Active</ShowOnClient>
+		<ShowOnAdmin>Inactive</ShowOnAdmin>
+		<RealTimeShipping>Active</RealTimeShipping>
+		<Status>Active</Status>
+		<Action></Action>
+	</Shipping>
+</ShippingMethods>
+
+
+	

@@ -1,0 +1,414 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<h4 class="page-title">Topic List</h4>
+			</div>
+			<div class="col-xs-12 col-sm-7">
+				<div class="pull-right col-sm-12 p-0" style="min-width:300px;">
+					<div class="col-md-12 p-0 text-right"> <a class="btn btn-primary" onclick="$(\'#window\').jqxWindow(\'open\');" href="javascript:void(0)" id="showWindowButton" title="Chart"><i class="fa fa-plus"></i> Add Content</a> <a class="btn btn-danger">Delete Contents</a> </div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20 m-t-10">
+				<div class="card-box grid-structure">
+					<div class="col-md-12 col-xs-12 p-b-10">
+						<div id="jqxWidget">
+							<div id="jqxgrid"></div>
+						</div>
+						<div id="window" style="z-index:-1;">
+							<div id="windowHeader">
+								<div class="h4 p-10 m-0">Add Content Article</div>
+							</div>
+							<div style="overflow-x: hidden; overflow-y:auto;" id="windowContent">
+								<form class="p-30">
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">Title:</label>
+										<div class="col-sm-7 col-md-6">
+											<input class="form-control" value="Master Store">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">Topic Name:</label>
+										<div class="col-sm-7 col-md-6">
+											<input class="form-control" value="Master Store">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">SEName:</label>
+										<div class="col-sm-7 col-md-6">
+											<input class="form-control" value="Master Store">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">Associated PHP File:</label>
+										<div class="col-sm-7 col-md-6">
+											<input class="form-control" value="Master Store">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">Question:</label>
+										<div class="col-sm-7 col-md-6">
+											<input class="form-control" value="Master Store">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">SEPage Title:</label>
+										<div class="col-sm-7 col-md-6">
+											<textarea class="form-control" value=""></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">SEKeywords:</label>
+										<div class="col-sm-7 col-md-6">
+											<textarea class="form-control" value=""></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">SEDescription:</label>
+										<div class="col-sm-7 col-md-6">
+											<textarea class="form-control" value=""></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3 p-t-10">Status:</label>
+										<div class="col-sm-7 col-md-6 radio-box">
+											<div class="radio radio-inline p-t-10">
+												<input type="radio" checked="" name="featureInline1" value="option1" id="featureRadio1">
+												<label for="featureRadio1">Online</label>
+											</div>
+											<div class="radio radio-inline p-t-10">
+												<input type="radio"  name="featureInline1" value="option1" id="featureRadio2">
+												<label for="featureRadio2">Online</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3 p-t-10">Display In Sitemap:</label>
+										<div class="col-sm-7 col-md-6 radio-box">
+											<div class="radio radio-inline p-t-10">
+												<input type="radio" checked="" name="featureInline1" value="option2" id="featureRadio1">
+												<label for="featureRadio1">Yes</label>
+											</div>
+											<div class="radio radio-inline p-t-10">
+												<input type="radio"  name="featureInline1" value="option2" id="featureRadio2">
+												<label for="featureRadio2">No</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">Page Content</label>
+										<div class="col-sm-8 col-md-9">
+											<textarea id="editor"></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3 p-t-10"></label>
+										<div class="col-sm-7 col-md-6"> <a href="#" class="btn btn-primary">Create Clone</a> </div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div id="window1" style="z-index:-1;">
+							<div id="windowHeader">
+								<div class="h4 p-10 m-0">Add Content Article</div>
+							</div>
+							<div style="overflow-x: hidden; overflow-y:auto;" id="windowContent">
+								<form class="p-30">
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">Title:</label>
+										<div class="col-sm-7 col-md-6">
+											<input class="form-control" value="Master Store">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">Topic Name:</label>
+										<div class="col-sm-7 col-md-6">
+											<input class="form-control" value="Master Store">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">SEName:</label>
+										<div class="col-sm-7 col-md-6">
+											<input class="form-control" value="Master Store">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">Associated PHP File:</label>
+										<div class="col-sm-7 col-md-6">
+											<input class="form-control" value="Master Store">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">Question:</label>
+										<div class="col-sm-7 col-md-6">
+											<input class="form-control" value="Master Store">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">SEPage Title:</label>
+										<div class="col-sm-7 col-md-6">
+											<textarea class="form-control" value=""></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">SEKeywords:</label>
+										<div class="col-sm-7 col-md-6">
+											<textarea class="form-control" value=""></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">SEDescription:</label>
+										<div class="col-sm-7 col-md-6">
+											<textarea class="form-control" value=""></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3 p-t-10">Status:</label>
+										<div class="col-sm-7 col-md-6 radio-box">
+											<div class="radio radio-inline p-t-10">
+												<input type="radio" checked="" name="featureInline1" value="option1" id="featureRadio1">
+												<label for="featureRadio1">Online</label>
+											</div>
+											<div class="radio radio-inline p-t-10">
+												<input type="radio"  name="featureInline1" value="option1" id="featureRadio2">
+												<label for="featureRadio2">Online</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3 p-t-10">Display In Sitemap:</label>
+										<div class="col-sm-7 col-md-6 radio-box">
+											<div class="radio radio-inline p-t-10">
+												<input type="radio" checked="" name="featureInline1" value="option2" id="featureRadio1">
+												<label for="featureRadio1">Yes</label>
+											</div>
+											<div class="radio radio-inline p-t-10">
+												<input type="radio"  name="featureInline1" value="option2" id="featureRadio2">
+												<label for="featureRadio2">No</label>
+											</div>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3">Page Content</label>
+										<div class="col-sm-8 col-md-9">
+											<textarea id="editor1"></textarea>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="col-sm-4 col-md-3 p-t-10"></label>
+										<div class="col-sm-7 col-md-6"> <a href="#" class="btn btn-primary">Create Clone</a> </div>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var basicDemo = (function() {
+	//Adding event listeners	
+	function _addEventListeners() {
+		$('#showWindowButton').click(function() {
+			$('#window').jqxWindow('open');
+		});
+		$('#showWindowButton1').click(function() {
+			$('#window1').jqxWindow('open');
+		});
+	};
+	
+	// Edit In Textarea
+	var initEditor = function () {
+		$('#editor').jqxEditor({
+			height: "200px",
+			width: '100%'
+		});
+		$('#editor1').jqxEditor({
+			height: "200px",
+			width: '100%'
+		});
+	};
+	
+	//Creating the demo window
+	function _createWindow() {
+		var jqxWidget = $('#jqxWidget');
+		var offset = jqxWidget.offset();
+		$('#window').jqxWindow({
+			position: 'center',
+			//showCollapseButton: true,
+			autoOpen:false,
+			isModal: true,
+			maxHeight: 600,
+			maxWidth: 700,
+			minHeight: 200,
+			minWidth: 200,
+			width: '100%',
+			resizable: false,
+			draggable: false,
+			initContent: function() {
+				$('#window').jqxWindow('focus');
+				initEditor();
+			}
+		});
+		$('#window1').jqxWindow({
+            position: 'center',
+            //showCollapseButton: true,
+            autoOpen: false,
+            isModal: true,
+            maxHeight: 600,
+            maxWidth: 700,
+            minHeight: 200,
+            minWidth: 200,
+            width: '80%',
+            resizable: false,
+            draggable: false,
+            initContent: function() {
+                $('#window1').jqxWindow('focus');
+            	initEditor();
+			}
+			
+        });
+	};
+	return {
+		config: {
+			dragArea: null
+		},
+		init: function() {
+			//Attaching event listeners
+			_addEventListeners();
+			//Adding jqxWindow
+			_createWindow();
+		}
+	};
+}());
+$(document).ready(function() {
+	
+	var url = "assets/xml/topiclists.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+//			name: 'ProductSelect',
+//			type: 'String'
+//		}, {
+			name: 'TopicName',
+			type: 'String'
+		}, {
+			name: 'SEName',
+			type: 'string'
+		}, {
+			name: 'Title',
+			type: 'String'
+		}, {
+			name: 'CreatedOn',
+			type: 'String'
+		}, {
+			name: 'LastUpdated',
+			type: 'String'
+		}, {
+			name: 'Status'
+		}, {
+			name: 'Action',
+			type: 'string'
+		}],
+		root: "TopicLists",
+		record: "TopicList",
+		id: 'TopicListID',
+		url: url
+	};
+
+ 	var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+		var actionLink = '';
+	
+		actionLink = '<div class="text-center action-icons p-t-10"><a href="#" ><i class="fa fa-eye"></i></a><a onclick="$(\'#window1\').jqxWindow(\'open\');" href="javascript:void(0)" id="showWindowButton1" ><i class="fa fa-pencil"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+	
+		return actionLink;
+	}
+
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+
+	// initialize jqxGrid
+
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+			width: '100%',
+			//height: '100%',
+			source: dataAdapter,                
+			pageable: true,
+			autoheight: true,
+			sortable: true,
+			altrows: true,
+			enabletooltips: false,
+			editable: true,
+			columnsheight: 50,
+			rowsheight: 70,
+			showfilterrow: true,
+            filterable: true,
+			//selectionmode: 'checkbox',
+			columns: [{
+				text: 'Topic Name',
+				datafield: 'TopicName',
+				editable: false,
+				width: '16%',
+				minwidth: '160'
+			}, {
+				text: 'SEName', 
+				datafield: 'SEName',
+				editable: false,
+				width: '16%',
+				minwidth: '80',
+			}, {
+				text: 'Title', 
+				datafield: 'Title',
+				editable: false,
+				width: '18%',
+				minwidth: '80',
+			}, {
+				text: 'Created On', 
+				datafield: 'CreatedOn',
+				editable: false,
+				width: '17.5%',
+				minwidth: '80',
+			}, {
+				text: 'Last Updated', 
+				datafield: 'LastUpdated',
+				editable: false,
+				width: '16.8%',
+				minwidth: '80',
+				filterable: false,
+			}, {
+				text: 'Status', 
+				datafield: 'Status',
+				editable: false,
+				width: '7.5%',
+				minwidth: '70',
+				cellsalign : 'center',
+				filterable: false,
+				//cellsrenderer: Status
+			}, {
+				text: 'Action',
+				datafield: 'Action',
+				width: '8.6%',
+				minwidth: '80',
+				editable: false,
+				filterable: false,
+				cellsrenderer: actionlink
+			}],
+		});
+
+	 basicDemo.init();
+ 
+	//$("#dropDownButton").jqxDropDownButton({ width: 150, height: 36});
+});
+</script>

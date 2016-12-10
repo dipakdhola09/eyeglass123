@@ -1,0 +1,670 @@
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<h4 class="page-title">Amazon Product List</h4>
+				<ol class="breadcrumb">
+					<li><a href="dashboard.html">Home</a></li>
+					<li>Products</li>
+					<li class="active">Amazon Product List</li>
+				</ol>
+			</div>
+			<div class="col-xs-12 col-sm-7">
+				<div class="pull-right col-sm-12" style="min-width:300px;">
+					<div class="col-sm-8 text-right">
+						<label class="m-t-10">Store Name:</label>
+					</div>
+					<div class="col-sm-2">
+						<select class="form-control m-t-5 pull-left" style="width:100%;">
+							<option>Select</option>
+							<option value="" selected>Store 1</option>
+							<option value="">Store 2</option>
+							<option value="">Store 3</option>
+							<option value="">Store 4</option>
+						</select>
+					</div>
+					<div class="col-sm-2 p-r-0">
+						<select class="form-control m-t-5 pull-left" style="width:100%;" onchange="if (this.value) window.location.href=this.value;">
+							<option>Select</option>
+							<option value="products-list.html">Web</option>
+							<option value="ebay-products-list.html">Ebay</option>
+							<option value="amazon-products-list.html" selected>Amazon</option>
+							<option value="jet-products-list.html">Jet</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="grid-container col-sm-12 m-b-15">
+				<div class="col-md-6">
+					<div class="m-b-10 text-left">
+						<div class="pull-left m-t-10"> <span><i class="fa fa-circle text-success"></i> Complete</span><span class="p-l-20"><i class="fa fa-circle text-warning"></i> Product Mandatory Filed Missing</span><span class="p-l-20"><i class="fa fa-circle text-danger"></i> Product Compulsory Filed Missing</span> </div>
+					</div>
+				</div>
+				<div class="col-md-6 p-r-0  text-right"> <a class="btn btn-primary m-b-5" href="javascript:void(0);">Upload Inventory in Amazon</a> <a class="btn btn-primary m-b-5" href="javascript:void(0);">Upload Price in Amazon</a></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12"><a class="btn btn-primary m-b-10" data-ui-sref="ProductList" data-ui-sref-active="active"><i class="fa fa-backward m-r-10"></i>Back to eCommerce Product List</a> <a href="#" class="btn btn-primary m-b-10">$ Amazon Price Analysis</a> </div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20">
+				<div class="card-box  grid-structure">
+					<div class="row m-b-10">
+						<div class="col-md-6">
+							<form class="form-inline">
+								<div class="form-group m-r-10">
+									<select class="form-control">
+										<option selected>Select Country</option>
+										<option>USA</option>
+										<option>Canada</option>
+										<option>Mexico</option>
+									</select>
+								</div>
+							</form>
+						</div>
+						<div class="col-md-6 text-right">
+							<form class="form-inline">
+								<div class="form-group m-r-10">
+									<label for="exampleInputName2">Search: </label>
+									<input type="text" class="form-control" id="" placeholder="Enter Name / ASIN / SKU / UPC " style=" width:250px;">
+								</div>
+								<button type="submit" class="btn btn-default btn-md">Search</button>
+								<button type="submit" class="btn btn-default btn-md">Show All</button>
+							</form>
+						</div>
+					</div>
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+						<div id="window" style="z-index:-1;">
+							<div id="windowHeader">
+								<div class="h4 p-10 m-0">Edit Lorem Ipsum is simply dummy text</div>
+							</div>
+							<div style="overflow: hidden;" id="windowContent">
+								<form class="p-10">
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3">Options</label>
+										<div class="col-sm-8 col-md-7"> <span class="m-r-10">
+											<label>
+												<input type="checkbox">
+												Is New Arrival</label>
+											</span><span class="m-r-10">
+											<label>
+												<input type="checkbox">
+												Is Best Seller</label>
+											</span><span class="m-r-10">
+											<label>
+												<input type="checkbox">
+												Is Hot Deal</label>
+											</span><span class="m-r-10">
+											<label>
+												<input type="checkbox">
+												Is Featured</label>
+											</span><span>
+											<label>
+												<input type="checkbox">
+												Is Latest</label>
+											</span> </div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Tag Name</label>
+										<div class="col-sm-8 col-md-7">
+											<select class="form-control">
+												<option>New</option>
+												<option>Used</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Price</label>
+										<div class="col-sm-8 col-md-7">
+											<input class="form-control">
+										</div>
+									</div>
+									<div class="form-group row">
+										<label class="control-label col-sm-4 col-md-3 p-t-10">Sale Price</label>
+										<div class="col-sm-8 col-md-7">
+											<input class="form-control">
+										</div>
+									</div>
+									<div class="form-group row p-b-10">
+										<label class="control-label col-sm-4 col-md-3 p-t-10"></label>
+										<div class="col-sm-8 col-md-9">
+											<input class="btn btn-primary" type="button" value="Save" id="">
+										</div>
+									</div>
+								</form>
+							</div>
+						</div>
+						<div id="window1" style="z-index:-1;">
+							<div id="windowHeader1">
+								<div class="h4 p-10 m-0">Warehouse Inventory</div>
+							</div>
+							<div style="overflow: hidden;" id="windowContent1">
+								<div class="table-responsive">
+									<table class="table-bordered" width="100%">
+										<tr>
+											<th><div class="p-10 bg-alt">Preferred Location</div></th>
+											<th><div class="p-10 bg-alt">Warehouse Name</div></th>
+											<th><div class="p-10 bg-alt">Inventory</div></th>
+										</tr>
+										<tr>
+											<td align="center"><div class="p-10">
+													<input type="radio" name="RadioInventory" checked>
+												</div></td>
+											<td><div class="p-10">Warehouse One</div></td>
+											<td><div class="p-10">
+													<input class="form-control" type="text" value="80">
+												</div></td>
+										</tr>
+										<tr>
+											<td align="center"><div class="p-10">
+													<input type="radio" name="RadioInventory" checked>
+												</div></td>
+											<td><div class="p-10">Warehouse Two</div></td>
+											<td><div class="p-10">
+													<input class="form-control" type="text" value="20">
+												</div></td>
+										</tr>
+										<tr>
+											<td align="center"><div class="p-10">
+													<input type="radio" name="RadioInventory" checked>
+												</div></td>
+											<td><div class="p-10">Warehouse Three</div></td>
+											<td><div class="p-10">
+													<input class="form-control" type="text" value="20">
+												</div></td>
+										</tr>
+										<tr>
+											<td colspan="2" align="right"><div class="p-10"><strong>Total</strong></div></td>
+											<td><div class="p-10"><strong>120</strong></div></td>
+										</tr>
+										<tr>
+											<td colspan="3" align="center"><div class="p-10"><a class="btn btn-primary">Save</a></div></td>
+										</tr>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div id="window2" style="z-index:-1;">
+							<div id="windowHeader2">
+								<div class="h4 p-10 m-0">Product Report</div>
+							</div>
+							<div style="overflow: hidden;" id="windowContent2">
+								<div class="table-bordered">
+									<div class="col-sm-4 p-0 p-t-b-10">
+										<div class="p-10"><strong>SKU</strong>: <span>ABC-1</span></div>
+										<div class="p-10 bg-alt"><strong>Name</strong>: <span>Lorem Ipsum Lorem</span></div>
+										<div class="p-10"><strong>Price</strong>: <span>$13.50</span></div>
+										<div class="p-10 bg-alt"><strong>Sale Price</strong>: <span>$13.50</span></div>
+										<div class="p-10"><strong>Inventory</strong>: <span>120</span></div>
+										<div class="p-10 bg-alt"><strong>View</strong>: <span>516</span></div>
+										<div class="p-10"><strong>Rating</strong>: <span>$4.5</span></div>
+									</div>
+									<div class="col-sm-4 p-0 p-t-b-10">
+										<div class="p-10"><img class="img-responsive" src="img/graph1.jpg" alt="graph 1"></div>
+									</div>
+									<div class="col-sm-4 p-0 p-t-b-10">
+										<div class="p-10"><img class="img-responsive" src="img/graph2.jpg" alt="graph 2"></div>
+									</div>
+									<div class="clearfix"></div>
+								</div>
+								<div class="tab m-t-20 popuptabs">
+									<ul class="nav nav-tabs">
+										<li class="active"><a href="#tab1" aria-controls="home" role="tab" data-toggle="tab">Product Summary</a></li>
+										<li><a href="#tab2" aria-controls="home" role="tab" data-toggle="tab">Inventory</a></li>
+									</ul>
+									<div class="tab-content p-0 m-0 m-b-15">
+										<div role="tabpanel" id="tab1" class="tab-pane active">
+											<div class="p-20">
+												<div class="table-responsive">
+													<table width="100%" class="table-bordered">
+														<tr>
+															<th class="p-10">Order Date</th>
+															<th class="p-10">Order Number</th>
+															<th class="p-10">Product Quantity</th>
+															<th class="p-10">Total Price</th>
+															<th class="p-10">Status</th>
+														</tr>
+														<tr>
+															<td class="p-10">jan 21st, 2015</td>
+															<td class="p-10">154822</td>
+															<td class="p-10">3</td>
+															<td class="p-10">$450.00</td>
+															<td class="p-10">New</td>
+														</tr>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div role="tabpanel" id="tab2" class="tab-pane">
+											<div class="p-20"> Inventory </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="p-10 m-t-15"> 
+						<!--<div class="col-sm-3 col-md-2 col-xs-12 pro-action-select">
+                  <select class="form-control">
+                    <option selected>Select Action</option>
+                    <option>Edit Multiple Price</option>
+                    <option>Edit Multiple Products</option>
+                    <option>Multiple Delete</option>                                                        
+                    <optgroup label="Sales channel">
+                        <option value="Amazon.com">Amazon.com</option>
+                        <option value="Amazon.ca">Amazon.ca</option>
+                        <option value="ATG">ATG</option>
+                        <option value="Bellacor">Bellacor</option>
+                        <option value="eBay">eBay</option>
+                        <option value="Esty">Esty</option>
+                        <option value="Houzz">Houzz</option>
+                        <option value="Jet.com">Jet.com</option>
+                        <option value="Kohls">Kohls</option>
+                        <option value="LNT">LNT</option>
+                        <option value="NewEgg">NewEgg</option>
+                        <option value="Overstock">Overstock</option>
+                        <option value="Polyvore">Polyvore</option>
+                        <option value="Rakuten">Rakuten</option>
+                        <option value="Sears">Sears</option>
+                        <option value="Wayfair">Wayfair</option>
+                    </optgroup>
+  				  </select>
+				</div>--> <a href="#" class="btn btn-primary pull-left m-r-10">Edit Multiple Price</a> <a href="#" class="btn btn-primary pull-left m-r-10">Edit Multiple Products</a> <a href="#" class="btn btn-primary pull-left">Multiple Delete</a>
+						<div class="clearfix"></div>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div style="position:relative;">
+		<div class="navbar-fixed-bottom">
+			<div class=" card-box m-b-0 p-10" style="background-color: rgba(0, 0, 0, 0.3);"> <!--<div class="col-sm-3 col-md-2 col-xs-12 pro-action-select">
+                  <select class="form-control">
+                    <option selected>Select Action</option>
+                    <option>Edit Multiple Price</option>
+                    <option>Edit Multiple Products</option>
+                    <option>Multiple Delete</option>                                                        
+                    <optgroup label="Sales channel">
+                        <option value="Amazon.com">Amazon.com</option>
+                        <option value="Amazon.ca">Amazon.ca</option>
+                        <option value="ATG">ATG</option>
+                        <option value="Bellacor">Bellacor</option>
+                        <option value="eBay">eBay</option>
+                        <option value="Esty">Esty</option>
+                        <option value="Houzz">Houzz</option>
+                        <option value="Jet.com">Jet.com</option>
+                        <option value="Kohls">Kohls</option>
+                        <option value="LNT">LNT</option>
+                        <option value="NewEgg">NewEgg</option>
+                        <option value="Overstock">Overstock</option>
+                        <option value="Polyvore">Polyvore</option>
+                        <option value="Rakuten">Rakuten</option>
+                        <option value="Sears">Sears</option>
+                        <option value="Wayfair">Wayfair</option>
+                    </optgroup>
+  				  </select>
+				</div>--> <a href="#" class="btn btn-primary pull-left m-r-10">Edit Multiple Price</a> <a href="#" class="btn btn-primary pull-left m-r-10">Edit Multiple Products</a> <a href="#" class="btn btn-primary pull-left">Multiple Delete</a>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var basicDemo = (function() {
+    //Adding event listeners	
+    function _addEventListeners() {
+        $('#showWindowButton').click(function() {
+            $('#window').jqxWindow('open');
+        });
+        $('#showWindowButton1').click(function() {
+            $('#window1').jqxWindow('open');
+        });
+        $('#showWindowButton2').click(function() {
+            $('#window2').jqxWindow('open');
+        });
+    };
+
+    //Creating the demo window
+    function _createWindow() {
+        var jqxWidget = $('#jqxWidget');
+        var offset = jqxWidget.offset();
+        $('#window').jqxWindow({
+            position: 'center',
+            //showCollapseButton: true,
+            autoOpen: false,
+            isModal: true,
+            maxHeight: 400,
+            maxWidth: 700,
+            minHeight: 200,
+            minWidth: 200,
+            width: '100%',
+            resizable: false,
+            draggable: false,
+
+            initContent: function() {
+                $('#window').jqxWindow('focus');
+            }
+        });
+        $('#window1').jqxWindow({
+            position: 'center',
+            //showCollapseButton: true,
+            autoOpen: false,
+            isModal: true,
+            maxHeight: 600,
+            maxWidth: 700,
+            minHeight: 200,
+            minWidth: 200,
+            width: '80%',
+            resizable: false,
+            draggable: false,
+            initContent: function() {
+                $('#window1').jqxWindow('focus');
+            }
+        });
+        $('#window2').jqxWindow({
+            position: 'center',
+            //showCollapseButton: true,
+            autoOpen: false,
+            isModal: true,
+            maxHeight: 1000,
+            maxWidth: 700,
+            minHeight: 400,
+            minWidth: 200,
+            width: '80%',
+            resizable: false,
+            draggable: false,
+            initContent: function() {
+                $('#window2').jqxWindow('focus');
+            }
+        });
+    };
+    return {
+        config: {
+            dragArea: null
+        },
+        init: function() {
+            //Attaching event listeners
+            _addEventListeners();
+            //Adding jqxWindow
+            _createWindow();
+        }
+    };
+}());
+
+$(document).ready(function() {
+    var url = "assets/xml/amazonproductsList.xml";
+    $.jqx.theme = "custom";
+    // prepare the data
+    var source = {
+        datatype: "xml",
+        datafields: [
+		 {
+			name: 'ProductImage',
+			type: 'String'
+		}, {
+            //			name: 'ProductSelect',
+            //			type: 'String'
+            //		}, {
+            //			name: 'ProductImage',
+            //			type: 'String'
+            //		}, {
+            name: 'ProductName',
+            type: 'string'
+        }, {
+            name: 'ProductSKU',
+            type: 'String'
+        }, {
+            name: 'ProductASIN',
+            type: 'String'
+        }, {
+            name: 'ProductUPC',
+            type: 'String'
+        }, {
+            name: 'Inventory',
+            type: 'String'
+        }, {
+            name: 'Price',
+            type: 'float'
+        }, {
+            name: 'SalePrice',
+            type: 'float'
+                //		}, {
+                //			name: 'StoreName',
+                //			type: 'string'
+                //		}, {
+                //			name: 'EditPrice',
+                //			type: 'string'
+        }, {
+            name: 'UpdatedOnBy',
+            type: 'String'
+        }, {
+            name: 'UpdatedBy',
+            type: 'String'
+        }, {
+            name: 'Uploaded',
+            type: 'String'
+        }, {
+            name: 'FieldStatus',
+            type: 'string'
+        }, {
+            name: 'Action',
+            type: 'string'
+        }],
+        root: "TemplateList",
+        record: "Template",
+        id: 'TemplateID',
+        url: url
+    };
+	
+	var proimg = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+		var proimg = '';
+	
+		proimg = '<div class="text-center action-icons" style="margin-top:15px;"><img width="60" src="img/camera_icon.png"></div>'
+	
+		return proimg;
+	}
+
+    var prodname = function(row, columnfield, value) {
+        var prodname = '';
+
+        prodname = '<div class="text-left action-icons" style="white-space: normal; margin-top:25px;line-height: 20px; margin-right:3px; overflow:hidden; text-overflow:ellipsis;"><i class="fa fa-circle text-success" style="display: table-cell; padding: 0 10px; "></i> <span style="display: table-cell; padding: 0 10px 0 0">' + value + '</span> </div>'
+
+        return prodname;
+    }
+
+    var actionlink = function(row, columnfield, value, defaulthtml, columnproperties, rowdata) {
+        var actionLink = '';
+
+        actionLink = '<div class="text-center action-icons" style=" margin-top:25px;"><a href="edit-product.html" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" title=""><i class="fa  fa-info-circle"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+
+        return actionLink;
+    }
+
+    var Uploaded = function(rrow, columnfield, value, defaulthtml, columnproperties, rowdata) {
+
+        if (value == 'No') {
+            return '<div class="text-center action-icons text-danger" style="margin-top:25px; font-size:18px"><i class="fa fa-times"></i></div>';
+        } else {
+            return '<div class="text-center action-icons text-success" style="margin-top:25px; font-size:18px"><i class="fa fa-check"></i></div>';
+        }
+    }
+
+
+    var FieldStatus = function(rrow, columnfield, value, defaulthtml, columnproperties, rowdata) {
+
+        if (value == 'Missing Info') {
+            return '<div class="text-center action-icons text-danger" style="margin-top:25px; font-size:18px"><i class="fa fa-warning"></i></div>';
+        } else {
+            return '<div class="text-center action-icons text-success" style="margin-top:25px; font-size:18px"><i class="fa fa-check-circle-o"></i></div>';
+        }
+    }
+    var dataAdapter = new $.jqx.dataAdapter(source, {
+        downloadComplete: function(data, status, xhr) {},
+        loadComplete: function(data) {},
+        loadError: function(xhr, status, error) {}
+    });
+    // initialize jqxGrid
+
+
+
+    $("#jqxgrid").jqxGrid(
+        //$("#jqxgrid").jqxDataTable(
+        {
+            width: '100%',
+            //height: '100%',
+            source: dataAdapter,
+            pageable: true,
+            autoheight: true,
+            sortable: true,
+            altrows: true,
+            enabletooltips: true,
+            editable: true,
+            columnsheight: 50,
+            rowsheight: 100,
+            showfilterrow: true,
+            filterable: true,
+            selectionmode: 'checkbox',
+            columns: [
+                /*{
+                	text: '',
+                	datafield: 'ProductSelect',
+                	width: '3%',
+                	minwidth: '30',
+                	columntype:'checkbox',
+                	filterable: false
+                }, */
+                /*{
+                				text: 'Image',
+                				datafield: 'ProductImage',
+                				width: '7.5%',
+                				editable: false,
+                				filterable: false,
+                				cellsrenderer: proimg
+                			},  */
+				   {
+					text: 'Image',
+					datafield: 'ProductImage',
+					width: '10%',
+					editable: false,
+					filterable: false,
+					cellsrenderer: proimg
+				}, {
+                    text: 'Product Name',
+                    datafield: 'ProductName',
+                    editable: false,
+                    width: '18%',
+                    cellsrenderer: prodname,
+                    minwidth: '140'
+                }, {
+                    text: 'SKU',
+                    datafield: 'ProductSKU',
+                    editable: false,
+                    width: '5%',
+                    minwidth: '70'
+                }, {
+                    text: 'ASIN',
+                    datafield: 'ProductASIN',
+                    editable: false,
+                    width: '8%',
+                    minwidth: '90'
+                }, {
+                    text: 'UPC',
+                    datafield: 'ProductUPC',
+                    editable: false,
+                    width: '8.5%',
+                    //cellsrenderer: ProductUPC				
+                }, {
+                    text: 'Inventory',
+                    datafield: 'Inventory',
+                    editable: false,
+                    cellsalign: 'center',
+                    width: '6%',
+                    minwidth: '80'
+                }, {
+                    text: 'Cost',
+                    datafield: 'Price',
+                    editable: false,
+                    cellsformat: 'c2',
+                    cellsalign: 'right',
+                    width: '6%',
+                    minwidth: '70'
+                }, {
+                    text: 'Sale Price',
+                    datafield: 'SalePrice',
+                    editable: false,
+                    cellsformat: 'c2',
+                    cellsalign: 'right',
+                    width: '5%',
+                    minwidth: '90',
+					renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:10px; margin-left: 5px;">Sale <br>Price</div>';
+					},
+                }, {
+                    text: 'Updated On',
+                    datafield: 'UpdatedOnBy',
+                    editable: false,
+                    cellsalign: 'center',
+                    width: '6%',
+                    minwidth: '80'
+                }, {
+                    text: 'Updated By',
+                    datafield: 'UpdatedBy',
+                    editable: false,
+                    cellsalign: 'center',
+                    width: '6.5%',
+                    minwidth: '70'
+                }, {
+                    text: 'Uploaded',
+                    datafield: 'Uploaded',
+                    width: '5%',
+                    minwidth: '80',
+                    editable: false,
+                    filtertype: 'checkedlist',
+                    cellsrenderer: Uploaded
+                }, {
+                    text: 'Field Status',
+                    datafield: 'FieldStatus',
+                    width: '5%',
+                    minwidth: '50',
+                    editable: false,
+                    filtertype: 'checkedlist',
+					renderer: function (defaultText, alignment, height) {
+             		return '<div style="margin-top:10px; margin-left: 5px;">Field <br>Status</div>';
+					},
+                    cellsrenderer: FieldStatus
+                }, {
+                    text: 'Action',
+                    datafield: 'Action',
+                    width: '7%',
+                    minwidth: '50',
+                    editable: false,
+                    filterable: false,
+                    cellsrenderer: actionlink
+                }
+            ],
+        });
+
+    basicDemo.init();
+
+
+    $("#dropDownButton").jqxDropDownButton({
+        width: 150,
+        height: 36
+    });
+    $('#jqxTree').on('select', function(event) {
+        var args = event.args;
+        var item = $('#jqxTree').jqxTree('getItem', args.element);
+        var dropDownContent = '<div style="position: relative; padding: 7px 12px; font-size:14px; color:#565656; line-height: 1.42857;">' + item.label + '</div>';
+        $("#dropDownButton").jqxDropDownButton('setContent', dropDownContent);
+    });
+    $("#jqxTree").jqxTree({
+        width: 200,
+        height: 220
+    });
+
+});
+</script>

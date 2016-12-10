@@ -1,0 +1,233 @@
+<!-- Page Content -->
+<div class="content">
+	<div class="container">
+		<div class="panel-group" id="accordion">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h4 class="panel-title"> Failed Transactions </h4>
+				</div>
+				<div id="collapseOne" class="panel-collapse collapse in">
+					<div class="panel-body">
+						<div id="jqxWidget">
+							<div id="jqxgrid"></div>
+						</div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+var basicDemo = (function() {
+	//Adding event listeners	
+//	function _addEventListeners() {
+//		$('#showWindowButton').click(function() {
+//			$('#window').jqxWindow('open');
+//		});
+//		$('#hideWindowButton').click(function() {
+//			$('#window').jqxWindow('close');
+//		});
+//	};
+	
+	//Creating the demo window
+	function _createWindow() {
+		var jqxWidget = $('#jqxWidget');
+		var offset = jqxWidget.offset();
+		$('#window').jqxWindow({
+			position: 'center',
+			//showCollapseButton: true,
+			autoOpen:false,
+			isModal: true,
+			maxHeight: 600,
+			maxWidth: 700,
+			minHeight: 200,
+			minWidth: 200,
+			width: '100%',
+			resizable: false,
+			draggable: false,
+			
+			initContent: function() {
+				$('#window').jqxWindow('focus');
+			}
+		});
+	};
+	return {
+		config: {
+			dragArea: null
+		},
+		init: function() {
+			//Attaching event listeners
+			_addEventListeners();
+			//Adding jqxWindow
+			_createWindow();
+		}
+	};
+}());
+$(document).ready(function () {
+	var url = "assets/xml/failed-transaction.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'FailedOrderNo',
+			type: 'String'
+		}, {
+			name: 'FailedCustomerName',
+			type: 'string'
+		}, {
+			name: 'FailedStoreName',
+			type: 'String'
+		}, {
+			name: 'FailedPaymentGateway',
+			type: 'String'
+		}, {
+			name: 'FailedPaymentMethod',
+			type: 'String'
+		}, {
+			name: 'FailedTransactionResult',
+			type: 'String'
+		}, {
+			name: 'FailedIP',
+			type: 'String'
+		}, {
+			name: 'FailedOrderDate',
+			type: 'String'
+		}, {
+			name: 'FailedAlert',
+			type: 'bool'
+		}, {
+			name: 'FailedNote',
+			type: 'String'
+		}],
+		root: "FailedTransactionList",
+		record: "FailedTransaction",
+		id: 'FailedTransactionID',
+		url: url
+	};
+	
+	var textarearender = function(row, columnfield, value) {
+		return '<div class="p-10" style="white-space:normal;">'+ value +'</div>'
+	}
+	
+	var linkrender = function(row, columnfield, value) {
+		return '<div class="jqx-grid-cell-left-align p-10" style="white-space:normal;"><a onclick="$(\'#window\').jqxWindow(\'open\');" href="javascript:void(0)" id="showWindowButton">'+ value +'</a></div>'
+	}
+	
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	
+	// initialize jqxGrid
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: true,
+		editable: true,
+		columnsheight: 50,
+		//rowsheight: 50,
+		autorowheight: true,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'checkbox',
+		columns: [{
+			text: 'Order No',
+			datafield: 'FailedOrderNo',
+			width: '7%',
+			minwidth: '70',
+			editable: false,
+			cellsrenderer: linkrender
+		},{
+			text: 'Customer Name',
+			datafield: 'FailedCustomerName',
+			editable: false,
+			width: '13%',
+			minwidth: '100'
+		},{
+			text: 'Store Name',
+			datafield: 'FailedStoreName',
+			editable: false,
+			width: '8.7%',
+			minwidth: '100',
+		},{
+			text: 'Payment Gateway',
+			datafield: 'FailedPaymentGateway',
+			editable: false,
+			width: '8%',
+			minwidth: '90',
+			renderer: function (defaultText, alignment, height) {
+            	return '<div style="margin-top:10px; margin-left: 5px;">Payment<br>Gateway</div>';
+			},
+		},{
+			text: 'Payment Method',
+			datafield: 'FailedPaymentMethod',
+			editable: false,
+			width: '8%',
+			minwidth: '90',
+			renderer: function (defaultText, alignment, height) {
+             	return '<div style="margin-top:10px; margin-left: 5px;">Payment<br>Method</div>';
+			},
+		},{
+			text: 'Transaction Result',
+			datafield: 'FailedTransactionResult',
+			width: '17%',
+			minwidth: '120',
+			editable: false,			
+			cellsrenderer: textarearender,
+			renderer: function (defaultText, alignment, height) {
+             	return '<div style="margin-top:10px; margin-left: 5px;">Transaction<br>Result</div>';
+			},
+		},{
+			text: 'IP',
+			datafield: 'FailedIP',
+			width: '6%',
+			minwidth: '70',
+			editable: false,
+		},{
+			text: 'Order Date',
+			datafield: 'FailedOrderDate',
+			width: '8%',
+			minwidth: '100',
+			editable: false,
+		},{
+			text: 'Alert',
+			datafield: 'FailedAlert',
+			width: '5%',
+			minwidth: '50',
+			editable: true,
+			columntype:'checkbox',
+			filtertype: 'checkedlist',
+			renderer: function (defaultText, alignment, height) {
+            	return '<div style="margin-top:10px; margin-left: 5px;">Alert<br>On/Off</div>';
+			},
+		},{
+			text: 'Note',
+			datafield: 'FailedNote',
+			width: '17%',
+			minwidth: '120',
+			//editable: false,
+			filterable: false,
+			cellsrenderer: textarearender
+		}],
+	});
+	
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	
+	//Initializing the demo
+    basicDemo.init();
+});
+</script>

@@ -1,0 +1,182 @@
+<!-- Page Content -->
+<div class="content">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12 col-sm-5">
+				<h4 class="page-title">Sub Category List</h4>
+				<ol class="breadcrumb">
+					<li><a data-ui-sref="Home" data-ui-sref-active="active">Home</a></li>
+					<li><a data-ui-sref="CategoryList" data-ui-sref-active="active">Categories</a></li>
+					<li class="active">Sub Category List</li>
+				</ol>
+			</div>
+			<div class="col-xs-12 col-sm-7">
+				<div class="pull-right col-sm-12" style="min-width:300px;">
+					<ul class="list-unstyled list-inline text-right prod-edit-links p-t-10">
+						<li> <a data-ui-sref="CategoryList" data-ui-sref-active="active">
+							<div class="menu-icon text-center"><i class="fa fa-plus-circle"></i></div>
+							<div class="menu-text">Add new category</div>
+							</a> </li>
+						<li> <a href="#">
+							<div class="menu-icon text-center"><i class="fa fa-question-circle"></i></div>
+							<div class="menu-text">Help</div>
+							</a> </li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 block p-20">
+				<div class="card-box grid-structure">
+					<div id="jqxWidget">
+						<div id="jqxgrid"></div>
+					</div>
+					<div class="col-sm-12 p-0 m-t-20">
+						<ul class="prod-edit-links list-inline list-unstyled">
+							<li> <a data-ui-sref="CategoryList" data-ui-sref-active="active">
+								<div class="menu-icon text-center"><i class="fa fa-arrow-circle-left"></i></div>
+								<div class="menu-text">Back to Category</div>
+								</a> </li>
+						</ul>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$(document).ready(function() {
+	var url = "assets/xml/sub-category-list.xml";
+	$.jqx.theme = "custom";
+	// prepare the data
+	var source = {
+		datatype: "xml",
+		datafields: [ {
+			name: 'SubCategoryId',
+			type: 'String'
+		}, {
+			name: 'SubCategoryName',
+			type: 'string'
+		}, {
+			name: 'SubCategoryDescription',
+			type: 'String'
+		}, {
+			name: 'SubCategoryPosition',
+			type: 'String'
+		}, {
+			name: 'SubCategoryStatus',
+			type: 'String'
+		}, {
+			name: 'SubCategoryEdit',
+			type: 'String'
+		}],
+		root: "SubCategories",
+		record: "SubCategory",
+		id: 'SubCategoryID',
+		url: url
+	};
+
+	var inputrender = function(row, columnfield, value) {
+		var inputrender = '';
+	
+		inputrender = '<div class="p-10"><input class="form-control" value="'+ value +'"></div>'
+	
+		return inputrender;
+	}
+
+	var actionlink = function(row, columnfield, value) {
+		var actionLink = '';
+	
+		actionLink = '<div class="text-center action-icons"><a href="#" class="on-default edit-row text-default"><i class="fa fa-pencil"></i></a><a href="#" id="deleterowbutton" class="on-default remove-row text-danger"><i class="fa fa-trash-o"></i></a></div>'
+	
+		return actionLink;
+	}
+	
+	var CategoryStatus = function (row, columnfield, value) {
+				
+				 if (value == 'Inactive') {
+                    return '<div class="text-center action-icons text-danger" style="font-size:18px"><i class="fa fa-thumbs-o-down"></i></div>';
+                }
+                else {
+                    return '<div class="text-center action-icons text-success" style="font-size:18px"><i class="fa fa-thumbs-o-up"></i></div>';
+                }
+		}
+	var dataAdapter = new $.jqx.dataAdapter(source, {
+		downloadComplete: function(data, status, xhr) {},
+		loadComplete: function(data) {},
+		loadError: function(xhr, status, error) {}
+	});
+	// initialize jqxGrid
+
+
+	$("#jqxgrid").jqxGrid(
+		//$("#jqxgrid").jqxDataTable(
+		{
+		width: '100%',
+		//height: '100%',
+		source: dataAdapter,                
+		pageable: true,
+		autoheight: true,
+		sortable: true,
+		altrows: true,
+		enabletooltips: true,
+		editable: true,
+		columnsheight: 50,
+		rowsheight: 60,
+		showfilterrow: true,
+		filterable: true,
+		selectionmode: 'checkbox',
+		columns: [
+		/*{
+			text: '',
+			datafield: 'ProductSelect',
+			width: '3%',
+			minwidth: '30',
+			columntype:'checkbox',
+			filterable: false
+		}, */{
+			text: 'ID',
+			datafield: 'SubCategoryId',
+			width: '10%',
+			minwidth: '120',
+			editable: false,
+		},{
+			text: 'Name',
+			datafield: 'SubCategoryName',
+			editable: false,
+			width: '22%',
+			minwidth: '200'
+		},{
+			text: 'Description',
+			datafield: 'SubCategoryDescription',
+			editable: false,
+			width: '41.6%',
+			minwidth: '300',
+		},{
+			text: 'Position',
+			datafield: 'SubCategoryPosition',
+			editable: false,
+			width: '10%',
+			minwidth: '120',
+			cellsrenderer: inputrender
+		},{
+			text: 'Status',
+			datafield: 'SubCategoryStatus',
+			width: '7%',
+			minwidth: '80',
+			editable: false,
+			filtertype: 'checkedlist',
+			cellsrenderer: CategoryStatus
+		},{
+			text: 'Action',
+			datafield: 'SubCategoryEdit',
+			width: '7%',
+			minwidth: '80',
+			editable: false,
+			filterable: false,
+			cellsrenderer: actionlink
+		}],
+	});
+});
+</script>
