@@ -17,12 +17,11 @@ use DB;
 use Illuminate\Support\Facades\Input;
 use App\Http\Controllers\Controller;
 use App\User;
-use App\Website_model;
-use App\Role;
 use Session;
 use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Validator;
 use Illuminate\Support\Facades\Crypt;
+use Image;
 
 class UsersController extends Controller {
 
@@ -69,8 +68,6 @@ class UsersController extends Controller {
      */
 
     public function create() {
-
-      
         return view('admin.user.create');
     }
 
@@ -95,26 +92,27 @@ class UsersController extends Controller {
         $validator = Validator::make($user, $rules);
 
         //store
-        if ($validator->fails()) {
-            
+        if ($validator->fails()) {            
             return redirect('user/add')->withErrors($validator);
         } 
         else {
-
-           
-
-           
-            
-           
-            
-           
+			
+			$avatar = Request::file('avatar');
+			
+			if($avatar){
+				
+				$filename = $user['name'].'_'.time() . '.' . $avatar->getClientOriginalExtension();
+				Image::make($avatar)->resize(128, 128)->save( public_path('/uploads/avatars/' . $filename ) );
+				$user['avatar'] = $filename;
+			}
+			
+			
            
             $user['password'] = bcrypt($user['password']);
-
-            
             //insert data in user table
+			
             User::create($user);
-            
+			
             //get last insert id
             $id = DB::getPdo()->lastInsertId();
             
@@ -151,18 +149,23 @@ class UsersController extends Controller {
         }
         //validation
         $rules = array(
-            "email" => "required|email",
+            "email" => "required|email",			
         );
 
-        $validator = Validator::make($user, $rules);
-
+        $validator = Validator::make($user, $rules);		
 		
-        if ($validator->fails()) {
-			
-
+        if ($validator->fails()) {			
             return redirect('user/edit/' . $id)->withErrors($validator);
-        } 
-        else {
+        } else {
+			
+			$avatar = Request::file('avatar');
+			
+			if($avatar){
+				
+				$filename = $user['name'].'_'.time() . '.' . $avatar->getClientOriginalExtension();
+				Image::make($avatar)->resize(128, 128)->save( public_path('/uploads/avatars/' . $filename ) );
+				$user['avatar'] = $filename;
+			}
 			
             User::where('id', $id)->update($user);
 			

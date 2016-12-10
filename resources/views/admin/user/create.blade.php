@@ -35,7 +35,7 @@
 					<p class="alert alert-success">{{ Session::get('msg') }}</p>
 					@endif
                     <!-- Main Content -->
-                     {!! Form::open(['action' => 'UsersController@store','autocomplete' => 'off','class'=>'form-horizontal','enctype'=>'multipart/form-data']) !!}      
+                     {!! Form::open(['action' => 'UsersController@store','autocomplete' => 'off','files'=>'true','class'=>'form-horizontal','enctype'=>'multipart/form-data']) !!}      
             		{!! Form::hidden('remember_token',csrf_token()) !!}
                         <div class="block">
                             <ul class="nav nav-tabs nav-justified push-20" data-toggle="tabs">
@@ -63,13 +63,7 @@
                                                     <label for="profile-lastname">Lastname</label>
 													{!! Form::text('lastname','',['id'=>'profile-lastname','class' => 'form-control input-lg','autocomplete' => 'off','placeholder'=>'Enter your lastname..']) !!}                                                    
                                                 </div>	
-                                            </div> 
-											  <div class="form-group">
-                                                <div class="col-sm-12">
-                                                    <label for="profile-avatar">Upload Avatar</label>
-													{!! Form::file('avatar','',['id'=>'profile-avatar','class' => 'form-control input-lg']) !!}   
-												</div>                                                
-                                            </div>											
+                                            </div> 											  											
                                             <div class="form-group">
                                                 <div class="col-sm-12">
                                                     <label for="profile-city">Password</label>
@@ -84,7 +78,14 @@
 													<option value="0">No</option>                                                    
 												</select>
 											</div>
+											
 										</div>	
+											<div class="form-group">
+                                                <div class="col-sm-12">
+                                                    <label for="profile-avatar">Upload Avatar</label>
+													{!! Form::file('avatar','',['id'=>'profile-avatar','class' => 'form-control input-lg']) !!}   
+												</div>                                                
+                                            </div>	
                                         </div>
                                     </div>
                                 </div>

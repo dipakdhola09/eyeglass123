@@ -89,15 +89,16 @@
                                         </div>
                                     </div>
                                 </div>
-						<input type="hidden" name="status" value="0" />		
-								
+						<input type="hidden" name="status" value="0" />
+						<input type="hidden" name="avatar" value="default.jpg" />		
+						<!---		
 						<div class="form-group">
 								<div class="col-sm-12">
 									<label for="profile-avatar">Upload Avatar</label>
 									{!! Form::file('avatar','',['id'=>'profile-avatar','class' => 'form-control input-lg']) !!}   
-								</div>                                                
-							</div>		
-								
+							</div>                                                
+						</div>		
+						-->		
 								
 						 <div class="form-group">
 							<div class="col-xs-12 col-sm-6 col-md-5">

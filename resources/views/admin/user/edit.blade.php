@@ -33,11 +33,11 @@
                 <div class="content content-boxed">
                     <!-- User Header -->
                     <div class="block">
-                        <!-- Basic Info -->
+                        <!-- Basic Info -->						
                         <div class="bg-image" style="background-image: url('{{ asset('assets/img/photos/photo3@2x.jpg')}}');">
                             <div class="block-content bg-primary-op text-center overflow-hidden">
                                 <div class="push-30-t push animated fadeInDown">
-                                    <img class="img-avatar img-avatar96 img-avatar-thumb" src="{{ asset('assets/img/avatars/avatar10.jpg')}}" alt="">
+                                    <img class="img-avatar img-avatar96 img-avatar-thumb" src="{{ url('/uploads/avatars')}}/{{$user->avatar}}" alt="">
                                 </div>
                                 <div class="push-30 animated fadeInUp">
                                     <h2 class="h4 font-w600 text-white push-5">{{$user->name}}</h2>
@@ -55,7 +55,7 @@
 					@endif
                     
                    <!-- Main Content -->
-                    {!! Form::open(['url' => '/user/edit/'.$user->id , 'class' => 'form-horizontal']) !!}
+                    {!! Form::open(['url' => '/user/edit/'.$user->id , 'class' => 'form-horizontal','files'=>'true']) !!}
             		{!! Form::hidden('remember_token',csrf_token()) !!}
                         <div class="block">
                             <ul class="nav nav-tabs nav-justified push-20" data-toggle="tabs">
