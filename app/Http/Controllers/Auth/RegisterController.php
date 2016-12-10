@@ -6,6 +6,11 @@ use App\User;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Illuminate\Support\Facades\Input;
+use Illuminate\Http\Request;
+
+
+
 
 class RegisterController extends Controller
 {
@@ -63,21 +68,17 @@ class RegisterController extends Controller
     protected function create(array $data)
     { 
 		
+		// $file = Request::file($data['avatar']);
 		
-		if($data['avatar']){			
-			//$image = Input::file($data['avatar']);
-			//echo '<pre>-->'; print_r($image); echo '</pre>';
-			//die;
-			//$upload = base_path().'/media/avatar';
-			//$filename = $data['avatar'];
-			//$image->move($upload, $filename);
-			//$avatar_path = $upload.$filename;
-   	 }
-		
-		
-		//echo '<pre>-->'; print_r($data); echo '</pre>';
-		//echo '<pre>-->'; print_r($avatar_path); echo '</pre>';
-		
+		/*if(Input::hasfile($data['avatar'])){
+				$image = Input::file($data['avatar']);
+				$upload = base_path().'/media/avatar';
+				$filename = $data['nip'].'.jpg';
+				$image->move($upload, $filename);
+				$path = $upload.$filename;
+			}*/
+		//echo '<pre>-->'; print_r(Request); echo '</pre>';
+		//die;
 		
         return User::create([
             'name' => $data['name'],

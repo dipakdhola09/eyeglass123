@@ -60,17 +60,79 @@
 
 			<!-- Side Content -->
 			<div class="side-content">
-				<ul class="nav-main">
+				<ul class="nav-main">					
 					<li>
-						<a class="active" href="{{ url('/admin/dashboard') }}"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span></a>
-					</li>
+						<a class="active" href="{{ url('/admin/dashboard') }}"><i class="si si-speedometer"></i><span class="sidebar-mini-hide">Dashboard</span></a>				</li>	
 					<li>
-						<a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-user"></i><span class="sidebar-mini-hide">User Profile</span></a>
+						<a class="nav-submenu" data-toggle="nav-submenu" href="#"> <i class="fa fa-barcode"></i> <span class="sidebar-mini-hide">Orders</span></a>
 						<ul>
 							<li>
-								<a href="{{ url('/user') }}">Users</a>
+								<a href="{{ url('/admin/dashboard') }}">Orders List</a>
 							</li>
-
+							<li>
+								<a href="{{ url('/admin/dashboard') }}">Phone Order</a>
+							</li>
+							<li>
+								<a href="{{ url('/admin/dashboard') }}">Failed Transaction</a>
+							</li>
+							<li>
+								<a href="{{ url('/admin/dashboard') }}">Fraud IP list</a>
+							</li>
+							<li>
+								<a href="{{ url('/admin/dashboard') }}">View Old Orders</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-users"></i><span class="sidebar-mini-hide">Customer</span></a>
+						<ul>
+							<li>
+								<a href="{{ url('/user') }}">Customer List</a>
+							</li>
+							<li>
+								<a href="{{ url('/user') }}">Export Customer</a>
+							</li>
+							<li>
+								<a href="{{ url('/user') }}">Customer Questions</a>
+							</li>
+							<li>
+								<a href="{{ url('/user') }}">Abandoned Cart</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-th"></i><span class="sidebar-mini-hide">Product</span></a>
+						<ul>
+							<li>
+								<a href="{{ url('/user') }}">Product List</a>
+							</li>
+							<li>
+								<a href="{{ url('/user') }}">Add Product</a>
+							</li>
+							<li>
+								<a href="{{ url('/user') }}">Category List</a>
+							</li>
+							<li>
+								<a href="{{ url('/user') }}">Add Category</a>
+							</li>
+							<li>
+								<a href="{{ url('/user') }}">Manufacture List</a>
+							</li>
+							<li>
+								<a href="{{ url('/user') }}">Product Reviews</a>								
+							</li>
+							<li> <a class="nav-submenu" data-toggle="nav-submenu" href="#">
+								<span class="sidebar-mini-hide">Seo</span></a>
+							<ul class="sb-submenu in">
+								<li class=""> <a data-ui-sref-active="active">
+									<span class="sidebar-mini-hide">Generate Google XML</span></a> 
+								</li>
+								<li class=""> <a data-ui-sref="GenerateRSS" data-ui-sref-active="active"> 
+									<span class="sidebar-mini-hide">Generate RSS</span></a>
+								</li>
+							</ul>
+						</li>
+							
 						</ul>
 					</li>
 				  </ul>
