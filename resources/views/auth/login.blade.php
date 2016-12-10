@@ -52,7 +52,9 @@
 			<div class="block block-themed animated fadeIn">
 				<div class="block-header bg-primary">
 					<ul class="block-options">
-						<li> <a href="forgot-password.html">Forgot Password?</a> </li>
+						<li> <a class="btn btn-link" href="{{ url('/password/reset') }}">
+                                    Forgot Your Password?
+                                </a> </li>
 						<li> <a href="register.html" data-toggle="tooltip" data-placement="left" title="New Account"><i class="si si-plus"></i></a> </li>
 					</ul>
 					<h3 class="block-title">Login</h3>
