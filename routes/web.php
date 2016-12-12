@@ -11,12 +11,25 @@
 |
 */
 
+/*---------------------------frontend---------------------------------------------*/
+
 Route::get('/', function () {
     return view('home');
 });
 
+
+
+
+
+
+
+/*-------------------------------------admin----------------------------------*/
+
 Auth::routes();
 
+/*****************************users**************************************/
+
+Route::get('/admin/dashboard', 'AdminController@dashboard');
 Route::get('/user', 'UsersController@user');
 Route::get('/user/add', 'UsersController@create');
 Route::post('/user/add', 'UsersController@store');
@@ -26,4 +39,11 @@ Route::post('/user/edit/{id}','UsersController@update');
 Route::get('/user/delete/{id}','UsersController@destroy');
 
 
-Route::get('/admin/dashboard', 'AdminController@dashboard');
+
+
+/*******************************products******************************/
+Route::resource('/admin/customer', 'CustomerController');
+Route::get('/admin/customer/{id}/delete','CustomerController@destroy');
+
+
+

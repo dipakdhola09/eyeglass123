@@ -2,38 +2,12 @@
 @section('content') 
 
 
- <!-- Page Container -->
-        <!--
-            Available Classes:
-
-            'enable-cookies'             Remembers active color theme between pages (when set through color theme list)
-
-            'sidebar-l'                  Left Sidebar and right Side Overlay
-            'sidebar-r'                  Right Sidebar and left Side Overlay
-            'sidebar-mini'               Mini hoverable Sidebar (> 991px)
-            'sidebar-o'                  Visible Sidebar by default (> 991px)
-            'sidebar-o-xs'               Visible Sidebar by default (< 992px)
-
-            'side-overlay-hover'         Hoverable Side Overlay (> 991px)
-            'side-overlay-o'             Visible Side Overlay by default (> 991px)
-
-            'side-scroll'                Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (> 991px)
-
-            'header-navbar-fixed'        Enables fixed header
-        -->
-        <div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
-			
-           @include('admin.sidebar')
-            @include('admin.header')
-
-            <!-- Header -->
-            
-            <!-- END Header -->
+ 
 
             <!-- Main Container -->
             <main id="main-container">
                 <!-- Page Content -->
-                <div class="content content-boxed">
+                <div class="content">
                     <!-- Header Tiles -->
                     <div class="row">
                         <div class="col-sm-6 col-md-3">
@@ -123,16 +97,7 @@
                 </div>
                 <!-- END Page Content -->
             </main>
-            <!-- END Main Container -->
-
-            @include('admin.footer')
-        </div>
-        <!-- END Page Container -->
-
-        <!-- Apps Modal -->
-        <!-- Opens from the button in the header -->
-        
-        <!-- END Apps Modal -->
+           
 <script type="text/javascript" src="{{asset('resources/admin/assets/plugins/jqwidgets/jqxcore.js')}}"></script>
 <!-- jQWidgets core JavaScript --> 
 <script type="text/javascript" src="{{asset('resources/admin/assets/plugins/jqwidgets/jqxdata.js')}}"></script> 
