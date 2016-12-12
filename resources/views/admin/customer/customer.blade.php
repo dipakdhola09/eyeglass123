@@ -7,7 +7,7 @@
             <main id="main-container">
                 <!-- Page Content -->
                 <div class="content">
-                    <!-- All Products -->
+                    <!-- All customer -->
                     <div class="block">
                         <div class="block-header bg-gray-lighter">
                             <ul class="block-options">
@@ -99,7 +99,7 @@
                             </nav>
                         </div>
                     </div>
-                    <!-- END All Products -->
+                    <!-- END All customers -->
                 </div>
                 <!-- END Page Content -->
             </main>

@@ -7,27 +7,23 @@
             <!-- Main Container -->
             <main id="main-container">
                 <!-- Page Content -->
-                <div class="content">
-                    <!-- Header Tiles -->
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3">
-                            <a class="block block-link-hover3 text-center" href="{{ url('/user/add') }}">
-                                <div class="block-content block-content-full">
-                                    <div class="h1 font-w700 text-success"><i class="fa fa-plus"></i></div>
-                                </div>
-                                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-success font-w600">Add New User</div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END Header Tiles -->
+                <div class="content">                    
 					 @if(Session::has('msg'))
 					<p class="alert alert-success">{{ Session::get('msg') }}</p>
 					@endif
                     <!-- All Users -->
+					
                     <div class="block">
                         <div class="block-header bg-gray-lighter">                          
+							 <ul class="block-options">
+                                <li class="dropdown">
+                                    <div class="text-success font-w600"><i class="fa fa-plus"></i> <a href="{{ url('/user/add')}}">Add Users</a></div>
+                                    
+                                </li>
+                            </ul>
                             <h3 class="block-title">All Users</h3>
                         </div>
+						
                         <div class="block-content">
 							<div id="dataTable"></div>
 							<!--
