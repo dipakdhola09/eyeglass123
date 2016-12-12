@@ -28,3 +28,4 @@ Route::get('/user/delete/{id}','UsersController@destroy');/*/
 
 Route::get('/admin/dashboard', 'AdminController@dashboard');
 Route::get('admin/product', 'ProductController@list');
+Route::get('product/getMasterProductsList','ProductController@getMasterProductsList');

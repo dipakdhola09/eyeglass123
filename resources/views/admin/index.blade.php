@@ -50,7 +50,17 @@
         <!-- END Stylesheets -->
     </head>
     <body>
+	
+<!-- Page Container -->
+
+        <div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
+			
+			@include('admin.sidebar')
+            @include('admin.header')
         @yield('content')
+		@include('admin.footer')
+          
+        </div>
 
         <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
         

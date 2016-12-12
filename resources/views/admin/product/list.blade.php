@@ -1,592 +1,61 @@
 @extends('admin.index')
 @section('content') 
+<style>
+#table{width:100% !important;}
+</style>
+<link href="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/styles/jqx.base.css" rel="stylesheet">
+<link href="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/styles/jqx.bootstrap.css" rel="stylesheet">
 
-
-
-<!-- Page Container -->
-        <!--
-            Available Classes:
-
-            'enable-cookies'             Remembers active color theme between pages (when set through color theme list)
-
-            'sidebar-l'                  Left Sidebar and right Side Overlay
-            'sidebar-r'                  Right Sidebar and left Side Overlay
-            'sidebar-mini'               Mini hoverable Sidebar (> 991px)
-            'sidebar-o'                  Visible Sidebar by default (> 991px)
-            'sidebar-o-xs'               Visible Sidebar by default (< 992px)
-
-            'side-overlay-hover'         Hoverable Side Overlay (> 991px)
-            'side-overlay-o'             Visible Side Overlay by default (> 991px)
-
-            'side-scroll'                Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (> 991px)
-
-            'header-navbar-fixed'        Enables fixed header
-        -->
-        <div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
-			
-			@include('admin.sidebar')
-            @include('admin.header')
 
 
             <!-- Main Container -->
               <main id="main-container">
                 <!-- Page Content -->
-                <div class="content content-boxed">
-                    <!-- Header Tiles -->
-                    <div class="row">
-                        <div class="col-sm-6 col-md-3">
-                            <a class="block block-link-hover3 text-center" href="base_pages_ecom_product_edit.html">
-                                <div class="block-content block-content-full">
-                                    <div class="h1 font-w700 text-success"><i class="fa fa-plus"></i></div>
-                                </div>
-                                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-success font-w600">Add New Product</div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <a class="block block-link-hover3 text-center" href="javascript:void(0)">
-                                <div class="block-content block-content-full">
-                                    <div class="h1 font-w700 text-danger" data-toggle="countTo" data-to="15"></div>
-                                </div>
-                                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-danger font-w600">Out of Stock</div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <a class="block block-link-hover3 text-center" href="javascript:void(0)">
-                                <div class="block-content block-content-full">
-                                    <div class="h1 font-w700" data-toggle="countTo" data-to="100"></div>
-                                </div>
-                                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-muted font-w600">Top Sellers</div>
-                            </a>
-                        </div>
-                        <div class="col-sm-6 col-md-3">
-                            <a class="block block-link-hover3 text-center" href="javascript:void(0)">
-                                <div class="block-content block-content-full">
-                                    <div class="h1 font-w700" data-toggle="countTo" data-to="8750"></div>
-                                </div>
-                                <div class="block-content block-content-full block-content-mini bg-gray-lighter text-muted font-w600">All Products</div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- END Header Tiles -->
+                <div class="content">
+
 
                     <!-- All Products -->
                     <div class="block">
                         <div class="block-header bg-gray-lighter">
-                            <ul class="block-options">
-                                <li class="dropdown">
-                                    <button type="button" data-toggle="dropdown">Filter <span class="caret"></span></button>
-                                    <ul class="dropdown-menu dropdown-menu-right">
-                                        <li>
-                                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">90</span>New</a>
-                                        </li>
-                                        <li>
-                                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">15</span>Out of Stock</a>
-                                        </li>
-                                        <li>
-                                            <a tabindex="-1" href="javascript:void(0)"><span class="badge pull-right">8750</span>All</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
                             <h3 class="block-title">All Products</h3>
                         </div>
                         <div class="block-content">
-                            <table class="table table-borderless table-striped table-vcenter">
-                                <thead>
-                                    <tr>
-                                        <th class="text-center" style="width: 100px;">ID</th>
-                                        <th class="visible-lg">Product</th>
-                                        <th class="hidden-xs text-center">Added</th>
-                                        <th>Status</th>
-                                        <th class="hidden-xs text-right">Value</th>
-                                        <th class="text-center">Action</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01535</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #35</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">05/01/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Out of Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$16,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01534</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #34</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">21/06/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Out of Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$19,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01533</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #33</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">14/10/2015</td>
-                                        <td>
-                                            <span class="label label-success">Available</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$97,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01532</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #32</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">09/10/2015</td>
-                                        <td>
-                                            <span class="label label-success">Available</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$43,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01531</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #31</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">16/12/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Out of Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$58,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01530</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #30</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">01/05/2015</td>
-                                        <td>
-                                            <span class="label label-success">Available</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$27,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01529</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #29</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">02/06/2015</td>
-                                        <td>
-                                            <span class="label label-success">Available</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$59,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01528</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #28</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">15/03/2015</td>
-                                        <td>
-                                            <span class="label label-success">Available</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$38,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01527</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #27</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">22/12/2015</td>
-                                        <td>
-                                            <span class="label label-success">Available</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$75,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01526</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #26</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">18/10/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Out of Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$54,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01525</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #25</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">13/03/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Out of Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$85,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01524</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #24</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">03/01/2015</td>
-                                        <td>
-                                            <span class="label label-success">Available</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$53,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01523</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #23</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">24/11/2015</td>
-                                        <td>
-                                            <span class="label label-success">Available</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$67,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01522</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #22</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">18/08/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Out of Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$12,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01521</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #21</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">20/10/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Out of Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$87,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01520</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #20</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">28/05/2015</td>
-                                        <td>
-                                            <span class="label label-success">Available</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$87,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01519</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #19</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">22/10/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Out of Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$33,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01518</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #18</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">27/12/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Out of Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$78,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01517</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #17</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">23/06/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Out of Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$63,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="text-center">
-                                            <a class="font-" href="base_pages_ecom_product_edit.html">
-                                                <strong>PID.01516</strong>
-                                            </a>
-                                        </td>
-                                        <td class="visible-lg">
-                                            <a href="base_pages_ecom_product_edit.html">Product #16</a>
-                                        </td>
-                                        <td class="hidden-xs text-center">07/03/2015</td>
-                                        <td>
-                                            <span class="label label-danger">Out of Stock</span>
-                                        </td>
-                                        <td class="text-right hidden-xs">
-                                            <strong>$52,00</strong>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="btn-group btn-group-xs">
-                                                <a href="base_pages_ecom_product_edit.html" data-toggle="tooltip" title="View" class="btn btn-default"><i class="fa fa-eye"></i></a>
-                                                <a href="javascript:void(0)" data-toggle="tooltip" title="Delete" class="btn btn-default"><i class="fa fa-times text-danger"></i></a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                            <nav class="text-right">
-                                <ul class="pagination pagination-sm">
-                                    <li class="active">
-                                        <a href="javascript:void(0)">1</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">2</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">3</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">4</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)">5</a>
-                                    </li>
-                                    <li>
-                                        <a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a>
-                                    </li>
-                                </ul>
-                            </nav>
+                           <!-- jQWidgets core JavaScript --> 
+						   <script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxcore.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxdata.js"></script>
+						   <script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxswitchbutton.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxpanel.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxtabs.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxtree.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxmenu.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxcheckbox.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxlistbox.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxdropdownlist.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxgrid.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxgrid.sort.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxgrid.pager.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxgrid.selection.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxinput.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxgrid.filter.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxcalendar.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxradiobutton.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxnumberinput.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxdatetimeinput.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxtooltip.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/globalization/globalize.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxgrid.edit.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxbuttons.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxcheckbox.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxscrollbar.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxpanel.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxdropdownbutton.js"></script> 
+							<script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/plugins/jqwidgets/jqxdatatable.js"></script> 
+						   
+						   
+							
+
+                           <script type="text/javascript" src="<?php echo url('/'); ?>/resources/admin/assets/js/config.js"></script> 
+							<div id="table" style="width:100% !important"></div>
                         </div>
                     </div>
                     <!-- END All Products -->
@@ -594,14 +63,103 @@
                 <!-- END Page Content -->
             </main>
            <!-- END Main Container -->
+		   
+		   <script type="text/javascript">
+    $(document).ready(function () {
+        var source = BASE_URL + "product/getMasterProductsList";
+        var theme = 'classic';
+        var source =
+                {
+					dataType: "json",
+                    datafields: [
+                        {name: 'product_id', type: 'int'},
+                        {name: 'name', type: 'string'},
+                        {name: 'sku', type: 'string'},
+                        {name: 'cost', type: 'float'},
+						{name: 'stock', type: 'int'},
+						{name: 'status', type: 'string'}
+                    ],
+					id: 'product_id',
+                    root: "data",
+                    cache: false,
+                    url: source,
+                   
+                };
+       var dataAdapter = new $.jqx.dataAdapter(source, {
+                downloadComplete: function (data, status, xhr) {
+                },
+                loadComplete: function (data) {
+                },
+                loadError: function (xhr, status, error) {
+                }
+            });
+		
+		var imageFormatter  = function (row, columnfield, value, defaulthtml, columnproperties) {
 			
-			@include('admin.footer')
-          
-        </div>
-        <!-- END Page Container -->
+			if(value != '')
+			{
+				var str = '<img src="site_images/products/icon/'+value+'" height="50">';
+			}   
+			else
+			{
+				var str = '<img src="site_images/products/icon/default.jpg" height="50">';
+				
+			}
+			return "<p class='text-center'>"+str+"</p>";
+		}
 
-        <!-- Apps Modal -->
-        <!-- Opens from the button in the header -->
-        
-        <!-- END Apps Modal -->
+		var actionFormatter = function (row, columnfield, value, defaulthtml, columnproperties) {
+                
+			var str = "<p class='text-center'><a href='Products/edit/"+value+"'><i class='fa fa-edit' style='font-size:20px; line-height:47px'></i></a>";
+			str += "<p class='text-center'><a href='<Products/delete/"+value+"'><i class='fa fa-times red' style='font-size:20px; line-height:47px'></i></a>";
+			return str;
+        }
+            
+        var statusFormatter = function (row, columnfield, value, defaulthtml, columnproperties) {
+                
+			if (value =='Y') 
+				return "<p class='text-center'><i class='fa fa-thumbs-up green' style='font-size:20px; line-height:47px'></i></p>";
+		else
+			return "<p class='text-center'><i class='fa fa-thumbs-down red' style='font-size:20px; line-height:47px'></i></p>";
+		}
+				
+        $("#table").jqxGrid(
+                {
+					 width: '100%',
+                   source: dataAdapter,
+                            pageable: true,
+                            autoheight: true,
+                            sortable: true,
+                            editable: true,
+                            selectionmode: 'singlerow',
+                             editmode: 'selectedrow',                            
+                            altrows: false,
+                            enabletooltips: true,
+                            showToolbar: true,
+                            columnsheight: 50,
+                            rowsheight: 50,
+                            showfilterrow: true,
+                            filterable: true,
+                            ready: function () {
+                               // addfilter();
+                            },
+                   
+                    filterable: true,
+                    sortable: true,
+                    columns: [
+                        {text: 'Image', editable: false, datafield: 'image', cellsalign: 'center', width: '10%'},
+                        {text: 'Name', datafield: 'name', cellsalign: 'left', align: 'left', width: '20%'},
+                        {text: 'SKU', datafield: 'sku', cellsalign: 'center', align: 'center', width: '10%'},
+						{text: 'Cost', datafield: 'cost', cellsalign: 'center', align: 'center', width: '10%'},
+						{text: 'Inventory', datafield: 'stock', cellsalign: 'center', align: 'center', width: '10%'},
+						{text: 'StoreName', datafield: 'product_id', cellsalign: 'center', align: 'center', width: '10%'},
+						{text: 'Status', datafield: 'status', width: '8%', cellsalign: 'center', align: 'center', cellsrenderer: statusFormatter},
+
+                    ]
+                });
+       
+    });
+</script>
+			
+
 @endsection

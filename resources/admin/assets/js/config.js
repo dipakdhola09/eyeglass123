@@ -1,7 +1,7 @@
 var BASE_URL;
 
 //ADMIN_FOLDER = "Admin/";
-BASE_URL = "http://localhost/Git/eyeglass123/public/";
+BASE_URL = "http://localhost/Git/eyeglass123/";
 
 //CTE_URL = "http://localhost/tfs/cte/dev/";
 CTE_URL = "http://10.0.10.51/tfs/Karen-Shanely/cte/dev/";
