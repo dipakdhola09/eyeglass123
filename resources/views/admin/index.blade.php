@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
 
-        <title>Eyeglass123</title>
+        <title>{{ config('app.name')}}</title>
 
         <meta name="description" content="OneUI - Admin Dashboard Template &amp; UI Framework created by pixelcave and published on Themeforest">
         <meta name="author" content="pixelcave">
@@ -50,17 +50,47 @@
         <!-- END Stylesheets -->
     </head>
     <body>
-	
-<!-- Page Container -->
+
+		<!-- Page Container -->
+        <!--
+            Available Classes:
+
+            'enable-cookies'             Remembers active color theme between pages (when set through color theme list)
+
+            'sidebar-l'                  Left Sidebar and right Side Overlay
+            'sidebar-r'                  Right Sidebar and left Side Overlay
+            'sidebar-mini'               Mini hoverable Sidebar (> 991px)
+            'sidebar-o'                  Visible Sidebar by default (> 991px)
+            'sidebar-o-xs'               Visible Sidebar by default (< 992px)
+
+            'side-overlay-hover'         Hoverable Side Overlay (> 991px)
+            'side-overlay-o'             Visible Side Overlay by default (> 991px)
+
+            'side-scroll'                Enables custom scrolling on Sidebar and Side Overlay instead of native scrolling (> 991px)
+
+            'header-navbar-fixed'        Enables fixed header
+        -->
 
         <div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
 			
 			@include('admin.sidebar')
             @include('admin.header')
-        @yield('content')
-		@include('admin.footer')
+
+
+			
+        		@yield('content')
+			
+			
+			@include('admin.footer')
           
         </div>
+        <!-- END Page Container -->
+
+        <!-- Apps Modal -->
+        <!-- Opens from the button in the header -->
+        
+        <!-- END Apps Modal -->
+
 
         <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
         
@@ -71,19 +101,7 @@
         <script src="{{ asset('assets/js/core/jquery.countTo.min.js')}}"></script>
         <script src="{{ asset('assets/js/core/jquery.placeholder.min.js')}}"></script>
         <script src="{{ asset('assets/js/core/js.cookie.min.js')}}"></script>
-        <script src="{{ asset('assets/js/app.js')}}"></script>
-
-        <!-- Page Plugins -->
-        <script src="{{ asset('assets/js/plugins/slick/slick.min.js')}}"></script>
-        <script src="{{ asset('assets/js/plugins/chartjs/Chart.min.js')}}"></script>
-
-        <!-- Page JS Code -->
-        <script src="{{ asset('assets/js/pages/base_pages_dashboard.js')}}"></script>
-        <script>
-            jQuery(function () {
-                // Init page helpers (Slick Slider plugin)
-                App.initHelpers('slick');
-            });
-        </script>
+        <script src="{{ asset('assets/js/app.js')}}"></script>		
+        
     </body>
 </html>

@@ -87,16 +87,16 @@
 						<a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-users"></i><span class="sidebar-mini-hide">Customer</span></a>
 						<ul>
 							<li>
-								<a href="{{ url('/user') }}">Customer List</a>
+								<a href="{{ url('/admin/customer') }}">Customer List</a>
 							</li>
 							<li>
-								<a href="{{ url('/user') }}">Export Customer</a>
+								<a href="{{ url('/admin/customer/export') }}">Export Customer</a>
 							</li>
 							<li>
-								<a href="{{ url('/user') }}">Customer Questions</a>
+								<a href="{{ url('/admin/customer/questions') }}">Customer Questions</a>
 							</li>
 							<li>
-								<a href="{{ url('/user') }}">Abandoned Cart</a>
+								<a href="{{ url('/admin/customer/cart') }}">Abandoned Cart</a>
 							</li>
 						</ul>
 					</li>
@@ -132,6 +132,14 @@
 								</li>
 							</ul>
 						</li>
+							
+						</ul>
+					</li>
+					<li> <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-user"></i><span class="sidebar-mini-hide">User Profile</span></a>
+						<ul>
+							<li>
+								<a href="{{ url('/user') }}">Users List</a>
+							</li>
 							
 						</ul>
 					</li>
