@@ -104,7 +104,7 @@
 						<a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="fa fa-th"></i><span class="sidebar-mini-hide">Product</span></a>
 						<ul>
 							<li>
-								<a href="{{ url('/user') }}">Product List</a>
+								<a href="{{ url('admin/product') }}">Product List</a>
 							</li>
 							<li>
 								<a href="{{ url('/user') }}">Add Product</a>

@@ -50,7 +50,7 @@
         <!-- END Stylesheets -->
     </head>
     <body>
-		
+
 		<!-- Page Container -->
         <!--
             Available Classes:
@@ -70,10 +70,12 @@
 
             'header-navbar-fixed'        Enables fixed header
         -->
+
         <div id="page-container" class="sidebar-l sidebar-o side-scroll header-navbar-fixed">
 			
 			@include('admin.sidebar')
             @include('admin.header')
+
 
 			
         		@yield('content')
@@ -88,6 +90,7 @@
         <!-- Opens from the button in the header -->
         
         <!-- END Apps Modal -->
+
 
         <!-- OneUI Core JS: jQuery, Bootstrap, slimScroll, scrollLock, Appear, CountTo, Placeholder, Cookie and App.js -->
         
